@@ -22,6 +22,7 @@
     />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header" id="site-header">
       <div class="container header-inner">
         <a class="logo" href="/" aria-label="NeuroSYS home">
@@ -97,6 +98,7 @@
         </nav>
         <div class="header-utility">
           <a class="nav-link" href="/contact.html">Get in touch</a>
+          <!-- language-switch hidden
           <div class="nav-details language-switch">
             <button class="nav-trigger" type="button">
               NO <span class="chevron">▾</span>
@@ -106,6 +108,7 @@
               <a href="/en">EN</a>
             </div>
           </div>
+          -->
           <button class="menu-toggle" type="button" aria-expanded="false">
             Menu
           </button>
@@ -113,7 +116,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="hero" id="top">
         <div class="container hero-inner">
           <div class="hero-content">
@@ -136,6 +139,11 @@
 
       <section class="logo-cloud" aria-label="Trusted by">
         <div class="container">
+          <div class="logo-cloud-controls">
+            <button class="logo-marquee-toggle" type="button" aria-pressed="false">
+              Pause logo animation
+            </button>
+          </div>
           <div class="logo-marquee">
             <div class="logo-track">
               <div class="logo-set">
@@ -423,46 +431,73 @@
               <button
                 class="platform-tab active"
                 type="button"
+                id="platform-tab-dify"
+                role="tab"
                 data-platform="dify"
                 aria-selected="true"
+                aria-controls="platform-panel-dify"
+                tabindex="0"
               >
                 Agentic workflows - Dify
               </button>
               <button
                 class="platform-tab"
                 type="button"
+                id="platform-tab-langchain"
+                role="tab"
                 data-platform="langchain"
                 aria-selected="false"
+                aria-controls="platform-panel-langchain"
+                tabindex="-1"
               >
                 Custom AI logic - LangChain
               </button>
               <button
                 class="platform-tab"
                 type="button"
+                id="platform-tab-huggingface"
+                role="tab"
                 data-platform="huggingface"
                 aria-selected="false"
+                aria-controls="platform-panel-huggingface"
+                tabindex="-1"
               >
                 Model customization - Hugging Face
               </button>
               <button
                 class="platform-tab"
                 type="button"
+                id="platform-tab-workspace"
+                role="tab"
                 data-platform="workspace"
                 aria-selected="false"
+                aria-controls="platform-panel-workspace"
+                tabindex="-1"
               >
                 Google Workspace Studio
               </button>
               <button
                 class="platform-tab"
                 type="button"
+                id="platform-tab-copilot"
+                role="tab"
                 data-platform="copilot"
                 aria-selected="false"
+                aria-controls="platform-panel-copilot"
+                tabindex="-1"
               >
                 Microsoft Copilot Studio
               </button>
             </div>
             <div class="platforms-detail">
-              <article class="platform-panel active" data-platform="dify">
+              <article
+                class="platform-panel active"
+                data-platform="dify"
+                id="platform-panel-dify"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="platform-tab-dify"
+              >
                 <div class="platform-panel-header">
                   <div class="platform-panel-title">Production-grade agentic workflows</div>
                   <div class="platform-panel-badge">Strategic partner</div>
@@ -490,7 +525,15 @@
                   <li>Move AI from pilots into daily operations</li>
                 </ul>
               </article>
-              <article class="platform-panel" data-platform="langchain">
+              <article
+                class="platform-panel"
+                data-platform="langchain"
+                id="platform-panel-langchain"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="platform-tab-langchain"
+                hidden
+              >
                 <div class="platform-panel-header">
                   <div class="platform-panel-title">Composable AI logic &amp; orchestration</div>
                 </div>
@@ -516,7 +559,15 @@
                   <li>Integrate tightly with proprietary systems</li>
                 </ul>
               </article>
-              <article class="platform-panel" data-platform="huggingface">
+              <article
+                class="platform-panel"
+                data-platform="huggingface"
+                id="platform-panel-huggingface"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="platform-tab-huggingface"
+                hidden
+              >
                 <div class="platform-panel-header">
                   <div class="platform-panel-title">Model customization &amp; experimentation</div>
                 </div>
@@ -541,7 +592,15 @@
                   <li>Retain control at the model level</li>
                 </ul>
               </article>
-              <article class="platform-panel" data-platform="workspace">
+              <article
+                class="platform-panel"
+                data-platform="workspace"
+                id="platform-panel-workspace"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="platform-tab-workspace"
+                hidden
+              >
                 <div class="platform-panel-header">
                   <div class="platform-panel-title">Workspace-native Communication Agents</div>
                 </div>
@@ -566,7 +625,15 @@
                   <li>Enable fast adoption across teams</li>
                 </ul>
               </article>
-              <article class="platform-panel" data-platform="copilot">
+              <article
+                class="platform-panel"
+                data-platform="copilot"
+                id="platform-panel-copilot"
+                role="tabpanel"
+                tabindex="0"
+                aria-labelledby="platform-tab-copilot"
+                hidden
+              >
                 <div class="platform-panel-header">
                   <div class="platform-panel-title">Microsoft 365-native copilots</div>
                 </div>
@@ -900,6 +967,12 @@
     <script src="app.js"></script>
   </body>
 </html>
+
+
+
+
+
+
 
 
 
