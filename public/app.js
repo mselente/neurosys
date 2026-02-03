@@ -102,17 +102,3 @@ if (platformTabs.length && platformPanels.length) {
   }
 }
 
-const logoClouds = document.querySelectorAll(".logo-cloud");
-
-logoClouds.forEach((cloud) => {
-  const toggleButton = cloud.querySelector(".logo-marquee-toggle");
-  if (!toggleButton) return;
-
-  toggleButton.addEventListener("click", () => {
-    const isPaused = cloud.classList.toggle("is-paused");
-    toggleButton.setAttribute("aria-pressed", String(isPaused));
-    toggleButton.textContent = isPaused
-      ? "Play logo animation"
-      : "Pause logo animation";
-  });
-});
