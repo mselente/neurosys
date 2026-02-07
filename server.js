@@ -14,7 +14,9 @@ const mimeTypes = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".svg": "image/svg+xml",
-  ".webp": "image/webp"
+  ".webp": "image/webp",
+  ".xml": "application/xml; charset=utf-8",
+  ".txt": "text/plain; charset=utf-8"
 };
 
 const server = http.createServer((req, res) => {
@@ -63,7 +65,15 @@ const server = http.createServer((req, res) => {
 
       const ext = path.extname(finalPath).toLowerCase();
       const contentType = mimeTypes[ext] || "application/octet-stream";
-      res.writeHead(200, { "Content-Type": contentType });
+      const headers = { "Content-Type": contentType };
+
+      if ([".css", ".js", ".svg", ".png", ".jpg", ".jpeg", ".webp", ".ico"].includes(ext)) {
+        headers["Cache-Control"] = "public, max-age=86400";
+      } else if (ext === ".html") {
+        headers["Cache-Control"] = "public, max-age=0, must-revalidate";
+      }
+
+      res.writeHead(200, headers);
       res.end(data);
     });
   });

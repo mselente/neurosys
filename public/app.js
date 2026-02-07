@@ -277,6 +277,58 @@ const I18N_STRINGS = {
     "Pilot to production, fast": "Fra pilot til produksjon, raskt",
     "We build right from the start so pilots can go into production without rebuilding. Identify, test and realize AI-driven business opportunities before committing a large investment.":
       "Vi bygger riktig fra start slik at piloter kan gå rett i produksjon. Identifiser, test og realiser AI-drevne muligheter før dere forplikter en stor investering.",
+    "Frequently asked questions": "Ofte stilte sporsmal",
+    "What does NeuroSYS do?": "Hva gjor NeuroSYS?",
+    "NeuroSYS designs, builds and operates production-grade AI systems for Nordic enterprises. We specialize in agentic AI - communication agents, process optimization and AI-enabled products - combining advisory, solution design, implementation and long-term support in one engagement.":
+      "NeuroSYS designer, bygger og drifter produksjonsklare AI-systemer for nordiske virksomheter. Vi spesialiserer oss pa agentisk AI - kommunikasjonsagenter, prosessoptimalisering og AI-aktiverte produkter - og kombinerer radgivning, loesningsdesign, implementering og langsiktig stoette i ett oppdrag.",
+    "What is an agentic AI workflow?": "Hva er en agentisk AI-arbeidsflyt?",
+    "An agentic AI workflow is an AI system that can reason, make decisions and take actions across multiple tools and data sources. Unlike simple chatbots, agentic workflows connect to your existing systems (ERP, CRM, documents), follow multi-step logic and escalate to humans when needed.":
+      "En agentisk AI-arbeidsflyt er et AI-system som kan resonnere, ta beslutninger og handle pa tvers av flere verktoy og datakilder. I motsetning til enkle chatboter kobler agentiske arbeidsflyter seg til eksisterende systemer (ERP, CRM, dokumenter), folger flertrinnslogikk og eskalerer til mennesker ved behov.",
+    "How long does a typical AI project take?": "Hvor lang tid tar et typisk AI-prosjekt?",
+    "A focused pilot typically takes 4-8 weeks, covering scope definition, integration, testing and evaluation. Production deployments follow in subsequent phases. We build pilots that are production-ready from day one, so you don't need to rebuild when scaling.":
+      "En fokusert pilot tar vanligvis 4-8 uker, inkludert omfangsdefinisjon, integrasjon, testing og evaluering. Produksjonsinnfoering folger i pafolgende faser. Vi bygger piloter som er produksjonsklare fra dag en, sa dere slipper a bygge pa nytt ved skalering.",
+    "Do I need to have AI expertise in my organization?": "Ma jeg ha AI-kompetanse i organisasjonen min?",
+    "No. We provide training and workshops to build shared understanding across your teams. Our engagement model covers everything from strategy and design to implementation and operations, so your team can focus on the business outcomes.":
+      "Nei. Vi tilbyr opplaering og workshops for a bygge felles forstaelse pa tvers av teamene. Var leveransemodell dekker alt fra strategi og design til implementering og drift, slik at teamet ditt kan fokusere pa forretningsresultatene.",
+    "Which platforms and technologies do you use?": "Hvilke plattformer og teknologier bruker dere?",
+    "We work with Dify for agentic workflow orchestration, LangChain for custom AI logic, Hugging Face for model customization, and Microsoft Azure AI for enterprise integration. Platform selection depends on your use case, security requirements and integration needs.":
+      "Vi bruker Dify for agentisk arbeidsflytorkestrering, LangChain for tilpasset AI-logikk, Hugging Face for modelltilpasning og Microsoft Azure AI for bedriftsintegrasjon. Plattformvalg avhenger av brukstilfellet, sikkerhetskrav og integrasjonsbehov.",
+    "What is a communication agent?": "Hva er en kommunikasjonsagent?",
+    "A communication agent is an AI system that handles customer and employee interactions across channels like chat, email and phone. Unlike traditional chatbots, it connects to your business systems, looks up data, completes tasks and involves humans only when needed.":
+      "En kommunikasjonsagent er et AI-system som handterer kunde- og ansattinteraksjoner pa tvers av kanaler som chat, e-post og telefon. I motsetning til tradisjonelle chatboter kobler den seg til forretningssystemene, slar opp data, fullforer oppgaver og involverer mennesker kun ved behov.",
+    "How is this different from a chatbot?": "Hvordan er dette forskjellig fra en chatbot?",
+    "A chatbot follows scripted flows and answers predefined questions. A communication agent reasons over live data, calls tools, resolves multi-step requests and learns from context. It works across systems rather than within a single interface.":
+      "En chatbot folger skriptede flyter og svarer pa forhåndsdefinerte sporsmal. En kommunikasjonsagent resonnerer over sanntidsdata, kaller verktoy, loser flertrinnsforesprorsler og laerer av kontekst. Den jobber pa tvers av systemer i stedet for innenfor ett enkelt grensesnitt.",
+    "What channels can a communication agent handle?": "Hvilke kanaler kan en kommunikasjonsagent handtere?",
+    "Communication agents work across web chat, email, phone, internal tools and messaging platforms. They use one shared knowledge base and logic layer, so customers and employees get consistent answers regardless of channel.":
+      "Kommunikasjonsagenter fungerer pa tvers av nettprat, e-post, telefon, interne verktoy og meldingsplattformer. De bruker en felles kunnskapsbase og logikklag, slik at kunder og ansatte far konsistente svar uansett kanal.",
+    "How do you measure the value of a communication agent?": "Hvordan maler dere verdien av en kommunikasjonsagent?",
+    "We measure resolution rate (how many requests the agent completes without human help), response time, customer satisfaction and support cost reduction. In pilot projects, we typically see 40-60% of meaningful conversations resolved autonomously.":
+      "Vi maler loesningsgrad (hvor mange henvendelser agenten fullforer uten menneskelig hjelp), svartid, kundetilfredshet og kostnadsreduksjon for support. I pilotprosjekter ser vi typisk at 40-60 % av meningsfulle samtaler loses autonomt.",
+    "What is AI process optimization?": "Hva er AI-prosessoptimalisering?",
+    "AI process optimization uses agentic AI workflows to automate decision-heavy tasks across operations, back-office and production. The AI connects to your existing systems, reasons over data and takes action - with human approval where it matters.":
+      "AI-prosessoptimalisering bruker agentiske AI-arbeidsflyter til a automatisere beslutningstunge oppgaver pa tvers av drift, back-office og produksjon. AI-en kobler seg til eksisterende systemer, resonnerer over data og handler - med menneskelig godkjenning der det betyr noe.",
+    "What types of processes can be optimized?": "Hvilke typer prosesser kan optimaliseres?",
+    "Common use cases include incident triage, supply chain exception handling, finance and case routing, quality control, production support and back-office automation. Any process with repetitive decisions across multiple systems is a candidate.":
+      "Vanlige brukstilfeller inkluderer hendelsestriage, unntakshåndtering i forsyningskjeden, finans- og sakshåndtering, kvalitetskontroll, produksjonssto tte og back-office-automatisering. Enhver prosess med repetitive beslutninger pa tvers av flere systemer er en kandidat.",
+    "How much can AI process optimization reduce manual work?": "Hvor mye kan AI-prosessoptimalisering redusere manuelt arbeid?",
+    "Our agentic platform removes up to 80% of repetitive tasks. The actual reduction depends on the process complexity and the level of system integration, but most organizations see significant capacity freed for value creation within the first deployment.":
+      "Var agentiske plattform fjerner opptil 80 % av repetitive oppgaver. Den faktiske reduksjonen avhenger av prosessens kompleksitet og graden av systemintegrasjon, men de fleste organisasjoner ser betydelig kapasitet frigjort til verdiskaping innen forste utrulling.",
+    "Does the AI replace people?": "Erstatter AI-en mennesker?",
+    "No. The AI handles routine, repetitive parts of workflows so people can focus on decisions that require judgment, creativity and relationships. Humans stay in the loop for exceptions and high-stakes decisions.":
+      "Nei. AI-en handterer rutinepregede, repetitive deler av arbeidsflyter slik at mennesker kan fokusere pa beslutninger som krever skjonn, kreativitet og relasjoner. Mennesker forblir i loopen for unntak og viktige beslutninger.",
+    "Who is the GenAI training for?": "Hvem er GenAI-opplaeringen for?",
+    "The training is for leadership teams, product owners, developers and operational staff who want to understand how generative AI applies to their work. No prior AI experience is required.":
+      "Opplaeringen er for ledergrupper, produkteiere, utviklere og driftspersonell som vil forsta hvordan generativ AI gjelder for arbeidet deres. Ingen tidligere AI-erfaring er nodvendig.",
+    "What do participants learn?": "Hva laerer deltakerne?",
+    "Participants learn how large language models work, what agentic AI can and cannot do, how to identify real use cases in their organization, and how to evaluate AI readiness. The workshops include hands-on exercises with real tools.":
+      "Deltakerne laerer hvordan store sprakmodeller fungerer, hva agentisk AI kan og ikke kan gjore, hvordan de identifiserer reelle brukstilfeller i organisasjonen, og hvordan de vurderer AI-modenhet. Workshopene inkluderer praktiske ovelser med reelle verktoy.",
+    "How long is a typical workshop?": "Hvor lang er en typisk workshop?",
+    "A standard workshop runs one full day. We also offer half-day executive briefings and multi-day deep-dive programs depending on your team's needs and technical level.":
+      "En standard workshop varer en hel dag. Vi tilbyr ogsa halvdags lederbriefer og flerdagers dybdeprogrammer avhengig av teamets behov og teknisk niva.",
+    "Can the training be customized for our industry?": "Kan opplaeringen tilpasses var bransje?",
+    "Yes. We tailor content to your industry, systems and operational context. This includes using your own data examples and mapping AI opportunities specific to your value chain.":
+      "Ja. Vi tilpasser innholdet til bransjen, systemene og den operasjonelle konteksten. Dette inkluderer bruk av egne dataeksempler og kartlegging av AI-muligheter spesifikt for verdikjeden.",
     "What customers say": "Det kundene sier",
     "Head of Productivity": "Leder for produktivitet",
     "Commercial Director": "Kommersiell direktør",
