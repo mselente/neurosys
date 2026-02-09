@@ -3041,14 +3041,35 @@ html {
     display: none;
   }
 
-  .dropdown {
+  .language-switch {
+    order: -1;
+  }
+
+  .language-switch .nav-trigger {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+
+  .language-switch .nav-trigger::after {
+    display: none;
+  }
+
+  .language-switch .dropdown {
+    right: 0;
+    left: auto;
+    min-width: 80px;
+  }
+
+  .site-nav .dropdown {
     position: static;
     box-shadow: none;
     border: none;
     padding: 10px 0 0;
   }
 
-  .nav-details .dropdown {
+  .site-nav .nav-details .dropdown {
     display: grid;
   }
 
