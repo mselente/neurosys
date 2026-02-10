@@ -121,6 +121,7 @@ const I18N_STRINGS = {
     Email: "E-post",
     Phone: "Telefon",
     "Read more →": "Les mer →",
+    "Read the full story →": "Les hele historien →",
     "See what we offer →": "Se hva vi tilbyr →",
     "Get workshop details →": "Få workshop-detaljer →",
     "Book a session →": "Book en sesjon →",
@@ -160,14 +161,10 @@ const I18N_STRINGS = {
       "Praktisk introduksjon til generativ AI kombinert med workshops med fokus på egne prosesser, produkter og drift.",
     "Outcome: shared understanding, concrete ideas, and clear next steps.":
       "Resultat: felles forståelse, konkrete ideer og tydelige neste steg.",
-    "Operationalizing agentic AI with Dify":
-      "Operasjonalisering av agentisk AI med Dify",
-    "Together with Dify, we gathered enterprise decision-makers in Oslo to discuss what it actually takes to move AI from pilots into production. With most organizations still struggling to scale beyond experimentation, the focus was on reusable workflows, shared knowledge, and controlled autonomy across teams.":
-      "Sammen med Dify samlet vi beslutningstakere i Oslo for å diskutere hva som faktisk kreves for å ta AI fra pilot til produksjon. Når de fleste virksomheter fortsatt sliter med å skalere utover eksperimentering, var fokuset på gjenbrukbare arbeidsflyter, delt kunnskap og kontrollert autonomi på tvers av team.",
-    "Identifying AI opportunities in industrial operations":
-      "Identifisering av AI-muligheter i industriell drift",
-    "We work closely with industrial and infrastructure companies to map value streams, data flows, and operational bottlenecks. Through on-site visits and collaborative analysis, we help organizations uncover concrete optimization opportunities across production, planning, quality, and energy use.":
-      "Vi jobber tett med industriselskaper og infrastrukturselskaper for å kartlegge verdistrømmer, dataflyt og driftsmessige flaskehalser. Gjennom besøk på stedet og samarbeidende analyse hjelper vi virksomheter å avdekke konkrete optimaliseringsmuligheter innen produksjon, planlegging, kvalitet og energibruk.",
+    "46 % of meaningful conversations resolved during pilot. How Norway's leading hardware retailer automated customer service with an AI communication agent - without increasing headcount.":
+      "46 % av meningsfulle samtaler løst i pilotperioden. Hvordan Norges ledende jernvareforhandler automatiserte kundeservice med en AI-kommunikasjonsagent - uten å øke bemanningen.",
+    "10,000+ control documents made searchable with a fully local, secure RAG solution. Operators get instant answers to critical procedures without exposing sensitive data.":
+      "10 000+ kontrolldokumenter gjort søkbare med en fullstendig lokal, sikker RAG-løsning. Operatører får umiddelbare svar på kritiske prosedyrer uten å eksponere sensitive data.",
     "Platforms we work with": "Plattformer vi jobber med",
     "We select platforms based on use case, security, autonomy, integration depth, and long-term fit.":
       "Vi velger plattformer basert på brukstilfelle, sikkerhet, autonomi, integrasjonsdybde og langsiktig passform.",
@@ -647,51 +644,214 @@ const I18N_STRINGS = {
     "Selected activities and updates from our work across industries and partner ecosystems.":
       "Utvalgte aktiviteter og oppdateringer fra arbeidet vårt på tvers av bransjer og partnerøkosystemer.",
     Insight: "Innsikt",
-    "What we learned from the Jernia pilot":
-      "Hva vi lærte av Jernia-piloten",
-    "What we learned from the Jernia pilot - NeuroSYS":
-      "Hva vi lærte av Jernia-piloten - NeuroSYS",
-    "Key insights from a real communication agent pilot and what it revealed about Phase 2 value.":
-      "Viktige innsikter fra en reell pilot med kommunikasjonsagent og hva den avslørte om verdien i fase 2.",
-    "A concise look at how real customer conversations reveal where communication agents create value - and what the next phase should focus on.":
-      "En kort oppsummering av hvordan ekte kundesamtaler viser hvor kommunikasjonsagenter skaper verdi - og hva neste fase bør fokusere på.",
+    Product: "Produkt",
+    "Case study": "Kundehistorie",
+    Partnership: "Partnerskap",
     "← Back to news": "← Tilbake til nyheter",
-    "The pilot confirmed that communication agents are already resolving real work - and showed exactly where Phase 2 should focus to unlock more value.":
-      "Piloten bekreftet at kommunikasjonsagenter allerede løser reelt arbeid - og viste nøyaktig hvor fase 2 bør fokusere for å frigjøre mer verdi.",
-    "We measured how people actually used the agent, filtered noise from real conversations, and reviewed which interactions were resolved, escalated, or left hanging. That gives a concrete view of what the agent already handles well - and where the next improvements will create the biggest impact.":
-      "Vi målte hvordan folk faktisk brukte agenten, filtrerte støy fra reelle samtaler og vurderte hvilke interaksjoner som ble løst, eskalert eller stående. Det gir et konkret bilde av hva agenten allerede håndterer godt - og hvor neste forbedringer vil gi størst effekt.",
-    "The strongest signal was product and order-related questions. That points directly to Phase 2: deeper product knowledge, order access and tighter system integration so the agent can resolve more cases end-to-end.":
-      "Det sterkeste signalet var spørsmål om produkter og ordre. Det peker direkte mot fase 2: dypere produktkunnskap, ordretilgang og tettere systemintegrasjon slik at agenten kan løse flere saker ende-til-ende.",
-    "The takeaway is simple: communication agents are already valuable in real operations, and a focused second phase turns that value into measurable improvements in resolution rate, customer experience and operational efficiency.":
-      "Oppsummeringen er enkel: kommunikasjonsagenter er allerede verdifulle i reell drift, og en fokusert fase 2 gjør den verdien om til målbare forbedringer i løsningsgrad, kundeopplevelse og operasjonell effektivitet.",
-    "Operationalizing agentic AI with Dify":
-      "Operasjonalisering av agentisk AI med Dify",
-    "Operationalizing agentic AI with Dify - NeuroSYS":
-      "Operasjonalisering av agentisk AI med Dify - NeuroSYS",
-    "A Nordic meetup in Oslo focused on moving agentic AI from pilots into production.":
-      "Et nordisk meetup i Oslo med fokus på å ta agentisk AI fra pilot til produksjon.",
-    "Together with Dify, we hosted a Nordic meetup in Oslo focused on what it actually takes to move AI from pilots into production.":
-      "Sammen med Dify arrangerte vi et nordisk meetup i Oslo med fokus på hva som faktisk skal til for å ta AI fra pilot til produksjon.",
-    "We gathered enterprise decision-makers to discuss the reality of AI adoption. With most organizations still in the pilot phase, the conversation centered on building reusable workflows, structuring knowledge, and creating controlled autonomy across teams.":
-      "Vi samlet beslutningstakere for å diskutere realiteten ved AI-adopsjon. Når de fleste virksomheter fortsatt er i pilotfasen, handlet samtalen om å bygge gjenbrukbare arbeidsflyter, strukturere kunnskap og skape kontrollert autonomi på tvers av team.",
+
+    "MedieX: From media noise to actionable insight":
+      "MedieX: Fra mediestøy til styrbar beslutningsinnsikt",
+    "MedieX: From media noise to actionable insight - NeuroSYS":
+      "MedieX: Fra mediestøy til styrbar beslutningsinnsikt - NeuroSYS",
+    "MedieX turns unstructured media noise into structured, actionable intelligence for communication and decision-making teams across Nordic enterprises.":
+      "MedieX gjør ustrukturert mediestøy om til styrbar, dokumenterbar beslutningsinnsikt for kommunikasjons- og beslutningsteam.",
+    "An operational AI platform for communication and decision-making teams. MedieX turns unstructured media noise into structured, documented intelligence - in seconds.":
+      "En operasjonell AI-plattform for kommunikasjons- og beslutningsteam. MedieX gjør ustrukturert mediestøy om til styrbar, dokumenterbar innsikt - på sekunder.",
+    "AI-powered media intelligence platform by NeuroSYS":
+      "AI-drevet medieintelligensplattform fra NeuroSYS",
+    "An AI-powered media intelligence platform that turns unstructured media data into structured decision support - in partnership with Schibsted, Polaris Media and Amedia.":
+      "En AI-drevet medieintelligensplattform som gjør ustrukturert mediedata om til strukturert beslutningsstøtte - i partnerskap med Schibsted, Polaris Media og Amedia.",
+    "Coverage of digital editorial media in Norway":
+      "Dekning av digitale redaksjonelle medier i Norge",
+    "Continuous monitoring and alerting":
+      "Kontinuerlig overvåking og varsling",
+    "Compliant by design": "Etterlevelse fra start",
+    "The problem: media noise": "Problemet: mediestøy",
+    "Communication teams in complex organizations deal with fragmented, unstructured news data every day. Sources vary in quality and format. Dialects, jargon, simplifications and time pressure make it hard to extract what actually matters. The result: teams spend time on volume instead of focusing on what requires real attention.":
+      "Kommunikasjonsteam i komplekse organisasjoner håndterer fragmentert, ustrukturert nyhetsdata hver dag. Kilder varierer i kvalitet og format. Dialekter, sjargong, forenklinger og tidspress gjør det vanskelig å trekke ut det som faktisk betyr noe. Resultatet: team bruker tid på volum i stedet for å fokusere på det som krever reell oppmerksomhet.",
+    "What MedieX does differently": "Hva MedieX gjør annerledes",
+    "Where traditional media monitoring stops at alerting and keyword matching, MedieX goes further. It is an agentic platform that understands context, not just hits - and turns raw media data into decision-ready insight.":
+      "Der tradisjonell medieovervåking stopper ved varsling og nøkkelordtreff, går MedieX videre. Det er en agentisk plattform som forstår kontekst, ikke bare treff - og gjør rå mediedata om til beslutningsklar innsikt.",
+    "Organizes topics, cases and search across sources":
+      "Organisering av temaer, saker og søk på tvers av kilder",
+    "Team collaboration with comments, assignments and alerts":
+      "Samhandling i team med kommentarer, ansvar og varsling",
+    "AI-powered filtering for noise reduction and decision support":
+      "AI-filtrering for støyreduksjon og beslutningsstøtte",
+    "Contextual sentiment and risk assessment per story":
+      "Kontekstuell sentiment- og risikovurdering per sak",
+    "Explains why stories matter to your specific organization":
+      "Forklarer hvorfor saker er viktige for din organisasjon",
+    "Understands context across related articles and sources":
+      "Forstår kontekst på tvers av relaterte artikler og kilder",
+    "Generates draft responses and briefs":
+      "Lager forslag til respons og sammendrag",
+    "Create custom alerts within the platform":
+      "Lag egne varslinger i plattformen",
+    "Extended media monitoring": "Utvidet medieovervåking",
+    "MedieX covers approximately 80 % of all digital editorial media in Norway, including analysis of articles behind paywalls. Content from Schibsted, Polaris Media, Amedia and Mediebedriftene is monitored continuously.":
+      "MedieX dekker ca. 80 % av alle digitale redaksjonelle medier i Norge, inkludert analyse av artikler bak betalingsmur. Innhold fra Schibsted, Polaris Media, Amedia og Mediebedriftene overvåkes kontinuerlig.",
+    "What you get": "Hva du får med MedieX",
+    "Better quality in decision-making foundations":
+      "Bedre kvalitet i beslutningsgrunnlag",
+    "Faster and safer handling of cases across teams":
+      "Raskere og tryggere håndtering av saker på tvers av team",
+    "Focus on what actually demands attention in complex organizations":
+      "Fokus på det som faktisk krever oppmerksomhet i komplekse organisasjoner",
+    "From volume to prioritization": "Fra volum til prioritering",
+    "Automation with traceability": "Automatisering med sporbarhet",
+    "The bottom line": "Bunnlinjen",
+    "MedieX streamlines communication work. Less operational effort, more strategic capacity. Direct OPEX impact.":
+      "MedieX effektiviserer kommunikasjonsarbeidet. Mindre driftsarbeid, mer strategisk kapasitet. Direkte OPEX-effekt.",
+    "In partnership with": "I partnerskap med",
+    "Schibsted, Polaris Media, Amedia and Mediebedriftene.":
+      "Schibsted, Polaris Media, Amedia og Mediebedriftene.",
+    "AI-enabled product": "AI-aktivert produkt",
+    "Media intelligence": "Medieintelligens",
+    "Agentic platform": "Agentisk plattform",
+    "Sentiment analysis": "Sentimentanalyse",
+    "Want to see how MedieX can transform your media monitoring?":
+      "Vil du se hvordan MedieX kan forvandle din medieovervåking?",
+
+    "Jernia: AI-drevet kundeservice som faktisk leverer":
+      "Jernia: AI-drevet kundeservice som faktisk leverer",
+    "Jernia: AI-powered customer service that delivers":
+      "Jernia: AI-drevet kundeservice som faktisk leverer",
+    "Jernia: AI-powered customer service that delivers - NeuroSYS":
+      "Jernia: AI-drevet kundeservice som faktisk leverer - NeuroSYS",
+    "46% of meaningful conversations resolved during pilot. How Jernia automated customer service with an AI communication agent.":
+      "46 % av meningsfulle samtaler løst i pilotperioden. Hvordan Jernia automatiserte kundeservice med en AI-kommunikasjonsagent.",
+    "46 % of meaningful conversations resolved in pilot. How Norway's leading hardware retailer automated customer service with an AI communication agent.":
+      "46 % av meningsfulle samtaler løst i pilot. Hvordan Norges ledende jernvareforhandler automatiserte kundeservice med en AI-kommunikasjonsagent.",
+    "46 % av meningsfulle samtaler ble løst i pilotperioden. Uten å øke bemanningen fikk Jernia raskere svar, færre saker til kundesenteret og en bedre kundeopplevelse.":
+      "46 % av meningsfulle samtaler ble løst i pilotperioden. Uten å øke bemanningen fikk Jernia raskere svar, færre saker til kundesenteret og en bedre kundeopplevelse.",
+    "Norway's leading hardware retailer": "Norges ledende jernvareforhandler",
+    "Meaningful conversations resolved during pilot":
+      "Meningsfulle samtaler løst i pilotperioden",
+    "Availability without additional staff":
+      "Tilgjengelighet uten økt bemanning",
+    "Average response time": "Gjennomsnittlig responstid",
+    "The challenge": "Utfordringen",
+    "Jernia handles a high volume of recurring customer questions - opening hours, store locations, return policies, order status and product advice. The customer service team was spending significant time on repetitive queries that follow predictable patterns, leaving less capacity for complex cases that genuinely need human attention.":
+      "Jernia håndterer et høyt volum av gjentakende kundespørsmål - åpningstider, butikklokasjoner, returvilkår, ordrestatus og produktråd. Kundeserviceteamet brukte mye tid på repeterende henvendelser med forutsigbare mønstre, noe som ga mindre kapasitet til komplekse saker som virkelig trenger menneskelig oppmerksomhet.",
+    "What we built": "Hva vi bygget",
+    "NeuroSYS delivered a tailored AI chat solution as a managed service. The agent answers questions based on Jernia's own knowledge base - it only responds using documents Jernia uploads, ensuring accuracy and brand control.":
+      "NeuroSYS leverte en skreddersydd AI chat-løsning som tjeneste. Agenten svarer på spørsmål basert på Jernias egen kunnskapsbase - den svarer kun basert på dokumenter Jernia laster opp, noe som sikrer nøyaktighet og merkekontroll.",
+    "Answers questions about opening hours, store locations, terms and returns":
+      "Svarer på kundespørsmål om åpningstider, lokasjoner, vilkår og retur",
+    "Retrieves live order status via nShift integration":
+      "Henter ordrestatus via nShift-integrasjon",
+    "Provides product tips and troubleshooting advice":
+      "Gir tips og triks for produkter",
+    "Runs on a dedicated instance with Jernia's own documentation":
+      "Kjører på en dedikert instans med Jernias egne dokumenter",
+    Results: "Resultater",
+    "During the pilot period, the agent resolved 46 % of meaningful conversations without human intervention. Customers got faster answers, the support team handled fewer routine tickets, and the overall experience improved - all without increasing headcount.":
+      "I løpet av pilotperioden løste agenten 46 % av meningsfulle samtaler uten menneskelig inngripen. Kundene fikk raskere svar, supportteamet håndterte færre rutinesaker, og den totale opplevelsen ble bedre - uten å øke bemanningen.",
+    "What's next": "Hva er neste steg",
+    "The strongest signal from the pilot was product and order-related questions. Phase 2 focuses on deeper product knowledge, expanded order access and tighter system integration - so the agent can resolve even more cases end-to-end.":
+      "Det sterkeste signalet fra piloten var spørsmål om produkter og ordre. Fase 2 fokuserer på dypere produktkunnskap, utvidet ordretilgang og tettere systemintegrasjon - slik at agenten kan løse enda flere saker ende-til-ende.",
+    "Future phases include integration with customer profiles, the full product catalog, and troubleshooting guides - moving from a helpful assistant to a complete self-service layer.":
+      "Fremtidige faser inkluderer integrasjon med kundeprofiler, full produktkatalog og feilsøkingsguider - fra en hjelpsom assistent til et komplett selvbetjeningslag.",
+    "Tool calling": "Verktøykall",
+    "Customer service agent": "Kundeserviceagent",
+    "nShift integration": "nShift-integrasjon",
+    "Knowledge base": "Kunnskapsbase",
+    "Want to explore how a communication agent could work for your customer service?":
+      "Vil du utforske hvordan en kommunikasjonsagent kan fungere for din kundeservice?",
+
+    "GE Healthcare: On-prem AI for factory operations":
+      "GE Healthcare: On-prem AI for fabrikkdrift",
+    "GE Healthcare: On-prem AI for factory operations - NeuroSYS":
+      "GE Healthcare: On-prem AI for fabrikkdrift - NeuroSYS",
+    "10,000+ control documents made searchable with a secure, on-premises RAG solution. How GE Healthcare gives operators instant answers to critical procedures.":
+      "10 000+ kontrolldokumenter gjort søkbare med en sikker, lokal RAG-løsning. Hvordan GE Healthcare gir operatører umiddelbare svar på kritiske prosedyrer.",
+    "10,000+ control documents made searchable with a fully local, secure RAG solution. Operators get instant answers to critical procedures without exposing sensitive data.":
+      "10 000+ kontrolldokumenter gjort søkbare med en fullstendig lokal, sikker RAG-løsning. Operatører får umiddelbare svar på kritiske prosedyrer uten å eksponere sensitive data.",
+    "10,000+ control documents made searchable with a secure, on-premises RAG solution for factory operators.":
+      "10 000+ kontrolldokumenter gjort søkbare med en sikker, lokal RAG-løsning for fabrikkoperatører.",
+    "Global leader in healthcare technology":
+      "Global leder innen helseteknologi",
+    "Control documents indexed": "Kontrolldokumenter indeksert",
+    "On-premises - no cloud dependency": "Lokal drift - ingen skyavhengighet",
+    "Bilingual document support": "Tospråklig dokumentstøtte",
+    "Factory operators at GE Healthcare need fast, reliable access to internal procedures, quality controls and compliance documentation. With thousands of documents spread across multiple systems, finding the right answer quickly was a bottleneck - especially when working on the production floor where time and accuracy are critical.":
+      "Fabrikkoperatører hos GE Healthcare trenger rask, pålitelig tilgang til interne prosedyrer, kvalitetskontroller og compliance-dokumentasjon. Med tusenvis av dokumenter fordelt på flere systemer var det en flaskehals å finne riktig svar raskt - spesielt på produksjonsgulvet hvor tid og nøyaktighet er kritisk.",
+    "NeuroSYS delivered a fully on-premises, LLM-based knowledge base and document search system. The solution runs on a dedicated AI-optimized server inside GE's local network - no internet access, no external services, no data leaving the building.":
+      "NeuroSYS leverte et fullstendig lokalt, LLM-basert kunnskapsbase- og dokumentsøksystem. Løsningen kjører på en dedikert AI-optimalisert server i GEs lokale nettverk - ingen internettilgang, ingen eksterne tjenester, ingen data forlater bygningen.",
+    "RAG-based search across Word, Excel, PDF, text files and email attachments":
+      "RAG-basert søk på tvers av Word, Excel, PDF, tekstfiler og e-postvedlegg",
+    "Answers grounded in source documents with direct references for verification":
+      "Svar forankret i kildedokumenter med direkte referanser for verifisering",
+    "Conversational interface - operators can ask follow-up questions within context":
+      "Samtalebasert grensesnitt - operatører kan stille oppfølgingsspørsmål i kontekst",
+    "Full conversation history per user for continuity across sessions":
+      "Full samtalehistorikk per bruker for kontinuitet på tvers av økter",
+    "Internal authentication with user accounts for selected employees":
+      "Intern autentisering med brukerkontoer for utvalgte ansatte",
+    "Bilingual support - documents and conversations in English and Norwegian":
+      "Tospråklig støtte - dokumenter og samtaler på engelsk og norsk",
+    "Operators get immediate, accurate answers to critical procedure questions without needing to know file locations or folder structures. The solution ensures information flow while meeting strict requirements for compliance, security and data governance.":
+      "Operatører får umiddelbare, nøyaktige svar på kritiske prosedyrespørsmål uten å måtte kjenne filplasseringer eller mappestrukturer. Løsningen sikrer informasjonsflyt samtidig som strenge krav til etterlevelse, sikkerhet og datastyring ivaretas.",
+    "Future phases will introduce integration with external data sources (shared drives, Box, Veeva, TrackWise, SAP), granular access permissions for document subsets, SSO-based authentication, and support for non-text content like images and video.":
+      "Fremtidige faser vil introdusere integrasjon med eksterne datakilder (fellesområder, Box, Veeva, TrackWise, SAP), detaljerte tilgangsrettigheter for dokumentundergrupper, SSO-basert autentisering og støtte for ikke-tekstlig innhold som bilder og video.",
+    "The architecture is also designed for multi-site access, with secure VPN tunnels enabling other GE locations to connect to the same knowledge base.":
+      "Arkitekturen er også designet for tilgang fra flere lokasjoner, med sikre VPN-tunneler som gjør at andre GE-lokasjoner kan koble seg til samme kunnskapsbase.",
+    "On-premises": "On-premises",
+    "Intranet agent": "Intranett-agent",
+    Compliance: "Etterlevelse",
+    "Need a secure, on-premises AI solution for your operations?":
+      "Trenger du en sikker, lokal AI-løsning for driften?",
+
+    "Why NeuroSYS chose to partner with Dify":
+      "Hvorfor NeuroSYS valgte å samarbeide med Dify",
+    "Why NeuroSYS chose to partner with Dify - NeuroSYS":
+      "Hvorfor NeuroSYS valgte å samarbeide med Dify - NeuroSYS",
+    "From pilot fatigue to production-ready AI. How Dify solved the core problems slowing down enterprise AI adoption - and why we chose them as our platform partner.":
+      "Fra pilottrøtthet til produksjonsklar AI. Hvordan Dify løste kjerneproblemene som bremser AI-adopsjon i virksomheter - og hvorfor vi valgte dem som plattformpartner.",
+    "From pilot fatigue to production-ready AI. How Dify solved the core problems slowing down enterprise AI adoption.":
+      "Fra pilottrøtthet til produksjonsklar AI. Hvordan Dify løste kjerneproblemene som bremser AI-adopsjon i virksomheter.",
+    "From pilot fatigue to production-ready AI. How Dify solved the core problems slowing down enterprise AI adoption - one platform for agents, workflows, RAG, evaluation and monitoring.":
+      "Fra pilot-overveldelser til produksjonsklar AI. Hvordan Dify løste kjerneproblemene som bremser AI-adopsjon - én plattform for agenter, arbeidsflyter, RAG, evaluering og overvåking.",
+    "We built countless AI pilots and kept hitting the same walls. Dify solved the core problems slowing down enterprise AI adoption - one platform for agents, workflows, RAG, evaluation and monitoring.":
+      "Vi bygget utallige AI-piloter og traff de samme veggene gang etter gang. Dify løste kjerneproblemene som bremser AI-adopsjon i virksomheter - én plattform for agenter, arbeidsflyter, RAG, evaluering og overvåking.",
+    "Open-source LLM application development platform":
+      "Open source-plattform for utvikling av LLM-applikasjoner",
+    "Before Dify: pilot fatigue": "Før Dify: pilottrøtthet",
+    "Every new AI project meant the same cycle: create tech and functional specs, set up a new cloud instance, make architecture decisions around LLM, storage, RAG and infrastructure. Pilots quickly became siloed, each with its own tech stack. When enterprise clients asked \"can we scale this easily?\" - the honest answer was usually \"that's a new project.\"":
+      "Hvert nytt AI-prosjekt betød den samme syklusen: lage tekniske og funksjonelle spesifikasjoner, sette opp en ny skyinstans, ta arkitekturbeslutninger rundt LLM, lagring, RAG og infrastruktur. Piloter ble raskt silo-baserte, hver med sin egen tech stack. Når enterprise-kunder spurte \"kan vi skalere dette enkelt?\" - var det ærlige svaret som regel \"det er et nytt prosjekt.\"",
+    "Too many architecture decisions per project":
+      "For mange arkitekturbeslutninger per prosjekt",
+    "Too much time spent on plumbing instead of solving business problems":
+      "For mye tid brukt på infrastruktur i stedet for å løse forretningsproblemer",
+    "Maintenance cost ballooned as each pilot had its own stack":
+      "Vedlikeholdskostnader økte fordi hver pilot hadde sin egen tech stack",
+    "Hard to ensure quality, security, consistency and compliance":
+      "Vanskelig å sikre kvalitet, sikkerhet, konsistens og etterlevelse",
+    "Iterating on production AI required faster, repeatable foundations":
+      "Iterering på produksjons-AI krevde raskere, repeterbare grunnlag",
+    "What Dify changed": "Hva Dify endret",
+    "Dify gave us one unified platform for agents, workflows, RAG, evaluation and monitoring. No need to rebuild infrastructure again and again. The result: faster delivery, more predictable engineering, and an enterprise-ready foundation that is flexible, open and high-performance.":
+      "Dify ga oss én samlet plattform for agenter, arbeidsflyter, RAG, evaluering og overvåking. Ikke behov for å bygge infrastruktur på nytt gang etter gang. Resultatet: raskere leveranse, mer forutsigbar utvikling, og et enterprise-klart fundament som er fleksibelt, åpent og ytelsessterkt.",
+    "Scale clients from prototype to production to operations on the same platform":
+      "Skaler kunder fra prototype til produksjon til drift på samme plattform",
+    "Teams focus on business value, not plumbing":
+      "Team fokuserer på forretningsverdi, ikke infrastruktur",
+    "Enterprise-ready with built-in security, governance and compliance":
+      "Enterprise-klar med innebygd sikkerhet, styring og etterlevelse",
+    "Open and flexible - no vendor lock-in":
+      "Åpent og fleksibelt - ingen leverandørlåsing",
+    "Oslo Meetup: from pilots to production":
+      "Oslo Meetup: fra piloter til produksjon",
+    "Together with Dify, we gathered enterprise decision-makers in Oslo to discuss what it actually takes to operationalize agentic AI. With most organizations still stuck in the pilot phase, the conversation focused on reusable workflows, shared knowledge, and controlled autonomy across teams.":
+      "Sammen med Dify samlet vi beslutningstakere i Oslo for å diskutere hva som faktisk skal til for å operasjonalisere agentisk AI. Når de fleste virksomheter fortsatt sitter fast i pilotfasen, var fokuset på gjenbrukbare arbeidsflyter, delt kunnskap og kontrollert autonomi på tvers av team.",
     "We explored what works in practice: democratizing building so teams can experiment safely, reusing proven workflows instead of reinventing in every department, and ensuring insights stay centralized rather than disappearing into isolated tools.":
       "Vi utforsket hva som fungerer i praksis: å demokratisere bygging slik at team kan eksperimentere trygt, gjenbruke utprøvde arbeidsflyter i stedet for å finne opp alt på nytt i hver avdeling, og sørge for at innsikt forblir sentralisert i stedet for å forsvinne i isolerte verktøy.",
-    "The key takeaway was clear: enterprises must take control of their knowledge, tasks, and processes - and use agentic workflows to push that intelligence out to teams, not the other way around.":
+    "The key takeaway was clear: enterprises must take control of their knowledge, tasks and processes - and use agentic workflows to push that intelligence out to teams, not the other way around.":
       "Hovedpoenget var tydelig: virksomheter må ta kontroll over kunnskap, oppgaver og prosesser - og bruke agentiske arbeidsflyter til å distribuere den intelligensen ut til teamene, ikke omvendt.",
-    "Identifying AI opportunities in industrial operations":
-      "Identifisering av AI-muligheter i industriell drift",
-    "Identifying AI opportunities in industrial operations - NeuroSYS":
-      "Identifisering av AI-muligheter i industriell drift - NeuroSYS",
-    "On-site visits and value stream mapping to uncover AI optimization opportunities.":
-      "Besøk på stedet og verdistrømskartlegging for å avdekke AI-optimaliseringsmuligheter.",
-    "We visit industrial sites to map value streams and surface concrete AI opportunities across production, planning, and quality.":
-      "Vi besøker industristeder for å kartlegge verdistrømmer og avdekke konkrete AI-muligheter på tvers av produksjon, planlegging og kvalitet.",
-    "We work closely with industrial and infrastructure companies to map value streams, data flows, and operational bottlenecks. The goal is always practical: identify where AI can remove friction and improve decision quality without disrupting day-to-day work.":
-      "Vi jobber tett med industri- og infrastrukturselskaper for å kartlegge verdistrømmer, dataflyt og operasjonelle flaskehalser. Målet er alltid praktisk: identifisere hvor AI kan fjerne friksjon og forbedre beslutningskvalitet uten å forstyrre daglig drift.",
-    "On-site visits help uncover concrete opportunities across production, capacity planning, quality control, and energy use. We also look at how to connect existing systems and data so that insights are actionable across teams.":
-      "Besøk på stedet avdekker konkrete muligheter innen produksjon, kapasitetsplanlegging, kvalitetskontroll og energibruk. Vi ser også på hvordan vi kan koble sammen eksisterende systemer og data slik at innsikt blir handlingsbar på tvers av team.",
-    "The result is a shared, realistic view of what can be optimized first - and which AI capabilities should be prioritized for measurable impact.":
-      "Resultatet er et felles, realistisk bilde av hva som kan optimaliseres først - og hvilke AI-kapabiliteter som bør prioriteres for målbar effekt.",
+    Workflows: "Arbeidsflyter",
+    "Ready to move from pilots to production-grade AI?":
+      "Klar for å gå fra piloter til produksjonsklar AI?",
     "Communication Agents - NeuroSYS Applications":
       "Kommunikasjonsagenter - NeuroSYS applikasjoner",
     "Agentic communication agents that resolve work across channels for employees and customers.":
@@ -975,6 +1135,24 @@ const I18N_STRINGS = {
     "Shared context": "Delt kontekst",
     "Reusable logic": "Gjenbrukbar logikk",
     "Continuous value": "Kontinuerlig verdi",
+    "AI-powered media intelligence platform":
+      "AI-drevet medieintelligensplattform",
+    "Turns unstructured media noise into structured, actionable intelligence - in seconds.":
+      "Gjør ustrukturert mediestøy om til strukturert, handlingsbar innsikt - på sekunder.",
+    "Agentic platform that understands context, not just keyword hits.":
+      "Agentisk plattform som forstår kontekst, ikke bare nøkkelordtreff.",
+    "Contextual sentiment and risk assessment per story.":
+      "Kontekstuell sentiment- og risikovurdering per sak.",
+    "Covers ~80% of all digital editorial media in Norway.":
+      "Dekker ca. 80 % av alle digitale redaksjonelle medier i Norge.",
+    "EU AI Act - compliant by design.":
+      "EU AI Act - etterlevelse fra start.",
+    "Technologies: agentic AI, sentiment analysis, RAG, NLP.":
+      "Teknologi: agentisk AI, sentimentanalyse, RAG, NLP.",
+    "Result: less operational effort, more strategic capacity. Direct OPEX impact for communication teams.":
+      "Resultat: mindre driftsarbeid, mer strategisk kapasitet. Direkte OPEX-effekt for kommunikasjonsteam.",
+    "MedieX: From media noise to actionable insight":
+      "MedieX: Fra mediestøy til styrbar beslutningsinnsikt",
     "One system - different entry points":
       "Ett system - ulike inngangspunkter",
     "Front-end interaction": "Front-end-interaksjon",

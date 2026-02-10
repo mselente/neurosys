@@ -1,9 +1,16 @@
 <svg width="420" height="240" viewBox="0 0 420 240" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="420" height="240" rx="24" fill="#EFE7DE"/>
-  <rect x="36" y="40" width="220" height="28" rx="14" fill="#D9C2B4"/>
-  <rect x="36" y="82" width="290" height="20" rx="10" fill="#E6D6CA"/>
-  <rect x="36" y="114" width="260" height="20" rx="10" fill="#E6D6CA"/>
-  <rect x="36" y="156" width="180" height="20" rx="10" fill="#D9C2B4"/>
-  <circle cx="330" cy="150" r="50" fill="#F1ECE4"/>
-  <path d="M310 150C318 140 342 140 350 150C358 160 342 170 330 170C318 170 302 160 310 150Z" fill="#8D6B5B" opacity="0.45"/>
+  <!-- Chat bubble pair - Communication Agents -->
+  <rect x="80" y="56" width="180" height="100" rx="20" fill="#E6D6CA"/>
+  <rect x="90" y="76" width="100" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="90" y="96" width="140" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="90" y="116" width="80" height="12" rx="6" fill="#D9C2B4"/>
+  <polygon points="120,156 140,156 110,176" fill="#E6D6CA"/>
+  <rect x="160" y="100" width="170" height="90" rx="20" fill="#D9C2B4"/>
+  <rect x="174" y="118" width="110" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="174" y="136" width="130" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="174" y="154" width="70" height="10" rx="5" fill="#CFAE9D"/>
+  <polygon points="290,190 270,190 300,210" fill="#D9C2B4"/>
+  <!-- Accent dot - activity indicator -->
+  <circle cx="336" cy="100" r="8" fill="#d07a3a" opacity="0.5"/>
 </svg>

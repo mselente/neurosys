@@ -1,7 +1,31 @@
 <svg width="960" height="640" viewBox="0 0 960 640" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="220" y="120" width="280" height="420" rx="52" fill="#E9DED4"/>
-  <rect x="252" y="170" width="216" height="300" rx="28" fill="#D7C1B2"/>
-  <circle cx="360" cy="495" r="14" fill="#C7AFA0"/>
-  <path d="M640 210C640 186 658 172 686 172C714 172 732 186 732 210C732 238 704 238 704 270" stroke="#C7AFA0" stroke-width="12" stroke-linecap="round" fill="none"/>
-  <circle cx="704" cy="300" r="8" fill="#C7AFA0"/>
+  <rect width="960" height="640" rx="40" fill="#F1ECE4"/>
+  <!-- Phone -->
+  <rect x="120" y="100" width="200" height="340" rx="40" fill="#E6D6CA"/>
+  <rect x="148" y="148" width="144" height="220" rx="22" fill="#D9C2B4"/>
+  <circle cx="220" cy="400" r="14" fill="#CFAE9D"/>
+  <!-- Speech bubble top-right -->
+  <rect x="400" y="80" width="320" height="160" rx="28" fill="#E6D6CA"/>
+  <rect x="436" y="118" width="180" height="16" rx="8" fill="#D9C2B4"/>
+  <rect x="436" y="148" width="240" height="16" rx="8" fill="#D9C2B4"/>
+  <rect x="436" y="178" width="140" height="16" rx="8" fill="#CFAE9D"/>
+  <!-- Bubble tail -->
+  <path d="M440 240L470 240L430 280Z" fill="#E6D6CA"/>
+  <!-- Envelope -->
+  <rect x="500" y="310" width="280" height="180" rx="24" fill="#D9C2B4"/>
+  <rect x="530" y="350" width="220" height="14" rx="7" fill="#CFAE9D"/>
+  <rect x="530" y="376" width="160" height="14" rx="7" fill="#CFAE9D"/>
+  <rect x="530" y="402" width="190" height="14" rx="7" fill="#EFE7DE"/>
+  <!-- Envelope flap -->
+  <path d="M500 310L640 410L780 310" fill="#E6D6CA"/>
+  <!-- Question mark bubble -->
+  <rect x="140" y="480" width="140" height="100" rx="22" fill="#EFE7DE"/>
+  <circle cx="210" cy="518" r="18" fill="#D9C2B4"/>
+  <circle cx="210" cy="518" r="7" fill="#d07a3a" opacity="0.45"/>
+  <rect x="206" y="544" width="8" height="8" rx="4" fill="#D9C2B4"/>
+  <!-- Connection dots -->
+  <circle cx="360" cy="320" r="10" fill="#CFAE9D"/>
+  <circle cx="400" cy="420" r="8" fill="#E6D6CA"/>
+  <circle cx="820" cy="190" r="12" fill="#EFE7DE"/>
+  <circle cx="860" cy="140" r="8" fill="#CFAE9D"/>
 </svg>

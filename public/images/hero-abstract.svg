@@ -3,6 +3,6 @@
   <circle cx="210" cy="190" r="140" fill="#E6D6CA"/>
   <circle cx="520" cy="180" r="110" fill="#D9C2B4"/>
   <rect x="170" y="300" width="380" height="160" rx="28" fill="#EFE7DE"/>
-  <path d="M210 340C260 310 330 310 380 340C430 370 500 370 550 340" stroke="#8D6B5B" stroke-width="10" stroke-linecap="round" opacity="0.4"/>
+  <path d="M210 340C260 310 330 310 380 340C430 370 500 370 550 340" stroke="#d07a3a" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
   <path d="M190 390C250 420 330 420 390 390C450 360 530 360 590 390" stroke="#8D6B5B" stroke-width="10" stroke-linecap="round" opacity="0.25"/>
 </svg>

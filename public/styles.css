@@ -972,6 +972,113 @@ p {
   color: var(--muted);
 }
 
+.news-detail-content h2 {
+  margin-top: 24px;
+}
+
+.case-profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px 28px;
+  background: var(--section);
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.case-profile-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.case-profile-info {
+  display: grid;
+  gap: 2px;
+}
+
+.case-profile-name {
+  font-family: var(--heading-font);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.case-profile-desc {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.case-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin: 12px 0;
+}
+
+.case-stat {
+  padding: 20px 22px;
+  background: var(--section);
+  border-radius: 8px;
+}
+
+.case-stat-value {
+  font-family: var(--heading-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.case-stat-label {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.case-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.case-tag {
+  padding: 4px 12px;
+  background: var(--section);
+  border-radius: 20px;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.news-detail-content ul {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+  color: var(--muted);
+}
+
+.news-detail-content li {
+  line-height: 1.6;
+}
+
+.case-cta {
+  margin-top: 16px;
+  padding: 28px;
+  background: var(--charcoal);
+  border-radius: 8px;
+  color: white;
+}
+
+.case-cta p {
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin-bottom: 12px;
+}
+
+.case-cta .text-link {
+  color: white;
+}
+
 .platforms {
   padding: 80px 0;
   background: var(--background);
@@ -1096,6 +1203,51 @@ p {
       rgba(15, 15, 16, 0.25)
     ),
     url("images/assistant-mock.svg") center/cover no-repeat;
+}
+
+.product-hero-visual.hero-comm-agents {
+  background: linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-communication-agents.svg") center/cover no-repeat;
+}
+
+.product-hero-visual.hero-process-opt {
+  background: linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-process-optimization.svg") center/cover no-repeat;
+}
+
+.product-hero-visual.hero-ai-products {
+  background: linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-ai-products.svg") center/cover no-repeat;
+}
+
+.product-hero-visual.hero-our-work {
+  background: linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-our-work.svg") center/cover no-repeat;
+}
+
+.product-hero-visual.hero-about {
+  background: linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-about.svg") center/cover no-repeat;
 }
 
 .training-hero-visual {
@@ -2137,12 +2289,14 @@ p {
 }
 
 .services-visual {
-  height: 260px;
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  min-height: 320px;
   background:
-    linear-gradient(140deg, rgba(36, 58, 74, 0.12), rgba(15, 15, 16, 0.06)),
-    radial-gradient(circle at 30% 30%, rgba(36, 58, 74, 0.2), transparent 60%);
-  border-radius: 14px;
+    linear-gradient(
+      140deg,
+      rgba(208, 122, 58, 0.16),
+      rgba(15, 15, 16, 0.25)
+    ),
+    url("images/hero-services.svg") center/cover no-repeat;
 }
 
 .services-flow {

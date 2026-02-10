@@ -1,0 +1,29 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="420" rx="28" fill="#F1ECE4"/>
+  <!-- Code brackets -->
+  <path d="M180 100L100 210L180 320" stroke="#D9C2B4" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M540 100L620 210L540 320" stroke="#D9C2B4" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Center gear -->
+  <circle cx="360" cy="210" r="60" fill="#E6D6CA"/>
+  <circle cx="360" cy="210" r="34" fill="#EFE7DE"/>
+  <!-- Gear teeth -->
+  <rect x="350" y="140" width="20" height="22" rx="5" fill="#E6D6CA"/>
+  <rect x="350" y="258" width="20" height="22" rx="5" fill="#E6D6CA"/>
+  <rect x="290" y="200" width="22" height="20" rx="5" fill="#E6D6CA"/>
+  <rect x="408" y="200" width="22" height="20" rx="5" fill="#E6D6CA"/>
+  <rect x="310" y="158" width="18" height="18" rx="4" fill="#E6D6CA" transform="rotate(-45 319 167)"/>
+  <rect x="392" y="158" width="18" height="18" rx="4" fill="#E6D6CA" transform="rotate(45 401 167)"/>
+  <rect x="310" y="244" width="18" height="18" rx="4" fill="#E6D6CA" transform="rotate(45 319 253)"/>
+  <rect x="392" y="244" width="18" height="18" rx="4" fill="#E6D6CA" transform="rotate(-45 401 253)"/>
+  <!-- Inner accent -->
+  <circle cx="360" cy="210" r="14" fill="#d07a3a" opacity="0.4"/>
+  <!-- Interface lines below -->
+  <rect x="240" y="350" width="100" height="14" rx="7" fill="#D9C2B4"/>
+  <rect x="360" y="350" width="130" height="14" rx="7" fill="#E6D6CA"/>
+  <rect x="280" y="374" width="160" height="12" rx="6" fill="#E6D6CA"/>
+  <!-- Floating elements -->
+  <circle cx="240" cy="120" r="12" fill="#EFE7DE"/>
+  <circle cx="480" cy="120" r="10" fill="#CFAE9D"/>
+  <circle cx="240" cy="300" r="8" fill="#CFAE9D"/>
+  <circle cx="480" cy="300" r="10" fill="#EFE7DE"/>
+</svg>

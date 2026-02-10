@@ -1,0 +1,47 @@
+<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="420" rx="28" fill="#F1ECE4"/>
+  <!-- Team member circles - top row -->
+  <circle cx="140" cy="100" r="40" fill="#E6D6CA"/>
+  <circle cx="140" cy="86" r="16" fill="#D9C2B4"/>
+  <rect x="120" y="110" width="40" height="24" rx="12" fill="#D9C2B4"/>
+  <circle cx="280" cy="100" r="40" fill="#D9C2B4"/>
+  <circle cx="280" cy="86" r="16" fill="#CFAE9D"/>
+  <rect x="260" y="110" width="40" height="24" rx="12" fill="#CFAE9D"/>
+  <circle cx="420" cy="100" r="40" fill="#E6D6CA"/>
+  <circle cx="420" cy="86" r="16" fill="#D9C2B4"/>
+  <rect x="400" y="110" width="40" height="24" rx="12" fill="#D9C2B4"/>
+  <circle cx="560" cy="100" r="40" fill="#D9C2B4"/>
+  <circle cx="560" cy="86" r="16" fill="#EFE7DE"/>
+  <rect x="540" y="110" width="40" height="24" rx="12" fill="#EFE7DE"/>
+  <!-- Name lines under team -->
+  <rect x="110" y="154" width="60" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="250" y="154" width="60" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="390" y="154" width="60" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="530" y="154" width="60" height="10" rx="5" fill="#CFAE9D"/>
+  <!-- Office locations row -->
+  <rect x="50" y="200" width="150" height="80" rx="16" fill="#E6D6CA"/>
+  <rect x="72" y="222" width="80" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="72" y="244" width="100" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="220" y="200" width="150" height="80" rx="16" fill="#EFE7DE"/>
+  <rect x="242" y="222" width="80" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="242" y="244" width="100" height="10" rx="5" fill="#D9C2B4"/>
+  <rect x="390" y="200" width="150" height="80" rx="16" fill="#E6D6CA"/>
+  <rect x="412" y="222" width="80" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="412" y="244" width="100" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="560" y="200" width="110" height="80" rx="16" fill="#EFE7DE"/>
+  <rect x="578" y="222" width="70" height="12" rx="6" fill="#D9C2B4"/>
+  <rect x="578" y="244" width="60" height="10" rx="5" fill="#D9C2B4"/>
+  <!-- Credential badges row -->
+  <rect x="50" y="320" width="120" height="56" rx="28" fill="#D9C2B4"/>
+  <rect x="74" y="340" width="72" height="14" rx="7" fill="#EFE7DE"/>
+  <rect x="190" y="320" width="120" height="56" rx="28" fill="#E6D6CA"/>
+  <rect x="214" y="340" width="72" height="14" rx="7" fill="#CFAE9D"/>
+  <rect x="330" y="320" width="120" height="56" rx="28" fill="#D9C2B4"/>
+  <rect x="354" y="340" width="72" height="14" rx="7" fill="#EFE7DE"/>
+  <!-- Stats -->
+  <rect x="500" y="320" width="170" height="56" rx="16" fill="#E6D6CA"/>
+  <rect x="524" y="334" width="50" height="16" rx="8" fill="#D9C2B4"/>
+  <rect x="524" y="356" width="120" height="10" rx="5" fill="#CFAE9D"/>
+  <!-- Accent -->
+  <circle cx="280" cy="100" r="6" fill="#d07a3a" opacity="0.45"/>
+</svg>

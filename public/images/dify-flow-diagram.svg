@@ -16,5 +16,5 @@
   <circle cx="600" cy="98" r="10" fill="#CFAE9D"/>
   <circle cx="240" cy="208" r="10" fill="#CFAE9D"/>
   <circle cx="480" cy="208" r="10" fill="#CFAE9D"/>
-  <circle cx="360" cy="322" r="12" fill="#8D6B5B" opacity="0.6"/>
+  <circle cx="360" cy="322" r="12" fill="#d07a3a" opacity="0.5"/>
 </svg>

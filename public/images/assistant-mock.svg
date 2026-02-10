@@ -11,5 +11,5 @@
   <rect x="90" y="329" width="160" height="14" rx="7" fill="#CFAE9D"/>
   <circle cx="560" cy="120" r="60" fill="#E6D6CA"/>
   <circle cx="560" cy="120" r="26" fill="#CFAE9D"/>
-  <path d="M550 120L568 108L568 132Z" fill="#8D6B5B" opacity="0.6"/>
+  <path d="M550 120L568 108L568 132Z" fill="#d07a3a" opacity="0.5"/>
 </svg>
