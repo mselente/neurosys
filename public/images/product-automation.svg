@@ -1,27 +1,27 @@
 <svg width="420" height="240" viewBox="0 0 420 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="420" height="240" rx="24" fill="#EFE7DE"/>
+  <rect width="420" height="240" rx="24" fill="#F8FAFC"/>
   <!-- Flow/node diagram - Process Optimization -->
   <!-- Top row: two nodes -->
-  <rect x="70" y="44" width="110" height="50" rx="14" fill="#E6D6CA"/>
-  <rect x="86" y="60" width="60" height="10" rx="5" fill="#D9C2B4"/>
-  <rect x="240" y="44" width="110" height="50" rx="14" fill="#E6D6CA"/>
-  <rect x="256" y="60" width="60" height="10" rx="5" fill="#D9C2B4"/>
+  <rect x="70" y="44" width="110" height="50" rx="14" fill="#F3F4F6"/>
+  <rect x="86" y="60" width="60" height="10" rx="5" fill="#E5E7EB"/>
+  <rect x="240" y="44" width="110" height="50" rx="14" fill="#F3F4F6"/>
+  <rect x="256" y="60" width="60" height="10" rx="5" fill="#E5E7EB"/>
   <!-- Connector lines down -->
-  <path d="M125 94V120" stroke="#CFAE9D" stroke-width="4" stroke-linecap="round"/>
-  <path d="M295 94V120" stroke="#CFAE9D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M125 94V120" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M295 94V120" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
   <!-- Middle node - the active/highlighted one -->
-  <rect x="155" y="120" width="110" height="50" rx="14" fill="#D9C2B4"/>
-  <rect x="171" y="136" width="60" height="10" rx="5" fill="#CFAE9D"/>
+  <rect x="155" y="120" width="110" height="50" rx="14" fill="#E5E7EB"/>
+  <rect x="171" y="136" width="60" height="10" rx="5" fill="#CBD5E1"/>
   <!-- Connector lines to middle -->
-  <path d="M125 120H155" stroke="#CFAE9D" stroke-width="4" stroke-linecap="round"/>
-  <path d="M295 120H265" stroke="#CFAE9D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M125 120H155" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M295 120H265" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
   <!-- Connector line down to bottom -->
-  <path d="M210 170V196" stroke="#CFAE9D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 170V196" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
   <!-- Bottom node -->
-  <rect x="140" y="196" width="140" height="28" rx="14" fill="#E6D6CA"/>
+  <rect x="140" y="196" width="140" height="28" rx="14" fill="#F3F4F6"/>
   <!-- Accent highlight on middle node -->
-  <circle cx="275" cy="145" r="7" fill="#d07a3a" opacity="0.5"/>
+  <circle cx="275" cy="145" r="7" fill="#F97316" opacity="0.5"/>
   <!-- Small dots on top nodes -->
-  <circle cx="170" cy="69" r="5" fill="#CFAE9D"/>
-  <circle cx="340" cy="69" r="5" fill="#CFAE9D"/>
+  <circle cx="170" cy="69" r="5" fill="#CBD5E1"/>
+  <circle cx="340" cy="69" r="5" fill="#CBD5E1"/>
 </svg>
