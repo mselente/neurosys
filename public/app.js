@@ -134,10 +134,10 @@ const I18N_STRINGS = {
     Certified: "Sertifisert",
     "AWS Partner": "AWS-partner",
     "Microsoft Partner": "Microsoft-partner",
-    "AI that actually works in your business":
-      "AI som faktisk fungerer i virksomheten din",
-    "We help organizations reduce cost, speed up work, and scale operations with agentic workflows - across customer interaction, internal processes, and digital products.":
-      "Vi hjelper virksomheter å redusere kostnader, jobbe raskere og skalere drift med agentiske arbeidsflyter - på tvers av kundedialog, interne prosesser og digitale produkter.",
+    "AI systems that run your operations":
+      "AI-systemer som driver driften din",
+    "We design, build and operate agentic workflows across customer interaction, internal processes and digital products.":
+      "Vi designer, bygger og drifter agentiske arbeidsflyter på tvers av kundedialog, interne prosesser og digitale produkter.",
     "Where we apply agentic workflows":
       "Hvor vi bruker agentiske arbeidsflyter",
     "Three business domains where we repeatedly deliver measurable impact.":
