@@ -1,0 +1,89 @@
+<svg width="640" height="480" viewBox="0 0 640 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="20" width="600" height="440" rx="32" fill="#F8FAFC"/>
+  <rect x="20" y="20" width="600" height="440" rx="32" stroke="#E5E7EB"/>
+
+  <g opacity="0.45">
+    <path d="M60 120H580" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M60 180H580" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M60 240H580" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M60 300H580" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M60 360H580" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M140 70V410" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M240 70V410" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M340 70V410" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M440 70V410" stroke="#E5E7EB" stroke-width="1"/>
+    <path d="M540 70V410" stroke="#E5E7EB" stroke-width="1"/>
+  </g>
+
+  <g>
+    <rect x="60" y="90" width="160" height="74" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="84" y="118" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">CUSTOMER INTERACTION</text>
+    <rect x="84" y="132" width="88" height="8" rx="4" fill="#CBD5E1"/>
+    <rect x="84" y="146" width="112" height="8" rx="4" fill="#E5E7EB"/>
+
+    <rect x="60" y="202" width="160" height="74" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="84" y="230" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">INTERNAL PROCESSES</text>
+    <rect x="84" y="244" width="104" height="8" rx="4" fill="#CBD5E1"/>
+    <rect x="84" y="258" width="92" height="8" rx="4" fill="#E5E7EB"/>
+
+    <rect x="60" y="314" width="160" height="74" rx="20" fill="#FFFFFF" stroke="#CBD5E1"/>
+    <text x="84" y="342" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.2">DIGITAL PRODUCTS</text>
+    <rect x="84" y="356" width="96" height="8" rx="4" fill="#CBD5E1"/>
+    <rect x="84" y="370" width="120" height="8" rx="4" fill="#E5E7EB"/>
+  </g>
+
+  <g>
+    <rect x="242" y="128" width="156" height="224" rx="28" fill="#111827"/>
+    <rect x="258" y="146" width="124" height="42" rx="14" fill="#1F2937"/>
+    <text x="320" y="172" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.6">AGENTIC LAYER</text>
+
+    <rect x="262" y="210" width="116" height="30" rx="15" fill="#F97316" fill-opacity="0.16" stroke="#F97316" stroke-opacity="0.28"/>
+    <text x="320" y="229" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Reason</text>
+
+    <rect x="262" y="250" width="116" height="30" rx="15" fill="#6366F1" fill-opacity="0.14" stroke="#A5B4FC" stroke-opacity="0.32"/>
+    <text x="320" y="269" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Route</text>
+
+    <rect x="262" y="290" width="116" height="30" rx="15" fill="#F97316" fill-opacity="0.16" stroke="#F97316" stroke-opacity="0.28"/>
+    <text x="320" y="309" text-anchor="middle" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600">Act</text>
+
+    <circle cx="392" cy="144" r="8" fill="#F97316"/>
+    <circle cx="248" cy="336" r="6" fill="#A5B4FC"/>
+  </g>
+
+  <g>
+    <rect x="420" y="110" width="160" height="60" rx="18" fill="#F3F4F6" stroke="#CBD5E1"/>
+    <text x="444" y="136" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.1">FASTER RESOLUTION</text>
+    <rect x="444" y="146" width="86" height="8" rx="4" fill="#CBD5E1"/>
+
+    <rect x="420" y="210" width="160" height="60" rx="18" fill="#F3F4F6" stroke="#CBD5E1"/>
+    <text x="444" y="236" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.1">LOWER COST</text>
+    <rect x="444" y="246" width="72" height="8" rx="4" fill="#CBD5E1"/>
+
+    <rect x="420" y="310" width="160" height="60" rx="18" fill="#F3F4F6" stroke="#CBD5E1"/>
+    <text x="444" y="336" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="1.1">SCALABLE OPS</text>
+    <rect x="444" y="346" width="96" height="8" rx="4" fill="#CBD5E1"/>
+  </g>
+
+  <g stroke-width="2.5" stroke-linecap="round">
+    <path d="M220 128C248 128 244 154 258 167" stroke="#CBD5E1"/>
+    <path d="M220 239C246 239 245 239 262 239" stroke="#CBD5E1"/>
+    <path d="M220 351C250 351 247 325 262 303" stroke="#CBD5E1"/>
+
+    <path d="M378 225C396 225 402 140 420 140" stroke="#F97316" stroke-opacity="0.7"/>
+    <path d="M378 265C398 265 398 240 420 240" stroke="#A5B4FC" stroke-opacity="0.9"/>
+    <path d="M378 305C396 305 401 340 420 340" stroke="#F97316" stroke-opacity="0.7"/>
+  </g>
+
+  <g>
+    <circle cx="220" cy="128" r="6" fill="#CBD5E1"/>
+    <circle cx="220" cy="239" r="6" fill="#CBD5E1"/>
+    <circle cx="220" cy="351" r="6" fill="#CBD5E1"/>
+
+    <circle cx="420" cy="140" r="6" fill="#F97316"/>
+    <circle cx="420" cy="240" r="6" fill="#A5B4FC"/>
+    <circle cx="420" cy="340" r="6" fill="#F97316"/>
+  </g>
+
+  <rect x="250" y="374" width="140" height="24" rx="12" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="320" y="389" text-anchor="middle" fill="#6B7280" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="600" letter-spacing="1.1">DESIGN · BUILD · OPERATE</text>
+</svg>
