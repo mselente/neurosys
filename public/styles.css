@@ -20,6 +20,18 @@
   --accent-hover: #ea580c;
   --accent-soft: #fed7aa;
   --accent-subtle: #fdba74;
+  --accent-muted: rgba(249, 115, 22, 0.6);
+  --accent-border: rgba(249, 115, 22, 0.2);
+  --accent-wash: rgba(249, 115, 22, 0.16);
+  --accent-wash-soft: rgba(249, 115, 22, 0.12);
+
+  /* AI highlight */
+  --ai-glow: #6366f1;
+  --ai-glow-soft: #a5b4fc;
+  --ai-soft: rgba(99, 102, 241, 0.04);
+  --ai-border: rgba(99, 102, 241, 0.2);
+  --ai-border-strong: rgba(99, 102, 241, 0.35);
+  --ai-line: rgba(99, 102, 241, 0.16);
 
   /* Semantic feedback */
   --success: #22c55e;
@@ -30,6 +42,26 @@
   --border: rgba(17, 24, 39, 0.08);
   --border-strong: rgba(17, 24, 39, 0.16);
   --stroke-muted: rgba(17, 24, 39, 0.2);
+  --surface-hover: rgba(17, 24, 39, 0.04);
+  --surface-overlay: rgba(247, 248, 250, 0.98);
+  --surface-fade: rgba(247, 248, 250, 0);
+  --surface-fade-strong: rgba(247, 248, 250, 1);
+  --hero-wash-strong: rgba(247, 248, 250, 0.92);
+  --hero-wash-medium: rgba(247, 248, 250, 0.7);
+  --hero-wash-light: rgba(247, 248, 250, 0.2);
+  --grid-line: rgba(17, 24, 39, 0.05);
+  --radial-ink: rgba(17, 24, 39, 0.06);
+  --inverse-soft: rgba(255, 255, 255, 0.75);
+  --inverse-muted: rgba(255, 255, 255, 0.8);
+  --inverse-label: rgba(255, 255, 255, 0.85);
+  --inverse-strong: rgba(255, 255, 255, 0.92);
+  --inverse-overlay-soft: rgba(17, 24, 39, 0.05);
+  --inverse-overlay-medium: rgba(17, 24, 39, 0.5);
+  --inverse-overlay-strong: rgba(17, 24, 39, 0.75);
+  --inverse-panel: rgba(17, 24, 39, 0.7);
+  --inverse-panel-strong: rgba(17, 24, 39, 0.75);
+  --inverse-scrim: rgba(17, 24, 39, 0.65);
+  --surface-inverse-soft: rgba(17, 24, 39, 0.08);
 
   /* Shadows */
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.08);
@@ -120,7 +152,7 @@ main a:not(.button):not(.text-link):not(.nav-link):not(.logo):not(.mega-link):no
 }
 
 .site-header.is-scrolled {
-  background: rgba(247, 248, 250, 0.98);
+  background: var(--surface-overlay);
   border-bottom-color: var(--border);
   backdrop-filter: blur(6px);
 }
@@ -268,7 +300,7 @@ main a:not(.button):not(.text-link):not(.nav-link):not(.logo):not(.mega-link):no
   transform: none;
   top: 48px;
   background: var(--background);
-  border-top: 1px solid rgba(208, 122, 58, 0.2);
+  border-top: 1px solid var(--accent-border);
 }
 
 .mega-menu-inner {
@@ -300,8 +332,8 @@ main a:not(.button):not(.text-link):not(.nav-link):not(.logo):not(.mega-link):no
 
 .mega-link:hover,
 .mega-link:focus-visible {
-  background: rgba(15, 17, 21, 0.04);
-  border-color: rgba(27, 26, 23, 0.08);
+  background: var(--surface-hover);
+  border-color: var(--border);
 }
 
 .mega-media {
@@ -518,23 +550,23 @@ p {
   background:
     linear-gradient(
       to right,
-      rgba(247, 244, 239, 0.92) 0%,
-      rgba(247, 244, 239, 0.7) 45%,
-      rgba(247, 244, 239, 0.2) 70%
+      var(--hero-wash-strong) 0%,
+      var(--hero-wash-medium) 45%,
+      var(--hero-wash-light) 70%
     ),
     radial-gradient(
       circle at 70% 30%,
-      rgba(27, 26, 23, 0.06),
+      var(--radial-ink),
       transparent 55%
     ),
     linear-gradient(
       to right,
-      rgba(27, 26, 23, 0.05) 1px,
+      var(--grid-line) 1px,
       transparent 1px
     ),
     linear-gradient(
       to bottom,
-      rgba(27, 26, 23, 0.05) 1px,
+      var(--grid-line) 1px,
       transparent 1px
     ),
     url("images/hero-abstract.svg") center/cover no-repeat;
@@ -720,9 +752,9 @@ p {
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(15, 15, 16, 0.05) 0%,
-    rgba(15, 15, 16, 0.5) 70%,
-    rgba(15, 15, 16, 0.75) 100%
+    var(--inverse-overlay-soft) 0%,
+    var(--inverse-overlay-medium) 70%,
+    var(--inverse-overlay-strong) 100%
   );
   z-index: 1;
 }
@@ -741,11 +773,11 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--inverse-label);
 }
 
 .card p {
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--inverse-strong);
   max-height: 0;
   overflow: hidden;
   opacity: 0;
@@ -753,7 +785,7 @@ p {
 }
 
 .card-link {
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--ink-inverse);
 }
 
 
@@ -774,7 +806,7 @@ p {
 .training {
   padding: 70px 0 90px;
   background: var(--section);
-  border-top: 1px solid rgba(27, 26, 23, 0.06);
+  border-top: 1px solid var(--border);
 }
 
 .training-panel {
@@ -814,8 +846,8 @@ p {
   height: 100%;
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.3)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.3)
     ),
     url("https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/client-workshops-neurosys.jpg")
       center/cover no-repeat;
@@ -865,13 +897,13 @@ p {
 
 .featured-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 26px 60px rgba(27, 26, 23, 0.16);
+  box-shadow: var(--shadow);
 }
 
 .featured-media {
   position: relative;
   overflow: hidden;
-  border-bottom: 1px solid rgba(27, 26, 23, 0.08);
+  border-bottom: 1px solid var(--border);
 }
 
 .featured-media img {
@@ -1099,7 +1131,7 @@ p {
 }
 
 .case-cta p {
-  color: rgba(255, 255, 255, 0.8) !important;
+  color: var(--inverse-muted) !important;
   margin-bottom: 12px;
 }
 
@@ -1227,8 +1259,8 @@ p {
   min-height: 320px;
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/assistant-mock.svg") center/cover no-repeat;
 }
@@ -1236,8 +1268,8 @@ p {
 .product-hero-visual.hero-comm-agents {
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-communication-agents.svg") center/cover no-repeat;
 }
@@ -1245,8 +1277,8 @@ p {
 .product-hero-visual.hero-process-opt {
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-process-optimization.svg") center/cover no-repeat;
 }
@@ -1254,8 +1286,8 @@ p {
 .product-hero-visual.hero-ai-products {
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-ai-products.svg") center/cover no-repeat;
 }
@@ -1263,8 +1295,8 @@ p {
 .product-hero-visual.hero-our-work {
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-our-work.svg") center/cover no-repeat;
 }
@@ -1272,8 +1304,8 @@ p {
 .product-hero-visual.hero-about {
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-about.svg") center/cover no-repeat;
 }
@@ -1281,8 +1313,8 @@ p {
 .training-hero-visual {
   background: linear-gradient(
       140deg,
-      rgba(15, 15, 16, 0.35),
-      rgba(15, 15, 16, 0.1)
+      rgba(17, 24, 39, 0.35),
+      var(--surface-inverse-soft)
     ),
     url("https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/client-workshops-neurosys.jpg")
       center/cover no-repeat;
@@ -1394,11 +1426,11 @@ p {
 
 .workflow-visual {
   height: 110px;
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  border: 1px solid var(--border);
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.12),
-      rgba(15, 15, 16, 0.08)
+      var(--accent-wash-soft),
+      var(--surface-inverse-soft)
     ),
     url("images/dify-workflow-card.svg") center/cover no-repeat;
 }
@@ -1448,7 +1480,7 @@ p {
   position: absolute;
   top: 12px;
   left: 12px;
-  background: rgba(15, 17, 21, 0.7);
+  background: var(--inverse-panel);
   color: var(--background);
   font-size: 0.75rem;
   padding: 4px 8px;
@@ -1459,7 +1491,7 @@ p {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: rgba(15, 17, 21, 0.75);
+  background: var(--inverse-panel-strong);
   padding: 6px 10px;
   height: 36px;
   display: inline-flex;
@@ -1534,7 +1566,7 @@ p {
   align-content: end;
   gap: 4px;
   padding: 16px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.65));
+  background: linear-gradient(180deg, rgba(17, 24, 39, 0) 40%, var(--inverse-scrim));
 }
 
 .office-city {
@@ -1543,7 +1575,7 @@ p {
 }
 
 .office-country {
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--inverse-soft);
   font-size: 0.9rem;
 }
 
@@ -1740,7 +1772,7 @@ p {
   display: grid;
   gap: 10px;
   padding-left: 12px;
-  border-left: 2px solid rgba(36, 58, 74, 0.12);
+  border-left: 2px solid var(--ai-border);
 }
 
 .context-group + .context-group {
@@ -1748,11 +1780,11 @@ p {
 }
 
 .context-group:nth-child(2) {
-  border-left-color: rgba(47, 94, 125, 0.16);
+  border-left-color: var(--ai-line);
 }
 
 .context-group:nth-child(3) {
-  border-left-color: rgba(26, 29, 36, 0.14);
+  border-left-color: rgba(17, 24, 39, 0.14);
 }
 
 .context-group-title {
@@ -1832,7 +1864,7 @@ p {
 }
 
 .flow-after {
-  border-color: rgba(47, 94, 125, 0.35);
+  border-color: var(--ai-border-strong);
 }
 
 .flow-points {
@@ -1895,11 +1927,11 @@ p {
 
 .dify-proof-visual {
   min-height: 320px;
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  border: 1px solid var(--border);
   background: linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.1),
-      rgba(15, 15, 16, 0.12)
+      rgba(249, 115, 22, 0.1),
+      rgba(17, 24, 39, 0.12)
     ),
     url("images/dify-flow-diagram.svg") center/cover no-repeat;
 }
@@ -1907,7 +1939,7 @@ p {
 .assistants-columns {
   padding: 50px 0 80px;
   background: var(--section);
-  border-top: 1px solid rgba(27, 26, 23, 0.06);
+  border-top: 1px solid var(--border);
 }
 
 .two-column {
@@ -1942,7 +1974,7 @@ p {
 
 .outcome-item {
   background: var(--section);
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  border: 1px solid var(--border);
   padding: 18px;
   text-align: center;
 }
@@ -1971,7 +2003,7 @@ p {
 
 .fit-card {
   background: var(--section);
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  border: 1px solid var(--border);
   padding: 22px;
   display: grid;
   gap: 10px;
@@ -2124,7 +2156,7 @@ p {
   width: fit-content;
   padding: 4px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(27, 26, 23, 0.12);
+  border: 1px solid var(--border-strong);
   color: var(--muted);
   font-size: 0.7rem;
   letter-spacing: 0.08em;
@@ -2191,15 +2223,15 @@ p {
 .placeholder-panel {
   padding: 70px 0;
   background: var(--section);
-  border-top: 1px solid rgba(27, 26, 23, 0.06);
-  border-bottom: 1px solid rgba(27, 26, 23, 0.06);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
 }
 
 .product-system {
   margin-top: 64px;
   padding: 20px 0 12px;
   background: var(--section);
-  border-bottom: 1px solid rgba(27, 26, 23, 0.06);
+  border-bottom: 1px solid var(--border);
 }
 
 .system-nav {
@@ -2290,8 +2322,8 @@ p {
 }
 
 .delivery-destination {
-  border-color: rgba(47, 94, 125, 0.35);
-  background: rgba(47, 94, 125, 0.04);
+  border-color: var(--ai-border-strong);
+  background: var(--ai-soft);
 }
 
 .assurance-bar {
@@ -2321,8 +2353,8 @@ p {
   background:
     linear-gradient(
       140deg,
-      rgba(208, 122, 58, 0.16),
-      rgba(15, 15, 16, 0.25)
+      var(--accent-wash),
+      rgba(17, 24, 39, 0.25)
     ),
     url("images/hero-services.svg") center/cover no-repeat;
 }
@@ -2474,9 +2506,9 @@ p {
 .product-hero-visual.contact-visual {
   position: relative;
   overflow: hidden;
-  color: rgba(36, 58, 74, 0.7);
+  color: var(--ai-glow);
   background:
-    linear-gradient(140deg, rgba(208, 122, 58, 0.16), rgba(15, 15, 16, 0.25)),
+    linear-gradient(140deg, var(--accent-wash), rgba(17, 24, 39, 0.25)),
     url("images/contact-visual.svg") center/cover no-repeat;
 }
 
@@ -2518,7 +2550,7 @@ p {
 .contact-person-photo {
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(27, 26, 23, 0.08);
+  border: 1px solid var(--border);
 }
 
 .contact-person-photo img {
@@ -2720,7 +2752,7 @@ p {
 }
 
 .why-card-cta p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--inverse-muted);
 }
 
 .why-card-cta .text-link {
@@ -2763,7 +2795,7 @@ p {
 .testimonial-quote {
   font-family: "Fraunces", serif;
   font-size: 2.6rem;
-  color: rgba(208, 122, 58, 0.6);
+  color: var(--accent-muted);
   line-height: 1;
 }
 
@@ -2931,7 +2963,7 @@ p {
 .contact-card {
   padding: 120px 0;
   background: var(--section);
-  border-top: 1px solid rgba(27, 26, 23, 0.08);
+  border-top: 1px solid var(--border);
   position: relative;
 }
 
@@ -2944,8 +2976,8 @@ p {
   height: 80px;
   background: linear-gradient(
     180deg,
-    rgba(247, 244, 239, 0) 0%,
-    rgba(241, 236, 228, 1) 100%
+    var(--surface-fade) 0%,
+    var(--surface-fade-strong) 100%
   );
 }
 
@@ -2979,7 +3011,7 @@ p {
 }
 
 .contact-band-copy p {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--inverse-muted);
 }
 
 .contact-band-copy {
@@ -3060,7 +3092,7 @@ p {
   width: 100%;
   aspect-ratio: 4 / 3;
   overflow: hidden;
-  border-bottom: 1px solid rgba(27, 26, 23, 0.08);
+  border-bottom: 1px solid var(--border);
 }
 
 .contact-photo img {
