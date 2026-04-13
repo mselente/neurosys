@@ -115,7 +115,6 @@ const I18N_STRINGS = {
     News: "Nyheter",
     Contact: "Kontakt",
     "Get in touch": "Ta kontakt",
-    "Contact person": "Kontaktperson",
     Menu: "Meny",
     Discover: "Utforsk",
     Office: "Kontor",
