@@ -1,39 +1,261 @@
 const header = document.getElementById("site-header");
 const nav = document.querySelector(".site-nav");
 const toggle = document.querySelector(".menu-toggle");
+const headerLogo = header?.querySelector(".logo img");
+const navDetails = Array.from(document.querySelectorAll(".nav-details"));
+const disclosureCloseTimers = new WeakMap();
+const homePaths = new Set(["/", "/index.html"]);
+const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
+const isHomePage = homePaths.has(normalizedPath);
+const DEFAULT_LOGO =
+  "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo.png";
+const INVERTED_LOGO =
+  "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo-inverted.png";
+const MENU_BREAKPOINT = 1120;
+const prefersDesktopHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+const canonicalMenuItems = {
+  "/applications/communication-agents.html": {
+    title: "Communication Agents",
+    text: "Resolve work across channels and reduce support load.",
+  },
+  "/applications/ai-process-optimization.html": {
+    title: "AI Process Optimization",
+    text: "Decision-heavy workflows automated end to end.",
+  },
+  "/applications/ai-enabled-products.html": {
+    title: "AI-Enabled Products",
+    text: "AI embedded directly into your SaaS and platforms.",
+  },
+};
+
+document.body.classList.toggle("home-page", isHomePage);
+
+const syncHeaderHeight = () => {
+  if (!header) return;
+  document.documentElement.style.setProperty(
+    "--header-height",
+    `${header.offsetHeight}px`
+  );
+};
+
+const setHeaderLogo = (useDefaultLogo) => {
+  if (!headerLogo) return;
+  const nextLogo = useDefaultLogo ? DEFAULT_LOGO : INVERTED_LOGO;
+  if (headerLogo.getAttribute("src") !== nextLogo) {
+    headerLogo.setAttribute("src", nextLogo);
+  }
+};
+
+const closeDisclosure = (group) => {
+  const trigger = group?.querySelector(".nav-trigger");
+  const panel = group?.querySelector(".dropdown");
+  if (!group || !trigger || !panel) return;
+  group.classList.remove("is-open");
+  trigger.setAttribute("aria-expanded", "false");
+  panel.hidden = true;
+};
+
+const openDisclosure = (group) => {
+  const trigger = group?.querySelector(".nav-trigger");
+  const panel = group?.querySelector(".dropdown");
+  if (!group || !trigger || !panel) return;
+  group.classList.add("is-open");
+  trigger.setAttribute("aria-expanded", "true");
+  panel.hidden = false;
+};
+
+const cancelScheduledDisclosureClose = (group) => {
+  const timer = disclosureCloseTimers.get(group);
+  if (timer) {
+    window.clearTimeout(timer);
+    disclosureCloseTimers.delete(group);
+  }
+};
+
+const scheduleDisclosureClose = (group, delay = 140) => {
+  cancelScheduledDisclosureClose(group);
+  const timer = window.setTimeout(() => {
+    closeDisclosure(group);
+    disclosureCloseTimers.delete(group);
+  }, delay);
+  disclosureCloseTimers.set(group, timer);
+};
+
+const closeAllDisclosures = (exception = null) => {
+  navDetails.forEach((group) => {
+    if (group === exception) return;
+    cancelScheduledDisclosureClose(group);
+    closeDisclosure(group);
+  });
+};
 
 const setHeaderState = () => {
   if (!header) return;
-  header.classList.toggle("is-scrolled", window.scrollY > 12);
+  const useSolidHeader =
+    !isHomePage || window.scrollY > 12 || nav?.classList.contains("is-open");
+  header.classList.toggle("is-scrolled", useSolidHeader);
+  setHeaderLogo(useSolidHeader);
+  syncHeaderHeight();
 };
 
 const closeMenu = () => {
   if (!nav || !toggle) return;
   nav.classList.remove("is-open");
+  header?.classList.remove("is-menu-open");
   toggle.setAttribute("aria-expanded", "false");
+  toggle.setAttribute("aria-label", "Open menu");
+  document.body.classList.remove("nav-open");
+  closeAllDisclosures();
+  setHeaderState();
 };
+
+const normalizeHeaderMenus = () => {
+  document.querySelectorAll(".mega-item").forEach((item) => {
+    const href = item.getAttribute("href");
+    const canonical = href ? canonicalMenuItems[href] : null;
+    if (!canonical) return;
+
+    const title = item.querySelector(".mega-title");
+    const text = item.querySelector(".mega-text");
+
+    if (title) {
+      title.textContent = canonical.title;
+    }
+
+    if (text) {
+      text.textContent = canonical.text;
+    }
+  });
+};
+
+normalizeHeaderMenus();
+
+if (nav && !nav.id) {
+  nav.id = "site-nav-panel";
+}
+
+navDetails.forEach((group, index) => {
+  const trigger = group.querySelector(".nav-trigger");
+  const panel = group.querySelector(".dropdown");
+  if (!trigger || !panel) return;
+
+  if (!panel.id) {
+    panel.id = `nav-panel-${index + 1}`;
+  }
+
+  trigger.setAttribute("aria-expanded", "false");
+  trigger.setAttribute("aria-controls", panel.id);
+  trigger.setAttribute("aria-haspopup", "true");
+  panel.hidden = true;
+
+  trigger.addEventListener("click", (event) => {
+    event.stopPropagation();
+    cancelScheduledDisclosureClose(group);
+    const willOpen = !group.classList.contains("is-open");
+    closeAllDisclosures(group);
+
+    if (willOpen) {
+      openDisclosure(group);
+    } else {
+      closeDisclosure(group);
+    }
+  });
+
+  group.addEventListener("pointerenter", () => {
+    if (window.innerWidth <= MENU_BREAKPOINT || !prefersDesktopHover.matches) {
+      return;
+    }
+    cancelScheduledDisclosureClose(group);
+    closeAllDisclosures(group);
+    openDisclosure(group);
+  });
+
+  group.addEventListener("pointerleave", (event) => {
+    if (window.innerWidth <= MENU_BREAKPOINT || !prefersDesktopHover.matches) {
+      return;
+    }
+    if (panel.contains(event.relatedTarget)) {
+      return;
+    }
+    scheduleDisclosureClose(group);
+  });
+
+  panel.addEventListener("pointerenter", () => {
+    cancelScheduledDisclosureClose(group);
+  });
+
+  panel.addEventListener("pointerleave", () => {
+    if (window.innerWidth <= MENU_BREAKPOINT || !prefersDesktopHover.matches) {
+      return;
+    }
+    scheduleDisclosureClose(group, 90);
+  });
+});
 
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
+window.addEventListener("load", syncHeaderHeight);
 
 if (toggle && nav) {
-  toggle.addEventListener("click", () => {
+  toggle.setAttribute("aria-controls", nav.id);
+  toggle.setAttribute("aria-label", "Open menu");
+
+  toggle.addEventListener("click", (event) => {
+    event.stopPropagation();
     const isOpen = nav.classList.toggle("is-open");
+    header?.classList.toggle("is-menu-open", isOpen);
+    document.body.classList.toggle("nav-open", isOpen);
     toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    if (!isOpen) {
+      closeAllDisclosures();
+    }
+    setHeaderState();
   });
 
   nav.addEventListener("click", (event) => {
-    if (event.target.matches("a")) {
+    if (event.target.closest("a")) {
       closeMenu();
     }
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 900) {
+    syncHeaderHeight();
+    if (window.innerWidth > MENU_BREAKPOINT) {
       closeMenu();
+    } else {
+      setHeaderState();
     }
   });
 }
+
+document.addEventListener("click", (event) => {
+  if (!header?.contains(event.target)) {
+    closeAllDisclosures();
+    if (nav?.classList.contains("is-open")) {
+      closeMenu();
+    }
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+
+  const activeDisclosure = navDetails.find((group) =>
+    group.classList.contains("is-open")
+  );
+
+  if (activeDisclosure) {
+    closeDisclosure(activeDisclosure);
+    activeDisclosure.querySelector(".nav-trigger")?.focus();
+    return;
+  }
+
+  if (nav?.classList.contains("is-open")) {
+    closeMenu();
+    toggle?.focus();
+  }
+});
 
 const platformTabs = document.querySelectorAll(".platform-tab");
 const platformPanels = document.querySelectorAll(".platform-panel");
@@ -104,7 +326,6 @@ if (platformTabs.length && platformPanels.length) {
 
 const I18N_STRINGS = {
   no: {
-    "Skip to content": "Hopp til innhold",
     "NeuroSYS home": "NeuroSYS forside",
     Primary: "Hovedmeny",
     Applications: "Applikasjoner",
@@ -122,6 +343,9 @@ const I18N_STRINGS = {
     Phone: "Telefon",
     "Read more →": "Les mer →",
     "Read the full story →": "Les hele historien →",
+    "Our services →": "Våre tjenester →",
+    "Client projects →": "Kundeprosjekter →",
+    "Contact us →": "Kontakt oss →",
     "See what we offer →": "Se hva vi tilbyr →",
     "Get workshop details →": "Få workshop-detaljer →",
     "Book a session →": "Book en sesjon →",
@@ -134,10 +358,16 @@ const I18N_STRINGS = {
     Certified: "Sertifisert",
     "AWS Partner": "AWS-partner",
     "Microsoft Partner": "Microsoft-partner",
-    "AI systems that run your operations":
-      "AI-systemer som driver driften din",
-    "We design, build and operate agentic workflows across customer interaction, internal processes and digital products.":
-      "Vi designer, bygger og drifter agentiske arbeidsflyter på tvers av kundedialog, interne prosesser og digitale produkter.",
+    "Platform partner for agentic AI":
+      "Plattformpartner for agentisk AI",
+    "We operationalize AI as part of how you operate":
+      "Vi forvalter AI som en del av hvordan dere opererer",
+    "Key benefits": "Nokkelfordeler",
+    "Full control": "Full kontroll",
+    "Predictable cost": "Forutsigbar kost",
+    "Ready for production": "Klar for produksjon",
+    "Full control. Predictable cost. Ready for production.":
+      "Full kontroll. Forutsigbar kost. Klar for produksjon.",
     "Where we apply agentic workflows":
       "Hvor vi bruker agentiske arbeidsflyter",
     "Three business domains where we repeatedly deliver measurable impact.":
