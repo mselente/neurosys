@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260413" />
+    <link rel="stylesheet" href="styles.css?v=__CSS_VERSION__" />
     <link rel="canonical" href="https://www.neurosys.no/" />
     <link
       rel="icon"
@@ -48,7 +48,7 @@
       "numberOfEmployees": {"@type": "QuantitativeValue", "minValue": 100},
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Dronning Eufemias gate 16",
+        "streetAddress": "Øvre Slottsgate 27",
         "addressLocality": "Oslo",
         "postalCode": "0191",
         "addressCountry": "NO"
@@ -69,96 +69,7 @@
     </script>
   </head>
   <body>
-    <header class="site-header" id="site-header">
-      <div class="container header-inner">
-        <a class="logo" href="/" aria-label="NeuroSYS home">
-          <img
-            src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo.png"
-            alt="NeuroSYS"
-          />
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-          <div class="nav-details">
-            <button class="nav-trigger" type="button">
-              Applications <span class="chevron">▾</span>
-            </button>
-            <div class="dropdown mega-menu">
-              <div class="mega-menu-inner">
-              <a class="mega-item" href="/applications/communication-agents.html">
-                <div class="mega-link">
-                  <div class="mega-media" aria-hidden="true">
-                    <img
-                      src="/images/product-assistants.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <span class="mega-title">Communication Agents</span>
-                  <span class="mega-text"
-                    >Resolve work across channels and reduce support load.</span
-                  >
-                  <span class="mega-arrow">→</span>
-                </div>
-              </a>
-              <a class="mega-item" href="/applications/ai-process-optimization.html">
-                <div class="mega-link">
-                  <div class="mega-media" aria-hidden="true">
-                    <img
-                      src="/images/product-automation.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <span class="mega-title">AI Process Automation</span>
-                  <span class="mega-text"
-                    >Decision-heavy workflows automated end to end.</span
-                  >
-                  <span class="mega-arrow">→</span>
-                </div>
-              </a>
-              <a class="mega-item" href="/applications/ai-enabled-products.html">
-                <div class="mega-link">
-                  <div class="mega-media" aria-hidden="true">
-                    <img
-                      src="/images/product-embedded.svg"
-                      alt=""
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  <span class="mega-title">AI-Enabled Products</span>
-                  <span class="mega-text"
-                    >AI embedded directly into your SaaS and platforms.</span
-                  >
-                  <span class="mega-arrow">→</span>
-                </div>
-              </a>
-              </div>
-            </div>
-          </div>
-          <a href="/services.html">Services</a>
-          <a href="/our-work.html">Our work</a>
-          <a href="/about.html">About</a>
-        </nav>
-        <div class="header-utility">
-          <a class="nav-link" href="/contact.html">Get in touch</a>
-          <div class="nav-details language-switch">
-            <button class="nav-trigger" type="button" data-lang-trigger>
-              <span data-lang-label>EN</span> <span class="chevron">▾</span>
-            </button>
-            <div class="dropdown language-menu">
-              <button type="button" data-lang="en">EN</button>
-              <button type="button" data-lang="no">NO</button>
-            </div>
-          </div>
-          <button class="menu-toggle" type="button" aria-expanded="false">
-            Menu
-          </button>
-        </div>
-      </div>
-    </header>
+    <!--#include virtual="/_partials/site-header.html" -->
 
     <main id="main">
       <section class="hero" id="top">
@@ -173,16 +84,16 @@
         <div class="container hero-inner">
           <div class="hero-content">
             <p class="eyebrow">Platform partner for agentic AI</p>
-            <h1>We operationalize AI as part of how you operate</h1>
+            <h1>We make AI part of how you operate</h1>
             <div class="hero-subtitle hero-points" aria-label="Key benefits">
               <span class="hero-point">Full control</span>
               <span class="hero-point">Predictable cost</span>
               <span class="hero-point">Ready for production</span>
             </div>
             <div class="hero-actions">
-              <a class="hero-link-cta" href="/services.html">Our services →</a>
-              <a class="hero-link-cta" href="/our-work.html">Client projects →</a>
-              <a class="hero-link-cta" href="/contact.html">Contact us →</a>
+              <a class="button primary prominent" href="/services">Our services →</a>
+              <a class="button ghost" href="/our-work">Client projects →</a>
+              <a class="button ghost" href="/contact">Contact us →</a>
             </div>
           </div>
         </div>
@@ -321,458 +232,370 @@
         </div>
       </section>
 
-      <section class="products" id="products">
-        <div class="container">
-          <div class="section-header">
-            <h2>Where we apply agentic workflows</h2>
-            <p class="section-subtitle">
-              Three business domains where we repeatedly deliver measurable
-              impact.
-            </p>
+      <section class="agent-platform-teaser section-shell section-shell-story">
+        <div class="container split-section split-section-emphasis-right">
+          <div class="open-story-band">
+            <div class="section-header section-header-wide agent-platform-header">
+              <p class="eyebrow">The future of work</p>
+              <h2>From testing AI to transforming the business</h2>
+              <p class="section-subtitle agent-platform-subtitle">
+                An agentic platform brings leadership, IT and operations closer
+                together, so AI becomes part of how the business actually runs.
+              </p>
+            </div>
+            <dl class="feature-list feature-list-split" aria-label="What the platform helps with">
+              <div>
+                <dt>Connect</dt>
+                <dd>systems, data sources and work tools in one shared layer.</dd>
+              </div>
+              <div>
+                <dt>Orchestrate</dt>
+                <dd>agents and workflows that can reason, act and escalate.</dd>
+              </div>
+              <div>
+                <dt>Govern</dt>
+                <dd>AI use with approvals, traceability and clear ownership.</dd>
+              </div>
+              <div>
+                <dt>Reuse</dt>
+                <dd>logic across channels, teams and future product decisions.</dd>
+              </div>
+            </dl>
+            <div class="agent-platform-footer">
+              <a class="text-link secondary-cta" href="/agent-platform"
+                >See how it works →</a
+              >
+            </div>
           </div>
-          <div class="card-grid">
-            <a class="card" href="/applications/communication-agents.html">
-              <div class="card-media" aria-hidden="true">
-                <img
-                  src="images/product-assistants.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-category">Customer &amp; employee interaction</span>
-                <h3>Communication agents</h3>
-                <p>
-                  Reduce support load and resolve work across channels by
-                  connecting to your systems and data.
-                </p>
-                <span class="card-link">Read more →</span>
-              </div>
-            </a>
-            <a class="card" href="/applications/ai-process-optimization.html">
-              <div class="card-media" aria-hidden="true">
-                <img
-                  src="images/product-automation.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-category">Operational processes</span>
-                <h3>AI process optimization</h3>
-                <p>
-                  Automate decision-heavy workflows and remove bottlenecks
-                  across operations.
-                </p>
-                <span class="card-link">Read more →</span>
-              </div>
-            </a>
-            <a class="card" href="/applications/ai-enabled-products.html">
-              <div class="card-media" aria-hidden="true">
-                <img
-                  src="images/product-embedded.svg"
-                  alt=""
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-              <div class="card-content">
-                <span class="card-category">Digital products</span>
-                <h3>AI-enabled products</h3>
-                <p>
-                  Embed AI into your software to create new value, features,
-                  and revenue streams.
-                </p>
-                <span class="card-link">Read more →</span>
-              </div>
-            </a>
+          <div class="media-split-visual media-split-asset media-split-asset-ui">
+            <img
+              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/Build-workflows-dify.png"
+              alt="Dify workflow builder showing agent orchestration and connected steps"
+              loading="lazy"
+              decoding="async"
+            />
           </div>
         </div>
       </section>
 
-      <section class="training" id="training">
-        <div class="container training-panel">
-          <div class="training-copy">
-            <span class="card-category">GenAI Training &amp; Workshops</span>
-            <h3>Practical, hands-on AI enablement</h3>
+      <section class="products section-shell section-shell-soft section-shell-center homepage-domain-map" id="products">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="eyebrow">Across the business</p>
+            <h2>Where agentic workflows fit in</h2>
+            <p class="section-subtitle">
+              From growth and service to digital products and operations - the
+              same platform fits very different parts of the business.
+            </p>
+          </div>
+          <div class="topic-grid" aria-label="Application areas">
+            <div class="topic-cluster topic-cluster-growth">
+              <div class="topic-cluster-label">Growth</div>
+              <a class="topic-item" href="/forretningsomrader/markedsforing">
+                <div class="topic-item-title">Marketing</div>
+                <p>Automate customer dialogue, campaign workflows, and follow-up.</p>
+              </a>
+              <a class="topic-item" href="/forretningsomrader/salg">
+                <div class="topic-item-title">Sales</div>
+                <p>Free time in CRM, quoting, and pipeline work with smarter automation.</p>
+              </a>
+            </div>
+            <div class="topic-cluster topic-cluster-service">
+              <div class="topic-cluster-label">Operations &amp; service</div>
+              <a class="topic-item" href="/forretningsomrader/service">
+                <div class="topic-item-title">Service</div>
+                <p>Improve customer service, case handling, and field operations.</p>
+              </a>
+              <a class="topic-item" href="/forretningsomrader/transport-og-logistikk">
+                <div class="topic-item-title">Transport &amp; logistics</div>
+                <p>Plan routes, absorb disruptions, and keep customers updated automatically.</p>
+              </a>
+            </div>
+            <div class="topic-cluster topic-cluster-digital">
+              <div class="topic-cluster-label">Engineering &amp; production</div>
+              <a class="topic-item" href="/forretningsomrader/prosjekt-og-data">
+                <div class="topic-item-title">Project &amp; data</div>
+                <p>Free project teams from sourcing, indexing, and validating component data.</p>
+              </a>
+              <a class="topic-item" href="/forretningsomrader/produksjon">
+                <div class="topic-item-title">Production</div>
+                <p>Reduce downtime, changeovers, and manual coordination on the floor.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="training section-shell section-shell-invert" id="training">
+        <div class="container">
+          <div class="offer-panel offer-panel-flat split-section split-section-emphasis-left">
+            <div class="open-story-band offer-panel-copy">
+              <div class="section-header">
+                <p class="eyebrow">Start here</p>
+                <h2>Get your teams aligned on real AI use cases</h2>
+              </div>
+              <p>
+                A focused workshop where leadership, IT and operations sit at
+                the same table. We work with your real processes and use cases
+                - not slides about what AI could be.
+              </p>
+              <ul class="offer-panel-outcomes" aria-label="What you walk away with">
+                <li>
+                  <svg class="outcome-check" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  </svg>
+                  Concrete use cases prioritized for your business
+                </li>
+                <li>
+                  <svg class="outcome-check" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  </svg>
+                  Shared language across leadership, IT and operations
+                </li>
+                <li>
+                  <svg class="outcome-check" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M3 8.5l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                  </svg>
+                  A clear next step - not another report
+                </li>
+              </ul>
+              <div class="offer-panel-actions">
+                <a class="button primary prominent" href="/training">
+                  Book a workshop →
+                </a>
+              </div>
+            </div>
+            <div class="media-split-visual media-split-asset media-split-asset-photo offer-panel-visual">
+              <img
+                src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/client-workshops-neurosys.jpg"
+                alt="NeuroSYS client workshop session"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-stories section-shell">
+        <div class="container">
+          <div class="story-shelf" data-story-shelf data-autoplay="7000">
+            <div class="story-shelf-header">
+              <div class="story-shelf-intro">
+                <p class="eyebrow">Stories</p>
+                <h2>How teams operationalize AI</h2>
+              </div>
+              <div class="story-shelf-controls" aria-label="Story navigation">
+                <button
+                  class="story-shelf-button"
+                  type="button"
+                  data-shelf-prev
+                  aria-label="Previous story"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+                <button
+                  class="story-shelf-button"
+                  type="button"
+                  data-shelf-next
+                  aria-label="Next story"
+                >
+                  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="story-shelf-track" data-shelf-track>
+              <a class="story-card" href="/news/operationalizing-agentic-ai-with-dify">
+                <div class="story-card-media">
+                  <img
+                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/dify-agentic-workflow-meetup-neurosys.jpg"
+                    alt="Dify agentic workflow meetup in Oslo"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="story-card-body">
+                  <div class="story-card-tag">Partnership</div>
+                  <h3>Why NeuroSYS chose to partner with Dify</h3>
+                  <p>
+                    From pilot fatigue to production-ready AI. One platform for
+                    agents, workflows, RAG, evaluation and monitoring.
+                  </p>
+                  <span class="story-card-cta">Read more →</span>
+                </div>
+              </a>
+              <a class="story-card" href="/news/identifying-ai-opportunities-in-industrial-operations">
+                <div class="story-card-media">
+                  <img
+                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/team/ge-healtcare-bilde.jpg.jpeg"
+                    alt="GE Healthcare factory operations"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="story-card-body">
+                  <div class="story-card-tag">Industrial AI</div>
+                  <h3>GE Healthcare: On-prem AI for factory operations</h3>
+                  <p>
+                    10,000+ control documents made searchable with a fully local,
+                    secure RAG solution that keeps sensitive data in-house.
+                  </p>
+                  <span class="story-card-cta">Read more →</span>
+                </div>
+              </a>
+              <a class="story-card" href="/news/jernia-agentic-pilot-insights">
+                <div class="story-card-media">
+                  <img
+                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/team/Jernia-bilde.jpg.jpeg"
+                    alt="Jernia customer service team"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="story-card-body">
+                  <div class="story-card-tag">Customer service</div>
+                  <h3>Jernia: AI-powered customer service that delivers</h3>
+                  <p>
+                    46% of meaningful conversations resolved during pilot - how
+                    Jernia automated customer service with a communication agent.
+                  </p>
+                  <span class="story-card-cta">Read more →</span>
+                </div>
+              </a>
+              <a class="story-card" href="/news/mediex-media-intelligence-platform">
+                <div class="story-card-media">
+                  <img
+                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/mediex-image.png"
+                    alt="MedieX media intelligence platform"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="story-card-body">
+                  <div class="story-card-tag">Media intelligence</div>
+                  <h3>MedieX: From media noise to actionable insight</h3>
+                  <p>
+                    Turning unstructured media noise into structured intelligence
+                    that communication and decision-making teams can act on.
+                  </p>
+                  <span class="story-card-cta">Read more →</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="platforms-section section-shell section-shell-soft" id="platforms">
+        <div class="container">
+          <div class="section-header section-header-wide">
+            <p class="eyebrow">How we deliver</p>
+            <h2>The foundation behind every delivery</h2>
+            <p class="section-subtitle">
+              We standardize on Dify - an open source platform you can start
+              on our cloud and move home to your own installation when ready.
+              No license traps, no lock-in.
+            </p>
+          </div>
+
+          <div class="platform-lead">
+            <div class="platform-lead-copy">
+              <span class="platform-lead-tag">Built on open source</span>
+              <div class="platform-lead-logo">
+                <img
+                  src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/dify-strategic-partner.png"
+                  alt="Dify"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h3>One of the world's leading platforms for AI agents</h3>
+              <p>
+                Dify is open source with 10,000+ commits and nearly 20 updates
+                a day from a global community. You stand on a robust,
+                future-proof foundation from day one - and skip the years of
+                in-house engineering it would take to build something close.
+                Start on Neurosys Workflows (our hosted instance) and move to
+                your own cloud or on-prem whenever you want.
+              </p>
+              <div class="platform-lead-stats" aria-label="Dify community proof">
+                <div class="platform-lead-stat">
+                  <span class="platform-lead-stat-value">138k+</span>
+                  <span class="platform-lead-stat-label">GitHub stars</span>
+                </div>
+                <div class="platform-lead-stat">
+                  <span class="platform-lead-stat-value">10,000+</span>
+                  <span class="platform-lead-stat-label">Commits</span>
+                </div>
+                <div class="platform-lead-stat">
+                  <span class="platform-lead-stat-value">~20 / day</span>
+                  <span class="platform-lead-stat-label">Active development</span>
+                </div>
+              </div>
+              <div class="platform-lead-actions">
+                <a class="button primary prominent" href="/agent-platform">
+                  How we use Dify →
+                </a>
+              </div>
+            </div>
+            <div class="platform-lead-visual" aria-hidden="true">
+              <img
+                src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/Build-workflows-dify.png"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="why-neurosys section-shell section-shell-invert">
+        <div class="container split-section split-section-emphasis-left">
+          <div class="open-story-band">
+            <div class="section-header">
+              <h2>Built for real operations</h2>
+              <p class="section-subtitle">
+                From pilot to production - AI that fits into how your
+                organization actually works.
+              </p>
+            </div>
             <p>
-              Practical introduction to Generative AI combined with workshops
-              focused on your own processes, products and operations.
+              NeuroSYS combines advisory, implementation and long-term
+              operational ownership so AI becomes part of how the business runs,
+              not just something you test on the side.
             </p>
-            <p class="outcome">
-              Outcome: shared understanding, concrete ideas, and clear next
-              steps.
-            </p>
-            <a class="button secondary featured" href="/training.html">
-              Get workshop details →
-            </a>
+            <a class="text-link" href="/services#how-we-work">See how we work →</a>
           </div>
-          <div class="training-visual" aria-hidden="true"></div>
-        </div>
-      </section>
-
-      <section class="featured-activities">
-        <div class="container featured-grid">
-          <article class="featured-card">
-            <div class="featured-media">
-              <img
-                src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/dify-agentic-workflow-meetup-neurosys.jpg"
-                alt="Dify agentic workflow meetup in Oslo"
-                loading="lazy"
-                decoding="async"
-              />
+          <div class="stat-callout stat-callout-3" aria-label="Proof points">
+            <div class="stat-callout-item">
+              <div class="stat-callout-value">80%</div>
+              <div class="stat-callout-label">
+                potential reduction in repetitive work for the right workflows.
+              </div>
             </div>
-            <div class="featured-body">
-              <h3>Why NeuroSYS chose to partner with Dify</h3>
-              <p>
-                From pilot fatigue to production-ready AI. How Dify solved the
-                core problems slowing down enterprise AI adoption - one platform
-                for agents, workflows, RAG, evaluation and monitoring.
-              </p>
-              <a
-                class="button secondary featured"
-                href="/news/operationalizing-agentic-ai-with-dify.html"
-              >
-                Read more →
-              </a>
+            <div class="stat-callout-item">
+              <div class="stat-callout-value">100+</div>
+              <div class="stat-callout-label">
+                engineers across AI, data engineering and full-stack delivery.
+              </div>
             </div>
-          </article>
-          <article class="featured-card">
-            <div class="featured-media">
-              <img
-                src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/team/ncc-cover-bilde.jpg.jpeg"
-                alt="GE Healthcare factory operations"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div class="featured-body">
-              <h3>GE Healthcare: On-prem AI for factory operations</h3>
-              <p>
-                10,000+ control documents made searchable with a fully local,
-                secure RAG solution. Operators get instant answers to critical
-                procedures without exposing sensitive data.
-              </p>
-              <a
-                class="button secondary featured"
-                href="/news/identifying-ai-opportunities-in-industrial-operations.html"
-              >
-                Read more →
-              </a>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="platforms">
-        <div class="container">
-          <div class="section-header">
-            <h2>Platforms we work with</h2>
-            <p class="section-subtitle">
-              We select platforms based on use case, security, autonomy,
-              integration depth, and long-term fit.
-            </p>
-          </div>
-          <div class="platforms-layout">
-            <div class="platforms-list" role="tablist" aria-label="Platforms">
-              <button
-                class="platform-tab active"
-                type="button"
-                id="platform-tab-dify"
-                role="tab"
-                data-platform="dify"
-                aria-selected="true"
-                aria-controls="platform-panel-dify"
-                tabindex="0"
-              >
-                Agentic workflows - Dify
-              </button>
-              <button
-                class="platform-tab"
-                type="button"
-                id="platform-tab-langchain"
-                role="tab"
-                data-platform="langchain"
-                aria-selected="false"
-                aria-controls="platform-panel-langchain"
-                tabindex="-1"
-              >
-                Custom AI logic - LangChain
-              </button>
-              <button
-                class="platform-tab"
-                type="button"
-                id="platform-tab-huggingface"
-                role="tab"
-                data-platform="huggingface"
-                aria-selected="false"
-                aria-controls="platform-panel-huggingface"
-                tabindex="-1"
-              >
-                Model customization - Hugging Face
-              </button>
-              <button
-                class="platform-tab"
-                type="button"
-                id="platform-tab-workspace"
-                role="tab"
-                data-platform="workspace"
-                aria-selected="false"
-                aria-controls="platform-panel-workspace"
-                tabindex="-1"
-              >
-                Google Workspace Studio
-              </button>
-              <button
-                class="platform-tab"
-                type="button"
-                id="platform-tab-copilot"
-                role="tab"
-                data-platform="copilot"
-                aria-selected="false"
-                aria-controls="platform-panel-copilot"
-                tabindex="-1"
-              >
-                Microsoft Copilot Studio
-              </button>
-            </div>
-            <div class="platforms-detail">
-              <article
-                class="platform-panel active"
-                data-platform="dify"
-                id="platform-panel-dify"
-                role="tabpanel"
-                tabindex="0"
-                aria-labelledby="platform-tab-dify"
-              >
-                <div class="platform-panel-header">
-                  <div class="platform-panel-title">Production-grade agentic workflows</div>
-                  <div class="platform-panel-badge">Strategic partner</div>
-                </div>
-                <div class="platform-panel-logo">
-                  <img
-                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/dify-strategic-partner.png"
-                    alt="Dify"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <p>
-                  Designed for end-to-end AI workflows that connect systems,
-                  data, and people in daily operations. Dify supports
-                  multi-step reasoning, tool usage, decision points, and human
-                  approval flows with strong control over data and integrations.
-                </p>
-                <div class="platform-panel-subtitle">Well suited when you need to</div>
-                <ul>
-                  <li>Automate workflows across multiple systems (ERP, CRM, internal tools)</li>
-                  <li>Run agents that reason, act, and escalate</li>
-                  <li>Keep humans in the loop where decisions matter</li>
-                  <li>Deploy AI in private cloud or regulated environments</li>
-                  <li>Move AI from pilots into daily operations</li>
-                </ul>
-              </article>
-              <article
-                class="platform-panel"
-                data-platform="langchain"
-                id="platform-panel-langchain"
-                role="tabpanel"
-                tabindex="0"
-                aria-labelledby="platform-tab-langchain"
-                hidden
-              >
-                <div class="platform-panel-header">
-                  <div class="platform-panel-title">Composable AI logic &amp; orchestration</div>
-                </div>
-                <div class="platform-panel-logo">
-                  <img
-                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/langchain.png"
-                    alt="LangChain"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <p>
-                  Built for highly customized AI logic and orchestration.
-                  LangChain is used when AI must be deeply embedded into existing
-                  systems or when full control over logic and execution is
-                  required.
-                </p>
-                <div class="platform-panel-subtitle">Well suited when you need to</div>
-                <ul>
-                  <li>Design custom agent architectures</li>
-                  <li>Embed AI directly into software products</li>
-                  <li>Implement advanced or experimental reasoning patterns</li>
-                  <li>Integrate tightly with proprietary systems</li>
-                </ul>
-              </article>
-              <article
-                class="platform-panel"
-                data-platform="huggingface"
-                id="platform-panel-huggingface"
-                role="tabpanel"
-                tabindex="0"
-                aria-labelledby="platform-tab-huggingface"
-                hidden
-              >
-                <div class="platform-panel-header">
-                  <div class="platform-panel-title">Model customization &amp; experimentation</div>
-                </div>
-                <div class="platform-panel-logo">
-                  <img
-                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/hugging-face.png"
-                    alt="Hugging Face"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <p>
-                  Focused on models rather than workflows. Hugging Face supports
-                  experimenting with, evaluating, and fine-tuning language
-                  models for research-driven or domain-specific initiatives.
-                </p>
-                <div class="platform-panel-subtitle">Well suited when you need to</div>
-                <ul>
-                  <li>Fine-tune or evaluate AI models</li>
-                  <li>Work with open or domain-specific models</li>
-                  <li>Build internal model benchmarks</li>
-                  <li>Retain control at the model level</li>
-                </ul>
-              </article>
-              <article
-                class="platform-panel"
-                data-platform="workspace"
-                id="platform-panel-workspace"
-                role="tabpanel"
-                tabindex="0"
-                aria-labelledby="platform-tab-workspace"
-                hidden
-              >
-                <div class="platform-panel-header">
-                  <div class="platform-panel-title">Workspace-native Communication Agents</div>
-                </div>
-                <div class="platform-panel-logo">
-                  <img
-                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/google-workspace-studio.png"
-                    alt="Google Workspace / Gemini"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <p>
-                  AI assistance directly inside Docs, Sheets, Gmail, Meet, and
-                  Drive. Best for quick productivity gains with minimal setup in
-                  Google-centric workflows.
-                </p>
-                <div class="platform-panel-subtitle">Well suited when you need to</div>
-                <ul>
-                  <li>Assist with writing, summarizing, and analysis</li>
-                  <li>Support meetings and documentation</li>
-                  <li>Add AI without changing core workflows</li>
-                  <li>Enable fast adoption across teams</li>
-                </ul>
-              </article>
-              <article
-                class="platform-panel"
-                data-platform="copilot"
-                id="platform-panel-copilot"
-                role="tabpanel"
-                tabindex="0"
-                aria-labelledby="platform-tab-copilot"
-                hidden
-              >
-                <div class="platform-panel-header">
-                  <div class="platform-panel-title">Microsoft 365-native copilots</div>
-                </div>
-                <div class="platform-panel-logo">
-                  <img
-                    src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/microsoft-copilot-studio.png"
-                    alt="Microsoft Copilot Studio"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-                <p>
-                  Copilots embedded in Microsoft 365. Copilot Studio enables
-                  assistants that operate inside Teams, Outlook, SharePoint, and
-                  other Microsoft 365 applications.
-                </p>
-                <div class="platform-panel-subtitle">Well suited when you need to</div>
-                <ul>
-                  <li>Build assistants grounded in Microsoft 365 data</li>
-                  <li>Support Teams-based workflows</li>
-                  <li>Extend AI using low-code tools</li>
-                  <li>Keep AI fully within the Microsoft ecosystem</li>
-                </ul>
-              </article>
+            <div class="stat-callout-item">
+              <div class="stat-callout-value">15+</div>
+              <div class="stat-callout-label">
+                years delivering enterprise-grade software with ISO, AWS and Microsoft partnerships.
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="why-neurosys">
-        <div class="container">
-          <div class="section-header">
-            <h2>Built for real operations</h2>
-            <p class="section-subtitle">
-              From pilot to production - AI that fits into how your
-              organization actually works.
-            </p>
-          </div>
-          <div class="why-grid">
-            <div class="why-card">
-              <div class="why-stat">80%</div>
-              <p>
-                The agentic platform removes up to 80% of repetitive tasks,
-                freeing capacity for value creation.
-              </p>
-            </div>
-            <div class="why-card">
-              <div class="why-icon" aria-hidden="true">&#9670;</div>
-              <h3>Specialized in operational AI</h3>
-              <p>
-                We build AI systems that run in daily operations, not just
-                demos and dashboards.
-              </p>
-            </div>
-            <div class="why-card">
-              <div class="why-icon" aria-hidden="true">&#9670;</div>
-              <h3>Deep LLM &amp; RAG expertise</h3>
-              <p>
-                Orchestration, retrieval, tool calling and multi-step
-                reasoning across enterprise data.
-              </p>
-            </div>
-            <div class="why-card">
-              <div class="why-icon" aria-hidden="true">&#9670;</div>
-              <h3>100+ engineers</h3>
-              <p>
-                AI, data engineering and full-stack teams ready to move from
-                pilot to production.
-              </p>
-            </div>
-            <div class="why-card">
-              <div class="why-icon" aria-hidden="true">&#9670;</div>
-              <h3>Enterprise-grade delivery</h3>
-              <p>
-                ISO certified. AWS and Microsoft partner. Built for security,
-                compliance and scale.
-              </p>
-            </div>
-            <div class="why-card why-card-cta">
-              <p>
-                We combine advisory, design and implementation into one
-                engagement model.
-              </p>
-              <a class="text-link" href="/services.html#how-we-work">See how we work →</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials">
+      <section class="testimonials section-shell">
         <div class="container">
           <div class="section-header">
             <h2>What customers say</h2>
@@ -953,7 +776,7 @@
           </div>
         </div>
       </section> -->
-      <section class="contact-band" id="contact">
+      <section class="contact-band contact-band-prominent section-shell" id="contact">
         <div class="container contact-band-inner">
           <div class="contact-band-copy">
             <h2>Shall we grab a coffee?</h2>
@@ -961,6 +784,9 @@
               A short conversation to assess where agentic AI makes sense, and
               where it doesn’t.
             </p>
+            <div class="contact-band-secondary">
+              <a class="text-link" href="/our-work">See our work →</a>
+            </div>
           </div>
           <div class="contact-band-card">
             <div class="contact-photo">
@@ -974,113 +800,17 @@
             <div class="contact-band-details">
               <div class="contact-name">Mikkel Selente</div>
               <div class="contact-role">CEO &amp; Tech advisor</div>
-              <a class="button secondary featured" href="/contact.html"
+              <a class="button secondary featured" href="/contact"
                 >Get in touch →</a
               >
             </div>
           </div>
         </div>
       </section>
-<section class="credentials" aria-label="Company credentials">
-        <div class="container credentials-grid">
-          <div class="credential">
-            <img
-              class="credential-icon"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/100-employees-neurosys.png"
-              alt="100+ employees"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="credential-value">100+</div>
-            <div class="credential-label">Employees</div>
-          </div>
-          <div class="credential">
-            <img
-              class="credential-icon"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/15-years-neurosys.png"
-              alt="15+ years in the market"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="credential-value">15+</div>
-            <div class="credential-label">Years in the market</div>
-          </div>
-          <div class="credential">
-            <img
-              class="credential-icon"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/iso-certification.png"
-              alt="ISO certified"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="credential-value">ISO</div>
-            <div class="credential-label">Certified</div>
-          </div>
-          <div class="credential">
-            <img
-              class="credential-icon"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/aws-partner-neurosys.png"
-              alt="AWS partner"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="credential-value">AWS</div>
-            <div class="credential-label">AWS Partner</div>
-          </div>
-          <div class="credential">
-            <img
-              class="credential-icon"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/microsoft-partner-neurosys.png"
-              alt="Microsoft partner"
-              loading="lazy"
-              decoding="async"
-            />
-            <div class="credential-value">Microsoft</div>
-            <div class="credential-label">Microsoft Partner</div>
-          </div>
-        </div>
-      </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div class="footer-brand">
-          <div class="logo">
-            <img
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo.png"
-              alt="NeuroSYS"
-            />
-          </div>
-          <a class="footer-social" href="https://www.linkedin.com/company/neurosys/">
-            <span class="footer-social-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" role="img" focusable="false">
-                <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6C1.12 6 0 4.88 0 3.5C0 2.12 1.12 1 2.5 1C3.88 1 4.98 2.12 4.98 3.5ZM0.5 23H4.5V7.5H0.5V23ZM8.5 7.5H12.3V9.6H12.35C12.88 8.6 14.2 7.5 16.1 7.5C20.3 7.5 21 10.1 21 14.3V23H17V15.1C17 13.2 17 10.9 14.7 10.9C12.4 10.9 12 12.8 12 15V23H8.5V7.5Z" />
-              </svg>
-            </span>
-            LinkedIn
-          </a>
-        </div>
-        <div class="footer-links">
-          <div class="footer-title">Discover</div>
-          <a href="/services.html">Services</a>
-          <a href="/news/">News</a>
-          <a href="/our-work.html">Our work</a>
-          <a href="/about.html">About</a>
-          <a href="/contact.html">Get in touch</a>
-        </div>
-        <div class="footer-meta">
-          <div class="footer-title">Contact</div>
-          <div class="footer-meta-lines">
-            <div>NeuroSYS AS</div>
-            <div>Dronning Eufemias gate 16</div>
-            <div>0191 Oslo, Norge</div>
-            <a href="tel:+47410171226">+47 41 01 712 26</a>
-            <a href="mailto:info@neurosys.no">info@neurosys.no</a>
-          </div>
-        </div>
-      </div>
-</footer>
+    <!--#include virtual="/_partials/site-footer.html" -->
 
-    <script src="app.js?v=20260413"></script>
+    <script src="app.js?v=__JS_VERSION__"></script>
   </body>
 </html>

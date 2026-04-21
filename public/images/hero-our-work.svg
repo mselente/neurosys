@@ -1,34 +1,136 @@
 <svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="420" rx="28" fill="#F8FAFC"/>
-  <!-- Case study cards / portfolio layout -->
-  <!-- Large featured card -->
-  <rect x="50" y="50" width="380" height="200" rx="22" fill="#F3F4F6"/>
-  <rect x="80" y="80" width="160" height="18" rx="9" fill="#E5E7EB"/>
-  <rect x="80" y="110" width="300" height="14" rx="7" fill="#CBD5E1"/>
-  <rect x="80" y="134" width="260" height="14" rx="7" fill="#CBD5E1"/>
-  <rect x="80" y="158" width="200" height="14" rx="7" fill="#CBD5E1"/>
-  <!-- Metric badge inside featured card -->
-  <rect x="80" y="196" width="80" height="32" rx="16" fill="#E5E7EB"/>
-  <rect x="176" y="196" width="60" height="32" rx="16" fill="#E5E7EB"/>
-  <!-- Side cards stack -->
-  <rect x="450" y="50" width="220" height="92" rx="18" fill="#E5E7EB"/>
-  <rect x="476" y="72" width="120" height="12" rx="6" fill="#CBD5E1"/>
-  <rect x="476" y="94" width="160" height="12" rx="6" fill="#FFFFFF"/>
-  <rect x="476" y="116" width="80" height="12" rx="6" fill="#FFFFFF"/>
-  <rect x="450" y="158" width="220" height="92" rx="18" fill="#FFFFFF"/>
-  <rect x="476" y="180" width="120" height="12" rx="6" fill="#E5E7EB"/>
-  <rect x="476" y="202" width="160" height="12" rx="6" fill="#E5E7EB"/>
-  <rect x="476" y="224" width="100" height="12" rx="6" fill="#CBD5E1"/>
-  <!-- Bottom row - result indicators -->
-  <rect x="50" y="280" width="200" height="100" rx="18" fill="#FFFFFF"/>
-  <rect x="78" y="306" width="80" height="20" rx="10" fill="#E5E7EB"/>
-  <rect x="78" y="338" width="140" height="12" rx="6" fill="#CBD5E1"/>
-  <rect x="270" y="280" width="200" height="100" rx="18" fill="#E5E7EB"/>
-  <rect x="298" y="306" width="80" height="20" rx="10" fill="#CBD5E1"/>
-  <rect x="298" y="338" width="140" height="12" rx="6" fill="#FFFFFF"/>
-  <rect x="490" y="280" width="180" height="100" rx="18" fill="#F3F4F6"/>
-  <rect x="518" y="306" width="80" height="20" rx="10" fill="#E5E7EB"/>
-  <rect x="518" y="338" width="120" height="12" rx="6" fill="#CBD5E1"/>
-  <!-- Accent dot -->
-  <circle cx="400" cy="96" r="10" fill="#F97316" opacity="0.45"/>
+  <defs>
+    <linearGradient id="ow-bg" x1="0" y1="0" x2="720" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <radialGradient id="ow-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(630 70) rotate(120) scale(220 200)">
+      <stop offset="0" stop-color="#F97316" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ow-img-1" x1="0" y1="0" x2="240" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1F2937"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="ow-img-2" x1="0" y1="0" x2="200" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="ow-img-3" x1="0" y1="0" x2="200" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#312E81"/>
+      <stop offset="1" stop-color="#4338CA"/>
+    </linearGradient>
+    <linearGradient id="ow-img-4" x1="0" y1="0" x2="200" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B3B2E"/>
+      <stop offset="1" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="420" rx="28" fill="url(#ow-bg)"/>
+  <rect width="720" height="420" rx="28" fill="url(#ow-glow)"/>
+
+  <!-- ============ FEATURED CARD (left, large) ============ -->
+  <g>
+    <rect x="40" y="40" width="320" height="340" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+    <!-- Image area -->
+    <rect x="40" y="40" width="320" height="170" rx="22" fill="url(#ow-img-1)"/>
+    <rect x="40" y="190" width="320" height="20" fill="#FFFFFF"/>
+    <rect x="40" y="40" width="320" height="170" rx="22" fill="url(#ow-img-1)"/>
+
+    <!-- Decorative chat lines on image -->
+    <rect x="68" y="80" width="120" height="10" rx="5" fill="#FFFFFF" fill-opacity="0.22"/>
+    <rect x="68" y="98" width="170" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.16"/>
+    <rect x="68" y="114" width="90" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.16"/>
+    <!-- Chat bubble -->
+    <rect x="220" y="138" width="116" height="46" rx="14" fill="#FFFFFF" fill-opacity="0.12"/>
+    <rect x="234" y="152" width="80" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.55"/>
+    <rect x="234" y="166" width="50" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.35"/>
+
+    <!-- Status pill -->
+    <rect x="60" y="60" width="92" height="22" rx="11" fill="#0F172A" fill-opacity="0.78"/>
+    <circle cx="72" cy="71" r="3" fill="#22C55E"/>
+    <rect x="80" y="67" width="62" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <!-- Logo chip on image -->
+    <rect x="60" y="170" width="82" height="28" rx="8" fill="#0F172A" fill-opacity="0.82"/>
+    <rect x="72" y="180" width="58" height="8" rx="4" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <!-- Card body -->
+    <rect x="60" y="226" width="80" height="10" rx="5" fill="#94A3B8"/>
+    <rect x="60" y="248" width="240" height="14" rx="7" fill="#0F172A" fill-opacity="0.85"/>
+    <rect x="60" y="270" width="200" height="14" rx="7" fill="#0F172A" fill-opacity="0.85"/>
+
+    <rect x="60" y="298" width="270" height="9" rx="4.5" fill="#CBD5E1"/>
+    <rect x="60" y="314" width="220" height="9" rx="4.5" fill="#CBD5E1"/>
+
+    <!-- Tags -->
+    <rect x="60" y="340" width="48" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="68" y="347" width="32" height="6" rx="3" fill="#94A3B8"/>
+
+    <rect x="116" y="340" width="64" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="124" y="347" width="48" height="6" rx="3" fill="#94A3B8"/>
+
+    <rect x="188" y="340" width="58" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="196" y="347" width="42" height="6" rx="3" fill="#94A3B8"/>
+  </g>
+
+  <!-- ============ SIDE CARD 1 (top right) ============ -->
+  <g>
+    <rect x="380" y="40" width="300" height="160" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+    <rect x="380" y="40" width="300" height="92" rx="22" fill="url(#ow-img-3)"/>
+    <rect x="380" y="118" width="300" height="14" fill="#FFFFFF"/>
+    <rect x="380" y="40" width="300" height="92" rx="22" fill="url(#ow-img-3)"/>
+
+    <!-- Status pill -->
+    <rect x="396" y="56" width="92" height="20" rx="10" fill="#0F172A" fill-opacity="0.78"/>
+    <circle cx="408" cy="66" r="3" fill="#22C55E"/>
+    <rect x="416" y="62" width="62" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <!-- Logo chip -->
+    <rect x="396" y="100" width="76" height="22" rx="6" fill="#0F172A" fill-opacity="0.82"/>
+    <rect x="406" y="108" width="56" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <!-- Title + tag -->
+    <rect x="396" y="146" width="180" height="11" rx="5.5" fill="#0F172A" fill-opacity="0.85"/>
+    <rect x="396" y="166" width="60" height="16" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="402" y="171" width="48" height="6" rx="3" fill="#94A3B8"/>
+    <rect x="464" y="166" width="72" height="16" rx="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="470" y="171" width="60" height="6" rx="3" fill="#94A3B8"/>
+  </g>
+
+  <!-- ============ SIDE CARD 2 (middle right) ============ -->
+  <g>
+    <rect x="380" y="220" width="142" height="160" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+    <rect x="380" y="220" width="142" height="86" rx="20" fill="url(#ow-img-2)"/>
+    <rect x="380" y="294" width="142" height="12" fill="#FFFFFF"/>
+    <rect x="380" y="220" width="142" height="86" rx="20" fill="url(#ow-img-2)"/>
+
+    <rect x="394" y="280" width="56" height="20" rx="6" fill="#0F172A" fill-opacity="0.82"/>
+    <rect x="402" y="288" width="40" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <rect x="394" y="320" width="100" height="9" rx="4.5" fill="#0F172A" fill-opacity="0.78"/>
+    <rect x="394" y="338" width="80" height="7" rx="3.5" fill="#CBD5E1"/>
+    <rect x="394" y="354" width="56" height="14" rx="7" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="400" y="359" width="44" height="4" rx="2" fill="#94A3B8"/>
+  </g>
+
+  <!-- ============ SIDE CARD 3 (bottom right) ============ -->
+  <g>
+    <rect x="538" y="220" width="142" height="160" rx="20" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+    <rect x="538" y="220" width="142" height="86" rx="20" fill="url(#ow-img-4)"/>
+    <rect x="538" y="294" width="142" height="12" fill="#FFFFFF"/>
+    <rect x="538" y="220" width="142" height="86" rx="20" fill="url(#ow-img-4)"/>
+
+    <!-- Featured/orange accent badge -->
+    <rect x="552" y="234" width="80" height="20" rx="10" fill="#F97316" fill-opacity="0.95"/>
+    <rect x="562" y="241" width="60" height="6" rx="3" fill="#FFFFFF"/>
+
+    <rect x="552" y="280" width="56" height="20" rx="6" fill="#0F172A" fill-opacity="0.82"/>
+    <rect x="560" y="288" width="40" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.85"/>
+
+    <rect x="552" y="320" width="100" height="9" rx="4.5" fill="#0F172A" fill-opacity="0.78"/>
+    <rect x="552" y="338" width="80" height="7" rx="3.5" fill="#CBD5E1"/>
+    <rect x="552" y="354" width="56" height="14" rx="7" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="558" y="359" width="44" height="4" rx="2" fill="#94A3B8"/>
+  </g>
 </svg>

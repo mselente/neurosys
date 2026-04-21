@@ -1,29 +1,191 @@
-<svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="420" rx="28" fill="#F8FAFC"/>
-  <!-- Code brackets -->
-  <path d="M180 100L100 210L180 320" stroke="#CBD5E1" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <path d="M540 100L620 210L540 320" stroke="#CBD5E1" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Center gear -->
-  <circle cx="360" cy="210" r="60" fill="#F3F4F6"/>
-  <circle cx="360" cy="210" r="34" fill="#FFFFFF"/>
-  <!-- Gear teeth -->
-  <rect x="350" y="140" width="20" height="22" rx="5" fill="#F3F4F6"/>
-  <rect x="350" y="258" width="20" height="22" rx="5" fill="#F3F4F6"/>
-  <rect x="290" y="200" width="22" height="20" rx="5" fill="#F3F4F6"/>
-  <rect x="408" y="200" width="22" height="20" rx="5" fill="#F3F4F6"/>
-  <rect x="310" y="158" width="18" height="18" rx="4" fill="#F3F4F6" transform="rotate(-45 319 167)"/>
-  <rect x="392" y="158" width="18" height="18" rx="4" fill="#F3F4F6" transform="rotate(45 401 167)"/>
-  <rect x="310" y="244" width="18" height="18" rx="4" fill="#F3F4F6" transform="rotate(45 319 253)"/>
-  <rect x="392" y="244" width="18" height="18" rx="4" fill="#F3F4F6" transform="rotate(-45 401 253)"/>
-  <!-- Inner accent -->
-  <circle cx="360" cy="210" r="14" fill="#F97316" opacity="0.4"/>
-  <!-- Interface lines below -->
-  <rect x="240" y="350" width="100" height="14" rx="7" fill="#E5E7EB"/>
-  <rect x="360" y="350" width="130" height="14" rx="7" fill="#F3F4F6"/>
-  <rect x="280" y="374" width="160" height="12" rx="6" fill="#F3F4F6"/>
-  <!-- Floating elements -->
-  <circle cx="240" cy="120" r="12" fill="#FFFFFF"/>
-  <circle cx="480" cy="120" r="10" fill="#A5B4FC"/>
-  <circle cx="240" cy="300" r="8" fill="#CBD5E1"/>
-  <circle cx="480" cy="300" r="10" fill="#FFFFFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" role="img" aria-label="AI-enabled product UI: native AI moments embedded inside the product surface - search, copilot, suggested actions and inline insight">
+  <defs>
+    <filter id="ap-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="rgba(15,23,42,0.10)"/>
+    </filter>
+    <filter id="ap-shadow-soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="rgba(15,23,42,0.08)"/>
+    </filter>
+    <radialGradient id="ap-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(360 210) scale(320)">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ap-copilot-head" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF7ED"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="ap-area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6366F1" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#6366F1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="420" fill="#FFFFFF"/>
+  <rect width="720" height="420" fill="url(#ap-glow)"/>
+
+  <!-- PRODUCT WINDOW -->
+  <g filter="url(#ap-shadow)">
+    <rect x="32" y="28" width="656" height="338" rx="20" fill="#FFFFFF" stroke="rgba(99,102,241,0.28)"/>
+
+    <!-- Top bar -->
+    <path d="M32 48 a20 20 0 0 1 20 -20 h616 a20 20 0 0 1 20 20 v18 h-656 z" fill="#F8FAFC"/>
+    <line x1="32" y1="66" x2="688" y2="66" stroke="#E2E8F0"/>
+
+    <!-- Window dots -->
+    <circle cx="56" cy="48" r="4.5" fill="#FCA5A5"/>
+    <circle cx="72" cy="48" r="4.5" fill="#FCD34D"/>
+    <circle cx="88" cy="48" r="4.5" fill="#86EFAC"/>
+
+    <!-- Product name -->
+    <text x="112" y="52" font-family="Inter,sans-serif" font-size="11" font-weight="700" fill="#0F172A">YourProduct</text>
+    <text x="184" y="52" font-family="Inter,sans-serif" font-size="10" fill="#94A3B8">/ Workspace</text>
+
+    <!-- Native AI badge in top bar -->
+    <g>
+      <rect x="586" y="38" width="84" height="20" rx="10" fill="#EEF2FF" stroke="#C7D2FE"/>
+      <circle cx="598" cy="48" r="3" fill="#6366F1"/>
+      <text x="606" y="51.5" font-family="Inter,sans-serif" font-size="9.5" font-weight="700" letter-spacing="0.06em" fill="#4338CA">Native AI</text>
+    </g>
+
+    <!-- AI search bar -->
+    <g>
+      <rect x="240" y="38" width="320" height="20" rx="10" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <circle cx="252" cy="48" r="3" fill="#F97316"/>
+      <text x="260" y="51.5" font-family="Inter,sans-serif" font-size="9.5" fill="#94A3B8">Ask anything in your product…</text>
+      <text x="552" y="51.5" text-anchor="end" font-family="Inter,sans-serif" font-size="9" fill="#CBD5E1">⌘K</text>
+    </g>
+
+    <!-- Sidebar -->
+    <rect x="32" y="66" width="120" height="300" fill="#FAFBFD"/>
+    <line x1="152" y1="66" x2="152" y2="366" stroke="#E2E8F0"/>
+
+    <g font-family="Inter,sans-serif">
+      <!-- Active nav -->
+      <rect x="48" y="88" width="88" height="26" rx="8" fill="#EEF2FF"/>
+      <rect x="48" y="88" width="3" height="26" rx="1.5" fill="#6366F1"/>
+      <circle cx="64" cy="101" r="3.5" fill="#6366F1"/>
+      <text x="74" y="105" font-size="10.5" font-weight="600" fill="#0F172A">Workspace</text>
+
+      <text x="64" y="138" font-size="10.5" fill="#64748B">Customers</text>
+      <text x="64" y="160" font-size="10.5" fill="#64748B">Projects</text>
+      <text x="64" y="182" font-size="10.5" fill="#64748B">Insights</text>
+      <text x="64" y="204" font-size="10.5" fill="#64748B">Reports</text>
+      <text x="64" y="226" font-size="10.5" fill="#64748B">Settings</text>
+
+      <!-- bottom user -->
+      <line x1="48" y1="320" x2="136" y2="320" stroke="#E2E8F0"/>
+      <circle cx="62" cy="338" r="9" fill="#FFE4D5"/>
+      <text x="62" y="342" text-anchor="middle" font-size="9" font-weight="700" fill="#9A3412">EM</text>
+      <text x="78" y="338" font-size="10" font-weight="600" fill="#0F172A">Eline M.</text>
+      <text x="78" y="350" font-size="9" fill="#94A3B8">Product team</text>
+    </g>
+
+    <!-- MAIN CONTENT (center column) -->
+    <text x="172" y="98" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#0F172A">Project · MedieX rollout</text>
+    <text x="172" y="116" font-family="Inter,sans-serif" font-size="10" fill="#94A3B8">Updated 2 minutes ago by AI</text>
+
+    <!-- Inline AI insight card with chart -->
+    <g filter="url(#ap-shadow-soft)">
+      <rect x="172" y="130" width="252" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="172" y="130" width="3" height="106" rx="1.5" fill="#6366F1"/>
+      <g font-family="Inter,sans-serif">
+        <text x="188" y="150" font-size="9" font-weight="700" letter-spacing="0.14em" fill="#4338CA">AI INSIGHT</text>
+        <text x="188" y="172" font-size="11.5" font-weight="600" fill="#0F172A">Activation up this sprint</text>
+      </g>
+
+      <!-- chart area -->
+      <path d="M188 222 L210 218 L232 212 L254 204 L276 196 L298 184 L320 174 L342 162 L364 152 L386 144 L408 138 L408 226 L188 226 Z" fill="url(#ap-area)"/>
+      <path d="M188 222 L210 218 L232 212 L254 204 L276 196 L298 184 L320 174 L342 162 L364 152 L386 144 L408 138" fill="none" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="408" cy="138" r="4" fill="#FFFFFF" stroke="#6366F1" stroke-width="2"/>
+      <text x="408" y="226" text-anchor="end" font-family="Inter,sans-serif" font-size="14" font-weight="700" fill="#0F172A">+38%</text>
+    </g>
+
+    <!-- Inline suggested next step -->
+    <g filter="url(#ap-shadow-soft)">
+      <rect x="172" y="246" width="252" height="106" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+      <rect x="172" y="246" width="3" height="106" rx="1.5" fill="#F97316"/>
+      <g font-family="Inter,sans-serif">
+        <text x="188" y="266" font-size="9" font-weight="700" letter-spacing="0.14em" fill="#9A3412">SUGGESTED NEXT STEP</text>
+        <text x="188" y="288" font-size="11.5" font-weight="600" fill="#0F172A">Auto-fill quote from last 3 deals</text>
+        <text x="188" y="305" font-size="10" fill="#64748B">Saves ~12 minutes per quote.</text>
+      </g>
+      <!-- Action buttons -->
+      <g>
+        <rect x="188" y="316" width="74" height="24" rx="12" fill="#0F172A"/>
+        <text x="225" y="332" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#FFFFFF">Apply</text>
+      </g>
+      <g>
+        <rect x="270" y="316" width="74" height="24" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <text x="307" y="332" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="500" fill="#475569">Adjust</text>
+      </g>
+      <g>
+        <rect x="352" y="316" width="56" height="24" rx="12" fill="transparent"/>
+        <text x="380" y="332" text-anchor="middle" font-family="Inter,sans-serif" font-size="10" font-weight="500" fill="#94A3B8">Dismiss</text>
+      </g>
+    </g>
+
+    <!-- COPILOT PANEL (right column) -->
+    <g filter="url(#ap-shadow-soft)">
+      <rect x="440" y="86" width="232" height="266" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+
+      <!-- Header -->
+      <path d="M440 100 a14 14 0 0 1 14 -14 h204 a14 14 0 0 1 14 14 v22 h-232 z" fill="url(#ap-copilot-head)"/>
+      <line x1="440" y1="122" x2="672" y2="122" stroke="#FED7AA"/>
+      <circle cx="456" cy="105" r="6" fill="#FFE4D5"/>
+      <path d="M453 105 q3 -3 6 0 q-3 3 -6 0 z" fill="#F97316"/>
+      <text x="468" y="109" font-family="Inter,sans-serif" font-size="11" font-weight="600" fill="#9A3412">Product Copilot</text>
+      <g>
+        <rect x="630" y="96" width="34" height="16" rx="8" fill="#ECFDF5" stroke="#A7F3D0"/>
+        <circle cx="640" cy="104" r="2.5" fill="#10B981"/>
+        <text x="647" y="107" font-family="Inter,sans-serif" font-size="8.5" font-weight="700" fill="#047857">Live</text>
+      </g>
+
+      <!-- User message bubble -->
+      <g>
+        <rect x="454" y="138" width="172" height="34" rx="12" fill="#F1F5F9"/>
+        <text x="464" y="153" font-family="Inter,sans-serif" font-size="9.5" fill="#0F172A">How is the rollout going?</text>
+        <text x="464" y="165" font-family="Inter,sans-serif" font-size="8.5" fill="#94A3B8">2 min ago</text>
+      </g>
+
+      <!-- Copilot reply bubble -->
+      <g>
+        <rect x="486" y="180" width="172" height="50" rx="12" fill="#EEF2FF"/>
+        <text x="496" y="195" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#0F172A">Healthy. SLA at 96%.</text>
+        <text x="496" y="208" font-family="Inter,sans-serif" font-size="9" fill="#475569">3 risks flagged. Want a</text>
+        <text x="496" y="220" font-family="Inter,sans-serif" font-size="9" fill="#475569">summary?</text>
+      </g>
+
+      <!-- Quick actions -->
+      <text x="454" y="252" font-family="Inter,sans-serif" font-size="8.5" font-weight="700" letter-spacing="0.12em" fill="#94A3B8">QUICK ACTIONS</text>
+
+      <g>
+        <rect x="454" y="262" width="204" height="26" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <circle cx="466" cy="275" r="3" fill="#F97316"/>
+        <text x="476" y="279" font-family="Inter,sans-serif" font-size="10" fill="#0F172A">Open the risk summary</text>
+        <text x="650" y="279" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">→</text>
+      </g>
+      <g>
+        <rect x="454" y="294" width="204" height="26" rx="8" fill="#FFFFFF" stroke="#E2E8F0"/>
+        <circle cx="466" cy="307" r="3" fill="#6366F1"/>
+        <text x="476" y="311" font-family="Inter,sans-serif" font-size="10" fill="#0F172A">Notify project owner</text>
+        <text x="650" y="311" text-anchor="end" font-family="Inter,sans-serif" font-size="11" fill="#94A3B8">→</text>
+      </g>
+      <g>
+        <rect x="454" y="326" width="204" height="20" rx="6" fill="#FAFBFD"/>
+        <text x="464" y="340" font-family="Inter,sans-serif" font-size="9" fill="#94A3B8">Reply…</text>
+        <rect x="640" y="330" width="14" height="12" rx="3" fill="#0F172A"/>
+        <text x="647" y="340" text-anchor="middle" font-family="Inter,sans-serif" font-size="8" font-weight="700" fill="#FFFFFF">↑</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- BOTTOM STATUS BAR -->
+  <g filter="url(#ap-shadow-soft)">
+    <rect x="40" y="378" width="640" height="30" rx="12" fill="#FFFFFF" stroke="#E2E8F0"/>
+    <circle cx="60" cy="393" r="3.5" fill="#6366F1"/>
+    <text x="70" y="397" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0F172A">AI moments embedded across 6 product surfaces</text>
+    <text x="356" y="397" font-family="Inter,sans-serif" font-size="9.5" fill="#64748B">· avg response 0.5s · 92% of users engage with at least one</text>
+    <rect x="588" y="384" width="80" height="18" rx="9" fill="#EEF2FF" stroke="#C7D2FE"/>
+    <text x="628" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#4338CA">Native, not bolted</text>
+  </g>
 </svg>

@@ -1,48 +1,127 @@
 <svg width="720" height="420" viewBox="0 0 720 420" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="720" height="420" rx="28" fill="#F8FAFC"/>
-  <!-- Six service stage cards in a 3x2 grid -->
-  <!-- Row 1 -->
-  <rect x="50" y="50" width="190" height="140" rx="20" fill="#F3F4F6"/>
-  <rect x="76" y="80" width="80" height="14" rx="7" fill="#E5E7EB"/>
-  <rect x="76" y="104" width="140" height="12" rx="6" fill="#CBD5E1"/>
-  <rect x="76" y="124" width="120" height="12" rx="6" fill="#CBD5E1"/>
-  <circle cx="200" cy="160" r="10" fill="#FFFFFF"/>
-  <rect x="265" y="50" width="190" height="140" rx="20" fill="#E5E7EB"/>
-  <rect x="291" y="80" width="80" height="14" rx="7" fill="#CBD5E1"/>
-  <rect x="291" y="104" width="140" height="12" rx="6" fill="#FFFFFF"/>
-  <rect x="291" y="124" width="100" height="12" rx="6" fill="#FFFFFF"/>
-  <circle cx="415" cy="160" r="10" fill="#F3F4F6"/>
-  <rect x="480" y="50" width="190" height="140" rx="20" fill="#F3F4F6"/>
-  <rect x="506" y="80" width="80" height="14" rx="7" fill="#E5E7EB"/>
-  <rect x="506" y="104" width="140" height="12" rx="6" fill="#CBD5E1"/>
-  <rect x="506" y="124" width="110" height="12" rx="6" fill="#CBD5E1"/>
-  <circle cx="630" cy="160" r="10" fill="#FFFFFF"/>
-  <!-- Row 1 connectors -->
-  <path d="M240 120H265" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <path d="M455 120H480" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <!-- Row 2 -->
-  <rect x="50" y="230" width="190" height="140" rx="20" fill="#FFFFFF"/>
-  <rect x="76" y="260" width="80" height="14" rx="7" fill="#E5E7EB"/>
-  <rect x="76" y="284" width="140" height="12" rx="6" fill="#E5E7EB"/>
-  <rect x="76" y="304" width="100" height="12" rx="6" fill="#E5E7EB"/>
-  <circle cx="200" cy="340" r="10" fill="#CBD5E1"/>
-  <rect x="265" y="230" width="190" height="140" rx="20" fill="#FFFFFF"/>
-  <rect x="291" y="260" width="80" height="14" rx="7" fill="#E5E7EB"/>
-  <rect x="291" y="284" width="140" height="12" rx="6" fill="#E5E7EB"/>
-  <rect x="291" y="304" width="120" height="12" rx="6" fill="#E5E7EB"/>
-  <circle cx="415" cy="340" r="10" fill="#CBD5E1"/>
-  <rect x="480" y="230" width="190" height="140" rx="20" fill="#E5E7EB"/>
-  <rect x="506" y="260" width="80" height="14" rx="7" fill="#FFFFFF"/>
-  <rect x="506" y="284" width="140" height="12" rx="6" fill="#FFFFFF"/>
-  <rect x="506" y="304" width="100" height="12" rx="6" fill="#FFFFFF"/>
-  <circle cx="630" cy="340" r="10" fill="#F3F4F6"/>
-  <!-- Row 2 connectors -->
-  <path d="M240 300H265" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <path d="M455 300H480" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <!-- Vertical connectors between rows -->
-  <path d="M145 190V230" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <path d="M360 190V230" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <path d="M575 190V230" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
-  <!-- Accent dot on one stage -->
-  <circle cx="575" cy="340" r="12" fill="#F97316" opacity="0.45"/>
+  <defs>
+    <linearGradient id="svc-bg" x1="0" y1="0" x2="720" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="svc-flagship" x1="40" y1="40" x2="440" y2="380" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFF7ED"/>
+      <stop offset="0.55" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <radialGradient id="svc-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(620 60) rotate(120) scale(220 200)">
+      <stop offset="0" stop-color="#F97316" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#F97316" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="720" height="420" rx="28" fill="url(#svc-bg)"/>
+  <rect width="720" height="420" rx="28" fill="url(#svc-glow)"/>
+
+  <!-- Flagship card: Agentic AI Implementation -->
+  <rect x="40" y="40" width="400" height="340" rx="24" fill="url(#svc-flagship)" stroke="#F97316" stroke-opacity="0.22" stroke-width="1.5"/>
+
+  <!-- Eyebrow tag -->
+  <rect x="64" y="64" width="116" height="24" rx="12" fill="#FFEDD5"/>
+  <circle cx="78" cy="76" r="3.5" fill="#F97316"/>
+  <rect x="90" y="71" width="76" height="9" rx="4.5" fill="#F97316" fill-opacity="0.85"/>
+
+  <!-- Title lines -->
+  <rect x="64" y="106" width="220" height="14" rx="7" fill="#0F172A" fill-opacity="0.85"/>
+  <rect x="64" y="128" width="160" height="10" rx="5" fill="#0F172A" fill-opacity="0.32"/>
+
+  <!-- Workflow visualization: 2 inputs -> agent -> output -->
+  <rect x="64" y="166" width="118" height="46" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+  <rect x="78" y="180" width="14" height="14" rx="4" fill="#CBD5E1"/>
+  <rect x="100" y="184" width="68" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="100" y="196" width="48" height="6" rx="3" fill="#CBD5E1"/>
+
+  <rect x="194" y="166" width="118" height="46" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+  <rect x="208" y="180" width="14" height="14" rx="4" fill="#CBD5E1"/>
+  <rect x="230" y="184" width="68" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="230" y="196" width="48" height="6" rx="3" fill="#CBD5E1"/>
+
+  <rect x="324" y="166" width="92" height="46" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+  <rect x="338" y="180" width="14" height="14" rx="4" fill="#CBD5E1"/>
+  <rect x="360" y="184" width="44" height="6" rx="3" fill="#94A3B8"/>
+  <rect x="360" y="196" width="32" height="6" rx="3" fill="#CBD5E1"/>
+
+  <!-- Connector lines down to agent -->
+  <path d="M123 212 V232 H240 V268" stroke="#CBD5E1" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M253 212 V232 H240" stroke="#CBD5E1" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <path d="M370 212 V232 H240" stroke="#CBD5E1" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+  <!-- Center agent node (highlighted) -->
+  <rect x="166" y="268" width="148" height="56" rx="14" fill="#FFF7ED" stroke="#F97316" stroke-opacity="0.55" stroke-width="1.6"/>
+  <circle cx="190" cy="296" r="9" fill="#F97316"/>
+  <path d="M186 296 L189 299 L195 293" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <rect x="208" y="288" width="86" height="8" rx="4" fill="#F97316" fill-opacity="0.85"/>
+  <rect x="208" y="302" width="60" height="6" rx="3" fill="#F97316" fill-opacity="0.45"/>
+
+  <!-- Agent down to output -->
+  <path d="M240 324 V346" stroke="#CBD5E1" stroke-width="1.6" stroke-linecap="round"/>
+
+  <!-- Output bar -->
+  <rect x="64" y="346" width="352" height="22" rx="11" fill="#F1F5F9"/>
+  <rect x="80" y="353" width="8" height="8" rx="4" fill="#22C55E"/>
+  <rect x="96" y="352" width="120" height="10" rx="5" fill="#94A3B8"/>
+  <rect x="228" y="352" width="80" height="10" rx="5" fill="#CBD5E1"/>
+
+  <!-- Side card 1: Consultant placement -->
+  <rect x="460" y="40" width="220" height="160" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+
+  <!-- Eyebrow tag -->
+  <rect x="480" y="62" width="84" height="20" rx="10" fill="#F1F5F9"/>
+  <rect x="490" y="68" width="64" height="8" rx="4" fill="#94A3B8"/>
+
+  <!-- Team avatars row -->
+  <g>
+    <circle cx="498" cy="120" r="14" fill="#E2E8F0"/>
+    <circle cx="498" cy="115" r="5" fill="#94A3B8"/>
+    <path d="M488 130 Q498 122 508 130" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+    <circle cx="538" cy="120" r="14" fill="#FFEDD5"/>
+    <circle cx="538" cy="115" r="5" fill="#F97316"/>
+    <path d="M528 130 Q538 122 548 130" stroke="#F97316" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+    <circle cx="578" cy="120" r="14" fill="#E2E8F0"/>
+    <circle cx="578" cy="115" r="5" fill="#94A3B8"/>
+    <path d="M568 130 Q578 122 588 130" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+    <circle cx="618" cy="120" r="14" fill="#E2E8F0"/>
+    <circle cx="618" cy="115" r="5" fill="#94A3B8"/>
+    <path d="M608 130 Q618 122 628 130" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+
+    <circle cx="658" cy="120" r="14" fill="#E2E8F0"/>
+    <circle cx="658" cy="115" r="5" fill="#94A3B8"/>
+    <path d="M648 130 Q658 122 668 130" stroke="#94A3B8" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Title -->
+  <rect x="480" y="160" width="140" height="10" rx="5" fill="#0F172A" fill-opacity="0.7"/>
+  <rect x="480" y="178" width="96" height="8" rx="4" fill="#0F172A" fill-opacity="0.32"/>
+
+  <!-- Side card 2: Project deliveries -->
+  <rect x="460" y="220" width="220" height="160" rx="22" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.4"/>
+
+  <!-- Eyebrow tag -->
+  <rect x="480" y="242" width="84" height="20" rx="10" fill="#F1F5F9"/>
+  <rect x="490" y="248" width="64" height="8" rx="4" fill="#94A3B8"/>
+
+  <!-- Stacked project layers (kanban-style columns) -->
+  <g transform="translate(480 280)">
+    <rect x="0" y="0" width="58" height="72" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="8" y="10" width="42" height="6" rx="3" fill="#CBD5E1"/>
+    <rect x="8" y="22" width="42" height="14" rx="6" fill="#E2E8F0"/>
+    <rect x="8" y="42" width="42" height="14" rx="6" fill="#E2E8F0"/>
+
+    <rect x="68" y="0" width="58" height="72" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="76" y="10" width="42" height="6" rx="3" fill="#CBD5E1"/>
+    <rect x="76" y="22" width="42" height="14" rx="6" fill="#FFEDD5"/>
+    <rect x="76" y="42" width="42" height="14" rx="6" fill="#E2E8F0"/>
+
+    <rect x="136" y="0" width="58" height="72" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.2"/>
+    <rect x="144" y="10" width="42" height="6" rx="3" fill="#CBD5E1"/>
+    <rect x="144" y="22" width="42" height="14" rx="6" fill="#E2E8F0"/>
+    <rect x="144" y="42" width="42" height="14" rx="6" fill="#FFEDD5"/>
+  </g>
 </svg>
