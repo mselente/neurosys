@@ -11,7 +11,7 @@ const DEFAULT_LOGO =
   "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo.png";
 const INVERTED_LOGO =
   "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo-inverted.png";
-const MENU_BREAKPOINT = 1120;
+const MENU_BREAKPOINT = 1024;
 const prefersDesktopHover = window.matchMedia("(hover: hover) and (pointer: fine)");
 const canonicalMenuItems = {
   "/applications/dialogagenter": {
@@ -437,7 +437,7 @@ const I18N_STRINGS = {
     "Low risk": "Lav risiko",
     "Fast learning": "Rask læring",
     "Clear progress": "Tydelig fremdrift",
-    "Read more →": "Les mer →",
+    "Read more": "Les mer",
     "Read the full story →": "Les hele historien →",
     Stories: "Historier",
     "How teams operationalize AI": "Hvordan team operasjonaliserer AI",
@@ -964,7 +964,6 @@ const I18N_STRINGS = {
     "Live in minutes on a fully managed Nordic platform. Hosting, operations, monitoring, updates, backup and support included.":
       "Live på minutter på en fullt administrert nordisk plattform. Hosting, drift, overvåking, oppdateringer, backup og brukerstøtte er inkludert.",
     Starter: "Starter",
-    Growth: "Growth",
     Scale: "Scale",
     "Up to 3 workflows · 1 GB storage":
       "Inntil 3 arbeidsflyter · 1 GB lagring",
@@ -2204,11 +2203,11 @@ const I18N_STRINGS = {
     "One orchestration platform connected to operational systems and downstream actions":
       "Én orkestreringsplattform koblet til operasjonelle systemer og nedstrøms handlinger",
     "ORCHESTRATION LAYER": "ORKESTRERINGSLAG",
-    "Sense · Decide · Act": "Fang opp · Beslutt · Handle",
+    "Sense · Decide · Act": "Fangst · Beslutt · Handle",
     "Production lines": "Produksjonslinjer",
     "Quality & deviations": "Kvalitet og avvik",
     "Finance ops": "Finansdrift",
-    "Tickets & cases": "Saker og henvendelser",
+    "Tickets & cases": "Saker",
     Approvals: "Godkjenninger",
     "Where AI process optimization fits in":
       "Hvor prosessagenter passer inn",
