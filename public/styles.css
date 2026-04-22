@@ -2190,6 +2190,8 @@ p {
 
 .story-card-cta {
   display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
   margin-top: 4px;
   font-weight: 500;
   color: var(--accent);
@@ -4722,6 +4724,381 @@ p {
   background:
     url("images/hero-services.svg") center/contain no-repeat,
     var(--surface);
+}
+
+/* ───────────────────────────────────────────────────────────────
+   SERVICES PAGE — hero anchor buttons (3 tracks)
+   Replaces the old hero CTA pair. Lets the visitor jump straight
+   to the service section that matches their intent.
+   ─────────────────────────────────────────────────────────────── */
+.hero-anchor-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: clamp(24px, 3vw, 36px);
+  max-width: 640px;
+}
+
+.hero-anchor-button {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--ink);
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.hero-anchor-button:hover,
+.hero-anchor-button:focus-visible {
+  border-color: rgba(249, 115, 22, 0.45);
+  background: #fff8f1;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(17, 24, 39, 0.08);
+  outline: none;
+}
+
+.hero-anchor-button-primary {
+  border-color: rgba(249, 115, 22, 0.55);
+  background: linear-gradient(180deg, #fff7ed 0%, #ffedd5 100%);
+}
+
+.hero-anchor-button-primary:hover,
+.hero-anchor-button-primary:focus-visible {
+  background: linear-gradient(180deg, #ffedd5 0%, #fed7aa 100%);
+  border-color: var(--accent);
+}
+
+.hero-anchor-button-eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.hero-anchor-button-title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: var(--ink);
+}
+
+.hero-anchor-button-arrow {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  font-size: 1rem;
+  color: var(--accent);
+  transition: transform 0.2s ease;
+}
+
+.hero-anchor-button:hover .hero-anchor-button-arrow,
+.hero-anchor-button:focus-visible .hero-anchor-button-arrow {
+  transform: translateY(3px);
+}
+
+@media (max-width: 720px) {
+  .hero-anchor-buttons {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────
+   SERVICES PAGE — Agentic AI section
+   The flagship section, given the most visual weight on the page.
+   ─────────────────────────────────────────────────────────────── */
+.services-agentic {
+  padding-top: clamp(72px, 8vw, 120px);
+  padding-bottom: clamp(72px, 8vw, 120px);
+}
+
+.services-agentic .section-header {
+  margin-bottom: clamp(36px, 4vw, 56px);
+}
+
+/* Roomy collapsible "service" card — wraps a <details>. Closed
+   state shows eyebrow + title + lead + price tag (~150-180px high)
+   so the buyer gets a real preview before deciding to expand. */
+.service-collapsible-list {
+  display: grid;
+  gap: 16px;
+}
+
+.service-collapsible {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.service-collapsible:hover {
+  border-color: rgba(249, 115, 22, 0.32);
+}
+
+.service-collapsible[open] {
+  border-color: rgba(249, 115, 22, 0.42);
+  box-shadow: 0 18px 40px rgba(17, 24, 39, 0.07);
+  background: #fffdfa;
+}
+
+.service-collapsible > summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+  padding: 26px 30px;
+  cursor: pointer;
+}
+
+.service-collapsible > summary::-webkit-details-marker {
+  display: none;
+}
+
+.service-collapsible-meta {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+
+.service-collapsible-eyebrow {
+  margin: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.service-collapsible-title {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: clamp(1.4rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.service-collapsible-lead {
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+.service-collapsible-pricetag {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  letter-spacing: -0.005em;
+}
+
+.service-collapsible-chevron {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(249, 115, 22, 0.1);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+  transition: transform 0.25s ease, background-color 0.2s ease;
+}
+
+.service-collapsible:hover .service-collapsible-chevron {
+  background-color: rgba(249, 115, 22, 0.16);
+}
+
+.service-collapsible[open] .service-collapsible-chevron {
+  transform: rotate(180deg);
+  background-color: rgba(249, 115, 22, 0.2);
+}
+
+.service-collapsible-body {
+  padding: 8px 30px 30px;
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
+}
+
+/* Bottom proof strip in the Agentic AI section */
+.services-agentic-proof {
+  margin-top: clamp(48px, 5vw, 72px);
+  padding-top: clamp(28px, 3vw, 36px);
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 720px) {
+  .service-collapsible > summary {
+    grid-template-columns: 1fr;
+    padding: 22px 22px;
+    gap: 16px;
+  }
+
+  .service-collapsible-chevron {
+    justify-self: end;
+  }
+
+  .service-collapsible-body {
+    padding: 8px 22px 24px;
+  }
+}
+
+/* ───────────────────────────────────────────────────────────────
+   SERVICES PAGE — Compact service sections (Experts, Projects)
+   These two tracks are intentionally lighter than Agentic AI:
+   one viewport, two columns (copy + aside), single CTA each.
+   ─────────────────────────────────────────────────────────────── */
+.services-compact {
+  padding-top: clamp(56px, 6vw, 88px);
+  padding-bottom: clamp(56px, 6vw, 88px);
+}
+
+.compact-service-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+  gap: clamp(32px, 4vw, 64px);
+  align-items: center;
+}
+
+.compact-service-copy {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+}
+
+.compact-service-copy .eyebrow {
+  margin: 0;
+}
+
+.compact-service-copy h2 {
+  margin: 0;
+  font-family: var(--heading-font);
+  font-size: clamp(1.7rem, 2.6vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.compact-service-lead {
+  margin: 4px 0 8px;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 56ch;
+}
+
+.compact-service-copy .button {
+  justify-self: start;
+}
+
+.compact-service-aside {
+  display: grid;
+  gap: 24px;
+}
+
+.compact-service-list,
+.compact-service-checks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.compact-service-list li,
+.compact-service-checks li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+.compact-service-list li::before {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.compact-service-checks li {
+  color: var(--muted);
+}
+
+.compact-service-checks li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.18em;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f97316' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+}
+
+.compact-service-deflist {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 18px;
+}
+
+.compact-service-deflist > div {
+  display: grid;
+  gap: 4px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.compact-service-deflist > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.compact-service-deflist dt {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.compact-service-deflist dd {
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 880px) {
+  .compact-service-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
 
 .services-flow {
@@ -10750,12 +11127,14 @@ html {
   color: #15803d;
 }
 
-.format-card h3 {
+.format-card h3,
+.format-card h4 {
   margin: 0;
   font-size: 1.2rem;
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--ink);
+  font-weight: 500;
 }
 
 .format-card-meta {
@@ -10930,12 +11309,14 @@ html {
   color: #15803d;
 }
 
-.hosting-card h3 {
+.hosting-card h3,
+.hosting-card h4 {
   margin: 0;
   font-size: 1.35rem;
   line-height: 1.2;
   letter-spacing: -0.012em;
   color: var(--ink);
+  font-weight: 500;
 }
 
 .hosting-card-lead {
@@ -11073,12 +11454,14 @@ html {
   margin-bottom: 6px;
 }
 
-.hosting-workflow-copy h3 {
+.hosting-workflow-copy h3,
+.hosting-workflow-copy h4 {
   margin: 0 0 6px;
   font-size: clamp(1.1rem, 1.3vw, 1.3rem);
   line-height: 1.25;
   letter-spacing: -0.01em;
   color: var(--ink);
+  font-weight: 500;
 }
 
 .hosting-workflow-copy p {
@@ -11110,6 +11493,55 @@ html {
   font-weight: 500;
   max-width: 220px;
   margin-left: auto;
+}
+
+/* Agentic AI consolidated section: groups workshops, hosting and workflow
+   pricing under one section header. Each sub-block has its own internal
+   header with eyebrow + h3 + lead so the buyer can scan the structure. */
+.services-agentic-details .agentic-subblock {
+  margin-top: clamp(48px, 6vw, 80px);
+}
+
+.services-agentic-details .agentic-subblock:first-of-type {
+  margin-top: clamp(28px, 3vw, 40px);
+}
+
+.agentic-subblock-header {
+  max-width: 760px;
+  margin: 0 0 clamp(20px, 2.4vw, 32px);
+}
+
+.agentic-subblock-eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.agentic-subblock-header h3 {
+  margin: 0 0 10px;
+  font-family: var(--heading-font);
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+
+.agentic-subblock-lead {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Credibility strip below the 4-phase framework on services page */
+.services-delivery-proof {
+  margin-top: clamp(48px, 5vw, 72px);
+  padding-top: clamp(28px, 3vw, 40px);
+  border-top: 1px solid var(--border);
 }
 
 @media (max-width: 1100px) {

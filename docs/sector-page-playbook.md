@@ -76,7 +76,7 @@ er nevnt, mangler siden noe.
 16. **Posisjoner på frihet og demokratisering, ikke mot copiloter.** Aldri argumenter direkte mot HubSpot/Salesforce/Microsoft sine native AI-tilbud — det blir lett kooptert ("ja, derfor har vi konsolidert") og virker defensivt. Bruk i stedet positive rammer: hvor mye av logikken eier dere selv, hvor lett er plattformen å bytte, hvordan skalerer kostnaden, hva slags data slipper dere å tvinge inn i et skjema. Frihets- og eierskapsspråk treffer C-level uten å virke som vi spiller en sammenligningskamp. Gjelder hele siden — også lede, H3-er og spørsmål.
 17. **NeuroSYS bygger agenter, ikke plattformen.** Vi bygger på Dify (open-source). Vi designer ikke den underliggende plattformen — vi bygger, drifter og videreutvikler agentene som kjører på den. Skriv aldri "vi designer plattformen" eller noe som overclaimer. Riktig formulering: *"Vi bygger agentene, drifter dem i produksjon, og utvikler dem videre — på et åpent fundament dere selv eier."*
 18. **Bro fra Seksjon 2 til Seksjon 3 må være eksplisitt.** Når Seksjon 2 har levert friksjon → endring, må Seksjon 3 åpne med en setning som forklarer *hvorfor leseren plutselig snakker om plattform*. Mal: *"Alt over forutsetter at agentene har et sted å bo. Plattformen er det laget. Spørsmålet er ikke om dere trenger en — men om den er bygget slik at verdien blir værende hos dere over tid."* Uten denne broen virker Seksjon 3-kriteriene som de kommer ut av intet.
-19. **Sluttseksjonen skal lande på sitatet, ikke på credentials.** Cross-area + hvem-bygger + setup-setning + sitat. Ingen "Siden 2008..." eller historikk på sektor-siden — det hører hjemme på en om-oss-side. Sitatet *"Fremtidens kapasitet bygges med digitale kollegaer"* er den siste tanken leseren tar med seg. Setup-setningen *"Det vi bygger er enklere å forstå hvis man slutter å tenke på det som verktøy"* er hengselet som gir sitatet betydning.
+19. **Sluttseksjonen skal lande på sitatet, ikke på credentials.** Cross-area + hvem-bygger + setup-setning + sitat. Ingen "Siden 2008..." eller historikk på sektor-siden — det hører hjemme på en om-oss-side. Sitatet *"Fremtidens kapasitet bygges med agentiske arbeidsflyter"* er den siste tanken leseren tar med seg. Setup-setningen *"Det vi bygger er enklere å forstå hvis man slutter å tenke på det som verktøy"* er hengselet som gir sitatet betydning.
 
 ---
 
@@ -181,7 +181,7 @@ Sitatet sitter som lukke. Fire elementer i fast rekkefølge:
 1. **Cross-area** — én setning: *"Byggesteinene gjelder ikke bare [denne sidens fagområde]."* + én setning som lister de fem andre i naturlig rekkefølge: *"Samme agentiske lag driver også [...] - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder."*
 2. **Hvem vi er** — *"Vi er de som bygger dem med dere. Ikke en konsulentpraksis eller et byrå - vi bygger agentene, drifter dem i produksjon, og utvikler dem videre når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier."*
 3. **Setup-setning til sitatet** — *"Det vi bygger er enklere å forstå hvis man slutter å tenke på det som verktøy."*
-4. **Sitatet** (`prose-stanza`) — *"Fremtidens kapasitet bygges med digitale kollegaer."*
+4. **Sitatet** (`prose-stanza`) — *"Fremtidens kapasitet bygges med agentiske arbeidsflyter."*
 
 Bruk ordet **"lag"**, ikke **"plattform"**, i cross-area-setningen.
 "Plattform" eies av Seksjon 3-diskusjonen om byttbarhet — å si "samme

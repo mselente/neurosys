@@ -372,10 +372,12 @@ const I18N_STRINGS = {
     Primary: "Hovedmeny",
     Applications: "Applikasjoner",
     "Agent Platform": "Agentplattform",
+    "Agent platform": "Agentplattform",
     "Why Dify": "Hvorfor Dify",
     "AI Process Automation": "AI-prosessautomatisering",
     Services: "Tjenester",
     "Our work": "Vårt arbeid",
+    "Customer references": "Kundereferanser",
     About: "Om oss",
     News: "Nyheter",
     Contact: "Kontakt",
@@ -394,13 +396,13 @@ const I18N_STRINGS = {
     "How we deliver": "Slik leverer vi",
     "The foundation behind every delivery":
       "Fundamentet bak hver leveranse",
-    "We standardize on Dify - an open source platform you can start on our cloud and move home to your own installation when ready. No license traps, no lock-in.":
-      "Vi standardiserer på Dify - en open source plattform dere kan starte på vår sky og flytte hjem til egen installasjon når dere er klare. Ingen lisensfeller, ingen lock-in.",
+    "One foundation across every delivery — so capability compounds, project after project.":
+      "Ett fundament på tvers av hver leveranse — slik at kapasitet bygger seg opp, prosjekt etter prosjekt.",
     "Built on open source": "Bygget på open source",
     "One of the world's leading platforms for AI agents":
       "En av verdens ledende plattformer for AI-agenter",
-    "Dify is open source with 10,000+ commits and nearly 20 updates a day from a global community. You stand on a robust, future-proof foundation from day one - and skip the years of in-house engineering it would take to build something close. Start on Neurosys Workflows (our hosted instance) and move to your own cloud or on-prem whenever you want.":
-      "Dify er open source med 10 000+ commits og nærmere 20 oppdateringer hver dag fra et globalt fellesskap. Dere står på et robust og fremtidsrettet fundament fra dag én - og slipper de årene med intern utvikling det ville tatt å bygge noe i nærheten. Start på Neurosys Workflows (vår hostede instans) og flytt til egen sky eller on-prem når dere vil.",
+    "Dify is one of the most active agentic AI platforms in the world, with a global community of contributors driving constant improvement. You stand on a future-proof base from day one — and skip the years of in-house engineering it would take to build something close. Start on Neurosys Workflows (our hosted instance) and move to your own cloud or on-prem whenever you want.":
+      "Dify er en av de mest aktive agentiske AI-plattformene i verden, med et globalt fellesskap av bidragsytere som driver kontinuerlig forbedring. Dere står på et fremtidsrettet fundament fra dag én — og slipper de årene med intern utvikling det ville tatt å bygge noe i nærheten. Start på Neurosys Workflows (vår hostede instans) og flytt til egen sky eller on-prem når dere vil.",
     "Dify community proof": "Dify-fellesskapets dekning",
     "GitHub stars": "GitHub-stjerner",
     "10,000+": "10 000+",
@@ -456,7 +458,7 @@ const I18N_STRINGS = {
       "Gjør ustrukturert medie-støy om til strukturert innsikt som kommunikasjons- og beslutningsteam kan handle på.",
     "Our services →": "Våre tjenester →",
     "Client projects →": "Kundeprosjekter →",
-    "See our work →": "Se vårt arbeid →",
+    "See customer references →": "Se kundereferanser →",
     "Contact us →": "Kontakt oss →",
     "See what we offer →": "Se hva vi tilbyr →",
     "Get workshop details →": "Få workshop-detaljer →",
@@ -488,8 +490,8 @@ const I18N_STRINGS = {
       "AI bygget direkte inn i SaaS-løsningene og plattformene deres.",
     "Open menu": "Åpne meny",
     "Close menu": "Lukk meny",
-    "We make AI part of how you operate":
-      "Vi gjør AI til en del av hvordan dere opererer",
+    "Agentic capacity built into your value chains.":
+      "Agentisk kapasitet bygd inn i verdikjedene deres.",
     "Key benefits": "Nokkelfordeler",
     "Full control": "Full kontroll",
     "Predictable cost": "Forutsigbar kost",
@@ -877,16 +879,32 @@ const I18N_STRINGS = {
       "Vi kombinerer rådgivning, design og implementering i én leveransemodell.",
     "See how we work →": "Se hvordan vi jobber →",
     Services: "Tjenester",
+    "Services and pricing": "Tjenester og priser",
+    "Services and pricing - NeuroSYS": "Tjenester og priser - NeuroSYS",
+    "Your Nordic platform partner and delivery team for agentic AI. Transparent pricing for workshops, hosted workflows and own installations - end-to-end implementation on Dify, from first workshop to AI in production.":
+      "Din nordiske plattformpartner og leveranseteam for agentisk AI. Transparent prising for workshops, hostede arbeidsflyter og egne installasjoner - ende-til-ende implementering på Dify, fra første workshop til AI i drift.",
     "Your platform partner and delivery team for agentic AI":
       "Plattformpartneren og leveranseteamet ditt for agentisk AI",
     "We are a Dify partner who builds, runs and evolves agentic AI together with Nordic enterprises - and bring the team needed at every step, from first workshop to AI in production.":
       "Vi er Dify-partneren som bygger, drifter og videreutvikler agentisk AI sammen med nordiske virksomheter - og stiller med teamet som trengs hele veien, fra første workshop til AI i drift.",
+    "We are a Dify partner who builds, runs and evolves agentic AI together with Nordic enterprises - from first workshop to AI in production.":
+      "Vi er Dify-partneren som bygger, drifter og videreutvikler agentisk AI sammen med nordiske virksomheter - fra første workshop til AI i drift.",
+    "As your Dify partner we build, run and evolve agentic AI that ships in daily operations. When you need more, we also bring experts into your team or full delivery teams for whole projects.":
+      "Som deres Dify-partner bygger, drifter og videreutvikler vi agentisk AI som leverer i daglig drift. Når dere trenger mer, stiller vi også med eksperter inn i teamet eller hele leveranseteam for komplette prosjekter.",
+    "Jump to a service": "Hopp til en tjeneste",
+    "Agentic AI Operations": "Agentisk AI Forvaltning",
+    "Consulting placement": "Konsulentformidling",
+    Experts: "Eksperter",
     "Book a coffee →": "Ta en kaffe med oss →",
     "See what we offer ↓": "Se hva vi tilbyr ↓",
+    "See pricing ↓": "Se priser ↓",
     "What we offer": "Det vi tilbyr",
     "How we work with our clients": "Slik jobber vi med kundene våre",
+    "Three ways to engage NeuroSYS": "Tre måter å engasjere NeuroSYS",
     "Three connected ways to engage NeuroSYS - as your agentic platform partner, as senior specialists embedded in your teams, or as a delivery team that takes a full project from idea to running production. Many clients combine them under one relationship.":
       "Tre tett koblede måter å engasjere NeuroSYS på - som agentisk plattformpartner, som seniorspesialister i teamene deres, eller som leveranseteam som tar et helt prosjekt fra idé til AI i drift. Mange kunder kombinerer dem i ett samarbeid.",
+    "Pick the model that fits where you are - as your agentic platform partner, as senior specialists embedded in your teams, or as a delivery team that takes a full project from idea to running production. Many clients combine them under one relationship.":
+      "Velg modellen som passer der dere er - som agentisk plattformpartner, som seniorspesialister i teamene deres, eller som leveranseteam som tar et helt prosjekt fra idé til AI i drift. Mange kunder kombinerer dem i ett samarbeid.",
     "Strategic Dify partner · End-to-end":
       "Strategisk Dify-partner · Ende-til-ende",
     "Agentic AI": "Agentisk AI",
@@ -953,9 +971,42 @@ const I18N_STRINGS = {
       "Strategiske avklaringer og arkitekturvalg",
     "Agentic AI · Workshops": "Agentisk AI · Workshops",
     "Agentic AI · Hosting and pricing": "Agentisk AI · Hosting og priser",
+    "Agentic AI · Inside the offering":
+      "Agentisk AI · Innholdet i leveransen",
+    "Agentic AI that ships in daily operations":
+      "Agentisk AI som leverer i daglig drift",
+    "As your Dify partner we put agentic AI into operation end-to-end - from your first workshop, through platform and hosting, to workflows that actually deliver value. Open a box below for details and pricing.":
+      "Som deres Dify-partner setter vi agentisk AI i drift ende-til-ende - fra første workshop, gjennom plattform og hosting, til arbeidsflyter som faktisk leverer verdi. Åpne en boks under for detaljer og pris.",
+    "Workshops, hosting and workflow pricing":
+      "Workshops, hosting og priser på arbeidsflyter",
+    "From your first workshop to the platform running in production - all the components of how we deliver agentic AI, with transparent pricing.":
+      "Fra første workshop til plattformen kjører i produksjon - alle delene som inngår i hvordan vi leverer agentisk AI, med transparent prising.",
+    "Where to start": "Der dere starter",
+    "Workshops to get aligned": "Workshops for å samkjøre",
+    "A free Executive Workshop or a multi-day Platform Acceleration program - both led by our seniormost team. The fastest way to get leadership, IT and operations aligned on what agentic AI could mean for you.":
+      "En gratis Executive Workshop eller et flerdagers Platform Acceleration-program - begge ledet av vårt mest erfarne team. Raskeste vei til å få ledelsen, IT og drift på linje rundt hva agentisk AI kan bety for dere.",
+    "From NOK 0 · 1-5 days · 2 senior experts":
+      "Fra 0 NOK · 1-5 dager · 2 senior eksperter",
+    "The easiest way to get leadership, IT and operations on the same page about what agentic AI could mean for you. Both led by our seniormost team.":
+      "Den enkleste måten å få ledelsen, IT og drift på linje rundt hva agentisk AI kan bety for dere. Begge ledet av vårt mest erfarne team.",
+    "Where it runs": "Der det kjører",
+    "Platform and hosting": "Plattform og hosting",
+    "Hosted on our managed Nordic platform, or installed inside your own cloud or on-premise. ISO 27001 certified, GDPR-aligned and operated for production from day one.":
+      "Hostet på vår administrerte nordiske plattform, eller installert i deres egen sky eller on-premise. ISO 27001-sertifisert, GDPR-tilpasset og driftet for produksjon fra dag én.",
+    "From NOK 3,900 / mo · 3 hosted tiers + enterprise install":
+      "Fra 3 900 NOK / mnd · 3 hostede tiers + enterprise-installasjon",
+    "Hosting and platform pricing": "Hosting og plattformpriser",
+    "Most clients run on our managed Nordic platform - ISO 27001 certified, GDPR-aligned and operated for production from day one. When data residency or integration requirements call for it, we install the same platform inside your own cloud or on-premise.":
+      "De fleste kundene kjører på vår administrerte nordiske plattform - ISO 27001-sertifisert, GDPR-tilpasset og driftet for produksjon fra dag én. Når datalokasjon eller integrasjonskrav tilsier det, installerer vi den samme plattformen i deres egen sky eller on-premise.",
     "Hosting and pricing": "Hosting og priser",
     "The platform runs where it suits you":
       "Plattformen kjører der det passer dere",
+    "What you build": "Det dere bygger",
+    Workflows: "Arbeidsflyter",
+    "New agentic AI workflows delivered as scoped engagements - chatbot, integration, document analysis, text classification, lead qualification and more. Typically live in production within 1-5 working days.":
+      "Nye agentiske AI-arbeidsflyter levert som scopede oppdrag - chatbot, integrasjon, dokumentanalyse, tekstklassifisering, lead-kvalifisering og mer. Typisk i produksjon innen 1-5 arbeidsdager.",
+    "NOK 12,900 / workday · first workflow in 1-5 days":
+      "12 900 NOK / arbeidsdag · første arbeidsflyt på 1-5 dager",
     "Most clients run on our managed Nordic platform - ISO 27001 certified, GDPR-aligned and operated for production from day one. When data residency, regulatory or integration requirements call for it, we install the same platform inside your own cloud or on-premise.":
       "De fleste kundene kjører på vår administrerte nordiske plattform - ISO 27001-sertifisert, GDPR-tilpasset og driftet for produksjon fra dag én. Når datalokasjon, regulatoriske eller integrasjonskrav tilsier det, installerer vi den samme plattformen i deres egen sky eller on-premise.",
     "Hosted by us · Recommended start":
@@ -963,6 +1014,8 @@ const I18N_STRINGS = {
     "Neurosys Workflows": "Neurosys Workflows",
     "Live in minutes on a fully managed Nordic platform. Hosting, operations, monitoring, updates, backup and support included.":
       "Live på minutter på en fullt administrert nordisk plattform. Hosting, drift, overvåking, oppdateringer, backup og brukerstøtte er inkludert.",
+    "- typical data volumes and request rates. Only published workflows count toward the limit; drafts and tests are free.":
+      "- typiske datamengder og forespørselsrater. Kun publiserte arbeidsflyter telles mot grensen; utkast og tester er gratis.",
     Starter: "Starter",
     Scale: "Scale",
     "Up to 3 workflows · 1 GB storage":
@@ -995,8 +1048,15 @@ const I18N_STRINGS = {
       "Pris etter avtale basert på skala, supportnivå og Dify-utgave (community eller enterprise).",
     "Discuss your setup →": "Snakk med oss om oppsett →",
     "Workflow development": "Arbeidsflyt-utvikling",
+    "Build new workflows on top of the platform":
+      "Bygg nye arbeidsflyter på toppen av plattformen",
+    "A workflow is an AI-driven business process with its own rules, logic, integrations and output. Examples: chatbot, integration, document analysis, text classification, lead qualification, text generation, data analysis.":
+      "En arbeidsflyt er en AI-drevet arbeidsprosess med egne regler, logikk, integrasjoner og output. Eksempler: chatbot, integrasjon, dokumentanalyse, tekstklassifisering, lead-kvalifisering, tekstgenerering, dataanalyse.",
+    "Delivery time": "Leveringstid",
     "First workflow live in 1-5 working days":
       "Første arbeidsflyt i produksjon på 1-5 arbeidsdager",
+    "We scope, build and put it in production alongside your team - on your hosted plan or your own installation.":
+      "Vi skoperer, bygger og setter den i produksjon sammen med teamet deres - på den hostede planen eller deres egen installasjon.",
     "A workflow is an AI-driven business process with its own rules, logic, integrations and output.":
       "En arbeidsflyt er en AI-drevet arbeidsprosess med egne regler, logikk, integrasjoner og output.",
     "Examples:": "Eksempler:",
@@ -1008,8 +1068,45 @@ const I18N_STRINGS = {
     "Working together": "Slik jobber vi sammen",
     "From first conversation to running production":
       "Fra første samtale til AI i drift",
+    "From first conversation to AI in production":
+      "Fra første samtale til AI i drift",
     "Most engagements move through these four phases - whether you start with a single workflow or a long-term platform rollout, we walk it together with your team.":
       "De fleste samarbeid går gjennom disse fire fasene - enten dere starter med én arbeidsflyt eller en langsiktig plattform-utrulling, går vi det sammen med teamet deres.",
+    "ISO 27001": "ISO 27001",
+    "Certified for security and compliance. AWS and Microsoft partner.":
+      "Sertifisert for sikkerhet og etterlevelse. AWS- og Microsoft-partner.",
+    "100+": "100+",
+    "Engineers across LLM orchestration, RAG, ML, deep learning and full-stack.":
+      "Ingeniører innen LLM-orkestrering, RAG, ML, dyp læring og fullstack.",
+    "80%": "80 %",
+    "Of repetitive tasks removed - so teams spend time on work that creates value.":
+      "Av repetitive oppgaver fjernet - så teamene bruker tiden på arbeid som skaper verdi.",
+    "Built on Dify": "Bygget på Dify",
+    "Open source platform with global contributors and ~20 daily updates.":
+      "Open source-plattform med globale bidragsytere og ~20 oppdateringer daglig.",
+    "1-5 days": "1-5 dager",
+    "From scoping a workflow to running in production.":
+      "Fra scoping av en arbeidsflyt til den kjører i produksjon.",
+    "Nearshoring and consulting from Norway and Poland. Senior specialists who step straight into your team - developers, architects and AI/ML experts - and build alongside your people from day one.":
+      "Nearshoring og konsulentformidling fra Norge og Polen. Senior-spesialister som går rett inn i teamet deres - utviklere, arkitekter og AI/ML-eksperter - og bygger sammen med folkene deres fra dag én.",
+    "AI and ML specialists": "AI- og ML-spesialister",
+    "Whole projects, A to Z": "Hele prosjekter, A til Å",
+    "Complete delivery teams that take projects from first idea to running production - including custom ML, deep learning and computer vision when the use case calls for it. 100+ engineers across the full stack, with one team accountable for the result.":
+      "Komplette leveranseteam som tar prosjekter fra første idé til AI i drift - inkludert skreddersydd ML, dyp læring og datasyn når brukstilfellet krever det. 100+ ingeniører på tvers av hele stacken, med ett team som er ansvarlig for resultatet.",
+    "Talk to us about a project →":
+      "Snakk med oss om prosjekt →",
+    Roles: "Roller",
+    "PM · architecture · dev · UX · QA · ML/AI · devops":
+      "PL · arkitektur · utvikling · UX · QA · ML/AI · devops",
+    Deliverables: "Leveranser",
+    "Source code · architecture · documentation · tests · runbook":
+      "Kildekode · arkitektur · dokumentasjon · tester · driftsmanual",
+    "Operations and management": "Drift og forvaltning",
+    "On request, we operate and maintain the solution on our or your infrastructure.":
+      "Ved behov drifter og forvalter vi løsningen på vår eller deres infrastruktur.",
+    "Trust and compliance": "Tillit og compliance",
+    "ISO 27001 certified. AWS and Microsoft partner.":
+      "ISO 27001-sertifisert. AWS- og Microsoft-partner.",
     Discover: "Avdekke",
     "Map current state, opportunities and constraints. Align stakeholders on what's worth building first.":
       "Kartlegg dagens situasjon, muligheter og begrensninger. Få interessentene på linje om hva som er verdt å bygge først.",
@@ -1238,8 +1335,8 @@ const I18N_STRINGS = {
     "About NeuroSYS": "Om NeuroSYS",
     "About NeuroSYS - Your AI implementation partner":
       "Om NeuroSYS - Din partner for AI-implementering",
-    "We make AI part of how Nordic businesses actually run":
-      "Vi gjør AI til en del av hvordan nordiske virksomheter faktisk opererer",
+    "We make AI part of Nordic operations":
+      "Vi gjør AI til en del av nordisk drift",
     "A Nordic-Polish team of 100+ specialists that takes organizations from AI experimentation to operational capability - as part of daily operations.":
       "Et nordisk-polsk team med 100+ spesialister som tar virksomheter fra AI-eksperimentering til operasjonell kapasitet - som en del av daglig drift.",
     "AI systems that work in real businesses":
@@ -1283,8 +1380,8 @@ const I18N_STRINGS = {
     ": a senior delivery team that builds, runs and evolves agentic AI on a platform you can keep.":
       ": et senior leveranseteam som bygger, drifter og utvikler agentisk AI på en plattform dere kan beholde.",
     "Mission": "Misjon",
-    "The future's capacity is built with digital colleagues.":
-      "Fremtidens kapasitet bygges med digitale kollegaer.",
+    "The future's capacity is built with agentic workflows.":
+      "Fremtidens kapasitet bygges med agentiske arbeidsflyter.",
     "NeuroSYS - since 2008": "NeuroSYS - siden 2008",
     "Where most are with AI adoption":
       "Hvor de fleste er med AI-adopsjon",
@@ -1390,9 +1487,9 @@ const I18N_STRINGS = {
     Poland: "Polen",
     Germany: "Tyskland",
     Contact: "Kontakt",
-    "Let's start a conversation": "La oss starte en samtale",
-    "A short, no-pressure conversation to assess where agentic AI makes sense for your organization - and where other approaches fit better. We'll come back within one working day.":
-      "En kort, uforpliktende samtale for å vurdere hvor agentisk AI gir mening for virksomheten din - og hvor andre tilnærminger passer bedre. Vi svarer innen én arbeidsdag.",
+    "Let's talk": "La oss ta en prat",
+    "A short, no-pressure conversation to assess where agentic AI makes sense for your organization - and where other approaches fit better.":
+      "En kort, uforpliktende samtale for å vurdere hvor agentisk AI gir mening for virksomheten din - og hvor andre tilnærminger passer bedre.",
     "General inquiries": "Generelle henvendelser",
     "For RFPs, partnerships, press, support and general questions about our work.":
       "For RFP-er, partnerskap, presse, support og generelle spørsmål om arbeidet vårt.",
@@ -1409,18 +1506,18 @@ const I18N_STRINGS = {
     "What happens next": "Hva skjer videre",
     "From first message to a clear next step":
       "Fra første melding til et tydelig neste steg",
-    "You reach out": "Du tar kontakt",
-    "A short note about your context, your stack and what you'd like to explore. No formal brief required.":
-      "En kort melding om konteksten din, teknologistacken og hva du vil utforske. Ingen formell brief nødvendig.",
-    "30-minute intro call": "30-minutters introsamtale",
+    "First contact": "Ved kontakt",
+    "Tell us what you're looking for - ideas, concepts or challenges you'd like to bring to life. No formal brief needed.":
+      "Fortell oss hva dere er ute etter - ideer, konsepter eller utfordringer dere ønsker å realisere. Ingen formell brief nødvendig.",
+    "We schedule a meeting": "Vi setter av tid til møte",
     "We listen, ask the right questions and share where agentic AI is realistic - and where other approaches fit better - in your situation.":
       "Vi lytter, stiller de riktige spørsmålene og deler hvor agentisk AI er realistisk - og hvor andre tilnærminger passer bedre - i din situasjon.",
-    "Concrete next step": "Konkret neste steg",
-    "A focused workshop, a pilot workflow or a short technical assessment - whichever moves you forward fastest.":
-      "En fokusert workshop, en pilot-arbeidsflyt eller en kort teknisk vurdering - det som tar dere raskest videre.",
+    "We propose next steps": "Vi foreslår neste steg",
+    "It might be a workshop, a pilot, a full project, or something else entirely - whatever moves you forward fastest.":
+      "Det kan være en workshop, pilot, prosjekt eller noe helt annet - alt etter hva som tar dere raskest videre.",
     "Your point of contact": "Din kontaktperson",
-    "\"Send me a short message about what you're trying to solve. I'll come back within one working day with a concrete next step - even if it's just a pointer in the right direction.\"":
-      "\"Send meg en kort melding om hva du prøver å løse. Jeg kommer tilbake innen én arbeidsdag med et konkret neste steg - selv om det bare er et hint i riktig retning.\"",
+    "\"Send me a short message about what you're trying to solve, and I'll come back with a concrete next step - even if it's just a pointer in the right direction.\"":
+      "\"Send meg en kort melding om hva du prøver å løse, så kommer jeg tilbake med et konkret neste steg - selv om det bare er et hint i riktig retning.\"",
     "Email Mikkel": "Send e-post til Mikkel",
     "LinkedIn profile": "LinkedIn-profil",
     "Talk to NeuroSYS about agentic AI. Book a 30-minute discovery call, ask a question, or come by our Oslo office.":
@@ -1555,8 +1652,10 @@ const I18N_STRINGS = {
     "Outcome: a clear, realistic plan for launching pilots with ownership and success criteria in place.":
       "Resultat: en tydelig, realistisk plan for å lansere piloter med eierskap og suksesskriterier på plass.",
     "Projects": "Prosjekter",
-    "See how we help organizations digitize, streamline and transform their business with AI and large language models.":
-      "Se hvordan vi hjelper virksomheter å digitalisere, effektivisere og transformere med AI og store språkmodeller.",
+    "Selected work with our customers":
+      "Utvalgt arbeid med kundene våre",
+    "From agentic AI in production to digital platforms in daily use - selected projects with leading organizations across industries.":
+      "Fra agentisk AI i produksjon til digitale plattformer i daglig bruk - utvalgte prosjekter med ledende organisasjoner på tvers av bransjer.",
     "Current projects": "Pågående prosjekter",
     "A selection of ongoing AI and digitalization projects with leading organizations.":
       "Et utvalg pågående AI- og digitaliseringsprosjekter med ledende organisasjoner.",
@@ -2583,9 +2682,9 @@ const I18N_STRINGS = {
     "Services - NeuroSYS": "Tjenester - NeuroSYS",
     "Advisory, training, solution design, implementation, and long-term AI upkeep.":
       "Rådgivning, opplæring, løsningsdesign, implementering og langsiktig AI-forvaltning.",
-    "Our work - NeuroSYS": "Vårt arbeid - NeuroSYS",
-    "See how we help organizations digitize, streamline and transform through AI.":
-      "Se hvordan vi hjelper virksomheter å digitalisere, effektivisere og transformere med AI.",
+    "Customer references - NeuroSYS": "Kundereferanser - NeuroSYS",
+    "Selected projects with leading organizations - from agentic AI in production to digital platforms in daily use.":
+      "Utvalgte prosjekter med ledende organisasjoner - fra agentisk AI i produksjon til digitale plattformer i daglig bruk.",
     "GenAI Training & Workshops - NeuroSYS":
       "GenAI-opplæring og workshops - NeuroSYS",
     "Practical GenAI training and workshops that build shared understanding, identify real opportunities and prepare your teams to work with AI in practice.":
