@@ -463,8 +463,8 @@ const I18N_STRINGS = {
     "See workshop details →": "Se workshop-detaljer →",
     "Book a session →": "Book en sesjon →",
     "Shall we grab a coffee?": "Skal vi ta en kaffe?",
-    "A short conversation to assess where agentic AI makes sense, and where it doesn’t.":
-      "En kort prat for å vurdere hvor agentisk AI gir mening, og hvor det ikke gjør det.",
+    "A short conversation to assess where agentic AI makes sense, and where other approaches fit better.":
+      "En kort prat for å vurdere hvor agentisk AI gir mening, og hvor andre tilnærminger passer bedre.",
     "Want to shape a workshop around your team?":
       "Vil dere forme en workshop rundt teamet deres?",
     "We can tailor the session to your team, technical level and operational context.":
@@ -603,15 +603,15 @@ const I18N_STRINGS = {
     "Start here": "Start her",
     "Get your teams aligned on real AI use cases":
       "Få teamene samkjørt om reelle AI-bruksområder",
-    "A focused workshop where leadership, IT and operations sit at the same table. We work with your real processes and use cases - not slides about what AI could be.":
-      "En fokusert workshop der ledelse, IT og operasjon sitter ved samme bord. Vi jobber med deres reelle prosesser og use cases - ikke slides om hva AI kunne vært.",
+    "A focused workshop where leadership, IT and operations sit at the same table. We work with your real processes and use cases.":
+      "En fokusert workshop der ledelse, IT og operasjon sitter ved samme bord. Vi jobber med deres reelle prosesser og use cases.",
     "What you walk away with": "Hva dere går derfra med",
     "Concrete use cases prioritized for your business":
       "Konkrete use cases prioritert for virksomheten deres",
     "Shared language across leadership, IT and operations":
       "Felles språk på tvers av ledelse, IT og operasjon",
-    "A clear next step - not another report":
-      "Et tydelig neste steg - ikke enda en rapport",
+    "A clear next step you can act on":
+      "Et tydelig neste steg dere kan handle på",
     "Book a workshop →": "Book en workshop →",
     "46 % of meaningful conversations resolved during pilot. How Norway's leading hardware retailer automated customer service with an AI communication agent - without increasing headcount.":
       "46 % av meningsfulle samtaler løst i pilotperioden. Hvordan Norges ledende jernvareforhandler automatiserte kundeservice med en AI-dialogagent - uten å øke bemanningen.",
@@ -643,8 +643,8 @@ const I18N_STRINGS = {
       "Se hele agentplattformen →",
     "AI as the architecture your organization builds the future on":
       "AI som arkitekturen virksomheten bygger fremtiden på",
-    "NeuroSYS combines one of the world’s leading open-source agent platforms with enterprise integration, governance, and operational delivery so AI can run across real processes, not isolated demos.":
-      "NeuroSYS kombinerer en av verdens ledende open-source agentplattformer med enterprise-integrasjon, styring og operativ leveranse, slik at AI kan kjøre på tvers av reelle prosesser, ikke isolerte demoer.",
+    "NeuroSYS combines one of the world’s leading open-source agent platforms with enterprise integration, governance, and operational delivery so AI can run across real processes in production.":
+      "NeuroSYS kombinerer en av verdens ledende open-source agentplattformer med enterprise-integrasjon, styring og operativ leveranse, slik at AI kan kjøre på tvers av reelle prosesser i produksjon.",
     "We deliver agentic AI on Dify - one of the world's leading open source platforms for AI agents. Start on Neurosys Workflows (our hosted instance) and move to your own cloud or on-prem when you're ready.":
       "Vi leverer agentisk AI på Dify - en av verdens ledende open source-plattformer for AI-agenter. Start på Neurosys Workflows (vår hostede instans) og flytt til egen sky eller on-prem når dere er klare.",
     "Book a platform walkthrough →": "Book en gjennomgang av plattformen →",
@@ -666,7 +666,7 @@ const I18N_STRINGS = {
     "You need a foundation with proper access control, audit trails, and the depth to integrate with the systems already running the business.":
       "Dere trenger et fundament med riktig tilgangsstyring, sporbarhet og nok dybde til å integrere med systemene som allerede driver virksomheten.",
     "Operations and product teams": "Operasjon og produktteam",
-    "AI in the work, not on the side": "AI i arbeidet, ikke ved siden av",
+    "AI inside the work": "AI inne i arbeidet",
     "You need agents that take part in real workflows - drafting, deciding, escalating - so the team gets time back instead of more dashboards.":
       "Dere trenger agenter som tar del i reelle arbeidsflyter - skriver utkast, beslutter, eskalerer - så teamet får tid tilbake istedenfor flere dashboards.",
     "Enterprise-grade": "Enterprise-grade",
@@ -699,14 +699,14 @@ const I18N_STRINGS = {
       "AI skaper mest verdi når den kan operere på tvers av virksomheten",
     "The platform determines whether AI stays as isolated pilots or becomes a shared operating layer the organization can actually rely on.":
       "Plattformen avgjør om AI blir værende som isolerte piloter eller blir et felles operativt lag virksomheten faktisk kan stole på.",
-    "If AI cannot connect systems, knowledge, approvals, and workflows in one model, it creates more experiments than operational value. The right platform gives you one foundation to scale from.":
-      "Hvis AI ikke kan koble sammen systemer, kunnskap, godkjenninger og arbeidsflyter i én modell, skaper den flere eksperimenter enn operativ verdi. Riktig plattform gir dere ett fundament å skalere fra.",
+    "When AI connects systems, knowledge, approvals, and workflows in one model, it turns experiments into operational value. The right platform gives you one foundation to scale from.":
+      "Når AI kobler sammen systemer, kunnskap, godkjenninger og arbeidsflyter i én modell, gjør den eksperimenter om til operativ verdi. Riktig plattform gir dere ett fundament å skalere fra.",
     "Move beyond pilots": "Kom dere videre fra piloter",
     "Reuse the same logic, integrations and governance instead of rebuilding from scratch in every new AI initiative.":
       "Gjenbruk den samme logikken, de samme integrasjonene og den samme styringen i stedet for å bygge alt på nytt i hvert nye AI-initiativ.",
     "Connect real work": "Koble til faktisk arbeid",
-    "Let AI operate across business systems, tools and knowledge, not just inside one isolated assistant or interface.":
-      "La AI operere på tvers av forretningssystemer, verktøy og kunnskap, ikke bare inne i én isolert assistent eller grensesnitt.",
+    "Let AI operate across business systems, tools and knowledge - reaching every place work actually happens.":
+      "La AI operere på tvers av forretningssystemer, verktøy og kunnskap - til hvert sted arbeidet faktisk skjer.",
     "Keep control as you scale": "Behold kontrollen mens dere skalerer",
     "Add approvals, traceability and clear ownership so AI can expand without losing accountability.":
       "Legg inn godkjenninger, sporbarhet og tydelig eierskap slik at AI kan utvides uten at ansvar forsvinner.",
@@ -783,8 +783,8 @@ const I18N_STRINGS = {
       "Løs arbeid på tvers av kanaler med agenter som er forankret i kunnskap, retningslinjer og enterprise-systemer.",
     "Automate multi-step operational processes that currently move between people, systems, and spreadsheets.":
       "Automatiser operasjonelle prosesser i flere steg som i dag flyter mellom mennesker, systemer og regneark.",
-    "Embed the platform logic into customer-facing or internal products that need AI to act, not just answer.":
-      "Bygg plattformlogikken inn i kundevendte eller interne produkter som trenger AI som handler, ikke bare svarer.",
+    "Embed the platform logic into customer-facing or internal products that need AI to take action.":
+      "Bygg plattformlogikken inn i kundevendte eller interne produkter som trenger AI som tar handling.",
     "See the application →": "Se applikasjonen →",
     "Want to see what this looks like in your organization?":
       "Vil dere se hvordan dette kan se ut i virksomheten deres?",
@@ -845,8 +845,8 @@ const I18N_STRINGS = {
       "Fra pilot til produksjon - AI som passer inn i måten organisasjonen din faktisk jobber på.",
     "The agentic platform removes up to 80% of repetitive tasks, freeing capacity for value creation.":
       "Plattformen fjerner opptil 80 % av repetitive oppgaver og frigjør kapasitet til verdiskaping.",
-    "NeuroSYS combines advisory, implementation and long-term operational ownership so AI becomes part of how the business runs, not just something you test on the side.":
-      "NeuroSYS kombinerer rådgivning, implementering og langsiktig operativt eierskap, slik at AI blir en del av hvordan virksomheten faktisk drives, ikke bare noe dere tester på siden.",
+    "NeuroSYS combines advisory, implementation and long-term operational ownership so AI becomes part of how the business actually runs day to day.":
+      "NeuroSYS kombinerer rådgivning, implementering og langsiktig operativt eierskap, slik at AI blir en del av hvordan virksomheten faktisk drives, dag for dag.",
     "Proof points": "Bevispunkter",
     "potential reduction in repetitive work for the right workflows.":
       "potensiell reduksjon i repetitivt arbeid for de riktige arbeidsflytene.",
@@ -862,8 +862,8 @@ const I18N_STRINGS = {
       "rådgivning, design, implementering og vedlikehold i ett samlet løp.",
     "Specialized in operational AI":
       "Spesialisert på operativ AI",
-    "We build AI systems that run in daily operations, not just demos and dashboards.":
-      "Vi bygger AI-systemer som fungerer i daglig drift, ikke bare demoer og dashbord.",
+    "We build AI systems that run in daily operations across the business.":
+      "Vi bygger AI-systemer som fungerer i daglig drift på tvers av virksomheten.",
     "Deep LLM & RAG expertise": "Dyp LLM- og RAG-kompetanse",
     "Orchestration, retrieval, tool calling and multi-step reasoning across enterprise data.":
       "Orkestrering, gjenfinning, verktøykall og flerstegs resonnering på tvers av virksomhetsdata.",
@@ -1023,12 +1023,12 @@ const I18N_STRINGS = {
     "Monitor quality, iterate based on usage and scale to more workflows over time.":
       "Overvåk kvalitet, iterer basert på bruk og skaler til flere arbeidsflyter over tid.",
     "Why NeuroSYS": "Hvorfor NeuroSYS",
-    "Built to deliver AI in production - not slides":
-      "Bygget for å levere AI i produksjon - ikke slides",
-    "We don't just advise on AI. We build, deploy and operate production-grade systems for Nordic enterprises.":
-      "Vi gir ikke bare råd om AI. Vi bygger, ruller ut og drifter produksjonsklare systemer for nordiske virksomheter.",
-    "Communication agents, workflow automation and embedded product intelligence - AI that runs in daily operations, not research shelves or disconnected proofs of concept.":
-      "Dialogagenter, arbeidsflytautomasjon og innebygd produktintelligens - AI som kjører i daglig drift, ikke forskningshyller eller løsrevne konseptbevis.",
+    "Built to deliver AI in production":
+      "Bygget for å levere AI i produksjon",
+    "We build, deploy and operate production-grade AI systems for Nordic enterprises.":
+      "Vi bygger, ruller ut og drifter produksjonsklare AI-systemer for nordiske virksomheter.",
+    "Communication agents, workflow automation and embedded product intelligence - AI that runs in daily operations across the business.":
+      "Dialogagenter, arbeidsflytautomasjon og innebygd produktintelligens - AI som kjører i daglig drift på tvers av virksomheten.",
     "100+ engineers across the full AI stack":
       "100+ ingeniører på tvers av hele AI-stacken",
     "LLM orchestration, RAG, ML and deep learning, full-stack engineering - one multidisciplinary team that covers model, data and product.":
@@ -1042,10 +1042,10 @@ const I18N_STRINGS = {
     "For agentic AI we deliver primarily on Dify - one of the world's leading open source platforms for AI agents. For custom AI engineering we use LangChain, Hugging Face, TensorFlow, PyTorch and the major cloud AI services (AWS, Azure). Platform selection depends on your use case, security requirements and integration needs.":
       "For agentisk AI leverer vi primært på Dify - en av verdens ledende open source-plattformer for AI-agenter. For skreddersydd AI-utvikling bruker vi LangChain, Hugging Face, TensorFlow, PyTorch og de store sky-AI-tjenestene (AWS, Azure). Valg av plattform avhenger av bruksområde, sikkerhetskrav og integrasjonsbehov.",
     "What makes us different": "Det som gjør oss annerledes",
-    "We don't just advise on AI - we build, deploy and operate production-grade systems.":
-      "Vi gir ikke bare råd om AI - vi bygger, drifter og kjører produksjonsklare systemer.",
-    "We focus on AI that runs in daily business operations - communication agents, workflow automation and embedded product intelligence. Not research projects or disconnected proofs of concept.":
-      "Vi fokuserer på AI som kjører i daglig drift - dialogagenter, arbeidsflytautomasjon og innebygd produktintelligens. Ikke forskningsprosjekter eller løsrevne konseptbevis.",
+    "We build, deploy and operate production-grade AI systems.":
+      "Vi bygger, drifter og kjører produksjonsklare AI-systemer.",
+    "We focus on AI that runs in daily business operations - communication agents, workflow automation and embedded product intelligence.":
+      "Vi fokuserer på AI som kjører i daglig drift - dialogagenter, arbeidsflytautomasjon og innebygd produktintelligens.",
     "Our teams have hands-on experience with LLM orchestration, retrieval-augmented generation, tool calling and multi-step reasoning across complex enterprise data environments.":
       "Teamene våre har praktisk erfaring med LLM-orkestrering, RAG, verktøykall og flerstegs resonnering i komplekse datamiljøer.",
     "100+ engineers across AI, data & full-stack":
@@ -1078,8 +1078,8 @@ const I18N_STRINGS = {
       "Kun arbeidsflyter i aktiv produksjon - de dere har publisert - telles mot grensen i planen deres. Utkast, testversjoner og upublisert arbeid er gratis, så teamet deres kan jobbe så mye de vil før dere går live.",
     "What does \"normal operations\" mean for the hosted plans?":
       "Hva betyr \"normal drift\" for de hostede planene?",
-    "Each Neurosys Workflows plan is priced for typical day-to-day use of the included workflows - normal request volumes, integrations and data processing. Storage is included per tier: Starter 1 GB, Growth 5 GB and Scale 10 GB, sized for production logs, knowledge bases and document handling at typical volumes. If a workflow needs unusually high request rates, very large knowledge bases or specialized infrastructure, we agree on a fair top-up before go-live so there are no surprises on the invoice.":
-      "Hver Neurosys Workflows-plan er priset for typisk daglig bruk av arbeidsflytene som inngår - normalt antall forespørsler, integrasjoner og databehandling. Lagring er inkludert per nivå: Starter 1 GB, Growth 5 GB og Scale 10 GB, dimensjonert for produksjonslogger, kunnskapsbaser og dokumenthåndtering ved typiske volumer. Hvis en arbeidsflyt krever uvanlig høye forespørselsrater, svært store kunnskapsbaser eller spesialisert infrastruktur, avtaler vi et rimelig påslag før go-live - så det ikke kommer overraskelser på fakturaen.",
+    "Each Neurosys Workflows plan is priced for typical day-to-day use of the included workflows - normal request volumes, integrations and data processing. Storage is included per tier: Starter 1 GB, Growth 5 GB and Scale 10 GB, sized for production logs, knowledge bases and document handling at typical volumes. If a workflow needs unusually high request rates, very large knowledge bases or specialized infrastructure, we agree on a fair top-up before go-live so the invoice stays predictable.":
+      "Hver Neurosys Workflows-plan er priset for typisk daglig bruk av arbeidsflytene som inngår - normalt antall forespørsler, integrasjoner og databehandling. Lagring er inkludert per nivå: Starter 1 GB, Growth 5 GB og Scale 10 GB, dimensjonert for produksjonslogger, kunnskapsbaser og dokumenthåndtering ved typiske volumer. Hvis en arbeidsflyt krever uvanlig høye forespørselsrater, svært store kunnskapsbaser eller spesialisert infrastruktur, avtaler vi et rimelig påslag før go-live - så fakturaen forblir forutsigbar.",
     "How do you handle data security and compliance?": "Hvordan håndterer dere datasikkerhet og compliance?",
     "We are ISO 27001 certified and operate Dify either in our managed Nordic cloud or fully on-premise inside your environment. Data stays within your boundaries, role-based access and audit logging are built in, and we work with you on GDPR, sector-specific requirements and internal governance from day one.":
       "Vi er ISO 27001-sertifisert og drifter Dify enten i vår administrerte nordiske sky eller fullstendig on-premise i deres miljø. Data forblir innenfor deres grenser, rollebasert tilgang og revisjonslogger er innebygget, og vi jobber med dere på GDPR, bransjespesifikke krav og intern styring fra dag én.",
@@ -1096,8 +1096,8 @@ const I18N_STRINGS = {
     "An agentic AI workflow is an AI system that can reason, make decisions and take actions across multiple tools and data sources. Unlike simple chatbots, agentic workflows connect to your existing systems (ERP, CRM, documents), follow multi-step logic and escalate to humans when needed.":
       "En agentisk AI-arbeidsflyt er et AI-system som kan resonnere, ta beslutninger og handle på tvers av flere verktøy og datakilder. I motsetning til enkle chatboter kobler agentiske arbeidsflyter seg til eksisterende systemer (ERP, CRM, dokumenter), følger flertrinnslogikk og eskalerer til mennesker ved behov.",
     "How long does a typical AI project take?": "Hvor lang tid tar et typisk AI-prosjekt?",
-    "A focused pilot typically takes 4-8 weeks, covering scope definition, integration, testing and evaluation. Production deployments follow in subsequent phases. We build pilots that are production-ready from day one, so you don't need to rebuild when scaling.":
-      "En fokusert pilot tar vanligvis 4-8 uker, inkludert omfangsdefinisjon, integrasjon, testing og evaluering. Produksjonsinnføring følger i påfølgende faser. Vi bygger piloter som er produksjonsklare fra dag én, så dere slipper å bygge på nytt ved skalering.",
+    "A focused pilot typically takes 4-8 weeks, covering scope definition, integration, testing and evaluation. Production deployments follow in subsequent phases. We build pilots that are production-ready from day one, so the same foundation carries you straight into scaling.":
+      "En fokusert pilot tar vanligvis 4-8 uker, inkludert omfangsdefinisjon, integrasjon, testing og evaluering. Produksjonsinnføring følger i påfølgende faser. Vi bygger piloter som er produksjonsklare fra dag én, så det samme fundamentet tar dere rett videre i skalering.",
     "Do I need to have AI expertise in my organization?": "Må jeg ha AI-kompetanse i organisasjonen min?",
     "No. We provide training and workshops to build shared understanding across your teams. Our engagement model covers everything from strategy and design to implementation and operations, so your team can focus on the business outcomes.":
       "Nei. Vi tilbyr opplæring og workshops for å bygge felles forståelse på tvers av teamene. Vår leveransemodell dekker alt fra strategi og design til implementering og drift, slik at teamet ditt kan fokusere på forretningsresultatene.",
@@ -1136,8 +1136,8 @@ const I18N_STRINGS = {
     "The training is for leadership teams, product owners, developers and operational staff who want to understand how agentic AI applies to their work. No prior AI experience is required.":
       "Opplæringen er for ledergrupper, produkteiere, utviklere og driftspersonell som vil forstå hvordan agentisk AI gjelder for arbeidet deres. Ingen tidligere AI-erfaring er nødvendig.",
     "What do participants learn?": "Hva lærer deltakerne?",
-    "Participants learn how large language models work, what agentic AI can and cannot do, how to identify real use cases in their organization, and how to evaluate AI readiness. The workshops include hands-on exercises with real tools.":
-      "Deltakerne lærer hvordan store språkmodeller fungerer, hva agentisk AI kan og ikke kan gjøre, hvordan de identifiserer reelle brukstilfeller i organisasjonen, og hvordan de vurderer AI-modenhet. Workshopene inkluderer praktiske øvelser med reelle verktøy.",
+    "Participants learn how large language models work, what agentic AI can do and where its limits lie, how to identify real use cases in their organization, and how to evaluate AI readiness. The workshops include hands-on exercises with real tools.":
+      "Deltakerne lærer hvordan store språkmodeller fungerer, hva agentisk AI kan gjøre og hvor grensene går, hvordan de identifiserer reelle brukstilfeller i organisasjonen, og hvordan de vurderer AI-modenhet. Workshopene inkluderer praktiske øvelser med reelle verktøy.",
     "How long is a typical workshop?": "Hvor lang er en typisk workshop?",
     "A standard workshop runs one full day. We also offer half-day executive briefings and multi-day deep-dive programs depending on your team's needs and technical level.":
       "En standard workshop varer en hel dag. Vi tilbyr også halvdags lederbriefer og flerdagers dybdeprogrammer avhengig av teamets behov og tekniske nivå.",
@@ -1155,8 +1155,8 @@ const I18N_STRINGS = {
     "What we help you with": "Dette hjelper vi deg med",
     "Decide where AI truly matters":
       "Bestem hvor AI virkelig betyr noe",
-    "Strategy, governance and prioritization - so agents and automation solve real problems, not interesting ones.":
-      "Strategi, governance og prioritering - slik at agenter og automatisering løser reelle problemer, ikke bare interessante.",
+    "Strategy, governance and prioritization - so agents and automation solve real business problems.":
+      "Strategi, governance og prioritering - slik at agenter og automatisering løser reelle forretningsproblemer.",
     "Turn priorities into working systems":
       "Gjør prioriteringer til fungerende systemer",
     "We design and build communication agents, workflows and AI-enabled products that fit your environment.":
@@ -1227,8 +1227,8 @@ const I18N_STRINGS = {
       "Operative runbooks og støtte til interessenter",
     "Long-term relevancy & innovation":
       "Langsiktig relevans og innovasjon",
-    "Ensure today’s systems don’t become tomorrow’s debt.":
-      "Sørg for at dagens systemer ikke blir morgendagens tekniske gjeld.",
+    "Keep today’s systems ready for what tomorrow demands.":
+      "Hold dagens systemer klare for det morgendagen krever.",
     "Model and stack refresh cadence":
       "Kadens for oppdatering av modeller og stack",
     "New capabilities as the market evolves":
@@ -1240,8 +1240,8 @@ const I18N_STRINGS = {
       "Om NeuroSYS - Din partner for AI-implementering",
     "We make AI part of how Nordic businesses actually run":
       "Vi gjør AI til en del av hvordan nordiske virksomheter faktisk opererer",
-    "A Nordic-Polish team of 100+ specialists that takes organizations from AI experimentation to operational capability - as part of daily operations, not next to them.":
-      "Et nordisk-polsk team med 100+ spesialister som tar virksomheter fra AI-eksperimentering til operasjonell kapasitet - som en del av daglig drift, ikke ved siden av.",
+    "A Nordic-Polish team of 100+ specialists that takes organizations from AI experimentation to operational capability - as part of daily operations.":
+      "Et nordisk-polsk team med 100+ spesialister som tar virksomheter fra AI-eksperimentering til operasjonell kapasitet - som en del av daglig drift.",
     "AI systems that work in real businesses":
       "AI-systemer som fungerer i ekte virksomheter",
     "We are a technology company with 100+ specialists, helping organizations turn AI into measurable impact across operations, customer experience and digital products.":
@@ -1270,12 +1270,12 @@ const I18N_STRINGS = {
     Microsoft: "Microsoft",
     "Solutions Partner": "Solutions Partner",
     "Why we exist": "Hvorfor vi finnes",
-    "Most companies don't have an AI problem - they have an implementation problem":
-      "De fleste virksomheter har ikke et AI-problem - de har et implementeringsproblem",
+    "Implementation is the real bottleneck for AI":
+      "Implementering er den egentlige flaskehalsen for AI",
     "Models keep getting better. The hard part has shifted to everything around them: integrations, governance, ownership, workflows in active production. That is where we live.":
       "Modellene blir stadig bedre. Det vanskelige har flyttet seg til alt rundt dem: integrasjoner, governance, eierskap, arbeidsflyter i aktiv produksjon. Det er der vi lever.",
-    "Since 2008, we've built software for Nordic enterprises. Over the last years, our practice has consolidated around one promise: take AI from isolated pilots to a real operational capability - so the value shows up in daily work, not in demos.":
-      "Siden 2008 har vi bygget programvare for nordiske virksomheter. De siste årene har praksisen vår samlet seg rundt ett løfte: å ta AI fra isolerte piloter til en reell operasjonell kapasitet - så verdien viser seg i daglig arbeid, ikke i demoer.",
+    "Since 2008, we've built software for Nordic enterprises. Over the last years, our practice has consolidated around one promise: take AI from isolated pilots to a real operational capability - so the value shows up in daily work.":
+      "Siden 2008 har vi bygget programvare for nordiske virksomheter. De siste årene har praksisen vår samlet seg rundt ett løfte: å ta AI fra isolerte piloter til en reell operasjonell kapasitet - så verdien viser seg i daglig arbeid.",
     "That is what makes us your":
       "Det er det som gjør oss til din",
     "strategic implementation partner":
@@ -1323,8 +1323,8 @@ const I18N_STRINGS = {
     "Three principles behind every delivery":
       "Tre prinsipper bak hver leveranse",
     "Business impact": "Forretningsmessig effekt",
-    "We measure success by outcomes: reduced effort, faster decisions and better experiences - not by how many models we ship.":
-      "Vi måler suksess i resultater: mindre innsats, raskere beslutninger og bedre opplevelser - ikke i hvor mange modeller vi sender ut.",
+    "We measure success by outcomes: reduced effort, faster decisions and better experiences.":
+      "Vi måler suksess i resultater: mindre innsats, raskere beslutninger og bedre opplevelser.",
     "We measure success by outcomes: reduced effort, faster decisions and better experiences.":
       "Vi måler suksess i resultater: mindre innsats, raskere beslutninger og bedre opplevelser.",
     "System thinking": "Systemtenkning",
@@ -1333,8 +1333,8 @@ const I18N_STRINGS = {
     "We build AI as part of your stack - integrated, reliable and ready to evolve.":
       "Vi bygger AI som en del av stacken din - integrert, pålitelig og klar til å utvikle seg.",
     "Responsible delivery": "Ansvarlig leveranse",
-    "Security, governance and operational quality are built in from day one - not patched on later. ISO 27001 certified for a reason.":
-      "Sikkerhet, governance og operasjonell kvalitet er bygd inn fra dag én - ikke lappet på etterpå. ISO 27001-sertifisert av en grunn.",
+    "Security, governance and operational quality are built in from day one. ISO 27001 certified for a reason.":
+      "Sikkerhet, governance og operasjonell kvalitet er bygd inn fra dag én. ISO 27001-sertifisert av en grunn.",
     "We take security, governance and operational quality seriously, from day one.":
       "Vi tar sikkerhet, governance og operasjonell kvalitet på alvor fra dag én.",
     People: "Mennesker",
@@ -1391,8 +1391,8 @@ const I18N_STRINGS = {
     Germany: "Tyskland",
     Contact: "Kontakt",
     "Let's start a conversation": "La oss starte en samtale",
-    "A short, no-pressure conversation to assess where agentic AI makes sense for your organization - and where it doesn't. We'll come back within one working day.":
-      "En kort, uforpliktende samtale for å vurdere hvor agentisk AI gir mening for virksomheten din - og hvor det ikke gjør det. Vi svarer innen én arbeidsdag.",
+    "A short, no-pressure conversation to assess where agentic AI makes sense for your organization - and where other approaches fit better. We'll come back within one working day.":
+      "En kort, uforpliktende samtale for å vurdere hvor agentisk AI gir mening for virksomheten din - og hvor andre tilnærminger passer bedre. Vi svarer innen én arbeidsdag.",
     "General inquiries": "Generelle henvendelser",
     "For RFPs, partnerships, press, support and general questions about our work.":
       "For RFP-er, partnerskap, presse, support og generelle spørsmål om arbeidet vårt.",
@@ -1413,8 +1413,8 @@ const I18N_STRINGS = {
     "A short note about your context, your stack and what you'd like to explore. No formal brief required.":
       "En kort melding om konteksten din, teknologistacken og hva du vil utforske. Ingen formell brief nødvendig.",
     "30-minute intro call": "30-minutters introsamtale",
-    "We listen, ask the right questions and share where agentic AI is realistic - and where it isn't - in your situation.":
-      "Vi lytter, stiller de riktige spørsmålene og deler hvor agentisk AI er realistisk - og hvor det ikke er det - i din situasjon.",
+    "We listen, ask the right questions and share where agentic AI is realistic - and where other approaches fit better - in your situation.":
+      "Vi lytter, stiller de riktige spørsmålene og deler hvor agentisk AI er realistisk - og hvor andre tilnærminger passer bedre - i din situasjon.",
     "Concrete next step": "Konkret neste steg",
     "A focused workshop, a pilot workflow or a short technical assessment - whichever moves you forward fastest.":
       "En fokusert workshop, en pilot-arbeidsflyt eller en kort teknisk vurdering - det som tar dere raskest videre.",
@@ -1449,8 +1449,8 @@ const I18N_STRINGS = {
     "Why invest in a focused session":
       "Hvorfor investere i en fokusert økt",
     "Shared decision confidence": "Felles beslutningssikkerhet",
-    "Leadership and teams align on what is realistic - and what isn’t worth pursuing.":
-      "Ledelse og team samkjører om hva som er realistisk - og hva som ikke er verdt å forfølge.",
+    "Leadership and teams align on what is realistic - and what deserves their focus first.":
+      "Ledelse og team samkjører om hva som er realistisk - og hva som fortjener fokuset først.",
     "Credible opportunity focus": "Tydelig mulighetsfokus",
     "You get a grounded view of where AI can create measurable value in your environment.":
       "Du får et jordnært bilde av hvor AI kan skape målbar verdi i ditt miljø.",
@@ -1534,8 +1534,8 @@ const I18N_STRINGS = {
       "Slik et samarbeid vanligvis utvikler seg",
     "Some teams only need one focused session. Others use it as the starting point for opportunity shaping and pilot readiness.":
       "Noen team trenger bare én fokusert økt. Andre bruker den som startpunkt for mulighetsforming og pilotklarhet.",
-    "The point is not to force a longer process, but to make the next decision clearer if you want to continue.":
-      "Poenget er ikke å tvinge fram et lengre løp, men å gjøre neste beslutning tydeligere dersom dere vil fortsette.",
+    "The point is to make the next decision clearer if you want to continue.":
+      "Poenget er å gjøre neste beslutning tydeligere dersom dere vil fortsette.",
     "You are here": "Du er her",
     "Next session": "Neste økt",
     "Final session": "Siste økt",
@@ -1705,8 +1705,8 @@ const I18N_STRINGS = {
     "Communication teams in complex organizations deal with fragmented, unstructured news data every day. Sources vary in quality and format. Dialects, jargon, simplifications and time pressure make it hard to extract what actually matters. The result: teams spend time on volume instead of focusing on what requires real attention.":
       "Kommunikasjonsteam i komplekse organisasjoner håndterer fragmentert, ustrukturert nyhetsdata hver dag. Kilder varierer i kvalitet og format. Dialekter, sjargong, forenklinger og tidspress gjør det vanskelig å trekke ut det som faktisk betyr noe. Resultatet: team bruker tid på volum i stedet for å fokusere på det som krever reell oppmerksomhet.",
     "What MedieX does differently": "Hva MedieX gjør annerledes",
-    "Where traditional media monitoring stops at alerting and keyword matching, MedieX goes further. It is an agentic platform that understands context, not just hits - and turns raw media data into decision-ready insight.":
-      "Der tradisjonell medieovervåking stopper ved varsling og nøkkelordtreff, går MedieX videre. Det er en agentisk plattform som forstår kontekst, ikke bare treff - og gjør rå mediedata om til beslutningsklar innsikt.",
+    "Where traditional media monitoring stops at alerting and keyword matching, MedieX goes further. It is an agentic platform that understands context and turns raw media data into decision-ready insight.":
+      "Der tradisjonell medieovervåking stopper ved varsling og nøkkelordtreff, går MedieX videre. Det er en agentisk plattform som forstår kontekst og gjør rå mediedata om til beslutningsklar innsikt.",
     "Organizes topics, cases and search across sources":
       "Organisering av temaer, saker og søk på tvers av kilder",
     "Team collaboration with comments, assignments and alerts":
@@ -1829,7 +1829,7 @@ const I18N_STRINGS = {
     "Operators get immediate, accurate answers to critical procedure questions without needing to know file locations or folder structures. The solution ensures information flow while meeting strict requirements for compliance, security and data governance.":
       "Operatører får umiddelbare, nøyaktige svar på kritiske prosedyrespørsmål uten å måtte kjenne filplasseringer eller mappestrukturer. Løsningen sikrer informasjonsflyt samtidig som strenge krav til etterlevelse, sikkerhet og datastyring ivaretas.",
     "Future phases will introduce integration with external data sources (shared drives, Box, Veeva, TrackWise, SAP), granular access permissions for document subsets, SSO-based authentication, and support for non-text content like images and video.":
-      "Fremtidige faser vil introdusere integrasjon med eksterne datakilder (fellesområder, Box, Veeva, TrackWise, SAP), detaljerte tilgangsrettigheter for dokumentundergrupper, SSO-basert autentisering og støtte for ikke-tekstlig innhold som bilder og video.",
+      "Fremtidige faser vil introdusere integrasjon med eksterne datakilder (fellesområder, Box, Veeva, TrackWise, SAP), detaljerte tilgangsrettigheter for dokumentundergrupper, SSO-basert autentisering og støtte for innhold utover tekst, som bilder og video.",
     "The architecture is also designed for multi-site access, with secure VPN tunnels enabling other GE locations to connect to the same knowledge base.":
       "Arkitekturen er også designet for tilgang fra flere lokasjoner, med sikre VPN-tunneler som gjør at andre GE-lokasjoner kan koble seg til samme kunnskapsbase.",
     "On-premises": "On-premises",
@@ -1866,12 +1866,12 @@ const I18N_STRINGS = {
     "Iterating on production AI required faster, repeatable foundations":
       "Iterering på produksjons-AI krevde raskere, repeterbare grunnlag",
     "What Dify changed": "Hva Dify endret",
-    "Dify gave us one unified platform for agents, workflows, RAG, evaluation and monitoring. No need to rebuild infrastructure again and again. The result: faster delivery, more predictable engineering, and an enterprise-ready foundation that is flexible, open and high-performance.":
-      "Dify ga oss én samlet plattform for agenter, arbeidsflyter, RAG, evaluering og overvåking. Ikke behov for å bygge infrastruktur på nytt gang etter gang. Resultatet: raskere leveranse, mer forutsigbar utvikling, og et enterprise-klart fundament som er fleksibelt, åpent og ytelsessterkt.",
+    "Dify gave us one unified platform for agents, workflows, RAG, evaluation and monitoring. We reuse infrastructure across projects instead of rebuilding it each time. The result: faster delivery, more predictable engineering, and an enterprise-ready foundation that is flexible, open and high-performance.":
+      "Dify ga oss én samlet plattform for agenter, arbeidsflyter, RAG, evaluering og overvåking. Vi gjenbruker infrastruktur på tvers av prosjekter i stedet for å bygge den på nytt hver gang. Resultatet: raskere leveranse, mer forutsigbar utvikling, og et enterprise-klart fundament som er fleksibelt, åpent og ytelsessterkt.",
     "Scale clients from prototype to production to operations on the same platform":
       "Skaler kunder fra prototype til produksjon til drift på samme plattform",
-    "Teams focus on business value, not plumbing":
-      "Team fokuserer på forretningsverdi, ikke infrastruktur",
+    "Teams focus on business value instead of plumbing":
+      "Team fokuserer på forretningsverdi i stedet for infrastruktur",
     "Enterprise-ready with built-in security, governance and compliance":
       "Enterprise-klar med innebygd sikkerhet, styring og etterlevelse",
     "Open and flexible - no vendor lock-in":
@@ -1882,8 +1882,8 @@ const I18N_STRINGS = {
       "Sammen med Dify samlet vi beslutningstakere i Oslo for å diskutere hva som faktisk skal til for å operasjonalisere agentisk AI. Når de fleste virksomheter fortsatt sitter fast i pilotfasen, var fokuset på gjenbrukbare arbeidsflyter, delt kunnskap og kontrollert autonomi på tvers av team.",
     "We explored what works in practice: democratizing building so teams can experiment safely, reusing proven workflows instead of reinventing in every department, and ensuring insights stay centralized rather than disappearing into isolated tools.":
       "Vi utforsket hva som fungerer i praksis: å demokratisere bygging slik at team kan eksperimentere trygt, gjenbruke utprøvde arbeidsflyter i stedet for å finne opp alt på nytt i hver avdeling, og sørge for at innsikt forblir sentralisert i stedet for å forsvinne i isolerte verktøy.",
-    "The key takeaway was clear: enterprises must take control of their knowledge, tasks and processes - and use agentic workflows to push that intelligence out to teams, not the other way around.":
-      "Hovedpoenget var tydelig: virksomheter må ta kontroll over kunnskap, oppgaver og prosesser - og bruke agentiske arbeidsflyter til å distribuere den intelligensen ut til teamene, ikke omvendt.",
+    "The key takeaway was clear: enterprises must take control of their knowledge, tasks and processes - and use agentic workflows to push that intelligence out to the teams who use it every day.":
+      "Hovedpoenget var tydelig: virksomheter må ta kontroll over kunnskap, oppgaver og prosesser - og bruke agentiske arbeidsflyter til å distribuere den intelligensen ut til teamene som bruker den daglig.",
     Workflows: "Arbeidsflyter",
     "Ready to move from pilots to production-grade AI?":
       "Klar for å gå fra piloter til produksjonsklar AI?",
@@ -1948,8 +1948,8 @@ const I18N_STRINGS = {
       "Grensesnitt gjenbruker samme kunnskap og handlinger",
     "Less fragmentation, lower maintenance cost":
       "Mindre fragmentering, lavere vedlikeholdskostnad",
-    "Agentic means it can reason, decide and act - not just respond.":
-      "Agentisk betyr at det kan resonnerer, beslutte og handle - ikke bare svare.",
+    "Agentic means it can reason, decide and act on your behalf.":
+      "Agentisk betyr at det kan resonnere, beslutte og handle på vegne av dere.",
     "From request to resolution": "Fra henvendelse til løsning",
     "How a communication agent actually resolves a request":
       "Slik løser en dialogagent en henvendelse i praksis",
@@ -2060,8 +2060,8 @@ const I18N_STRINGS = {
     "Why this matters": "Hvorfor dette betyr noe",
     "From answering questions to resolving work":
       "Fra å svare på spørsmål til å løse arbeid",
-    "Communication agents don’t just respond - they complete work across systems.":
-      "Dialogagenter svarer ikke bare - de fullfører arbeid på tvers av systemer.",
+    "Communication agents complete work across systems - end to end.":
+      "Dialogagenter fullfører arbeid på tvers av systemer - fra ende til ende.",
     "Shorter resolution times for common issues":
       "Kortere løsnings­tider for vanlige saker",
     "Fewer tickets and handovers between teams":
@@ -2150,8 +2150,8 @@ const I18N_STRINGS = {
     "Why AI Process Optimization":
       "Hvorfor prosessagenter",
     "Context-aware": "Kontekstbevisst",
-    "Decisions consider history, live context and rules - not just static thresholds.":
-      "Beslutninger tar hensyn til historikk, sanntidskontekst og regler - ikke bare statiske terskler.",
+    "Decisions consider history, live context and rules together.":
+      "Beslutninger tar hensyn til historikk, sanntidskontekst og regler samtidig.",
     "Cross-system": "Tverrsystem",
     "Workflows follow how work actually flows across ERP, MES, CRM, ticketing and documents.":
       "Arbeidsflyter følger hvordan arbeidet faktisk flyter på tvers av ERP, MES, CRM, saksbehandling og dokumenter.",
@@ -2198,8 +2198,8 @@ const I18N_STRINGS = {
       "Arbeidsflyter gjenbruker samme kontekst, regler og integrasjoner",
     "Human checkpoints stay where judgment matters":
       "Menneskelige kontrollpunkter beholdes der skjønn er viktig",
-    "Agentic means the workflow can reason, decide and act - not just move data between systems.":
-      "Agentisk betyr at arbeidsflyten kan resonnere, beslutte og handle - ikke bare flytte data mellom systemer.",
+    "Agentic means the workflow can reason, decide and act across your systems.":
+      "Agentisk betyr at arbeidsflyten kan resonnere, beslutte og handle på tvers av systemene deres.",
     "One orchestration platform connected to operational systems and downstream actions":
       "Én orkestreringsplattform koblet til operasjonelle systemer og nedstrøms handlinger",
     "ORCHESTRATION LAYER": "ORKESTRERINGSLAG",
@@ -2290,15 +2290,15 @@ const I18N_STRINGS = {
       "MedieX: Fra mediestøy til handlingsrettet innsikt",
     "Digital products & services":
       "Digitale produkter og tjenester",
-    "Embed agentic AI directly into your SaaS or digital platform - as native product functionality, not a bolt-on chatbot.":
-      "Bygg agentisk AI direkte inn i SaaS eller digitale plattformer - som native produktfunksjonalitet, ikke en påklistret chatbot.",
+    "Embed agentic AI directly into your SaaS or digital platform - as native product functionality.":
+      "Bygg agentisk AI direkte inn i SaaS eller digitale plattformer - som native produktfunksjonalitet.",
     "Digital products & platforms":
       "Digitale produkter og plattformer",
-    "Make agentic AI a native part of your product - inline guidance, copilots and suggested actions that share one intelligence layer, not bolt-on chatbots beside it.":
-      "Gjør agentisk AI til en native del av produktet - inline veiledning, copiloter og foreslåtte handlinger som deler ett intelligenslag, ikke påklistrede chatboter ved siden av.",
+    "Make agentic AI a native part of your product - inline guidance, copilots and suggested actions that share one intelligence layer.":
+      "Gjør agentisk AI til en native del av produktet - inline veiledning, copiloter og foreslåtte handlinger som deler ett intelligenslag.",
     Native: "Native",
-    "AI moments inside the product, not a chatbot beside it":
-      "AI-øyeblikk inne i produktet, ikke en chatbot ved siden av",
+    "AI moments inside the product surface itself":
+      "AI-øyeblikk inne i selve produktflaten",
     "One layer": "Ett lag",
     "shared intelligence many product features can reuse":
       "delt intelligens som mange produktfunksjoner kan gjenbruke",
@@ -2316,8 +2316,8 @@ const I18N_STRINGS = {
       "Funksjoner gjenbruker samme prompts, verktøy og guardrails",
     "Shipped like any other product feature - your team owns it":
       "Sendes ut som hvilken som helst produktfunksjon - teamet deres eier den",
-    "Native means it lives in the flows users already know - not in a separate window they have to remember to open.":
-      "Native betyr at det bor i flytene brukerne allerede kjenner - ikke i et eget vindu de må huske å åpne.",
+    "Native means it lives in the flows users already know - inside the same window where the work already happens.":
+      "Native betyr at det bor i flytene brukerne allerede kjenner - inne i det samme vinduet der arbeidet allerede skjer.",
     "One product intelligence layer connected to AI moments inside the product surface":
       "Ett produktintelligenslag koblet til AI-øyeblikk inne i produktflaten",
     "PRODUCT INTELLIGENCE": "PRODUKTINTELLIGENS",
@@ -2344,17 +2344,17 @@ const I18N_STRINGS = {
       "Fra produktøyeblikk til levende funksjon",
     "How an AI feature actually lands in your product":
       "Hvordan en AI-funksjon faktisk lander i produktet",
-    "Each AI feature follows the same four steps - so it ships like any other product capability, with metrics, ownership and a roadmap, not a one-off experiment.":
-      "Hver AI-funksjon følger de samme fire stegene - så den sendes ut som hvilken som helst produktkapabilitet, med målinger, eierskap og veikart, ikke som et engangs eksperiment.",
+    "Each AI feature follows the same four steps - so it ships like any other product capability, with metrics, ownership and a roadmap behind it.":
+      "Hver AI-funksjon følger de samme fire stegene - så den sendes ut som hvilken som helst produktkapabilitet, med målinger, eierskap og veikart bak.",
     "Pick the moment": "Velg øyeblikket",
     "Find one product moment with the highest leverage - where users get stuck, repeat work or wait for someone - and define what success looks like.":
       "Finn ett produktøyeblikk med høyest løftekraft - der brukere setter seg fast, gjentar arbeid eller venter på noen - og definer hva suksess ser ut som.",
     "Design it native": "Design det native",
-    "Design the AI moment inside the existing flow - same data, same UI patterns, same auth - so it feels like a feature, not a bolt-on chatbot.":
-      "Design AI-øyeblikket inne i eksisterende flyt - samme data, samme UI-mønstre, samme auth - så det føles som en funksjon, ikke en påklistret chatbot.",
+    "Design the AI moment inside the existing flow - same data, same UI patterns, same auth - so it feels like a native feature.":
+      "Design AI-øyeblikket inne i eksisterende flyt - samme data, samme UI-mønstre, samme auth - så det føles som en native funksjon.",
     "Build on the platform": "Bygg på plattformen",
-    "Build the workflow on the agentic platform: prompts, tools, retrieval and guardrails - reusable across other moments, not stitched into the product code.":
-      "Bygg arbeidsflyten på den agentiske plattformen: prompts, verktøy, gjenfinning og guardrails - gjenbrukbart på tvers av andre øyeblikk, ikke sydd inn i produktkoden.",
+    "Build the workflow on the agentic platform: prompts, tools, retrieval and guardrails - reusable across other moments in the same product.":
+      "Bygg arbeidsflyten på den agentiske plattformen: prompts, verktøy, gjenfinning og guardrails - gjenbrukbart på tvers av andre øyeblikk i samme produkt.",
     "Ship, measure, expand": "Send, mål, utvid",
     "Release to a slice of users, instrument adoption and quality, iterate, then reuse the same building blocks for the next AI moment.":
       "Slipp til en del av brukerne, mål adopsjon og kvalitet, iterer, og gjenbruk de samme byggeklossene til neste AI-øyeblikk.",
@@ -2381,8 +2381,8 @@ const I18N_STRINGS = {
     "Samelane learning platform": "Samelane læringsplattform",
     "of all digital editorial media in Norway covered by an agentic product that turns noise into structured intelligence.":
       "av all digital redaksjonell media i Norge dekket av et agentisk produkt som gjør støy om til strukturert innsikt.",
-    "AI is built into the product itself - ingestion, contextual sentiment, risk assessment and summaries are native features of MedieX, not a separate chatbot. EU AI Act compliant by design.":
-      "AI er bygget inn i selve produktet - innhenting, kontekstuell sentiment, risikovurdering og sammendrag er native funksjoner i MedieX, ikke en separat chatbot. EU AI Act compliant by design.",
+    "AI is built into the product itself - ingestion, contextual sentiment, risk assessment and summaries are native features of MedieX. EU AI Act compliant by design.":
+      "AI er bygget inn i selve produktet - innhenting, kontekstuell sentiment, risikovurdering og sammendrag er native funksjoner i MedieX. EU AI Act compliant by design.",
     "Agentic product": "Agentisk produkt",
     Sentiment: "Sentiment",
     "EU AI Act": "EU AI Act",
@@ -2439,8 +2439,8 @@ const I18N_STRINGS = {
     "Customer and partner portals": "Kunde- og partnerportaler",
     "How AI shows up inside products":
       "Hvordan AI vises i produkter",
-    "Product capabilities that feel native, not bolted on.":
-      "Produktkapabiliteter som føles native, ikke påklistret.",
+    "Product capabilities that feel native to your product.":
+      "Produktkapabiliteter som føles native i produktet.",
     "Product guidance": "Produktveiledning",
     "AI guides users through complex choices, learns from product data and rules, and is embedded directly in UI flows.":
       "AI veileder brukere gjennom komplekse valg, lærer av produktdata og regler, og er innebygd direkte i UI-flyt.",
@@ -2485,8 +2485,8 @@ const I18N_STRINGS = {
       "AI-drevet medieintelligensplattform",
     "Turns unstructured media noise into structured, actionable intelligence - in seconds.":
       "Gjør ustrukturert mediestøy om til strukturert, handlingsbar innsikt - på sekunder.",
-    "Agentic platform that understands context, not just keyword hits.":
-      "Agentisk plattform som forstår kontekst, ikke bare nøkkelordtreff.",
+    "Agentic platform that understands context across your media coverage.":
+      "Agentisk plattform som forstår kontekst på tvers av medieomtalen.",
     "Contextual sentiment and risk assessment per story.":
       "Kontekstuell sentiment- og risikovurdering per sak.",
     "Covers ~80% of all digital editorial media in Norway.":

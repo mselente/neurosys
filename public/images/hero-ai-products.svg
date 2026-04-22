@@ -186,6 +186,6 @@
     <text x="70" y="397" font-family="Inter,sans-serif" font-size="10" font-weight="600" fill="#0F172A">AI moments embedded across 6 product surfaces</text>
     <text x="356" y="397" font-family="Inter,sans-serif" font-size="9.5" fill="#64748B">· avg response 0.5s · 92% of users engage with at least one</text>
     <rect x="588" y="384" width="80" height="18" rx="9" fill="#EEF2FF" stroke="#C7D2FE"/>
-    <text x="628" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#4338CA">Native, not bolted</text>
+    <text x="628" y="397" text-anchor="middle" font-family="Inter,sans-serif" font-size="9.5" font-weight="600" fill="#4338CA">Native by design</text>
   </g>
 </svg>
