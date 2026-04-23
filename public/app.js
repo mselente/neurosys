@@ -490,8 +490,8 @@ const I18N_STRINGS = {
       "AI bygget direkte inn i SaaS-løsningene og plattformene deres.",
     "Open menu": "Åpne meny",
     "Close menu": "Lukk meny",
-    "Agentic capacity built into your value chains.":
-      "Agentisk kapasitet bygd inn i verdikjedene deres.",
+    "Agentic capacity built into your value chains":
+      "Agentisk kapasitet bygd inn i verdikjedene",
     "Key benefits": "Nokkelfordeler",
     "Full control": "Full kontroll",
     "Predictable cost": "Forutsigbar kost",
@@ -503,16 +503,12 @@ const I18N_STRINGS = {
     "Where we apply agentic workflows":
       "Hvor agentiske arbeidsflyter brukes",
     "Across the business": "På tvers av virksomheten",
-    "Where agentic workflows fit in": "Hvor agentiske arbeidsflyter passer inn",
-    "From growth and service to digital products and operations - the same platform fits very different parts of the business.":
-      "Fra vekst og service til digitale produkter og drift - samme plattform passer i svært ulike deler av virksomheten.",
+    "Where agentic workflows create value": "Hvor agentiske arbeidsflyter skaper verdi",
     "Application areas": "Bruksområder",
     "Where can AI create value across the business?":
       "Hvor i virksomheten kan AI skape verdi?",
     "From marketing and sales to service, project delivery, digital touchpoints, and insight.":
       "Fra markedsføring og salg til service, prosjektleveranse, digitale flater og innsikt.",
-    "From growth and service to digital products and operational decisions, the same platform logic can support very different parts of the business.":
-      "Fra vekst og service til digitale produkter og operative beslutninger kan den samme plattformlogikken støtte svært ulike deler av virksomheten.",
     Growth: "Vekst",
     "Operations & service": "Operasjon og service",
     "Digital products & insight": "Digitale produkter og innsikt",
@@ -526,20 +522,20 @@ const I18N_STRINGS = {
     "From testing AI to transforming the business":
       "Fra å teste AI til å transformere virksomheten",
     "An agentic platform brings leadership, IT and operations closer together, so AI becomes part of how the business actually runs.":
-      "En agentisk plattform bringer ledelse, IT og operasjon tettere sammen, slik at AI blir en del av hvordan virksomheten faktisk drives.",
+      "En agentisk plattform bringer ledelse, IT og operasjon tettere sammen, slik at AI blir en del av hvordan virksomheten opererer.",
     "What the platform helps with": "Hva plattformen hjelper med",
     Connect: "Koble",
-    "systems, data sources and work tools in one shared layer.":
-      "systemer, datakilder og arbeidsverktøy i ett delt lag.",
+    "systems, data sources and work tools in one shared platform.":
+      "systemer, datakilder og arbeidsverktøy på en felles plattform.",
     Orchestrate: "Orkestrere",
     "agents and workflows that can reason, act and escalate.":
       "agenter og arbeidsflyter som kan resonnere, handle og eskalere.",
     Govern: "Styre",
-    "AI use with approvals, traceability and clear ownership.":
-      "AI-bruk med godkjenninger, sporbarhet og tydelig eierskap.",
+    "AI use you approve, with traceability and clear ownership.":
+      "AI-bruk du godkjenner, med sporbarhet og tydelig eierskap.",
     Reuse: "Gjenbruke",
-    "logic across channels, teams and future product decisions.":
-      "logikk på tvers av kanaler, team og fremtidige produktvalg.",
+    "workflows, models and integrations across business domains.":
+      "arbeidsflyter, modeller og integrasjoner på tvers av forretningsområder.",
     "Dify workflow builder showing agent orchestration and connected steps":
       "Dify arbeidsflytbygger som viser agentorkestrering og sammenkoblede steg",
     Assistance: "Assistanse",
@@ -570,8 +566,8 @@ const I18N_STRINGS = {
     "Free project teams from sourcing, indexing, and validating component data.":
       "Frigjør prosjektteamene fra sourcing, indeksering og validering av komponentdata.",
     Production: "Produksjon",
-    "Reduce downtime, changeovers, and manual coordination on the floor.":
-      "Reduser stans, omstilling og manuell koordinering på gulvet.",
+    "Optimize productivity with integrated agentic workflows.":
+      "Økt produktivitet med integrerte AI-agentiske arbeidsflyter.",
     "Communication agents": "Dialogagenter",
     "Reduce support load and resolve work across channels by connecting to your systems and data.":
       "Reduser supportbelastning og løs oppgaver på tvers av kanaler ved å koble til systemer og data.",
