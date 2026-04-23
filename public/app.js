@@ -1331,8 +1331,8 @@ const I18N_STRINGS = {
     "About NeuroSYS": "Om NeuroSYS",
     "About NeuroSYS - Your AI implementation partner":
       "Om NeuroSYS - Din partner for AI-implementering",
-    "We make AI part of Nordic operations":
-      "Vi gjør AI til en del av nordisk drift",
+    "A senior team for agentic AI":
+      "Et senior team for agentisk AI",
     "A Nordic-Polish team of 100+ specialists that takes organizations from AI experimentation to operational capability - as part of daily operations.":
       "Et nordisk-polsk team med 100+ spesialister som tar virksomheter fra AI-eksperimentering til operasjonell kapasitet - som en del av daglig drift.",
     "AI systems that work in real businesses":
@@ -1344,8 +1344,8 @@ const I18N_STRINGS = {
     "years in market": "år i markedet",
     "European hubs": "europeiske hubber",
     "Who we are": "Hvem vi er",
-    "A senior team, built to be trusted with production AI":
-      "Et senior team, bygget for å håndtere AI i produksjon",
+    "Built to be trusted with production AI":
+      "Bygget for å håndtere AI i produksjon",
     "Founded in 2008, certified for the work we do, and partnered with the platforms that power modern AI delivery.":
       "Grunnlagt i 2008, sertifisert for arbeidet vi gjør, og partner med plattformene som driver moderne AI-leveranse.",
     "Specialists across AI, software, data and delivery":
