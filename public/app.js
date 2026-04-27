@@ -5,7 +5,19 @@ const headerLogo = header?.querySelector(".logo img");
 const navDetails = Array.from(document.querySelectorAll(".nav-details"));
 const disclosureCloseTimers = new WeakMap();
 const homePaths = new Set(["/", "/index.html"]);
-const normalizedPath = window.location.pathname.replace(/\/+$/, "") || "/";
+const localeMatch = window.location.pathname.match(/^\/(en|no)(?=\/|$)/);
+const currentLocale = window.__NEUROSYS_LANG__ || localeMatch?.[1] || null;
+const stripLocalePrefix = (pathname) => {
+  if (!pathname) return "/";
+  const stripped = pathname.replace(/^\/(en|no)(?=\/|$)/, "");
+  return stripped.replace(/\/+$/, "") || "/";
+};
+const withLocalePath = (pathname, locale = currentLocale) => {
+  const normalized = pathname.replace(/\/+$/, "") || "/";
+  if (!locale) return normalized;
+  return normalized === "/" ? `/${locale}/` : `/${locale}${normalized}`;
+};
+const normalizedPath = stripLocalePrefix(window.location.pathname);
 const isHomePage = homePaths.has(normalizedPath);
 const DEFAULT_LOGO =
   "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo.png";
@@ -14,16 +26,16 @@ const INVERTED_LOGO =
 const MENU_BREAKPOINT = 1024;
 const prefersDesktopHover = window.matchMedia("(hover: hover) and (pointer: fine)");
 const canonicalMenuItems = {
-  "/applications/dialogagenter": {
-    title: "Communication Agents",
+  "/applications/dialogueagents": {
+    title: "Dialogue Agents",
     text: "Resolve work across channels and reduce support load.",
   },
-  "/applications/prosessagenter": {
-    title: "AI Process Optimization",
+  "/applications/processagents": {
+    title: "Process Agents",
     text: "Decision-heavy workflows automated end to end.",
   },
-  "/applications/produktagenter": {
-    title: "AI-Enabled Products",
+  "/applications/productagents": {
+    title: "Product Agents",
     text: "AI embedded directly into your SaaS and platforms.",
   },
 };
@@ -36,15 +48,20 @@ document.querySelectorAll("[data-current-year]").forEach((el) => {
 });
 
 const ensureAgentPlatformLinks = () => {
-  if (nav && !nav.querySelector('a[href="/agent-platform"]')) {
+  const localizedAgentPlatformPath = withLocalePath("/agent-platform");
+  const localizedServicesPath = withLocalePath("/services");
+
+  if (nav && !nav.querySelector(`a[href="${localizedAgentPlatformPath}"]`)) {
     const agentPlatformLink = document.createElement("a");
-    agentPlatformLink.href = "/agent-platform";
+    agentPlatformLink.href = localizedAgentPlatformPath;
     agentPlatformLink.textContent = "Agent Platform";
     if (normalizedPath === "/agent-platform") {
       agentPlatformLink.setAttribute("aria-current", "page");
     }
 
-    const servicesLink = nav.querySelector('a[href="/services"]');
+    const servicesLink =
+      nav.querySelector(`a[href="${localizedServicesPath}"]`) ||
+      nav.querySelector('a[href="/services"]');
     if (servicesLink) {
       servicesLink.insertAdjacentElement("beforebegin", agentPlatformLink);
     } else {
@@ -53,16 +70,18 @@ const ensureAgentPlatformLinks = () => {
   }
 
   document.querySelectorAll(".footer-links").forEach((links) => {
-    if (links.querySelector('a[href="/agent-platform"]')) return;
+    if (links.querySelector(`a[href="${localizedAgentPlatformPath}"]`)) return;
 
     const agentPlatformLink = document.createElement("a");
-    agentPlatformLink.href = "/agent-platform";
+    agentPlatformLink.href = localizedAgentPlatformPath;
     agentPlatformLink.textContent = "Agent Platform";
     if (normalizedPath === "/agent-platform") {
       agentPlatformLink.setAttribute("aria-current", "page");
     }
 
-    const servicesLink = links.querySelector('a[href="/services"]');
+    const servicesLink =
+      links.querySelector(`a[href="${localizedServicesPath}"]`) ||
+      links.querySelector('a[href="/services"]');
     if (servicesLink) {
       servicesLink.insertAdjacentElement("afterend", agentPlatformLink);
     } else {
@@ -380,6 +399,8 @@ const I18N_STRINGS = {
     "Customer references": "Kundereferanser",
     About: "Om oss",
     News: "Nyheter",
+    Insights: "Innsikt",
+    "AI Workshops": "AI-workshops",
     Contact: "Kontakt",
     "Get in touch": "Ta kontakt",
     "Why Dify →": "Hvorfor Dify →",
@@ -479,13 +500,13 @@ const I18N_STRINGS = {
     "Microsoft Partner": "Microsoft-partner",
     "Platform partner for agentic AI":
       "Plattformpartner for agentisk AI",
-    "Communication Agents": "Dialogagenter",
+    "Dialogue Agents": "Dialogagenter",
     "Resolve work across channels and reduce support load.":
       "Løs arbeid på tvers av kanaler og reduser belastningen på support.",
-    "AI Process Optimization": "Prosessagenter",
+    "Process Agents": "Prosessagenter",
     "Decision-heavy workflows automated end to end.":
       "Beslutningstunge arbeidsflyter automatisert fra start til slutt.",
-    "AI-Enabled Products": "Produktagenter",
+    "Product Agents": "Produktagenter",
     "AI embedded directly into your SaaS and platforms.":
       "AI bygget direkte inn i SaaS-løsningene og plattformene deres.",
     "Open menu": "Åpne meny",
@@ -808,7 +829,7 @@ const I18N_STRINGS = {
     "Build internal model benchmarks": "Bygge interne modellbenchmarker",
     "Retain control at the model level":
       "Beholde kontroll på modellnivå",
-    "Workspace-native Communication Agents":
+    "Workspace-native Dialogue Agents":
       "Arbeidsflate-native dialogagenter",
     "AI assistance directly inside Docs, Sheets, Gmail, Meet, and Drive. Best for quick productivity gains with minimal setup in Google-centric workflows.":
       "AI-hjelp direkte i Docs, Sheets, Gmail, Meet og Drive. Best for raske produktivitetsgevinster med minimal oppsett i Google-sentrerte arbeidsflyter.",
@@ -879,6 +900,32 @@ const I18N_STRINGS = {
     "Services and pricing - NeuroSYS": "Tjenester og priser - NeuroSYS",
     "Your Nordic platform partner and delivery team for agentic AI. Transparent pricing for workshops, hosted workflows and own installations - end-to-end implementation on Dify, from first workshop to AI in production.":
       "Din nordiske plattformpartner og leveranseteam for agentisk AI. Transparent prising for workshops, hostede arbeidsflyter og egne installasjoner - ende-til-ende implementering på Dify, fra første workshop til AI i drift.",
+    "NeuroSYS is a Nordic platform partner and delivery team for agentic AI. We build, run and evolve agentic AI on Dify, place senior experts directly into client teams, and deliver full projects end-to-end - from first workshop to AI in production.":
+      "NeuroSYS er en nordisk plattformpartner og leveranseteam for agentisk AI. Vi bygger, drifter og videreutvikler agentisk AI på Dify, setter senior eksperter direkte inn i kundeteam og leverer komplette prosjekter ende-til-ende - fra første workshop til AI i produksjon.",
+    "AI Services": "AI-tjenester",
+    "Agentic AI, Embedded Experts, Project Deliveries":
+      "Agentisk AI, innleide eksperter, prosjektleveranser",
+    "Embedded Experts": "Innleide eksperter",
+    "Project Deliveries": "Prosjektleveranser",
+    "End-to-end agentic AI on Dify - advisory, platform setup, workflow development and long-term operations.":
+      "Ende-til-ende agentisk AI på Dify - rådgivning, plattformoppsett, arbeidsflytutvikling og langsiktig drift.",
+    "Senior developers, architects and AI specialists who step into client teams and build alongside in-house people - from Norway and Poland.":
+      "Seniorutviklere, arkitekter og AI-spesialister som går inn i kundeteam og bygger sammen med interne ressurser - fra Norge og Polen.",
+    "Full-scope delivery teams that take projects from idea to production, including custom ML, deep learning and computer vision.":
+      "Komplette leveranseteam som tar prosjekter fra idé til produksjon, inkludert skreddersydd ML, dyp læring og datasyn.",
+    "Free 1-day workshop with 2 NeuroSYS experts. Understand agentic AI workflows, what they mean for the organization, governance and structure to get started.":
+      "Gratis 1-dags workshop med 2 NeuroSYS-eksperter. Forstå agentiske AI-arbeidsflyter, hva de betyr for organisasjonen, og styring og struktur for å komme i gang.",
+    "Multi-day program with 2 NeuroSYS experts. AI roadmap and prioritization, train-the-trainer, strategic clarifications and architecture choices. NOK 19,500 per day.":
+      "Flerdagers program med 2 NeuroSYS-eksperter. AI-roadmap og prioritering, train-the-trainer, strategiske avklaringer og arkitekturvalg. 19 500 NOK per dag.",
+    "Neurosys Workflows (hosted)": "Neurosys Workflows (hostet)",
+    "Fully managed Nordic platform. Subscription tiers: Starter (up to 3 workflows, 1 GB storage) NOK 3,900/mo, Growth (up to 10 workflows, 5 GB storage) NOK 9,900/mo, Scale (up to 20 workflows, 10 GB storage) NOK 16,900/mo. Plans assume normal operations (typical data volumes and request rates). LLM/API usage at cost + 20%.":
+      "Fullt administrert nordisk plattform. Abonnementsnivåer: Starter (inntil 3 arbeidsflyter, 1 GB lagring) 3 900 NOK/mnd, Growth (inntil 10 arbeidsflyter, 5 GB lagring) 9 900 NOK/mnd, Scale (inntil 20 arbeidsflyter, 10 GB lagring) 16 900 NOK/mnd. Planene forutsetter normal drift (typiske datamengder og forespørselsrater). LLM/API-bruk faktureres til kost + 20 %.",
+    "Own installation (Neurosys Cloud or On-premise)":
+      "Egen installasjon (Neurosys Cloud eller on-premise)",
+    "Run the agentic platform in your own environment - dedicated Neurosys Cloud install or fully on-premise. Pricing by agreement based on scale, support level and Dify edition.":
+      "Kjør den agentiske plattformen i eget miljø - dedikert Neurosys Cloud-installasjon eller fullt on-premise. Pris etter avtale basert på skala, supportnivå og Dify-utgave.",
+    "New agentic AI workflows delivered as scoped engagements. First workflow typically live in 1-5 working days. NOK 9,900 per workday.":
+      "Nye agentiske AI-arbeidsflyter levert som scopede oppdrag. Første arbeidsflyt er typisk live på 1-5 arbeidsdager. 9 900 NOK per arbeidsdag.",
     "Your platform partner and delivery team for agentic AI":
       "Plattformpartneren og leveranseteamet ditt for agentisk AI",
     "We are a Dify partner who builds, runs and evolves agentic AI together with Nordic enterprises - and bring the team needed at every step, from first workshop to AI in production.":
@@ -1001,8 +1048,8 @@ const I18N_STRINGS = {
     Workflows: "Arbeidsflyter",
     "New agentic AI workflows delivered as scoped engagements - chatbot, integration, document analysis, text classification, lead qualification and more. Typically live in production within 1-5 working days.":
       "Nye agentiske AI-arbeidsflyter levert som scopede oppdrag - chatbot, integrasjon, dokumentanalyse, tekstklassifisering, lead-kvalifisering og mer. Typisk i produksjon innen 1-5 arbeidsdager.",
-    "NOK 12,900 / workday · first workflow in 1-5 days":
-      "12 900 NOK / arbeidsdag · første arbeidsflyt på 1-5 dager",
+    "NOK 9,900 / workday · first workflow in 1-5 days":
+      "9 900 NOK / arbeidsdag · første arbeidsflyt på 1-5 dager",
     "Most clients run on our managed Nordic platform - ISO 27001 certified, GDPR-aligned and operated for production from day one. When data residency, regulatory or integration requirements call for it, we install the same platform inside your own cloud or on-premise.":
       "De fleste kundene kjører på vår administrerte nordiske plattform - ISO 27001-sertifisert, GDPR-tilpasset og driftet for produksjon fra dag én. Når datalokasjon, regulatoriske eller integrasjonskrav tilsier det, installerer vi den samme plattformen i deres egen sky eller on-premise.",
     "Hosted by us · Recommended start":
@@ -1051,6 +1098,8 @@ const I18N_STRINGS = {
     "Delivery time": "Leveringstid",
     "First workflow live in 1-5 working days":
       "Første arbeidsflyt i produksjon på 1-5 arbeidsdager",
+    "A workflow is an AI-driven business process with its own rules, logic, integrations and output. We scope, build and put it in production alongside your team - on your hosted plan or your own installation.":
+      "En arbeidsflyt er en AI-drevet arbeidsprosess med egne regler, logikk, integrasjoner og output. Vi skoperer, bygger og setter den i produksjon sammen med teamet deres - på den hostede planen eller deres egen installasjon.",
     "We scope, build and put it in production alongside your team - on your hosted plan or your own installation.":
       "Vi skoperer, bygger og setter den i produksjon sammen med teamet deres - på den hostede planen eller deres egen installasjon.",
     "A workflow is an AI-driven business process with its own rules, logic, integrations and output.":
@@ -1058,7 +1107,7 @@ const I18N_STRINGS = {
     "Examples:": "Eksempler:",
     "chatbot, integration, document analysis, text classification, lead qualification, text generation, data analysis.":
       "chatbot, integrasjon, dokumentanalyse, tekstklassifisering, lead-kvalifisering, tekstgenerering, dataanalyse.",
-    "NOK 12,900": "12 900 NOK",
+    "NOK 9,900": "9 900 NOK",
     "per workday · typical workflow 1-5 days":
       "per arbeidsdag · typisk arbeidsflyt 1-5 dager",
     "Working together": "Slik jobber vi sammen",
@@ -1163,8 +1212,10 @@ const I18N_STRINGS = {
     "Most engagements start with either a free AI Introduction workshop to align on opportunities, or a focused discovery call to scope a first workflow. From there we propose a clear plan: timeline, deliverables and pricing. No long sales process.":
       "De fleste engasjementer starter enten med en gratis AI Introduksjon-workshop for å samkjøre om muligheter, eller en fokusert oppdagelsessamtale for å skopere en første arbeidsflyt. Derfra foreslår vi en tydelig plan: tidslinje, leveranser og pris. Ingen lang salgsprosess.",
     "How do you price your work?": "Hvordan priser dere arbeidet?",
-    "Workshops are fixed price (free Introduction, NOK 19,500/day for Executive and Platform Acceleration). Workflow development runs at NOK 12,900 per workday. Larger implementations and embedded expert engagements are scoped per engagement based on team size and duration.":
-      "Workshops har fastpris (gratis Introduksjon, NOK 19 500/dag for Executive og Platform Acceleration). Arbeidsflyt-utvikling går for NOK 12 900 per arbeidsdag. Større implementeringer og leveranser med innleide spesialister skoperes per engasjement basert på teamstørrelse og varighet.",
+    "Workshops are fixed price (free Introduction, NOK 19,500/day for Executive and Platform Acceleration). Workflow development runs at NOK 9,900 per workday. Larger implementations and embedded expert engagements are scoped per engagement based on team size and duration.":
+      "Workshops har fastpris (gratis Introduksjon, NOK 19 500/dag for Executive og Platform Acceleration). Arbeidsflyt-utvikling går for NOK 9 900 per arbeidsdag. Større implementeringer og leveranser med innleide spesialister skoperes per engasjement basert på teamstørrelse og varighet.",
+    "What does normal operations mean for the hosted plans?":
+      'Hva betyr "normal drift" for de hostede planene?',
     "What counts as a workflow toward my plan?":
       "Hva regnes som en arbeidsflyt mot planen min?",
     "Only workflows in active production - the ones you have published - count toward the limit in your plan. Drafts, test versions and unpublished work are free, so your team can iterate as much as they need before going live.":
@@ -1496,7 +1547,7 @@ const I18N_STRINGS = {
     "Direct email": "Direkte e-post",
     "Direct phone": "Direkte telefon",
     "Speak directly with": "Snakk direkte med",
-    "Mon-Fri, 09:00-17:00 CET": "Man-fre, 09:00-17:00 CET",
+    "Mon-Fri, 09:00-17:00": "Man-fre, 09:00-17:00",
     "Coffee always on": "Kaffen står alltid klar",
     "Øvre Slottsgate 27, 0157 Oslo": "Øvre Slottsgate 27, 0157 Oslo",
     "What happens next": "Hva skjer videre",
@@ -1520,7 +1571,7 @@ const I18N_STRINGS = {
       "Snakk med NeuroSYS om agentisk AI. Book en 30-minutters introsamtale, still et spørsmål, eller stikk innom Oslo-kontoret vårt.",
     "Øvre Slottsgate 27, Oslo": "Øvre Slottsgate 27, Oslo",
     "Contact - NeuroSYS": "Kontakt - NeuroSYS",
-    "0191 Oslo, Norway": "0191 Oslo, Norge",
+    "0157 Oslo, Norway": "0157 Oslo, Norge",
     "NeuroSYS Services": "NeuroSYS tjenester",
     "GenAI Training & Workshops - NeuroSYS":
       "GenAI-opplæring og workshops - NeuroSYS",
@@ -1655,6 +1706,8 @@ const I18N_STRINGS = {
     "Current projects": "Pågående prosjekter",
     "A selection of ongoing AI and digitalization projects with leading organizations.":
       "Et utvalg pågående AI- og digitaliseringsprosjekter med ledende organisasjoner.",
+    "A selection of ongoing AI and digitalization projects with leading organizations. Agentic AI references are listed first: Jernia, GE Healthcare and Uloba.":
+      "Et utvalg pågående AI- og digitaliseringsprosjekter med ledende organisasjoner. Referanser med agentisk AI er listet først: Jernia, GE Healthcare og Uloba.",
     "In progress": "Pågår",
     "Started Q1 2025": "Startet Q1 2025",
     "Started Q1 2024": "Startet Q1 2024",
@@ -1672,22 +1725,36 @@ const I18N_STRINGS = {
     "Delivered 2022": "Levert 2022",
     "Smart customer service AI chatbot":
       "Smart kundeservice AI-chatbot",
+    "Agentic customer service AI for Jernia":
+      "Agentisk kundeservice-AI for Jernia",
     "Development of an advanced AI-powered customer service chatbot with LLM and tool calling to streamline customer dialogue for Norway’s leading hardware retailer.":
       "Utvikling av en avansert AI-drevet kundeservicechatbot med LLM og verktøykall for å effektivisere kundedialogen for Norges ledende jernvareforhandler.",
+    "Production AI with LLM and tool calling for Norway’s leading hardware retailer - focused on faster answers, fewer tickets and better customer dialogue.":
+      "Produksjonsklar AI med LLM og verktøykall for Norges ledende jernvareforhandler - med fokus på raskere svar, færre saker og bedre kundedialog.",
+    "Agentic AI": "Agentisk AI",
     LLM: "LLM",
     "Tool Calling": "Verktøykall",
     "Customer service": "Kundeservice",
     "Process and operations optimization with AI":
       "Prosess- og operasjonsoptimalisering med AI",
+    "On-prem AI for factory operations":
+      "On-prem AI for fabrikkdrift",
     "Optimization of factory processes using digitalization, Generative AI and machine learning to increase efficiency and reduce costs.":
       "Optimalisering av fabrikkprosesser med digitalisering, generativ AI og maskinlæring for å øke effektiviteten og redusere kostnader.",
+    "Secure on-prem AI with RAG for factory operators, making critical procedures and control documents instantly searchable without exposing sensitive data.":
+      "Sikker on-prem AI med RAG for fabrikkoperatører, som gjør kritiske prosedyrer og kontrolldokumenter umiddelbart søkbare uten å eksponere sensitive data.",
+    "On-prem": "On-prem",
     Digitalization: "Digitalisering",
     GenAI: "GenAI",
     "Machine learning": "Maskinlæring",
     "Smart AI communication agent":
       "Smart AI-kommunikasjonsagent",
+    "AI communication agent for accessibility":
+      "AI-kommunikasjonsagent for tilgjengelighet",
     "Development of an AI-based communication agent that analyzes, interprets and generates content for better decision support, improved accessibility and clearer communication.":
       "Utvikling av en AI-basert kommunikasjonsagent som analyserer, tolker og genererer innhold for bedre beslutningsstøtte, økt tilgjengelighet og tydeligere kommunikasjon.",
+    "An AI communication agent that analyzes, interprets and generates content for better decision support, improved accessibility and clearer communication.":
+      "En AI-kommunikasjonsagent som analyserer, tolker og genererer innhold for bedre beslutningsstøtte, økt tilgjengelighet og tydeligere kommunikasjon.",
     "AI agent": "AI-agent",
     "Content generation": "Innholdsgenerering",
     Accessibility: "Tilgjengelighet",
@@ -1750,8 +1817,11 @@ const I18N_STRINGS = {
       "Gjennomførte en mulighetsavklaring og leverte en digitaliseringsrapport som beskriver prosjekter under vurdering for automatisert metallsortering.",
     Sustainability: "Bærekraft",
     "News - NeuroSYS": "Nyheter - NeuroSYS",
+    "Insights - NeuroSYS": "Innsikt - NeuroSYS",
     "Updates and featured activities from NeuroSYS.":
       "Oppdateringer og utvalgte aktiviteter fra NeuroSYS.",
+    "Insights, case stories, and partner updates from NeuroSYS.":
+      "Innsikt, kundehistorier og partneroppdateringer fra NeuroSYS.",
     "Selected activities and updates from our work across industries and partner ecosystems.":
       "Utvalgte aktiviteter og oppdateringer fra arbeidet vårt på tvers av bransjer og partnerøkosystemer.",
     Insight: "Innsikt",
@@ -1759,10 +1829,12 @@ const I18N_STRINGS = {
     "Case study": "Kundehistorie",
     Partnership: "Partnerskap",
     "← Back to news": "← Tilbake til nyheter",
+    "← Back to insights": "← Tilbake til innsikt",
     Featured: "Utvalgt",
     "Read article": "Les artikkelen",
     "Related stories": "Relaterte historier",
     "All news →": "Alle nyheter →",
+    "All insights →": "All innsikt →",
     "More stories": "Flere historier",
     "4 stories": "4 historier",
     "Want to talk about your own AI use case?":
@@ -1821,6 +1893,8 @@ const I18N_STRINGS = {
     "Extended media monitoring": "Utvidet medieovervåking",
     "MedieX covers approximately 80 % of all digital editorial media in Norway, including analysis of articles behind paywalls. Content from Schibsted, Polaris Media, Amedia and Mediebedriftene is monitored continuously.":
       "MedieX dekker ca. 80 % av alle digitale redaksjonelle medier i Norge, inkludert analyse av artikler bak betalingsmur. Innhold fra Schibsted, Polaris Media, Amedia og Mediebedriftene overvåkes kontinuerlig.",
+    "Here, the ~80 % figure refers to digital editorial media sources monitored by MedieX in Norway, including selected paywalled publishers. \"EU AI Act compliant by design\" means traceability, human review points and documented AI handling are built into the product from day one.":
+      "Her viser ~80 % til digitale redaksjonelle mediekilder som overvåkes av MedieX i Norge, inkludert utvalgte betalingsmurpublikasjoner. \"EU AI Act compliant by design\" betyr at sporbarhet, menneskelige kontrollpunkter og dokumentert AI-håndtering er bygget inn i produktet fra dag én.",
     "What you get": "Hva du får med MedieX",
     "Better quality in decision-making foundations":
       "Bedre kvalitet i beslutningsgrunnlag",
@@ -1878,6 +1952,8 @@ const I18N_STRINGS = {
     Results: "Resultater",
     "During the pilot period, the agent resolved 46 % of meaningful conversations without human intervention. Customers got faster answers, the support team handled fewer routine tickets, and the overall experience improved - all without increasing headcount.":
       "I løpet av pilotperioden løste agenten 46 % av meningsfulle samtaler uten menneskelig inngripen. Kundene fikk raskere svar, supportteamet håndterte færre rutinesaker, og den totale opplevelsen ble bedre - uten å øke bemanningen.",
+    "Here, \"meaningful conversations\" means customer conversations that required an actual answer - excluding greetings, empty sessions and obvious handoff cases.":
+      "Her betyr \"meningsfulle samtaler\" kundedialoger som krevde et faktisk svar - og utelater hilsener, tomme økter og åpenbare videresendinger.",
     "What's next": "Hva er neste steg",
     "The strongest signal from the pilot was product and order-related questions. Phase 2 focuses on deeper product knowledge, expanded order access and tighter system integration - so the agent can resolve even more cases end-to-end.":
       "Det sterkeste signalet fra piloten var spørsmål om produkter og ordre. Fase 2 fokuserer på dypere produktkunnskap, utvidet ordretilgang og tettere systemintegrasjon - slik at agenten kan løse enda flere saker ende-til-ende.",
@@ -1984,17 +2060,17 @@ const I18N_STRINGS = {
       "Klar for å gå fra piloter til produksjonsklar AI?",
     "Explore the Agent Platform →":
       "Utforsk agentplattformen →",
-    "Communication Agents - NeuroSYS Applications":
-      "Dialogagenter - NeuroSYS applikasjoner",
+    "Dialogue Agents - NeuroSYS":
+      "Dialogagenter - NeuroSYS",
     "Agentic communication agents that resolve work across channels for employees and customers.":
       "Agentiske dialogagenter som løser arbeid på tvers av kanaler for ansatte og kunder.",
-    "AI Process Optimization - NeuroSYS Applications":
-      "Prosessagenter - NeuroSYS applikasjoner",
-    "AI Process Optimization - agentic workflows for operational work.":
+    "Process Agents - NeuroSYS":
+      "Prosessagenter - NeuroSYS",
+    "Process Agents - agentic workflows for operational work.":
       "Prosessagenter - agentiske arbeidsflyter for operasjonelt arbeid.",
-    "AI-Enabled Products - NeuroSYS Applications":
-      "Produktagenter - NeuroSYS applikasjoner",
-    "AI-Enabled Products - part of the NeuroSYS AI System.":
+    "Product Agents - NeuroSYS":
+      "Produktagenter - NeuroSYS",
+    "Product Agents - part of the NeuroSYS AI System.":
       "Produktagenter - en del av NeuroSYS AI-system.",
     "Applications:": "Applikasjoner:",
     "Customer & employee interaction": "Kunde- og medarbeiderdialog",
@@ -2242,7 +2318,7 @@ const I18N_STRINGS = {
       "Automatisering av økonomi og sakstriasje",
     "Extract key fields and route cases; humans handle exceptions.":
       "Hent ut nøkkelfelt og ruter saker; mennesker håndterer unntak.",
-    "Why AI Process Optimization":
+    "Why Process Agents":
       "Hvorfor prosessagenter",
     "Context-aware": "Kontekstbevisst",
     "Decisions consider history, live context and rules together.":
@@ -2478,6 +2554,8 @@ const I18N_STRINGS = {
       "av all digital redaksjonell media i Norge dekket av et agentisk produkt som gjør støy om til strukturert innsikt.",
     "AI is built into the product itself - ingestion, contextual sentiment, risk assessment and summaries are native features of MedieX. EU AI Act compliant by design.":
       "AI er bygget inn i selve produktet - innhenting, kontekstuell sentiment, risikovurdering og sammendrag er native funksjoner i MedieX. EU AI Act compliant by design.",
+    "In practice, that means traceability, review points and documented data handling are designed into the product layer from the start. Final compliance still depends on configuration, governance and use in each deployment.":
+      "I praksis betyr det at sporbarhet, kontrollpunkter og dokumentert datahåndtering er bygget inn i produktlaget fra start. Endelig etterlevelse avhenger fortsatt av konfigurasjon, styring og bruk i hver utrulling.",
     "Agentic product": "Agentisk produkt",
     Sentiment: "Sentiment",
     "EU AI Act": "EU AI Act",
@@ -2548,7 +2626,6 @@ const I18N_STRINGS = {
       "Automatisering av arbeidsflyt i produktet",
     "AI triggers actions based on user input or events, automating steps across internal services.":
       "AI trigges av brukerinput eller hendelser og automatiserer steg på tvers av interne tjenester.",
-    Insights: "Innsikt",
     "Insight & summarization features":
       "Innsikt- og oppsummeringsfunksjoner",
     "AI summarizes activity or cases, turning raw data into understandable insights inside dashboards.":
@@ -2915,7 +2992,20 @@ const applyLanguage = (lang) => {
   enhanceArrowIcons();
 };
 
+const setLanguageCookie = (lang) => {
+  document.cookie = `neurosys-lang=${encodeURIComponent(
+    lang
+  )}; Path=/; Max-Age=31536000; SameSite=Lax`;
+};
+
+const buildLocaleUrl = (lang) => {
+  const currentPath = stripLocalePrefix(window.location.pathname);
+  const nextPath = withLocalePath(currentPath, lang);
+  return `${nextPath}${window.location.search}${window.location.hash}`;
+};
+
 const getInitialLanguage = () => {
+  if (currentLocale) return currentLocale;
   const stored = localStorage.getItem("neurosys-lang");
   if (stored) return stored;
   const browserLang = navigator.language?.toLowerCase() || "";
@@ -2929,6 +3019,12 @@ const setupLanguageSwitcher = () => {
       const lang = button.getAttribute("data-lang");
       if (!lang) return;
       localStorage.setItem("neurosys-lang", lang);
+      setLanguageCookie(lang);
+      const nextUrl = buildLocaleUrl(lang);
+      if (nextUrl !== `${window.location.pathname}${window.location.search}${window.location.hash}`) {
+        window.location.assign(nextUrl);
+        return;
+      }
       window.location.reload();
     });
   });

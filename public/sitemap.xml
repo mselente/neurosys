@@ -1,135 +1,399 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.neurosys.no/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://www.neurosys.no/en/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/" />
+    <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/about.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/services.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/agent-platform.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/contact.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.neurosys.no/our-work.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/training.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/applications/dialogagenter.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/applications/prosessagenter.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/applications/produktagenter.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/salg.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/markedsforing.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/service.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/produksjon.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/prosjekt-og-data.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/forretningsomrader/transport-og-logistikk.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/news/</loc>
-    <lastmod>2026-04-20</lastmod>
+    <loc>https://www.neurosys.no/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/about" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/about" />
+    <lastmod>2026-04-27</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.neurosys.no/news/samelane-lms-competency-intelligence.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.neurosys.no/news/mediex-media-intelligence-platform.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
+    <loc>https://www.neurosys.no/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/services" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/services" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.neurosys.no/news/jernia-agentic-pilot-insights.html</loc>
-    <lastmod>2026-01-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.neurosys.no/en/agent-platform</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/agent-platform" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/agent-platform" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/agent-platform" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.neurosys.no/news/identifying-ai-opportunities-in-industrial-operations.html</loc>
-    <lastmod>2026-01-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.neurosys.no/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/contact" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/contact" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.neurosys.no/news/operationalizing-agentic-ai-with-dify.html</loc>
-    <lastmod>2026-04-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://www.neurosys.no/en/customer-references</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/customer-references" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/customer-references" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/customer-references" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/ai-workshops</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/ai-workshops" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/ai-workshops" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/ai-workshops" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/applications/dialogueagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/dialogueagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/dialogueagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/dialogueagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/applications/processagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/processagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/processagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/processagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/applications/productagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/productagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/productagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/productagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/marketing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/marketing" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/marketing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/marketing" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/sales</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/sales" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/sales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/sales" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/service" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/service" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/production</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/production" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/production" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/production" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/project-and-data</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/project-and-data" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/project-and-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/project-and-data" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/industries/transport-and-logistics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/transport-and-logistics" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/transport-and-logistics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/transport-and-logistics" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights/samelane-lms-competency-intelligence</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/samelane-lms-competency-intelligence" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/samelane-lms-competency-intelligence" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/samelane-lms-competency-intelligence" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights/mediex-media-intelligence-platform</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/mediex-media-intelligence-platform" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/mediex-media-intelligence-platform" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/mediex-media-intelligence-platform" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights/jernia-agentic-pilot-insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/jernia-agentic-pilot-insights" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/jernia-agentic-pilot-insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/jernia-agentic-pilot-insights" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights/identifying-ai-opportunities-in-industrial-operations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/en/insights/operationalizing-agentic-ai-with-dify</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/operationalizing-agentic-ai-with-dify" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/operationalizing-agentic-ai-with-dify" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/operationalizing-agentic-ai-with-dify" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/about" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/about" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/services</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/services" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/services" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/agent-platform</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/agent-platform" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/agent-platform" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/agent-platform" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/contact" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/contact" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/customer-references</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/customer-references" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/customer-references" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/customer-references" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/ai-workshops</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/ai-workshops" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/ai-workshops" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/ai-workshops" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/applications/dialogueagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/dialogueagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/dialogueagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/dialogueagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/applications/processagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/processagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/processagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/processagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/applications/productagents</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/applications/productagents" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/applications/productagents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/applications/productagents" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/marketing</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/marketing" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/marketing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/marketing" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/sales</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/sales" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/sales" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/sales" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/service</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/service" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/service" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/service" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/production</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/production" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/production" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/production" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/project-and-data</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/project-and-data" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/project-and-data" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/project-and-data" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/industries/transport-and-logistics</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/industries/transport-and-logistics" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/industries/transport-and-logistics" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/industries/transport-and-logistics" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights/samelane-lms-competency-intelligence</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/samelane-lms-competency-intelligence" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/samelane-lms-competency-intelligence" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/samelane-lms-competency-intelligence" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights/mediex-media-intelligence-platform</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/mediex-media-intelligence-platform" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/mediex-media-intelligence-platform" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/mediex-media-intelligence-platform" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights/jernia-agentic-pilot-insights</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/jernia-agentic-pilot-insights" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/jernia-agentic-pilot-insights" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/jernia-agentic-pilot-insights" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights/identifying-ai-opportunities-in-industrial-operations</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/identifying-ai-opportunities-in-industrial-operations" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.neurosys.no/no/insights/operationalizing-agentic-ai-with-dify</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.neurosys.no/en/insights/operationalizing-agentic-ai-with-dify" />
+    <xhtml:link rel="alternate" hreflang="no" href="https://www.neurosys.no/no/insights/operationalizing-agentic-ai-with-dify" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.neurosys.no/no/insights/operationalizing-agentic-ai-with-dify" />
+    <lastmod>2026-04-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

@@ -57,10 +57,10 @@ Som plattformpartner hjelper NeuroSYS virksomheter med å finne hvor markedsfør
 
 ## Relatert innhold
 
-- [Communication Agents](/applications/communication-agents.html)
-- [Agent Platform](/agent-platform.html)
-- [Why NeuroSYS chose to partner with Dify](/news/operationalizing-agentic-ai-with-dify.html)
-- [MedieX: From media noise to actionable insight](/news/mediex-media-intelligence-platform.html)
+- [Dialogue Agents](/applications/dialogueagents)
+- [Agent Platform](/agent-platform)
+- [Why NeuroSYS chose to partner with Dify](/insights/operationalizing-agentic-ai-with-dify)
+- [MedieX: From media noise to actionable insight](/insights/mediex-media-intelligence-platform)
 
 ## Vil dere gjøre markedsføringen mer relevant og mindre manuell?
 

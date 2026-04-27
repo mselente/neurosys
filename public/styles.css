@@ -3213,14 +3213,14 @@ p {
   pointer-events: none;
 }
 
-.product-hero-visual.hero-comm-agents {
+.product-hero-visual.hero-dialogue-agents {
   min-height: 0;
   aspect-ratio: 720 / 420;
   background:
-    url("images/hero-communication-agents.svg") center/contain no-repeat,
+    url("images/hero-dialogue-agents.svg") center/contain no-repeat,
     var(--surface);
 }
-.product-hero-visual.hero-comm-agents::after {
+.product-hero-visual.hero-dialogue-agents::after {
   display: none;
 }
 
