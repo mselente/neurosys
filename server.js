@@ -109,7 +109,19 @@ const routeAliases = {
 };
 
 const normalizePathname = (pathname) => pathname.replace(/\/+$/, "") || "/";
-const normalizeText = (value) => value.replace(/\s+/g, " ").trim();
+const decodeHtmlEntities = (value) =>
+  value
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+const normalizeText = (value) => decodeHtmlEntities(value).replace(/\s+/g, " ").trim();
+const escapeHtmlText = (value) =>
+  value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+const escapeHtmlAttribute = (value) =>
+  escapeHtmlText(value).replace(/"/g, "&quot;");
 
 const extractObjectLiteral = (source, anchor) => {
   const anchorIndex = source.indexOf(anchor);
@@ -176,6 +188,19 @@ const loadServerI18nStrings = () => {
 
 const serverI18nStrings = loadServerI18nStrings();
 const getLocaleDictionary = (locale) => serverI18nStrings[locale] || {};
+const reverseNoDictionary = Object.fromEntries(
+  Object.entries(serverI18nStrings.no || {}).reduce((entries, [english, norwegian]) => {
+    if (typeof english !== "string" || typeof norwegian !== "string") {
+      return entries;
+    }
+    const normalizedNorwegian = normalizeText(norwegian);
+    if (!normalizedNorwegian || entries.some(([key]) => key === normalizedNorwegian)) {
+      return entries;
+    }
+    entries.push([normalizedNorwegian, english]);
+    return entries;
+  }, [])
+);
 
 const prefixLocale = (locale, contentPath) => {
   const normalizedContentPath = normalizePathname(contentPath);
@@ -243,10 +268,43 @@ const localizeSiteUrl = (url, locale) => {
   return `https://www.neurosys.no${prefixLocale(locale, pathPart)}`;
 };
 
+const getSourceLanguage = (html) => {
+  const match = html.match(/<html\b[^>]*lang="([^"]*)"/i);
+  return match?.[1]?.toLowerCase() || "en";
+};
+
+const getTranslationDictionary = (sourceLanguage, locale) => {
+  if (sourceLanguage.startsWith("no") && locale === "en") {
+    return reverseNoDictionary;
+  }
+  if (!sourceLanguage.startsWith("no") && locale === "no") {
+    return getLocaleDictionary("no");
+  }
+  return null;
+};
+
 const translateString = (value, dictionary) => {
   if (!dictionary || typeof value !== "string") return value;
   const translated = dictionary[normalizeText(value)];
   return translated || value;
+};
+
+const translateAttributeValue = (rawValue, attrName, dictionary) => {
+  const decodedValue = decodeHtmlEntities(rawValue);
+  const directTranslation = translateString(decodedValue, dictionary);
+  if (directTranslation !== decodedValue) {
+    return directTranslation;
+  }
+
+  if (attrName.toLowerCase() === "aria-label" && decodedValue.startsWith("Read: ")) {
+    const translatedPrefix = translateString("Read:", dictionary);
+    const translatedTitle = translateString(decodedValue.slice(6), dictionary);
+    if (translatedPrefix !== "Read:" || translatedTitle !== decodedValue.slice(6)) {
+      return `${translatedPrefix} ${translatedTitle}`;
+    }
+  }
+
+  return decodedValue;
 };
 
 const localizeStructuredData = (value, locale, dictionary) => {
@@ -283,15 +341,15 @@ const replaceMetaContent = (html, attrName, attrValue, translate) =>
       `(<meta[\\s\\S]*?${attrName}="${attrValue}"[\\s\\S]*?content=")([^"]*)("[\\s\\S]*?\\/>)`,
       "i"
     ),
-    (match, prefix, content, suffix) => `${prefix}${translate(content)}${suffix}`
+    (match, prefix, content, suffix) => `${prefix}${escapeHtmlAttribute(translate(content))}${suffix}`
   );
 
 const translateHtmlAttributes = (html, dictionary) =>
   html.replace(
     /\b(placeholder|aria-label|title|alt)="([^"]*)"/gi,
     (match, attrName, rawValue) => {
-      const translated = translateString(rawValue, dictionary);
-      return `${attrName}="${translated}"`;
+      const translated = translateAttributeValue(rawValue, attrName, dictionary);
+      return `${attrName}="${escapeHtmlAttribute(translated)}"`;
     }
   );
 
@@ -303,11 +361,11 @@ const translateHtmlTextNodes = (html, dictionary) =>
 
     const leadingWhitespace = rawText.match(/^\s*/)?.[0] ?? "";
     const trailingWhitespace = rawText.match(/\s*$/)?.[0] ?? "";
-    return `>${leadingWhitespace}${translated}${trailingWhitespace}<`;
+    return `>${leadingWhitespace}${escapeHtmlText(translated)}${trailingWhitespace}<`;
   });
 
-const translateHtmlContent = (html, locale, dictionary) => {
-  if (locale !== "no") return html;
+const translateHtmlContent = (html, dictionary) => {
+  if (!dictionary) return html;
 
   const segments = html.split(/(<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>)/gi);
   return segments
@@ -318,12 +376,12 @@ const translateHtmlContent = (html, locale, dictionary) => {
     .join("");
 };
 
-const translateHeadMetadata = (html, locale, dictionary) => {
+const translateHeadMetadata = (html, dictionary) => {
   let transformed = html;
 
-  if (locale === "no") {
+  if (dictionary) {
     transformed = transformed.replace(/<title>([\s\S]*?)<\/title>/i, (match, title) => {
-      return `<title>${translateString(title, dictionary)}</title>`;
+      return `<title>${escapeHtmlText(translateString(title, dictionary))}</title>`;
     });
 
     transformed = replaceMetaContent(transformed, "name", "description", (content) =>
@@ -392,16 +450,13 @@ const rewriteAnchorHrefs = (html, locale) =>
 
 const transformHtmlForLocale = (html, locale, contentPath) => {
   const localizedUrl = `https://www.neurosys.no${prefixLocale(locale, contentPath)}`;
-  const dictionary = getLocaleDictionary(locale);
+  const sourceLanguage = getSourceLanguage(html);
+  const dictionary = getTranslationDictionary(sourceLanguage, locale);
   const runtimeConfig =
     `<script>window.__NEUROSYS_LANG__=${JSON.stringify(locale)};` +
     `window.__NEUROSYS_LOCALE_PATH__=${JSON.stringify(contentPath)};</script>`;
 
-  let transformed = translateHtmlContent(
-    translateHeadMetadata(html, locale, dictionary),
-    locale,
-    dictionary
-  )
+  let transformed = translateHtmlContent(translateHeadMetadata(html, dictionary), dictionary)
     .replace(/<html\b[^>]*lang="[^"]*"/i, `<html lang="${locale}"`)
     .replace(/<link rel="canonical" href="[^"]*" \/>/i, `<link rel="canonical" href="${localizedUrl}" />`)
     .replace(/<meta property="og:url" content="[^"]*" \/>/i, `<meta property="og:url" content="${localizedUrl}" />`);

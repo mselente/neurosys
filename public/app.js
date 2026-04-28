@@ -589,6 +589,337 @@ const I18N_STRINGS = {
     Production: "Produksjon",
     "Optimize productivity with integrated agentic workflows.":
       "Økt produktivitet med integrerte AI-agentiske arbeidsflyter.",
+    "AI that only responds is everywhere. AI that can act on behalf of the business - on your logic, your data, your terms - is something few have actually built.":
+      "AI som svarer er rikelig. AI som kan handle på vegne av virksomheten - på deres logikk, deres data, deres premisser - er det få som har bygget.",
+    "Value that slips away today - and what changes":
+      "Verdien som flyr forbi i dag - og hva som endrer seg",
+    "Why an agentic platform": "Hvorfor en agentisk plattform",
+    "All of the above assumes the agents have somewhere to live. The platform is that layer. What matters is whether it is built so the value stays with you over time.":
+      "Alt over forutsetter at agentene har et sted å bo. Plattformen er det laget. Det avgjørende er om den er bygget slik at verdien blir værende hos dere over tid.",
+    "The platform should be the easiest thing to replace in the whole setup. The value should live in your logic and your data, decoupled from a vendor roadmap or pricing model. Four properties determine in practice whether you actually own what you build.":
+      "Plattformen burde være det enkleste å bytte ut i hele oppsettet. Verdien skal bo i logikken og dataene deres, frikoblet fra leverandørs roadmap eller prismodell. Fire egenskaper avgjør i praksis om dere faktisk eier det dere bygger.",
+    "Your logic, governed by you": "Logikken er deres, styrt av dere",
+    "Data you do not have to force into a schema":
+      "Data dere slipper å tvinge inn i et skjema",
+    "The platform is the easiest thing to replace":
+      "Plattformen er den enkleste å bytte",
+    "The cost follows the infrastructure you use":
+      "Kostnaden følger infrastrukturen dere bruker",
+    "Questions worth sitting with":
+      "Spørsmål som er nyttige å sitte med",
+    "None of them has a single right answer - but they make it easier to see where the value actually sits.":
+      "Ingen av dem har et fasitsvar - men de gjør det enklere å se hvor verdien faktisk ligger.",
+    "Built once - together with you":
+      "Bygget én gang - sammen med dere",
+    "This becomes easier to understand if you stop thinking of it as tools.":
+      "Det vi bygger er enklere å forstå hvis man slutter å tenke på det som verktøy.",
+    "\"The future's capacity is built with agentic workflows.\"":
+      "\"Fremtidens kapasitet bygges med agentiske arbeidsflyter.\"",
+    "Where is it practical to start?":
+      "Hvor er det praktisk å begynne?",
+    "We are happy to take a no-obligation conversation about where an agentic platform could realistically take over manual work for you - and what creates the most value to start with.":
+      "Vi tar gjerne en uforpliktende samtale om hvor en agentisk plattform faktisk kunne tatt over manuelt arbeid hos dere - og hva som gir mest verdi å starte med - en åpen samtale, en titt sammen.",
+    "Talk to us →": "Snakk med oss →",
+    "Marketing - NeuroSYS": "Markedsføring - NeuroSYS",
+    "A note on how AI in marketing moves from functions in each tool to a shared agent layer - and what questions that opens up.":
+      "Et notat om hvordan AI i markedsføring beveger seg fra funksjoner i hvert verktøy til et felles agentlag - og hvilke spørsmål det åpner.",
+    "A note on how AI in marketing moves from functions in each tool to a shared agent layer.":
+      "Et notat om hvordan AI i markedsføring beveger seg fra funksjoner i hvert verktøy til et felles agentlag.",
+    "A note on how AI in marketing moves from tools to an agent layer.":
+      "Et notat om hvordan AI i markedsføring beveger seg fra verktøy til agentlag.",
+    "Business areas · Marketing":
+      "Forretningsområder · Markedsføring",
+    "Customer data, content and channels tied together by an agentic layer - so marketing can act faster and more precisely.":
+      "Kundedata, innhold og kanaler bundet sammen av et agentisk lag - så markedsføringen handler raskere og mer presist.",
+    "Marketing rarely lacks ideas or strategy. What costs the most is the friction between the idea and the action - and that is where an agentic platform moves the most. Four places where it shows up most clearly in marketing:":
+      "Markedsavdelingen har sjelden mangel på ideer eller strategi. Det som koster mest er friksjonen mellom ideen og handlingen - og det er der en agentisk plattform flytter mest. Fire steder det slår tydeligst ut for markedsføringen:",
+    "Campaigns launched in days":
+      "Kampanjer som lanseres på dager",
+    "The path from 'we should do something with this' to an actual launch is often two to three weeks: segmentation, brief, variants, channel setup, approval, send-out. When agents take the coordination and the first drafts, the same process runs in days. The marketing team can test more ideas in the same period and find out what actually works faster - instead of betting everything on one campaign per quarter.":
+      "Veien fra \"vi burde gjøre noe på dette\" til faktisk lansering er ofte to-tre uker: segmentering, brief, varianter, kanaloppsett, godkjenning, utsendelse. Når agentene tar koordineringen og førsteutkastene, går samme prosess på dager. Markedsteamet kan teste flere ideer i samme periode og finne ut hva som faktisk virker, raskere - i stedet for å vedde alt på én kampanje per kvartal.",
+    "Customer dialogue that is on when the customer is on":
+      "Kundedialog som er på når kunden er på",
+    "A customer who opens a chat in the evening, or an email that lands over the weekend, usually sits until the next working day - and by then the attention has moved elsewhere. With agents on top of customer data and content, the dialogue starts immediately, in the same tone and with the same context the team itself would have used. Marketing loses fewer conversations just because the clock is wrong.":
+      "En kunde som chatter inn på kvelden, eller en mail som lander i helgen, blir oftest liggende til neste arbeidsdag - og da er oppmerksomheten et annet sted. Med agenter på toppen av kundedata og innhold er dialogen i gang umiddelbart, i samme tone og med samme kontekst som teamet selv ville svart med. Markedsføringen mister færre samtaler bare fordi klokken er feil.",
+    "Content that reaches people when it is relevant":
+      "Innhold som rekker ut når det er relevant",
+    "The most common loss in marketing is that the content is ready too late: campaign variants are finished too late to reach all segments, the follow-up email is sent two weeks after the signal, the landing page is updated after traffic has gone quiet. When agents create the first drafts and set up the variants, production keeps pace with the calendar instead of lagging behind it.":
+      "Det vanligste tapet i markedsføring er at innholdet er klart for sent: kampanjevariantene står klare for sent til å nå alle segmenter, oppfølgingsmailen blir sendt to uker etter signalet, landingssiden oppdateres etter at trafikken har stilnet. Når agentene gjør førsteutkastene og setter opp variantene, holder produksjonen tritt med kalenderen i stedet for å henge etter den.",
+    "Personalization that actually happens":
+      "Personalisering som faktisk skjer",
+    "Personalization has been a theory in marketing for a long time - everyone should get the message that fits them. In practice, most teams end up with variant A or B because it takes too much manual work to vary more. Agents solve that: each recipient can get the message that actually fits their situation, without the marketing team building hundreds of flows by hand.":
+      "Personalisering har vært en teori i markedsføring lenge - alle skal få meldingen som passer dem. I praksis ender de fleste opp med variant A eller B, fordi det krever for mye manuell jobb å variere mer. Agentene løser det: hver mottaker kan få meldingen som faktisk passer deres situasjon, uten at markedsteamet bygger hundrevis av flows for hånd.",
+    "None of this is small-margin value. It is value that passes through the customer journey every day - value the team already knows is there, but rarely has time to capture. The biggest opportunity is to stop letting that value fly by.":
+      "Ingen av dette er små marginer. Det er verdi som passerer gjennom kundereisen hver dag - som teamet vet om, men sjelden rekker å fange opp. Det største potensialet ligger i å slutte å la den verdien fly forbi.",
+    "Each business segments, prioritizes and communicates in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in journey builder. The company's own knowledge, tone and exceptions determine what the agent does.":
+      "Hver virksomhet segmenterer, prioriterer og kommuniserer på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller en innebygd journey-bygger. Bedriftens egen kunnskap, tone og unntak styrer hva agenten gjør.",
+    "Much of what drives a strong campaign or dialogue sits outside CRM or MarTech fields: emails, attachments, behavior signals, external sources, conversations, editorial content. Agents use it as it is. You do not need to build dashboards or bridge integrations in systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Mye av det som styrer en god kampanje eller dialog ligger utenfor CRM- eller MarTech-feltene: e-poster, vedlegg, atferdssignaler, eksterne kilder, samtaler, redaksjonelt innhold. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i systemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace CRM, email tooling or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere CRM, e-postverktøy eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-send pricing starts to hurt at scale precisely when you begin to succeed. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-utsendelse-prising biter på skala akkurat når dere begynner å lykkes. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "If you are evaluating where to start, there are a few questions we have seen work well as an entry point. None of them has a single right answer - but they make it easier to see where the value actually sits.":
+      "Hvis dere vurderer hvor dere skal starte, er det noen spørsmål vi har sett fungerer godt som inngang. Ingen av dem har et fasitsvar - men de gjør det enklere å se hvor verdien faktisk ligger.",
+    "How much of your marketing work is really just moving data between tools?":
+      "Hvor mye av markedsarbeidet hos dere er egentlig flytting av data mellom verktøy?",
+    "How long does it take from an idea until a new automation is live?":
+      "Hvor lang tid tar det fra en idé til en ny automasjon er i drift?",
+    "Where in the customer journey do the tools lose the thread - and what does that do to the experience?":
+      "Hvor i kundereisen mister verktøyene tråden - og hva gjør det med opplevelsen?",
+    "How much of your marketing logic and customer data lives in a setup you own yourselves - and how much is spread across vendor accounts?":
+      "Hvor mye av markeds-logikken og kundedataene deres bor i et oppsett dere selv eier - og hvor mye spredt på leverandørenes kontoer?",
+    "The building blocks extend beyond marketing. The same agentic layer also powers sales, service, project and data, transport and logistics, and production - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover markedsføring. Samme agentiske lag driver også salg, service, prosjekt og data, transport og logistikk, og produksjon - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and continues evolving them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og videreutvikler dem når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
+    "Sales - NeuroSYS": "Salg - NeuroSYS",
+    "A note on how an agentic platform removes friction across the entire sales cycle - from the first lead signal to a signed renewal - and what questions that opens for leadership.":
+      "Et notat om hvordan en agentisk plattform fjerner friksjonen i hele salgs-syklusen - fra første lead-signal til signert fornyelse - og hvilke spørsmål det åpner for ledelsen.",
+    "A note on how an agentic platform removes friction across the entire sales cycle - from the first lead signal to a signed renewal.":
+      "Et notat om hvordan en agentisk plattform fjerner friksjonen i hele salgs-syklusen - fra første lead-signal til signert fornyelse.",
+    "Business areas · Sales": "Forretningsområder · Salg",
+    "Lead work, quoting and pipeline tied together by an agentic layer - so sellers spend their time on the conversations that actually close deals.":
+      "Lead-arbeid, tilbudsarbeid og pipeline bundet sammen av et agentisk lag - så selgerne bruker tiden på samtalene som faktisk lukker avtaler.",
+    "Sales rarely lacks willingness or talent. What costs the most is the friction between each phase of the sales cycle - from the first lead signal until the contract is renewed. Five places where it shows up most clearly:":
+      "Salget mangler sjelden vilje eller talent. Det som koster mest er friksjonen mellom hver fase i salgs-syklusen - fra første lead-signal til kontrakten fornyes. Fem steder det slår tydeligst ut:",
+    "Leads qualified before the seller even sees them":
+      "Leads kvalifisert før selgeren ser dem",
+    "Sales teams often drown in leads - or spend time on leads that were never a match - because qualification happens manually from incomplete data. Agents pull company, intent and behavior data from open sources, intent services and your own systems at the same time, check it against your ICP, and deliver a shortlist with context and a suggested opening. The good leads are clearly separated from the bad ones.":
+      "Salgsteam drukner ofte i leads - eller bruker tid på leads som aldri var en match - fordi kvalifisering skjer manuelt fra ufullstendig data. Agenter henter selskaps-, intent- og atferdsdata fra åpne kilder, intent-tjenester og deres egne systemer samtidig, krysser mot ICP-en, og leverer en kortliste med kontekst og forslag til åpning. De gode leadsene løftes tydelig fram av de dårlige.",
+    "Follow-up that stays connected between meetings":
+      "Oppfølging som henger sammen mellom møter",
+    "Leads that lack maturity today often fall out of the seller's head within a week - and cold leads that suddenly show signs of life are rarely spotted in time. Agents keep the dialogue alive with relevant nudges, and alert the seller the same day a buying signal appears. Re-activation stops being a campaign and becomes a continuous track.":
+      "Leads som mangler modenhet i dag faller ofte ut av selgerens hode innen en uke - og kalde leads som plutselig viser tegn til liv, oppdages sjelden i tide. Agenter holder dialogen i live med relevante drypp, og varsler selgeren samme dag et kjøpssignal dukker opp. Reaktivering slutter å være en kampanje og blir et kontinuerlig spor.",
+    "Quotes ready before the conversation goes cold":
+      "Tilbud som er klare før samtalen er kald",
+    "The path from 'send us a quote' to a signed document is rarely under a week - spec is confirmed, price is fetched from one system, terms from another, someone rewrites it in a third. Agents pull everything across systems at the same time and assemble the quote in the same conversation. The buyer gets the quote before the conversation goes cold.":
+      "Veien fra \"send oss et tilbud\" til signert dokument er sjelden under en uke - spec bekreftes, pris hentes fra ett system, vilkår fra et annet, noen renskriver i et tredje. Agentene henter alt på tvers av systemene samtidig, og setter sammen tilbudet i samme samtale. Kjøperen får tilbudet før samtalen er kald.",
+    "A pipeline that maintains itself":
+      "Pipeline som vedlikeholder seg selv",
+    "Half of a seller's day often disappears into CRM work and calendar coordination: meeting notes, status updates, next-step fields, back-and-forth on timing. Agents pull call recordings and update the deal automatically, and book meetings directly into the buyer's calendar via email or chat. The seller keeps the pipeline without having to maintain it manually.":
+      "Halvparten av selgerens dag forsvinner ofte i CRM-arbeid og kalenderkoordinering: møtereferater, statusoppdateringer, neste-steg-felt, frem-og-tilbake om tidspunkt. Agenter henter samtaleopptak og oppdaterer dealen automatisk, og booker møter direkte mot kjøpers kalender via e-post eller chat. Selgeren beholder pipelinen sin uten å måtte vedlikeholde den.",
+    "Existing customers who actually buy again":
+      "Eksisterende kunder som faktisk kjøper igjen",
+    "An account owner rarely has the capacity to watch contract expiry, real product usage and engagement across every account at the same time - so renewal often becomes an email thirty days before expiry, instead of a conversation based on what the customer is actually doing. Agents follow those signals continuously and bring renewal, expansion and cross-sell opportunities to the seller while the window is open. Accounts stop being silent until they turn into problems.":
+      "Account-ansvarlig har sjelden kapasitet til å holde øye med kontraktsutløp, faktisk produktbruk og engasjement på alle kontoene samtidig - så renewal blir ofte en e-post tretti dager før, i stedet for en samtale basert på hva kunden gjør. Agentene følger disse signalene kontinuerlig og bringer renewal-, oppgraderings- og cross-sell-muligheter til selgeren mens vinduet er åpent. Kontoer slutter å være tause til de er problemer.",
+    "The biggest opportunity lies in keeping the whole cycle moving, from the first lead signal to a signed renewal, without someone having to remember everything themselves.":
+      "Det største potensialet ligger i å holde hele syklusen i bevegelse, fra første lead-signal til signert fornyelse, uten at noen må huske på alt selv.",
+    "Each business qualifies, prices and escalates in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in workflow tool. The company's own knowledge, tone and exceptions determine what the agent does.":
+      "Hver virksomhet kvalifiserer, priser og eskalerer på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller et innebygd workflow-verktøy. Bedriftens egen kunnskap, tone og unntak styrer hva agenten gjør.",
+    "Much of what drives a good decision sits outside CRM fields: emails, attachments, external signals, drawings, spreadsheets, conversations. Agents use it as it is. You do not need to build dashboards or bridge integrations in systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Mye av det som styrer en god beslutning ligger utenfor CRM-feltene: e-poster, vedlegg, eksterne signaler, tegninger, regneark, samtaler. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i systemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace CRM, email tooling or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere CRM, e-postverktøy eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-conversation pricing starts to hurt at scale precisely when you begin to succeed. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-samtale-prising biter på skala akkurat når dere begynner å lykkes. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "How many leads reach sellers because they are actually qualified - and how many because someone thinks they might be?":
+      "Hvor mange leads ender hos selgerne fordi de faktisk er kvalifiserte - og hvor mange fordi noen tror de \"kanskje er det\"?",
+    "When a cold lead shows a new buying signal, how long does it take before the seller actually knows about it?":
+      "Når en kald lead viser et nytt kjøpssignal, hvor lang tid går før selgeren faktisk vet om det?",
+    "How long does it take from 'buyer asks for a quote' until the quote is ready in their inbox?":
+      "Hvor lang tid tar det fra \"kjøper ber om tilbud\" til tilbudet er klart i deres innboks?",
+    "How much of your sales logic lives in a setup you own yourselves - and how much in a vendor account?":
+      "Hvor mye av salgs-logikken deres bor i et oppsett dere selv eier - og hvor mye i en leverandørs konto?",
+    "The building blocks extend beyond sales. The same agentic layer also powers marketing, service, project and data, transport and logistics, and production - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover salget. Samme agentiske lag driver også markedsføring, service, prosjekt og data, transport og logistikk, og produksjon - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and continues evolving them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og videreutvikler dem når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
+    "Service - NeuroSYS": "Service - NeuroSYS",
+    "A note on how agentic AI makes service more than faster - cases are understood before they arrive, and patterns are removed before they become more cases.":
+      "Et notat om hvordan agentisk AI gjør servicen mer enn raskere - saker forstås før de ankommer, og mønstre fjernes før de blir flere saker.",
+    "Business areas · Service": "Forretningsområder · Service",
+    "Requests, knowledge and field operations tied together by an agentic layer - so each case is actually solved, finished from the first second.":
+      "Henvendelser, kunnskap og felt bundet sammen av et agentisk lag - så hver sak faktisk løses, ferdig fra første sekund.",
+    "Customer service rarely lacks people who want to help. What costs the most is the friction between a request coming in and the case actually being solved - and that is where agents do something different from traditional workflow tools. Four places where it shows up most clearly:":
+      "Kundeservice har sjelden mangel på folk som vil hjelpe. Det som koster mest er friksjonen mellom at henvendelsen kommer inn og at saken faktisk er løst - og det er der agentene gjør noe annet enn de tradisjonelle workflow-verktøyene. Fire steder det slår tydeligst ut:",
+    "Cases that start solved, finished from the first second":
+      "Saker som starter løst, ferdig fra første sekund",
+    "A new request today usually means 'received, we will respond within 24 hours.' When agents read the message, fetch the customer's context and try the solution immediately, many cases are already solved before anyone touches them - and the rest reach the case handler pre-understood, ready from the first second.":
+      "En ny henvendelse i dag betyr oftest \"mottatt, vi svarer innen 24 timer\". Når agentene leser meldingen, henter kundens kontekst og prøver løsningen umiddelbart, er mange saker ferdig løst før noen rører dem - og resten når saksbehandleren forhåndsforstått, klar fra første sekund.",
+    "Case handlers with context and suggestions from the start":
+      "Saksbehandleren med kontekst og forslag fra start",
+    "A typical case handler spends half the time searching: customer history, similar cases, warranties, documents spread across CRM, ERP and the knowledge base. The agent brings it into one picture and suggests the likely solution based on how similar cases have actually been resolved. It is like having a colleague who already did the heavy lifting before the meeting.":
+      "En typisk saksbehandler bruker halvparten av tiden på å lete: kundens historikk, lignende saker, garantier, dokumenter spredt over CRM, ERP og kunnskapsbasen. Agenten samler det i ett bilde og foreslår sannsynlig løsning basert på hvordan tilsvarende saker faktisk har blitt løst. Det er som å ha en kollega som har gjort grovjobben før møtet.",
+    "Field work prepared before the technician rings the bell":
+      "Feltarbeid som er forberedt før teknikeren ringer på",
+    "A technician who arrives without the right parts loses the entire visit. The agent looks at the history and symptoms, suggests the likely cause, picks parts and documentation, and updates the order after the visit based on the technician's own notes. Fewer return visits, more time in the field, less admin at the desk.":
+      "En tekniker som kommer ut uten riktig deler taper hele besøket. Agenten ser historikken og symptomene, foreslår sannsynlig årsak, plukker deler og dokumentasjon, og oppdaterer ordren etter besøket basert på teknikerens egne notater. Færre returbesøk, mer tid i feltet, mindre admin på pulten.",
+    "Cases that prevent the next case":
+      "Sakene som forhindrer neste sak",
+    "Fifty similar cases per week on the same topic, and no one tackles the source - because no human manager has time to read through all of them. Agents group requests into patterns continuously and alert the owner - product team, delivery, marketing - when a theme starts growing. The roots are removed while the issue is still young, long before 500 cases have happened.":
+      "Femti like saker per uke om samme tema, og ingen tar tak i kilden - fordi ingen menneskelig leder rekker å lese gjennom alle. Agentene grupperer henvendelser i mønstre kontinuerlig og varsler eier - produktteam, leveranser, marketing - når et tema vokser. Røttene fjernes mens tematikken er ung, lenge før 500 saker har skjedd.",
+    "None of this is small-margin value. The biggest opportunity lies in every case meeting a service that is already pre-understood, and in preventing the next case before it appears.":
+      "Ingen av dette er små marginer. Det største potensialet ligger i at hver sak møter en service som er forhåndsforstått, og at neste sak forhindres før den oppstår.",
+    "Each business qualifies, escalates and resolves cases in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in workflow tool. The company's own knowledge, tone and exceptions determine what the agent does.":
+      "Hver virksomhet kvalifiserer, eskalerer og løser saker på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller et innebygd workflow-verktøy. Bedriftens egen kunnskap, tone og unntak styrer hva agenten gjør.",
+    "Much of what drives a good resolution sits outside the case fields: emails, attachments, similar historical cases, knowledge-base PDFs, call recordings, field photos. Agents use it as it is. You do not need to build dashboards or bridge integrations in case-management systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Mye av det som styrer en god løsning ligger utenfor sak-feltene: e-poster, vedlegg, lignende historiske saker, kunnskapsbase-PDFer, samtaleopptak, bilder fra felt. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i saksbehandlingssystemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace your case-management system, CRM or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere saksbehandlingssystem, CRM eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-conversation pricing starts to hurt at scale precisely when you begin to succeed - and service scales in volume. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-samtale-prising biter på skala akkurat når dere begynner å lykkes - og service skalerer i volum. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "How much of a case handler's day goes to fetching data, versus solving the actual case?":
+      "Hvor mye av saksbehandlerens dag går til å hente data, kontra å løse selve saken?",
+    "How long does it take from a case being reported until the customer actually has an answer - beyond a ticket number?":
+      "Hvor lang tid tar det fra en sak meldes inn til kunden faktisk har et svar - utover et saksnummer?",
+    "How systematically do patterns in incoming cases get back to the people who can remove the root cause?":
+      "Hvor systematisk får mønstre i innkommende saker tilbake til dem som kan fjerne årsaken?",
+    "How much of the knowledge and logic in your case handling lives in a setup you own yourselves - and how much in a vendor account?":
+      "Hvor mye av kunnskapen og logikken i saksbehandlingen bor i et oppsett dere selv eier - og hvor mye i en leverandørs konto?",
+    "The building blocks extend beyond service. The same agentic layer also powers marketing, sales, project and data, transport and logistics, and production - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover servicen. Samme agentiske lag driver også markedsføring, salg, prosjekt og data, transport og logistikk, og produksjon - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and continues evolving them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og videreutvikler dem når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
+    "Production - NeuroSYS": "Produksjon - NeuroSYS",
+    "A note on how an agentic platform reduces friction between plan and reality in production - and what questions that opens for leaders on the floor.":
+      "Et notat om hvordan en agentisk plattform reduserer friksjonen mellom plan og virkelighet i produksjonen - og hvilke spørsmål det åpner for ledelsen på gulvet.",
+    "A note on how an agentic platform reduces friction between plan and reality in production.":
+      "Et notat om hvordan en agentisk plattform reduserer friksjonen mellom plan og virkelighet i produksjonen.",
+    "Business areas · Production":
+      "Forretningsområder · Produksjon",
+    "Planning, quality and maintenance tied together by an agentic layer - so downtime, changeovers and manual coordination bite less on the floor.":
+      "Planlegging, kvalitet og vedlikehold bundet sammen av et agentisk lag - så stans, omstilling og manuell koordinering biter mindre på gulvet.",
+    "Production rarely lacks the will to improve. What costs the most is the friction between each phase in the operating cycle - between plan and reality, between shifts, between machine and human. Five places where it shows up most clearly:":
+      "Produksjon mangler sjelden vilje til å forbedre. Det som koster mest er friksjonen mellom hver fase i drift-syklusen - mellom plan og virkelighet, mellom skiftene, mellom maskin og menneske. Fem steder det slår tydeligst ut:",
+    "A plan that can keep up with reality":
+      "Planen som klarer å følge med virkeligheten",
+    "The production plan is finished in the morning and outdated before lunch - an order change, a breakdown, sick operators, materials that do not arrive. The planner spends the rest of the day patching spreadsheets and MES, and calling around to negotiate with reality. Agents rebalance the plan continuously against new constraints, suggest reallocations, and escalate what actually requires human judgment. Planning stops being a daily fire drill.":
+      "Produksjonsplanen er ferdig om morgenen og utdatert før lunsj - en ordreendring, et havari, sykmeldte operatører, materialer som uteblir. Planlegger bruker resten av dagen på å flikke i regneark og MES, og ringer rundt for å forhandle om virkeligheten. Agenter rebalanserer planen kontinuerlig mot nye begrensninger, foreslår omplasseringer, og eskalerer det som faktisk krever menneskelig vurdering. Planlegging slutter å være en daglig brannøvelse.",
+    "Quality discovered before scrap happens":
+      "Kvalitet som oppdages før utskudd",
+    "Deviations are often caught in final inspection - or worse, by the customer. Operators see the signs early: strange sounds, drift in the measurements, a color shift - but the signals are rarely systematized. Agents monitor process telemetry, operator notes and machine signals together, and alert on patterns before they turn into defects. Quality stops being an after-check and becomes a live track.":
+      "Avvik fanges ofte ved sluttkontroll - eller verre, av kunden. Operatørene ser tegnene tidlig: rare lyder, drift i målene, en fargeskygge - men signalene blir sjelden systematisert. Agenter overvåker prosesstelemetri, operatørnotater og maskinsignaler på tvers, og varsler om mønstre før de blir defekter. Kvalitet slutter å være en ettersjekk og blir et pågående spor.",
+    "Maintenance that predicts downtime before it happens":
+      "Vedlikehold som forutser stans før den skjer",
+    "Reactive maintenance dominates because predictive maintenance requires sensor data, work-order history, supplier manuals and shift experience to talk to each other - and they rarely do. Agents connect those signals, read the history, and suggest maintenance windows before the equipment falls out. Downtime moves from 'unexpected' to 'planned'.":
+      "Reaktivt vedlikehold dominerer fordi prediktivt vedlikehold krever at sensordata, ordrehistorikk, leverandørmanualer og erfaringen fra skiftet snakker sammen - og det gjør de sjelden. Agenter kobler signalene, leser historikken, og foreslår vedlikeholdsvinduer før utstyret faller ut. Stans flytter seg fra \"uventet\" til \"planlagt\".",
+    "Shift handovers without context falling between shifts":
+      "Skiftbytter uten at konteksten faller mellom skiftene",
+    "Shift handovers are often verbal or written in a binder that the next shift rarely has time to read. Issues from one shift continue into the next without the new operator knowing why. Agents synthesize the shift status from MES, quality logs and maintenance notes, and deliver a short contextual briefing to the next shift. Less falls between them.":
+      "Skiftbytter er ofte muntlige eller noteres i en perm som neste skift sjelden rekker å lese. Saker fra ett skift fortsetter inn i det neste uten at den nye operatøren vet hvorfor. Agenter syntetiserer skiftets status fra MES, kvalitetslogger og vedlikeholdsnotater, og leverer en kort, kontekstuell brifing til neste skift. Mindre faller mellom dem.",
+    "Order-to-delivery without manual middlemen":
+      "Ordre-til-leveranse uten manuelle mellommenn",
+    "From an order in CRM or ERP to actual production there is a lot of manual translation: BOM checks, capacity questions, material coverage, lead-time promises. Agents tie the order system, MES, inventory and supplier data together - so confirmed delivery dates are reliable from the moment the order is taken. Sales and production stop negotiating with reality afterwards.":
+      "Fra ordre i CRM eller ERP til faktisk produksjon er det mye manuell oversettelse: BOM-sjekker, kapasitetspørsmål, materialdekning, ledetidsløfter. Agenter binder ordresystemet, MES, lager og leverandørdata sammen - så bekreftede leveringsdatoer er pålitelige fra øyeblikket ordren tas. Salg og produksjon slipper å forhandle om virkeligheten i ettertid.",
+    "The biggest opportunity lies in removing the friction between plan and reality, so capacity stays inside the line instead of leaking out at the edges.":
+      "Det største potensialet ligger i å fjerne friksjonen mellom plan og virkelighet, så kapasiteten holdes inne i linjen i stedet for å lekke ut i kantene.",
+    "Each business plans, controls and escalates in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in workflow tool. The company's own knowledge, tone and exceptions determine what the agent does.":
+      "Hver virksomhet planlegger, kontrollerer og eskalerer på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller et innebygd workflow-verktøy. Bedriftens egen kunnskap, tone og unntak styrer hva agenten gjør.",
+    "Much of what drives a good decision sits outside MES fields: shift notes, maintenance logs, sensor streams, supplier manuals, spreadsheets, conversations. Agents use it as it is. You do not need to build dashboards or bridge integrations in systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Mye av det som styrer en god beslutning ligger utenfor MES-feltene: skiftnotater, vedlikeholdslogger, sensorstrømmer, leverandørmanualer, regneark, samtaler. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i systemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace MES, ERP or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere MES, ERP eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-conversation pricing starts to hurt at scale precisely when you begin to succeed. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-samtale-prising biter på skala akkurat når dere begynner å lykkes. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "How many hours are spent every day updating the production plan against a new reality - and how much of that is something a human should actually handle?":
+      "Hvor mange timer går hver dag på å oppdatere produksjonsplanen mot ny virkelighet - og hvor mye av det er noe et menneske bør ta?",
+    "When a quality deviation appears, how long does it take to know whether it is caused by machine, material or method?":
+      "Når et kvalitetsavvik dukker opp, hvor lang tid tar det å vite om det skyldes maskin, materiale eller metode?",
+    "How much of the first hour of a shift goes to figuring out what the previous shift actually did?":
+      "Hvor mye av første time på et skift går til å finne ut hva forrige skift faktisk gjorde?",
+    "How often does sales need to call production to ask 'can we promise this' - and how long do they wait for an answer?":
+      "Hvor ofte må salg ringe produksjon for å spørre \"kan vi love dette\" - og hvor lenge må de vente på svar?",
+    "The building blocks extend beyond production. The same agentic layer also powers marketing, sales, service, project and data, and transport and logistics - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover produksjonen. Samme agentiske lag driver også markedsføring, salg, service, prosjekt og data, og transport og logistikk - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and continues evolving them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og videreutvikler dem når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
+    "Project and data - NeuroSYS":
+      "Prosjekt og data - NeuroSYS",
+    "A note on how agentic AI takes over the data work that eats project time - sourcing, structuring, validating and document generation at component level.":
+      "Et notat om hvordan agentisk AI overtar dataarbeidet som spiser opp prosjekttiden - sourcing, strukturering, validering og dokumentgenerering på komponentnivå.",
+    "Business areas · Project and data":
+      "Forretningsområder · Prosjekt og data",
+    "Component and project data tied together by an agentic layer - so teams spend their time designing and delivering, free from punching, indexing and cross-checking.":
+      "Komponent- og prosjektdata bundet sammen av et agentisk lag - så teamene bruker tiden på å designe og levere, fri fra punching, indeksering og krysjekking.",
+    "Project managers and engineers are rarely hired to cut and paste between datasheets and spreadsheets - but that is often where the day ends up. In data-intensive projects, it eats more of the time than anyone likes to admit. Four places where agents do something different from traditional PLM, ERP and document tools:":
+      "Prosjektledere og ingeniører er sjelden ansatt for å klippe og lime mellom dataark og regneark - men det er ofte der dagen havner. I dataintensive prosjekter spiser det opp mer av tiden enn noen liker å innrømme. Fire steder agentene gjør noe annet enn de tradisjonelle PLM-, ERP- og dokumentverktøyene:",
+    "Components sourced and structured while the project manager sleeps":
+      "Komponentene sourcet og strukturert mens prosjektlederen sover",
+    "A complex facility can consist of thousands of components, and for each one someone needs to find the datasheet, read the specifications, check price and availability, and punch it in. Agents pull this from supplier pages and PDFs and structure it into the project's component register automatically when something is added to a spec. The engineer gets structured alternatives instead of empty cells.":
+      "Et komplekst anlegg kan bestå av tusenvis av komponenter, og for hver enkelt må noen finne dataarket, lese ut spesifikasjoner, sjekke pris og tilgjengelighet, og punche det inn. Agentene henter dette fra leverandørsider og PDF-er, og strukturerer det i prosjektets komponentregister - automatisk når noe legges til en spec. Ingeniøren får ferdig strukturerte alternativer i stedet for tomme celler.",
+    "Thousands of items categorized in hours":
+      "Tusenvis av elementer kategorisert på timer",
+    "A unique catalog, product base or bill of materials per customer often requires someone to sort thousands of items from inconsistent sources into categories that did not exist in any system beforehand. The agent reads names, properties and use cases, and suggests a consistent categorization based on the customer's own taxonomy - including duplicates and inconsistencies humans overlook. What used to take weeks is finished in days, and more consistent than manual work ever was.":
+      "En unik katalog, produktbase eller materialeliste per kunde krever ofte at noen sorterer tusenvis av elementer fra inkonsistente kilder inn i kategorier som mangler i noe system fra før. Agenten leser navn, egenskaper og bruksområder, og foreslår en konsistent kategorisering basert på kundens egen taksonomi - inkludert duplikater og inkonsistenser mennesker overser. Det som pleide å ta uker, er ferdig på dager - og mer konsistent enn manuelt arbeid noensinne ble.",
+    "Specifications cross-checked against the project's requirements":
+      "Spesifikasjoner krysjekket mot prosjektets krav",
+    "When a project has thousands of components, it also has thousands of opportunities for a specification to fall outside the requirements - technical, regulatory or contractual. The agent reads each datasheet against the project's full set of requirements and flags deviations before anything is sent to engineering. Deviations that would have cost a revision round are caught before they reach the drawing board.":
+      "Når et prosjekt har tusenvis av komponenter, har det også tusenvis av muligheter for at en spesifikasjon havner utenfor kravene - tekniske, regulatoriske eller kontraktsfestede. Agenten leser hvert dataark mot prosjektets samlede krav og flagger avvik før noe sendes til konstruksjon. Avvik som ville kostet en revisjonsrunde, fanges før de når opp på tegnebordet.",
+    "Documents generated directly from validated data":
+      "Dokumenter generert direkte fra validerte data",
+    "When the project is ready for delivery, someone has to assemble component lists, certificates, declarations of conformity and customer-specific documentation - days of cross-referencing between systems. When agents have already structured the data throughout the project, a catalog, BOM, quote or delivery package can be generated on request in the customer's format. Documentation becomes a by-product of clean data, free from a separate hump of work before handover.":
+      "Når prosjektet skal leveres, må noen sammenstille komponentlister, sertifikater, samsvarserklæringer og kundespesifikk dokumentasjon - dagsverk med kryssreferering mellom systemer. Når agentene allerede har strukturert dataene gjennom prosjektet, genereres katalog, BOM, tilbud eller leveransepakke på forespørsel - i kundens format. Dokumentasjon blir et biprodukt av at data er ren, fri fra separate pukkeljobber før levering.",
+    "None of this is small-margin value. The biggest opportunity lies in giving engineers back the time they lose to punching, indexing and assembling data.":
+      "Ingen av dette er små marginer. Det største potensialet ligger i å gi ingeniørene tilbake tiden de mister i punching, indeksering og sammenstilling.",
+    "Each business specifies, categorizes and validates in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in PLM template. The company's own taxonomy, naming conventions and quality requirements determine what the agent does.":
+      "Hver virksomhet spesifiserer, kategoriserer og validerer på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller en innebygd PLM-mal. Bedriftens egen taksonomi, navnekonvensjoner og kvalitetskrav styrer hva agenten gjør.",
+    "Most component knowledge sits outside PLM or ERP fields: datasheets as PDFs, supplier pages, spreadsheets, emails with spec changes, old project archives. Agents use it as it is. You do not need to build dashboards or bridge integrations in systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Det meste av komponentkunnskapen ligger utenfor PLM- eller ERP-feltene: dataark som PDF, leverandørsider, regneark, e-poster med spec-endringer, gamle prosjektarkiver. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i systemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace PLM, ERP or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere PLM, ERP eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-document pricing starts to hurt at scale precisely when you begin to succeed - and projects carry volume in components spread across many documents. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-dokument-prising biter på skala akkurat når dere begynner å lykkes - og prosjekter har volum av komponenter, fordelt på mange dokumenter. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "What share of a project engineer's week goes to fetching, reading and punching datasheets - and how much goes to actual engineering?":
+      "Hvor stor andel av en prosjektingeniørs uke går til å hente, lese og punche dataark - og hvor mye til faktisk engineering?",
+    "How many different places does the same component information live today - and how often do they agree?":
+      "Hvor mange forskjellige steder lever den samme komponentinfoen i dag - og hvor ofte stemmer de overens?",
+    "When a catalog or delivery package has to go out, how much of the work is assembly that only exists because the data lacked cleanliness from the start?":
+      "Når en katalog eller leveransepakke skal ut, hvor mye av jobben er sammenstilling som måtte gjøres fordi data manglet renhet fra start?",
+    "How much of the component knowledge and quality logic lives in a setup you own yourselves - and how much in a vendor account?":
+      "Hvor mye av komponentkunnskapen og kvalitetslogikken bor i et oppsett dere selv eier - og hvor mye i en leverandørs konto?",
+    "The building blocks extend beyond project work. The same agentic layer also powers marketing, sales, service, transport and logistics, and production - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover prosjektarbeidet. Samme agentiske lag driver også markedsføring, salg, service, transport og logistikk, og produksjon - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and keeps developing them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og utvikler dem videre når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
+    "Transport and logistics - NeuroSYS":
+      "Transport og logistikk - NeuroSYS",
+    "A note on how agentic AI lets routes, dispatch and customer communication absorb sick leave, roadworks and disruptions - without anyone needing to start the plan over.":
+      "Et notat om hvordan agentisk AI lar ruter, dispatch og kundekommunikasjon absorbere sykdom, veiarbeid og avvik - uten at noen må starte planen på nytt.",
+    "Business areas · Transport and logistics":
+      "Forretningsområder · Transport og logistikk",
+    "Routes, dispatch and customers tied together by an agentic layer - so the plan can absorb deviations, day after day.":
+      "Ruter, dispatch og kunde bundet sammen av et agentisk lag - så planen tåler avvikene, dag etter dag.",
+    "Logistics rarely lacks the willingness to drive or coordinate. What costs the most is the gap between yesterday's plan and today's reality. Four places where agents do something different from traditional TMS and routing tools:":
+      "Logistikk mangler sjelden vilje til å kjøre eller koordinere. Det som koster mest er gapet mellom gårsdagens plan og dagens virkelighet. Fire steder agentene gjør noe annet enn de tradisjonelle TMS- og ruteverktøyene:",
+    "A route plan that actually plans itself":
+      "Ruteplanen som faktisk planlegger seg selv",
+    "Daily route planning is a puzzle of stops, drivers, vehicles, delivery windows and load - one that takes hours to build and falls apart on the first disruption. Agents take in all the variables at once and can re-optimize in minutes when something changes. The coordinator uses their head on the exceptions instead of starting from zero every morning.":
+      "Daglig ruteplanlegging er et puslespill med stops, sjåfører, kjøretøy, leveringsvinduer og last - som tar timer å legge og faller sammen ved første avvik. Agentene tar inn alle variablene samtidig og kan re-optimere på minutter når noe endrer seg. Koordinatoren bruker hodet på unntakene, fri fra å starte fra null hver morgen.",
+    "Disruptions that re-plan themselves while the vehicles are moving":
+      "Avvik som omplanlegger seg selv mens bilene ruller",
+    "A resource drops out, a main route is blocked, an urgent delivery appears, a recipient cancels - each disruption today means a calling round to move stops around. The agent catches the change from GPS, dispatch or the customer, suggests a reallocation among available resources, and notifies the affected parties. The disruption goes from hours of panic to an adjustment that is in place before the next vehicle rolls.":
+      "En ressurs som faller fra, en hovedrute som blokkeres, en haste-leveranse, en mottaker som avbestiller - hvert avvik betyr i dag en ringerunde for å flytte stops. Agenten fanger endringen fra GPS, dispatch eller kunde, foreslår omplassering blant tilgjengelige ressurser, og varsler de berørte. Avviket går fra timer med panikk til en justering som er på plass før neste bil ruller.",
+    "The customer knows when the vehicle will arrive - before they call to ask":
+      "Kunden vet når bilen kommer - før kunden ringer for å spørre",
+    "When ETA changes or a delivery deviates from the plan, the customer often finds out by calling first. The agent sees the changes continuously and notifies in the customer's preferred channel - with the new ETA, signed proof of delivery or a photo from the delivery point. Fewer calls to dispatch, fewer customers waiting for something that never arrives.":
+      "Når ETA endrer seg eller en leveranse avviker fra planen, oppdager kunden det ofte ved å ringe selv. Agenten ser endringene kontinuerlig og varsler i kundens foretrukne kanal - med ny ETA, signert kvittering eller bilde fra leveringspunktet. Færre samtaler til dispatch, færre kunder som venter på noe som uteblir.",
+    "The driver has all the information before she starts the engine":
+      "Sjåføren med all informasjonen før hun starter motoren",
+    "A driver has stops, addresses and a packing list - but rarely special instructions, access codes, return pickups or where the delivery should actually be placed. The agent gathers it from emails, previous deliveries and dispatch notes, and presents it in the driver app as the next thing she needs to know. Fewer return visits, fewer calls to dispatch, less time per stop.":
+      "En sjåfør har stops, adresser og en pakkliste - men sjelden særskilte instrukser, tilgangskoder, retur-pickup eller hvor leveransen faktisk skal legges. Agenten samler det fra e-poster, tidligere leveranser og dispatchnotater, og presenterer det i sjåfør-appen som det neste hun trenger å vite. Færre returbesøk, færre samtaler til dispatch, kortere tid per stopp.",
+    "None of this is small-margin value. The biggest opportunity lies in a plan that can absorb disruptions, and in both customer and driver knowing what is happening without having to call anyone.":
+      "Ingen av dette er små marginer. Det største potensialet ligger i at planen tåler avvikene, og at kunde og sjåfør vet hva som skjer uten å måtte ringe noen.",
+    "Each business plans, prioritizes stops and communicates deviations in its own way. The agentic part is that this way of working can be expressed as it actually is, free from the limits of a standard field or a built-in route optimizer. The company's own routines, customer preferences and exceptions determine what the agent does.":
+      "Hver virksomhet planlegger, prioriterer stops og kommuniserer avvik på sin egen måte. Det agentiske er at den måten kan uttrykkes slik den faktisk er, fri fra grensene i et standardfelt eller en innebygd ruteoptimerer. Bedriftens egne rutiner, kundepreferanser og unntak styrer hva agenten gjør.",
+    "Much of what drives good dispatching sits outside TMS fields: GPS traces, customer SMS messages, supplier messages, driver notes, weather and traffic sources. Agents use it as it is. You do not need to build dashboards or bridge integrations in systems that were never meant for it - or wait for a vendor to prioritize exactly your data source.":
+      "Mye av det som styrer en god disponering ligger utenfor TMS-feltene: GPS-spor, kunde-SMS, leverandørmeldinger, sjåførnotater, vær- og trafikk-kilder. Agentene bruker det som det er. Dere slipper å bygge dashbord eller bro-integrasjoner i systemer som aldri var ment for det - eller å vente på at en leverandør prioriterer akkurat deres datakilde.",
+    "We prefer open source that you can run yourselves. What matters most is that the logic and data live with you - in your own account, your own infrastructure. If you replace TMS, routing tools or the agent platform itself in three years, the work should move with you. The plug should always be possible to pull.":
+      "Vi foretrekker open-source som dere kan kjøre selv. Det viktigste er at logikken og dataene bor hos dere - i deres egen konto, deres egen infrastruktur. Bytter dere TMS, ruteverktøy eller agentplattformen helt om tre år, følger arbeidet med ut. Pluggen skal alltid være mulig å trekke.",
+    "Per-action and per-message pricing starts to hurt at scale precisely when you begin to succeed - and logistics is volume. Open infrastructure lets cost follow actual resource usage - based on the infrastructure you already have. That makes it realistic to let agents take over work at real volume, far beyond pilot size.":
+      "Per-handling- og per-melding-prising biter på skala akkurat når dere begynner å lykkes - og logistikk er volum. Åpen infrastruktur lar kostnaden følge ressursbruk - basert på infrastrukturen dere har. Det gjør det realistisk å la dem ta over arbeid i stort volum, langt utover pilotstørrelse.",
+    "How long does it take from a disruption hitting the plan until a re-planned route is out with the drivers?":
+      "Hvor lang tid tar det fra et avvik treffer planen til en omplanlagt rute er ute hos sjåførene?",
+    "How many of your customers discover delays by calling you - before you have notified them?":
+      "Hvor mange av kundene oppdager forsinkelser ved å ringe dere - før dere har varslet dem?",
+    "How large a share of a dispatcher's day goes to coordinating exceptions by phone?":
+      "Hvor stor andel av en dispatchers dag går til å koordinere unntak per telefon?",
+    "How much of your route and dispatch logic lives in a setup you own yourselves - and how much in a TMS vendor account?":
+      "Hvor mye av rute- og dispatch-logikken bor i et oppsett dere selv eier - og hvor mye i en TMS-leverandørs konto?",
+    "The building blocks extend beyond logistics. The same agentic layer also powers marketing, sales, service, project and data, and production - with different agents on top. The capability is built once and used in many places.":
+      "Byggesteinene strekker seg utover logistikken. Samme agentiske lag driver også markedsføring, salg, service, prosjekt og data, og produksjon - med ulike agenter på toppen. Kapasiteten bygges én gang og brukes mange steder.",
+    "We are the ones who build them with you - a build team that takes the agents from first version into operations, and keeps developing them when you find the next place they should take over work, on an open foundation you own yourselves.":
+      "Vi er de som bygger dem med dere - et bygg-team som tar agentene fra første versjon til drift, og utvikler dem videre når dere finner neste sted de bør ta over arbeid, på et åpent fundament dere selv eier.",
     "Communication agents": "Dialogagenter",
     "Reduce support load and resolve work across channels by connecting to your systems and data.":
       "Reduser supportbelastning og løs oppgaver på tvers av kanaler ved å koble til systemer og data.",
@@ -898,10 +1229,16 @@ const I18N_STRINGS = {
     Services: "Tjenester",
     "Services and pricing": "Tjenester og priser",
     "Services and pricing - NeuroSYS": "Tjenester og priser - NeuroSYS",
+    "Agentic AI Services & Pricing - NeuroSYS":
+      "Agentisk AI-tjenester og priser - NeuroSYS",
     "Your Nordic platform partner and delivery team for agentic AI. Transparent pricing for workshops, hosted workflows and own installations - end-to-end implementation on Dify, from first workshop to AI in production.":
       "Din nordiske plattformpartner og leveranseteam for agentisk AI. Transparent prising for workshops, hostede arbeidsflyter og egne installasjoner - ende-til-ende implementering på Dify, fra første workshop til AI i drift.",
+    "Agentic AI services for Nordic enterprises: workshops, workflow development, managed hosting and on-prem Dify delivery with transparent pricing.":
+      "Agentisk AI-tjenester for nordiske virksomheter: workshops, arbeidsflytutvikling, administrert hosting og on-prem Dify-leveranse med transparente priser.",
     "NeuroSYS is a Nordic platform partner and delivery team for agentic AI. We build, run and evolve agentic AI on Dify, place senior experts directly into client teams, and deliver full projects end-to-end - from first workshop to AI in production.":
       "NeuroSYS er en nordisk plattformpartner og leveranseteam for agentisk AI. Vi bygger, drifter og videreutvikler agentisk AI på Dify, setter senior eksperter direkte inn i kundeteam og leverer komplette prosjekter ende-til-ende - fra første workshop til AI i produksjon.",
+    "NeuroSYS delivers agentic AI services for Nordic enterprises: workshops, workflow development, managed hosting, on-prem Dify delivery and long-term operations.":
+      "NeuroSYS leverer agentisk AI-tjenester for nordiske virksomheter: workshops, arbeidsflytutvikling, administrert hosting, on-prem Dify-leveranse og langsiktig drift.",
     "AI Services": "AI-tjenester",
     "Agentic AI, Embedded Experts, Project Deliveries":
       "Agentisk AI, innleide eksperter, prosjektleveranser",
@@ -1380,8 +1717,16 @@ const I18N_STRINGS = {
     "Innovation pipeline aligned with your strategy":
       "Innovasjonspipeline i tråd med strategien",
     "About NeuroSYS": "Om NeuroSYS",
+    "NeuroSYS is the strategic implementation partner that takes Nordic enterprises from AI experimentation to operational capability. 100+ specialists, 15+ years, ISO certified.":
+      "NeuroSYS er den strategiske implementeringspartneren som tar nordiske virksomheter fra AI-eksperimentering til operativ kapasitet. 100+ spesialister, 15+ års erfaring, ISO-sertifisert.",
     "About NeuroSYS - Your AI implementation partner":
       "Om NeuroSYS - Din partner for AI-implementering",
+    "About NeuroSYS | Agentic AI Implementation Partner":
+      "Om NeuroSYS | Partner for implementering av agentisk AI",
+    "Meet NeuroSYS: a Nordic-Polish delivery team for agentic AI, with 100+ specialists, enterprise delivery experience and ISO-certified operations.":
+      "Møt NeuroSYS: et nordisk-polsk leveranseteam for agentisk AI, med 100+ spesialister, erfaring fra enterprise-leveranser og ISO-sertifisert drift.",
+    "NeuroSYS is an agentic AI implementation partner for Nordic enterprises. A senior delivery team that builds, runs and evolves production AI across real operations.":
+      "NeuroSYS er en implementeringspartner for agentisk AI for nordiske virksomheter. Et erfarent leveranseteam som bygger, drifter og videreutvikler produksjonsklar AI i reell drift.",
     "A senior team for agentic AI":
       "Et senior team for agentisk AI",
     "A Nordic-Polish team of 100+ specialists that takes organizations from AI experimentation to operational capability - as part of daily operations.":
@@ -1699,6 +2044,10 @@ const I18N_STRINGS = {
     "Outcome: a clear, realistic plan for launching pilots with ownership and success criteria in place.":
       "Resultat: en tydelig, realistisk plan for å lansere piloter med eierskap og suksesskriterier på plass.",
     "Projects": "Prosjekter",
+    "Agentic AI Customer References & Case Studies - NeuroSYS":
+      "Kundereferanser og caser for agentisk AI - NeuroSYS",
+    "Customer references and case studies from agentic AI projects in production, including Jernia, GE Healthcare and Uloba.":
+      "Kundereferanser og caser fra agentiske AI-prosjekter i produksjon, inkludert Jernia, GE Healthcare og Uloba.",
     "Selected work with our customers":
       "Utvalgt arbeid med kundene våre",
     "From agentic AI in production to digital platforms in daily use - selected projects with leading organizations across industries.":
@@ -1818,8 +2167,12 @@ const I18N_STRINGS = {
     Sustainability: "Bærekraft",
     "News - NeuroSYS": "Nyheter - NeuroSYS",
     "Insights - NeuroSYS": "Innsikt - NeuroSYS",
+    "Agentic AI Insights & Case Stories - NeuroSYS":
+      "Innsikt og kundehistorier om agentisk AI - NeuroSYS",
     "Updates and featured activities from NeuroSYS.":
       "Oppdateringer og utvalgte aktiviteter fra NeuroSYS.",
+    "Insights, case stories and implementation lessons from NeuroSYS across agentic AI, Dify, product teams and operations.":
+      "Innsikt, kundehistorier og implementeringslæring fra NeuroSYS på tvers av agentisk AI, Dify, produktteam og drift.",
     "Insights, case stories, and partner updates from NeuroSYS.":
       "Innsikt, kundehistorier og partneroppdateringer fra NeuroSYS.",
     "Selected activities and updates from our work across industries and partner ecosystems.":
@@ -1855,6 +2208,10 @@ const I18N_STRINGS = {
       "MedieX: Fra mediestøy til styrbar beslutningsinnsikt",
     "MedieX: From media noise to actionable insight - NeuroSYS":
       "MedieX: Fra mediestøy til styrbar beslutningsinnsikt - NeuroSYS",
+    "MedieX Case: AI Media Intelligence Platform - NeuroSYS":
+      "MedieX-case: AI-plattform for medieintelligens - NeuroSYS",
+    "How MedieX turns unstructured media coverage into actionable intelligence with AI summarization, tagging and risk analysis.":
+      "Hvordan MedieX gjør ustrukturert mediedekning om til handlingsbar innsikt med AI-oppsummering, tagging og risikoanalyse.",
     "MedieX turns unstructured media noise into structured, actionable intelligence for communication and decision-making teams across Nordic enterprises.":
       "MedieX gjør ustrukturert mediestøy om til styrbar, dokumenterbar beslutningsinnsikt for kommunikasjons- og beslutningsteam.",
     "An operational AI platform for communication and decision-making teams. MedieX turns unstructured media noise into structured, documented intelligence - in seconds.":
@@ -1923,8 +2280,12 @@ const I18N_STRINGS = {
       "Jernia: AI-drevet kundeservice som faktisk leverer",
     "Jernia: AI-powered customer service that delivers - NeuroSYS":
       "Jernia: AI-drevet kundeservice som faktisk leverer - NeuroSYS",
+    "Jernia Case: Agentic AI for Customer Service - NeuroSYS":
+      "Jernia-case: Agentisk AI for kundeservice - NeuroSYS",
     "46% of meaningful conversations resolved during pilot. How Jernia automated customer service with an AI communication agent.":
       "46 % av meningsfulle samtaler løst i pilotperioden. Hvordan Jernia automatiserte kundeservice med en AI-dialogagent.",
+    "How Jernia used an agentic AI customer service solution to resolve 46% of meaningful conversations during pilot.":
+      "Hvordan Jernia brukte en agentisk AI-løsning for kundeservice til å løse 46 % av meningsfulle samtaler i pilotperioden.",
     "46 % of meaningful conversations resolved in pilot. How Norway's leading hardware retailer automated customer service with an AI communication agent.":
       "46 % av meningsfulle samtaler løst i pilot. Hvordan Norges ledende jernvareforhandler automatiserte kundeservice med en AI-dialogagent.",
     "46 % av meningsfulle samtaler ble løst i pilotperioden. Uten å øke bemanningen fikk Jernia raskere svar, færre saker til kundesenteret og en bedre kundeopplevelse.":
@@ -1970,12 +2331,16 @@ const I18N_STRINGS = {
       "GE Healthcare: On-prem AI for fabrikkdrift",
     "GE Healthcare: On-prem AI for factory operations - NeuroSYS":
       "GE Healthcare: On-prem AI for fabrikkdrift - NeuroSYS",
+    "GE Healthcare Case: On-Prem RAG for Factory Operations - NeuroSYS":
+      "GE Healthcare-case: On-prem RAG for fabrikkdrift - NeuroSYS",
     "10,000+ control documents made searchable with a secure, on-premises RAG solution. How GE Healthcare gives operators instant answers to critical procedures.":
       "10 000+ kontrolldokumenter gjort søkbare med en sikker, lokal RAG-løsning. Hvordan GE Healthcare gir operatører umiddelbare svar på kritiske prosedyrer.",
     "10,000+ control documents made searchable with a fully local, secure RAG solution. Operators get instant answers to critical procedures without exposing sensitive data.":
       "10 000+ kontrolldokumenter gjort søkbare med en fullstendig lokal, sikker RAG-løsning. Operatører får umiddelbare svar på kritiske prosedyrer uten å eksponere sensitive data.",
     "10,000+ control documents made searchable with a secure, on-premises RAG solution for factory operators.":
       "10 000+ kontrolldokumenter gjort søkbare med en sikker, lokal RAG-løsning for fabrikkoperatører.",
+    "How GE Healthcare made 10,000+ control documents searchable with a secure on-prem RAG solution for factory operators.":
+      "Hvordan GE Healthcare gjorde 10 000+ kontrolldokumenter søkbare med en sikker on-prem RAG-løsning for fabrikkoperatører.",
     "Global leader in healthcare technology":
       "Global leder innen helseteknologi",
     "Control documents indexed": "Kontrolldokumenter indeksert",
@@ -2013,6 +2378,10 @@ const I18N_STRINGS = {
       "Hvorfor NeuroSYS valgte å samarbeide med Dify",
     "Why NeuroSYS chose to partner with Dify - NeuroSYS":
       "Hvorfor NeuroSYS valgte å samarbeide med Dify - NeuroSYS",
+    "Why NeuroSYS Chose Dify for Production Agentic AI - NeuroSYS":
+      "Hvorfor NeuroSYS valgte Dify for produksjonsklar agentisk AI - NeuroSYS",
+    "Why NeuroSYS chose Dify as the platform for production agentic AI: faster workflows, governance and a clearer path from pilot to operations.":
+      "Hvorfor NeuroSYS valgte Dify som plattform for produksjonsklar agentisk AI: raskere arbeidsflyter, governance og en tydeligere vei fra pilot til drift.",
     "From pilot fatigue to production-ready AI. How Dify solved the core problems slowing down enterprise AI adoption - and why we chose them as our platform partner.":
       "Fra pilottrøtthet til produksjonsklar AI. Hvordan Dify løste kjerneproblemene som bremser AI-adopsjon i virksomheter - og hvorfor vi valgte dem som plattformpartner.",
     "From pilot fatigue to production-ready AI. How Dify solved the core problems slowing down enterprise AI adoption.":
@@ -2062,16 +2431,28 @@ const I18N_STRINGS = {
       "Utforsk agentplattformen →",
     "Dialogue Agents - NeuroSYS":
       "Dialogagenter - NeuroSYS",
+    "Dialogue Agents for Customer Service & Internal Support - NeuroSYS":
+      "Dialogagenter for kundeservice og intern støtte - NeuroSYS",
     "Agentic communication agents that resolve work across channels for employees and customers.":
       "Agentiske dialogagenter som løser arbeid på tvers av kanaler for ansatte og kunder.",
+    "Deploy dialogue agents across chat, email and internal channels with grounded answers, workflow actions and human handoff.":
+      "Rull ut dialogagenter på tvers av chat, e-post og interne kanaler med forankrede svar, arbeidsflythandlinger og sømløs overlevering til mennesker.",
     "Process Agents - NeuroSYS":
       "Prosessagenter - NeuroSYS",
+    "Process Agents for Operations Automation - NeuroSYS":
+      "Prosessagenter for automatisering av drift - NeuroSYS",
     "Process Agents - agentic workflows for operational work.":
       "Prosessagenter - agentiske arbeidsflyter for operasjonelt arbeid.",
+    "Automate operational workflows across systems, data and decisions with process agents built for control, traceability and real business operations.":
+      "Automatiser operative arbeidsflyter på tvers av systemer, data og beslutninger med prosessagenter bygget for kontroll, sporbarhet og reell forretningsdrift.",
     "Product Agents - NeuroSYS":
       "Produktagenter - NeuroSYS",
+    "Product Agents for AI-Native Products - NeuroSYS":
+      "Produktagenter for AI-native produkter - NeuroSYS",
     "Product Agents - part of the NeuroSYS AI System.":
       "Produktagenter - en del av NeuroSYS AI-system.",
+    "Embed product agents into SaaS and internal platforms with copilots, recommendations, actions and shared AI logic across the product surface.":
+      "Bygg produktagenter inn i SaaS og interne plattformer med copiloter, anbefalinger, handlinger og delt AI-logikk på tvers av produktflaten.",
     "Applications:": "Applikasjoner:",
     "Customer & employee interaction": "Kunde- og medarbeiderdialog",
     "Agentic communication agents for employees and customers that resolve work across channels, on top of your existing systems and data.":
@@ -2549,6 +2930,10 @@ const I18N_STRINGS = {
     "L&D": "L&D",
     "Samelane: From LMS to AI-native Competency Intelligence":
       "Samelane: Fra LMS til AI-native Competency Intelligence",
+    "Samelane Case: AI-Native Competency Intelligence - NeuroSYS":
+      "Samelane-case: AI-native kompetanseintelligens - NeuroSYS",
+    "How Samelane added AI-native competency intelligence for 40,000+ learners with Dify-powered course generation, summaries and semantic search.":
+      "Hvordan Samelane la til AI-native kompetanseintelligens for 40 000+ lærende med Dify-drevet kursgenerering, oppsummeringer og semantisk søk.",
     "Samelane learning platform": "Samelane læringsplattform",
     "of all digital editorial media in Norway covered by an agentic product that turns noise into structured intelligence.":
       "av all digital redaksjonell media i Norge dekket av et agentisk produkt som gjør støy om til strukturert innsikt.",
@@ -2697,6 +3082,14 @@ const I18N_STRINGS = {
     "Trusted by": "Betrodd av",
     "Company credentials": "Selskapsfakta",
     "Agentic platform tree": "Agentisk plattformtre",
+    Commits: "Committer",
+    "DATA LAYER": "DATALAG",
+    "Reason · Decide · Act": "Resonner · Beslutt · Utfør",
+    "Read:": "Les:",
+    "Follow NeuroSYS on LinkedIn": "Følg NeuroSYS på LinkedIn",
+    "ISO certified": "ISO-sertifisert",
+    "AWS partner": "AWS-partner",
+    "Microsoft partner": "Microsoft-partner",
     Platforms: "Plattformer",
     "NeuroSYS helped us uncover process improvements and cost savings we had not identified ourselves. Their insight has been essential in increasing productivity and reducing costs.":
       "NeuroSYS hjalp oss å avdekke prosessforbedringer og kostnadsbesparelser vi ikke hadde identifisert selv. Deres innsikt har vært avgjørende for å øke produktiviteten og redusere kostnader.",
@@ -2744,6 +3137,12 @@ const I18N_STRINGS = {
     "Get in touch with NeuroSYS to discuss AI opportunities and next steps.":
       "Ta kontakt med NeuroSYS for å diskutere AI-muligheter og neste steg.",
     "About NeuroSYS": "Om NeuroSYS",
+    "Agentic AI Partner for Nordic Enterprises - NeuroSYS":
+      "Partner for agentisk AI for nordiske virksomheter - NeuroSYS",
+    "NeuroSYS builds and operates agentic AI systems for Nordic enterprises - from workflows and copilots to AI-enabled products running in production.":
+      "NeuroSYS bygger og drifter agentiske AI-systemer for nordiske virksomheter - fra arbeidsflyter og copiloter til AI-drevne produkter i produksjon.",
+    "NeuroSYS is an agentic AI partner for Nordic enterprises. We build and operate production-grade AI systems, workflows and AI-enabled products across real operations.":
+      "NeuroSYS er en partner for agentisk AI for nordiske virksomheter. Vi bygger og drifter produksjonsklare AI-systemer, arbeidsflyter og AI-drevne produkter i reell drift.",
     "NeuroSYS builds AI systems that deliver measurable impact across operations, customer experience and digital products.":
       "NeuroSYS bygger AI-systemer som gir målbar effekt på tvers av drift, kundeopplevelse og digitale produkter.",
     "Agentic AI for real operations, products, and workflows.":
@@ -2758,6 +3157,15 @@ const I18N_STRINGS = {
     "Customer references - NeuroSYS": "Kundereferanser - NeuroSYS",
     "Selected projects with leading organizations - from agentic AI in production to digital platforms in daily use.":
       "Utvalgte prosjekter med ledende organisasjoner - fra agentisk AI i produksjon til digitale plattformer i daglig bruk.",
+    "Agentic AI Workshops for Leadership & Teams - NeuroSYS":
+      "Agentisk AI-workshops for ledelse og team - NeuroSYS",
+    "Agentic AI workshops for leadership teams, product owners and operational teams - practical sessions that clarify opportunities, priorities and next steps.":
+      "Agentisk AI-workshops for ledergrupper, produkteiere og operative team - praktiske sesjoner som klargjør muligheter, prioriteringer og neste steg.",
+    "Agentic AI Workshops": "Agentisk AI-workshops",
+    "Agentic AI Platform on Dify - NeuroSYS":
+      "Agentisk AI-plattform på Dify - NeuroSYS",
+    "Production-ready agentic AI platform on Dify with workflow orchestration, governance, managed hosting and on-prem deployment for Nordic enterprises.":
+      "Produksjonsklar agentisk AI-plattform på Dify med arbeidsflytorchestrering, governance, administrert hosting og on-prem utrulling for nordiske virksomheter.",
     "GenAI Training & Workshops - NeuroSYS":
       "GenAI-opplæring og workshops - NeuroSYS",
     "Practical GenAI training and workshops that build shared understanding, identify real opportunities and prepare your teams to work with AI in practice.":
