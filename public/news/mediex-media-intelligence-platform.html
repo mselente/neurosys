@@ -10,12 +10,8 @@
       name="description"
       content="MedieX turns unstructured media noise into structured, actionable intelligence for communication and decision-making teams across Nordic enterprises."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/styles.css?v=__CSS_VERSION__" />
     <link rel="canonical" href="https://www.neurosys.no/insights/mediex-media-intelligence-platform" />
     <link
@@ -79,8 +75,10 @@
           <div class="case-profile">
             <img
               class="case-profile-logo"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/partners/mediex-logo-normal.png"
+              src="/images/mediex-logo-normal.png"
               alt="MedieX logo"
+              width="345"
+              height="87"
               loading="lazy"
               decoding="async"
             />

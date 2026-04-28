@@ -25,6 +25,7 @@ const INVERTED_LOGO =
   "https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/general/neurosys-logo-inverted.png";
 const MENU_BREAKPOINT = 1024;
 const prefersDesktopHover = window.matchMedia("(hover: hover) and (pointer: fine)");
+let hasSolidHeaderState = null;
 const canonicalMenuItems = {
   "/applications/dialogueagents": {
     title: "Dialogue Agents",
@@ -153,6 +154,8 @@ const setHeaderState = () => {
   if (!header) return;
   const useSolidHeader =
     !isHomePage || window.scrollY > 12 || nav?.classList.contains("is-open");
+  if (hasSolidHeaderState === useSolidHeader) return;
+  hasSolidHeaderState = useSolidHeader;
   header.classList.toggle("is-scrolled", useSolidHeader);
   setHeaderLogo(useSolidHeader);
   syncHeaderHeight();
@@ -591,6 +594,11 @@ const I18N_STRINGS = {
       "Økt produktivitet med integrerte AI-agentiske arbeidsflyter.",
     "AI that only responds is everywhere. AI that can act on behalf of the business - on your logic, your data, your terms - is something few have actually built.":
       "AI som svarer er rikelig. AI som kan handle på vegne av virksomheten - på deres logikk, deres data, deres premisser - er det få som har bygget.",
+    "AI that only responds is everywhere. AI that can ":
+      "AI som svarer er rikelig. AI som kan ",
+    act: "handle",
+    " on behalf of the business - on your logic, your data, your terms - is something few have actually built.":
+      " på vegne av virksomheten - på deres logikk, deres data, deres premisser - er det få som har bygget.",
     "Value that slips away today - and what changes":
       "Verdien som flyr forbi i dag - og hva som endrer seg",
     "Why an agentic platform": "Hvorfor en agentisk plattform",

@@ -2,6 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
+const zlib = require("zlib");
 
 const port = process.env.PORT || 3000;
 const publicDir = path.join(__dirname, "public");
@@ -40,6 +41,15 @@ const assetTokens = {
   __JS_VERSION__: "app.js"
 };
 
+const compressibleContentTypes = [
+  "text/",
+  "application/javascript",
+  "text/javascript",
+  "application/json",
+  "application/xml",
+  "image/svg+xml"
+];
+
 const assetVersion = (assetRelativePath) => {
   try {
     const stats = fs.statSync(path.join(publicDir, assetRelativePath));
@@ -55,6 +65,55 @@ const applyAssetTokens = (html) => {
     result = result.split(token).join(assetVersion(asset));
   }
   return result;
+};
+
+const minifyCss = (css) =>
+  css
+    .replace(/\/\*[\s\S]*?\*\//g, "")
+    .replace(/\s+/g, " ")
+    .replace(/\s*([{}:;,>])\s*/g, "$1")
+    .replace(/;}/g, "}")
+    .trim();
+
+const canCompressResponse = (req, contentType, bodyLength) => {
+  const acceptEncoding = req.headers["accept-encoding"] || "";
+  if (bodyLength < 1024 || !/\b(br|gzip)\b/.test(acceptEncoding)) {
+    return false;
+  }
+
+  return compressibleContentTypes.some((prefix) => contentType.startsWith(prefix));
+};
+
+const compressResponseBody = (req, body, headers) => {
+  const bodyBuffer = Buffer.isBuffer(body) ? body : Buffer.from(body);
+  const contentType = headers["Content-Type"] || "";
+
+  if (!canCompressResponse(req, contentType, bodyBuffer.length)) {
+    return { body: bodyBuffer, headers };
+  }
+
+  const acceptEncoding = req.headers["accept-encoding"] || "";
+  const nextHeaders = { ...headers, Vary: "Accept-Encoding" };
+
+  try {
+    if (acceptEncoding.includes("br")) {
+      return {
+        body: zlib.brotliCompressSync(bodyBuffer),
+        headers: { ...nextHeaders, "Content-Encoding": "br" }
+      };
+    }
+
+    if (acceptEncoding.includes("gzip")) {
+      return {
+        body: zlib.gzipSync(bodyBuffer),
+        headers: { ...nextHeaders, "Content-Encoding": "gzip" }
+      };
+    }
+  } catch (error) {
+    return { body: bodyBuffer, headers };
+  }
+
+  return { body: bodyBuffer, headers };
 };
 
 const permanentRedirects = {
@@ -512,7 +571,9 @@ const mimeTypes = {
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
   ".svg": "image/svg+xml",
+  ".avif": "image/avif",
   ".webp": "image/webp",
+  ".woff2": "font/woff2",
   ".xml": "application/xml; charset=utf-8",
   ".txt": "text/plain; charset=utf-8"
 };
@@ -685,23 +746,28 @@ const server = http.createServer((req, res) => {
 
     if ([".css", ".js"].includes(ext)) {
       headers["Cache-Control"] = "public, max-age=0, must-revalidate";
-    } else if ([".svg", ".png", ".jpg", ".jpeg", ".webp", ".ico"].includes(ext)) {
-      headers["Cache-Control"] = "public, max-age=86400";
+    } else if ([".svg", ".png", ".jpg", ".jpeg", ".webp", ".avif", ".ico", ".woff2"].includes(ext)) {
+      headers["Cache-Control"] = "public, max-age=31536000, immutable";
     } else if (ext === ".html") {
       headers["Cache-Control"] = "public, max-age=0, must-revalidate";
     }
 
-    const responseBody =
-      ext === ".html"
-        ? transformHtmlForLocale(
-            applyAssetTokens(await renderHtmlWithIncludes(resolved.path)),
-            localeMatch.locale || getPreferredLocale(req),
-            contentPath
-          )
-        : await fs.promises.readFile(resolved.path);
+    let responseBody;
+    if (ext === ".html") {
+      responseBody = transformHtmlForLocale(
+        applyAssetTokens(await renderHtmlWithIncludes(resolved.path)),
+        localeMatch.locale || getPreferredLocale(req),
+        contentPath
+      );
+    } else if (ext === ".css") {
+      responseBody = minifyCss(await fs.promises.readFile(resolved.path, "utf8"));
+    } else {
+      responseBody = await fs.promises.readFile(resolved.path);
+    }
 
-    res.writeHead(200, headers);
-    res.end(responseBody);
+    const compressedResponse = compressResponseBody(req, responseBody, headers);
+    res.writeHead(200, compressedResponse.headers);
+    res.end(compressedResponse.body);
   })().catch(() => {
     res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
     res.end("Server Error");

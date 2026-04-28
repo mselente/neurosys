@@ -10,12 +10,8 @@
       name="description"
       content="10,000+ control documents made searchable with a secure, on-premises RAG solution. How GE Healthcare gives operators instant answers to critical procedures."
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;500&family=Inter:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="/styles.css?v=__CSS_VERSION__" />
     <link rel="canonical" href="https://www.neurosys.no/insights/identifying-ai-opportunities-in-industrial-operations" />
     <link
@@ -79,8 +75,10 @@
           <div class="case-profile">
             <img
               class="case-profile-logo"
-              src="https://zarnnrxwzoxvovjhovhu.supabase.co/storage/v1/object/public/images/logos/ge-healthcare-logo.png"
+              src="/images/ge-healthcare-logo.png"
               alt="GE Healthcare logo"
+              width="140"
+              height="50"
               loading="lazy"
               decoding="async"
             />
