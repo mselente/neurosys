@@ -533,7 +533,6 @@ const I18N_STRINGS = {
       "Hvor i virksomheten kan AI skape verdi?",
     "From marketing and sales to service, project delivery, digital touchpoints, and insight.":
       "Fra markedsføring og salg til service, prosjektleveranse, digitale flater og innsikt.",
-    Growth: "Vekst",
     "Operations & service": "Operasjon og service",
     "Digital products & insight": "Digitale produkter og innsikt",
     "How the platform creates impact":
@@ -3174,6 +3173,202 @@ const I18N_STRINGS = {
       "Agentisk AI-plattform på Dify - NeuroSYS",
     "Production-ready agentic AI platform on Dify with workflow orchestration, governance, managed hosting and on-prem deployment for Nordic enterprises.":
       "Produksjonsklar agentisk AI-plattform på Dify med arbeidsflytorchestrering, governance, administrert hosting og on-prem utrulling for nordiske virksomheter.",
+    "Analyze Your Business with AI Opportunity Mapping - NeuroSYS":
+      "Analyser virksomheten din med AI-kartlegging av muligheter - NeuroSYS",
+    "Enter your website and get a concrete first-pass analysis of your current business situation, AI opportunities, and practical next actions.":
+      "Legg inn nettsiden din og få en konkret førsteanalyse av dagens situasjon, AI-muligheter og praktiske neste steg.",
+    "Analyze your business": "Analyser virksomheten din",
+    "Get a quick AI analysis of your business":
+      "Få en rask AI-analyse av virksomheten din",
+    "yourcompany.com": "dittselskap.no",
+    "Enter your website and get a concrete view of where AI creates value":
+      "Legg inn nettsiden din og få et konkret bilde av hvor AI kan skape verdi",
+    "Enter your website. We return a first-pass view of current situation, opportunities and next actions.":
+      "Legg inn nettsiden din. Vi returnerer en førstevurdering av dagens situasjon, muligheter og neste steg.",
+    "Get a structured first pass on your current situation, likely AI opportunities, and practical actions worth testing next.":
+      "Få en strukturert førstevurdering av dagens situasjon, sannsynlige AI-muligheter og praktiske tiltak som er verdt å teste videre.",
+    "Powered by Dify": "Drevet av Dify",
+    "Powered by": "Drevet av",
+    "Built in the NeuroSYS delivery stack":
+      "Bygget i NeuroSYS sin leveransestack",
+    "Analyze now →": "Analyser nå →",
+    "Analyze →": "Analyser →",
+    "You will be taken to a guided analysis view with situation, opportunities and actions.":
+      "Du sendes videre til en guidet analysevisning med situasjon, muligheter og tiltak.",
+    "Open the full experience →": "Åpne hele opplevelsen →",
+    Output: "Output",
+    "Current situation, opportunities, actions.":
+      "Dagens situasjon, muligheter, tiltak.",
+    "Result opens in a structured view.":
+      "Resultatet åpnes i en strukturert visning.",
+    "Fast first pass for internal discussion.":
+      "Rask førstevurdering for intern diskusjon.",
+    "This experience gives you a structured first pass on your current situation, likely AI opportunities, and practical next actions your team can validate.":
+      "Denne opplevelsen gir deg en strukturert førstevurdering av dagens situasjon, sannsynlige AI-muligheter og praktiske neste steg teamet kan validere.",
+    "NeuroSYS workflow, UX and delivery framing":
+      "NeuroSYS arbeidsflyt, UX og leveranseinnramming",
+    "We structure the output into current situation, opportunities and actions so it is easy to discuss internally.":
+      "Vi strukturerer resultatet i situasjon, muligheter og tiltak slik at det blir enkelt å diskutere internt.",
+    "What you get": "Hva du får",
+    "A readable business case, not raw AI output":
+      "En lesbar business case, ikke rå AI-output",
+    "Current situation": "Dagens situasjon",
+    "How the company operates today, what signals stand out, and where friction likely lives.":
+      "Hvordan selskapet opererer i dag, hvilke signaler som skiller seg ut og hvor friksjonen sannsynligvis ligger.",
+    "Opportunities": "Muligheter",
+    "The most relevant AI opportunities ranked by business fit, likely value, and urgency.":
+      "De mest relevante AI-mulighetene rangert etter forretningsmessig relevans, sannsynlig verdi og hastverk.",
+    "Actions": "Tiltak",
+    "The first practical move, roadmap themes, and what to prioritize or avoid next.":
+      "Det første praktiske grepet, veikarttemaer og hva som bør prioriteres eller unngås videre.",
+    "Built for decision makers": "Bygget for beslutningstakere",
+    "The output is structured to support internal discussion: what is true today, where value likely sits, and which move is realistic first.":
+      "Resultatet er strukturert for å støtte intern diskusjon: hva som er sant i dag, hvor verdien sannsynligvis ligger og hvilket grep som er mest realistisk først.",
+    "Fast first pass": "Rask førstevurdering",
+    "Use it to qualify whether a follow-up workshop, pilot or workflow sprint is worth doing before spending time on long discovery cycles.":
+      "Bruk den til å vurdere om en workshop, pilot eller arbeidsflytsprint er verdt å gå videre med før dere bruker tid på lange avklaringsløp.",
+    "Grounded in delivery": "Forankret i leveranse",
+    "The framing is tuned for teams who want AI in production, not just an idea list. It points toward actions that can actually be built.":
+      "Innrammingen er tilpasset team som vil ha AI i produksjon, ikke bare en idéliste. Den peker mot tiltak som faktisk kan bygges.",
+    "Preparing Your Analysis - NeuroSYS":
+      "Forbereder analysen din - NeuroSYS",
+    "NeuroSYS is preparing your AI opportunity analysis.":
+      "NeuroSYS forbereder analysen av AI-muligheter.",
+    "We are building your first-pass business analysis":
+      "Vi bygger den første analysen av virksomheten din",
+    "We are analyzing your business":
+      "Vi analyserer virksomheten din",
+    "We are looking through the website now.":
+      "Vi går gjennom nettsiden nå.",
+    "We are reading the website, mapping signals, and structuring the result into situation, opportunities and actions.":
+      "Vi leser nettsiden, kartlegger signaler og strukturerer resultatet i situasjon, muligheter og tiltak.",
+    "Understanding the business context": "Forstår forretningskonteksten",
+    "Identifying relevant AI opportunities": "Identifiserer relevante AI-muligheter",
+    "Structuring practical next actions": "Strukturerer praktiske neste steg",
+    "This usually takes a few seconds.": "Dette tar vanligvis noen sekunder.",
+    "Retry analysis →": "Prøv analysen på nytt →",
+    "Try another company": "Prøv et annet selskap",
+    "Powered by Dify inside the NeuroSYS delivery stack.":
+      "Drevet av Dify inne i NeuroSYS sin leveransestack.",
+    "Business Analysis Result - NeuroSYS":
+      "Resultat av virksomhetsanalyse - NeuroSYS",
+    "NeuroSYS AI business analysis result.":
+      "Resultat fra NeuroSYS AI-virksomhetsanalyse.",
+    "Preparing result…": "Forbereder resultat…",
+    "We are loading the structured analysis and mapping it into a readable business view.":
+      "Vi laster den strukturerte analysen og gjør den om til en lesbar forretningsvisning.",
+    "Key insight": "Kjerneinnsikt",
+    "Confidence": "Tillit",
+    "First step": "Første steg",
+    "Loading…": "Laster…",
+    "What stands out right now": "Hva som skiller seg ut akkurat nå",
+    "Business model": "Forretningsmodell",
+    "Customer journey": "Kundereise",
+    "Products and services": "Produkter og tjenester",
+    "Signals worth noting": "Signaler det er verdt å merke seg",
+    Industry: "Bransje",
+    Strengths: "Styrker",
+    Unknowns: "Usikkerheter",
+    "Where AI appears to create value": "Hvor kan AI skape verdi",
+    "Where can AI create value": "Hvor kan AI skape verdi",
+    "What it does": "Hva den gjør",
+    "Why it matters": "Hvorfor det betyr noe",
+    "Business value": "Forretningsverdi",
+    "How it is built": "Hvordan det bygges",
+    "Want to validate the shortlist?": "Vil du validere shortlist-en?",
+    "Turn the best opportunity into a scoped next step":
+      "Gjør den beste muligheten om til et konkret neste steg",
+    "NeuroSYS can help turn the strongest opportunity into a workshop, pilot or production workflow.":
+      "NeuroSYS kan hjelpe dere med å gjøre den sterkeste muligheten om til en workshop, pilot eller arbeidsflyt i produksjon.",
+    "Talk to NeuroSYS →": "Snakk med NeuroSYS →",
+    Roadmap: "Veikart",
+    "Cost & setup": "Kostnad og oppstart",
+    "What it likely takes to get started": "Hva det sannsynligvis krever å komme i gang",
+    "Estimated setup cost": "Estimert etableringskostnad",
+    "Time to first value": "Tid til første verdi",
+    "Workflow count": "Antall arbeidsflyter",
+    "Recommended start package": "Anbefalt startpakke",
+    "Cost drivers": "Kostnadsdrivere",
+    Summary: "Oppsummering",
+    Comparison: "Sammenligning",
+    "How this compares to building it yourself":
+      "Hvordan dette sammenlignes med å bygge selv",
+    "Traditional approach": "Tradisjonell tilnærming",
+    "NeuroSYS approach": "NeuroSYS-tilnærming",
+    "Key difference": "Viktigste forskjell",
+    Timeline: "Tidslinje",
+    Cost: "Kostnad",
+    Complexity: "Kompleksitet",
+    Description: "Beskrivelse",
+    "What is included": "Hva som er inkludert",
+    Narrative: "Fortelling",
+    "The longer read": "Den lengre lesningen",
+    "We are loading the narrative explanation from the analysis workflow.":
+      "Vi laster den lengre forklaringen fra analysearbeidsflyten.",
+    "Next step": "Neste steg",
+    "Want to move from analysis to implementation?":
+      "Vil dere gå fra analyse til implementering?",
+    "From analysis to implementation":
+      "Fra analyse til implementering",
+    "We can turn the strongest idea into a practical workshop, pilot or workflow sprint with your team.":
+      "Vi kan gjøre den sterkeste ideen om til en praktisk workshop, pilot eller arbeidsflytsprint sammen med teamet deres.",
+    "We help you turn the right opportunity into a concrete next step with your team.":
+      "Vi hjelper dere med å gjøre riktig mulighet om til et konkret neste steg sammen med teamet deres.",
+    "Contact NeuroSYS →": "Kontakt NeuroSYS →",
+    "We could not load this result": "Vi kunne ikke laste dette resultatet",
+    "The result may have expired or the analysis did not complete.":
+      "Resultatet kan ha utløpt eller analysen ble ikke fullført.",
+    "Please enter a website URL.":
+      "Legg inn en nettsideadresse.",
+    "Please enter a valid website URL.":
+      "Legg inn en gyldig nettsideadresse.",
+    "Please enter a valid company website.":
+      "Legg inn en gyldig bedriftsnettside.",
+    "Only http and https URLs are supported.":
+      "Bare http- og https-adresser støttes.",
+    "Too many scan requests. Please wait a moment and try again.":
+      "For mange analyseforesporsler. Vent litt og prøv igjen.",
+    "Missing scan id.": "Mangler analyse-id.",
+    "Scan not found.": "Fant ikke analysen.",
+    "Method not allowed.": "Metode ikke tillatt.",
+    "Invalid JSON body": "Ugyldig forespørsel.",
+    "Payload too large": "Forespørselen er for stor.",
+    "We are starting the analysis…": "Vi setter i gang analysen…",
+    "Still working. Complex sites can take a little longer.":
+      "Vi jobber fortsatt. Komplekse nettsider kan ta litt lengre tid.",
+    "The analysis took longer than expected, but it is still running.":
+      "Analysen tar lengre tid enn forventet, men kjører fortsatt.",
+    "The analysis is running.": "Analysen bygges nå.",
+    "Sections will appear as they are completed.":
+      "Seksjonene fylles inn fortløpende.",
+    "Currently processing:": "Jobber med:",
+    "Analysis complete.": "Analysen er ferdig.",
+    "Still loading…": "Kommer straks…",
+    "Scanner is not configured on the server.":
+      "Analysetjenesten er ikke konfigurert på serveren.",
+    "The analysis took too long. Please try again.":
+      "Analysen tok for lang tid. Prøv igjen.",
+    "The analysis request failed.":
+      "Analyseforespørselen feilet.",
+    "The analysis could not be completed.":
+      "Analysen kunne ikke fullføres.",
+    "We could not start the analysis. Please try again.":
+      "Vi kunne ikke starte analysen. Prøv igjen.",
+    "We could not load the analysis result yet.":
+      "Vi kunne ikke laste analyseresultatet ennå.",
+    "The analysis is still running. Redirecting…":
+      "Analysen kjører fortsatt. Sender deg videre…",
+    High: "Høy",
+    Medium: "Middels",
+    Low: "Lav",
+    Directional: "Retningsgivende",
+    "Weeks 1-2": "Uke 1-2",
+    "Weeks 3-6": "Uke 3-6",
+    "Months 2-3": "Måned 2-3",
+    "No signal found yet.": "Ingen signaler funnet ennå.",
+    "No roadmap items available yet.": "Ingen veikartpunkter tilgjengelig ennå.",
+    "No opportunities were returned yet.": "Ingen muligheter ble returnert ennå.",
+    "No narrative returned.": "Ingen forklarende tekst ble returnert.",
     "GenAI Training & Workshops - NeuroSYS":
       "GenAI-opplæring og workshops - NeuroSYS",
     "Practical GenAI training and workshops that build shared understanding, identify real opportunities and prepare your teams to work with AI in practice.":
@@ -3537,8 +3732,591 @@ const initStoryShelves = () => {
   });
 };
 
+const analyzerContentPath = "/analyze-your-business";
+const analyzerLoadingPath = `${analyzerContentPath}/loading`;
+const analyzerResultPath = `${analyzerContentPath}/result`;
+
+const getActiveLanguage = () => currentLocale || getInitialLanguage();
+const t = (text) =>
+  getActiveLanguage() === "no" ? I18N_STRINGS.no[text] || text : text;
+const localizeRuntimeMessage = (message, fallback = "") => {
+  if (typeof message === "string" && message.trim()) {
+    return t(message.trim());
+  }
+  return fallback ? t(fallback) : "";
+};
+const wait = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
+
+const trackAnalyzerEvent = (eventName, params = {}) => {
+  if (typeof window.gtag === "function") {
+    window.gtag("event", eventName, params);
+    return;
+  }
+  if (Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({ event: eventName, ...params });
+  }
+};
+
+const buildLocalizedPath = (pathname, searchParams = null) => {
+  const base = withLocalePath(pathname);
+  const query = searchParams?.toString();
+  return query ? `${base}?${query}` : base;
+};
+
+const extractHostname = (url) => {
+  try {
+    return new URL(url).hostname;
+  } catch (error) {
+    return url || "";
+  }
+};
+
+const setFormBusy = (form, busy, buttonText = null) => {
+  form.classList.toggle("is-busy", busy);
+  const submitButton = form.querySelector("[data-analyzer-submit]");
+  const input = form.querySelector("[data-analyzer-input]");
+  if (submitButton) {
+    if (!submitButton.dataset.defaultLabel) {
+      submitButton.dataset.defaultLabel = submitButton.textContent.trim();
+    }
+    submitButton.disabled = busy;
+    submitButton.textContent =
+      busy && buttonText ? buttonText : submitButton.dataset.defaultLabel;
+  }
+  if (input) {
+    input.disabled = busy;
+  }
+};
+
+const setFormError = (form, message = "") => {
+  const errorNode = form.querySelector("[data-analyzer-error]");
+  if (!errorNode) return;
+  if (!message) {
+    errorNode.hidden = true;
+    errorNode.textContent = "";
+    return;
+  }
+  errorNode.hidden = false;
+  errorNode.textContent = message;
+};
+
+const startAnalyzerScan = async (websiteUrl) => {
+  const response = await fetch("/api/scan", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ website_url: websiteUrl }),
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(
+      localizeRuntimeMessage(payload.error, "We could not start the analysis. Please try again.")
+    );
+  }
+  return payload;
+};
+
+const launchAnalyzerFlow = async (websiteUrl, form) => {
+  const trimmedUrl = String(websiteUrl || "").trim();
+  if (!trimmedUrl) {
+    setFormError(form, t("Please enter a website URL."));
+    return;
+  }
+
+  setFormError(form, "");
+  setFormBusy(form, true, t("We are starting the analysis…"));
+
+  try {
+    const payload = await startAnalyzerScan(trimmedUrl);
+    const scanId = payload.scanId;
+    if (!scanId) {
+      throw new Error(t("We could not start the analysis. Please try again."));
+    }
+    sessionStorage.setItem(`analyzer:start:${scanId}`, String(Date.now()));
+    sessionStorage.setItem(`analyzer:url:${scanId}`, payload.websiteUrl || trimmedUrl);
+    trackAnalyzerEvent("scan_started", {
+      scan_id: scanId,
+      website_host: extractHostname(payload.websiteUrl || trimmedUrl),
+    });
+    const searchParams = new URLSearchParams({ id: scanId });
+    window.location.assign(buildLocalizedPath(analyzerLoadingPath, searchParams));
+  } catch (error) {
+    setFormBusy(form, false);
+    setFormError(
+      form,
+      localizeRuntimeMessage(error.message, "We could not start the analysis. Please try again.")
+    );
+  }
+};
+
+const initAnalyzerForms = () => {
+  const forms = document.querySelectorAll("[data-analyzer-form]");
+  if (!forms.length) return;
+
+  forms.forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const input = form.querySelector("[data-analyzer-input]");
+      launchAnalyzerFlow(input?.value || "", form);
+    });
+  });
+};
+
+const fetchScanStatus = async (scanId) => {
+  const response = await fetch(`/api/scan-status?id=${encodeURIComponent(scanId)}`, {
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  const payload = await response.json().catch(() => ({}));
+  if (!response.ok) {
+    throw new Error(
+      localizeRuntimeMessage(payload.error, "We could not load the analysis result yet.")
+    );
+  }
+  return payload;
+};
+
+const showAnalyzerLoadingError = (root, websiteUrl, message) => {
+  const statusNode = root.querySelector("[data-analyzer-loading-status]");
+  const noteNode = root.querySelector("[data-analyzer-loading-note]");
+  const targetNode = root.querySelector("[data-analyzer-loading-target]");
+  const actionsNode = root.querySelector("[data-analyzer-loading-actions]");
+  const retryButton = root.querySelector("[data-analyzer-retry]");
+  if (statusNode) statusNode.textContent = localizeRuntimeMessage(message);
+  if (noteNode) noteNode.textContent = "";
+  if (websiteUrl && targetNode) {
+    targetNode.hidden = false;
+    targetNode.textContent = extractHostname(websiteUrl);
+  }
+  if (actionsNode) actionsNode.hidden = false;
+  if (retryButton) {
+    retryButton.onclick = async () => {
+      if (!websiteUrl) {
+        window.location.assign(withLocalePath(analyzerContentPath));
+        return;
+      }
+      const shimForm = document.createElement("form");
+      const errorNode = document.createElement("p");
+      errorNode.dataset.analyzerError = "true";
+      shimForm.append(errorNode);
+      await launchAnalyzerFlow(websiteUrl, shimForm);
+    };
+  }
+};
+
+const initAnalyzerLoadingPage = async () => {
+  if (normalizedPath !== analyzerLoadingPath) return;
+  const root = document.querySelector("[data-analyzer-loading]");
+  if (!root) return;
+
+  const scanId = new URLSearchParams(window.location.search).get("id");
+  const statusNode = root.querySelector("[data-analyzer-loading-status]");
+  const noteNode = root.querySelector("[data-analyzer-loading-note]");
+  const targetNode = root.querySelector("[data-analyzer-loading-target]");
+
+  if (!scanId) {
+    showAnalyzerLoadingError(root, "", t("We could not load the analysis result yet."));
+    return;
+  }
+
+  const startedAt =
+    parseInt(sessionStorage.getItem(`analyzer:start:${scanId}`) || "", 10) || Date.now();
+  let websiteUrl = sessionStorage.getItem(`analyzer:url:${scanId}`) || "";
+  let lastStatus = "";
+
+  while (true) {
+    try {
+      const payload = await fetchScanStatus(scanId);
+      websiteUrl = payload.websiteUrl || websiteUrl;
+      if (websiteUrl && targetNode) {
+        targetNode.hidden = false;
+        targetNode.textContent = extractHostname(websiteUrl);
+      }
+
+      if (payload.status === "completed") {
+        const elapsed = Date.now() - startedAt;
+        if (elapsed < 3000) {
+          await wait(3000 - elapsed);
+        }
+        const searchParams = new URLSearchParams({ id: scanId });
+        window.location.assign(buildLocalizedPath(analyzerResultPath, searchParams));
+        return;
+      }
+
+      if ((payload.status === "queued" || payload.status === "running") && Date.now() - startedAt > 2200) {
+        const searchParams = new URLSearchParams({ id: scanId });
+        window.location.assign(buildLocalizedPath(analyzerResultPath, searchParams));
+        return;
+      }
+
+      if (payload.status === "failed") {
+        if (!sessionStorage.getItem(`analyzer:failed:${scanId}`)) {
+          trackAnalyzerEvent("scan_failed", {
+            scan_id: scanId,
+            website_host: extractHostname(websiteUrl),
+          });
+          sessionStorage.setItem(`analyzer:failed:${scanId}`, "1");
+        }
+        showAnalyzerLoadingError(
+          root,
+          websiteUrl,
+          localizeRuntimeMessage(payload.error, "The analysis could not be completed.")
+        );
+        return;
+      }
+
+      const elapsed = Date.now() - startedAt;
+      const nextStatus =
+        elapsed > 25000
+          ? t("The analysis took longer than expected, but it is still running.")
+          : elapsed > 10000
+            ? t("Still working. Complex sites can take a little longer.")
+            : t("This usually takes a few seconds.");
+
+      if (nextStatus !== lastStatus) {
+        lastStatus = nextStatus;
+        if (statusNode) statusNode.textContent = nextStatus;
+        if (noteNode) noteNode.textContent =
+          payload.status === "running"
+            ? t("We are looking through the website now.")
+            : t("We are starting the analysis…");
+      }
+    } catch (error) {
+      showAnalyzerLoadingError(
+        root,
+        websiteUrl,
+        localizeRuntimeMessage(error.message, "We could not load the analysis result yet.")
+      );
+      return;
+    }
+
+    await wait(1800);
+  }
+};
+
+const formatConfidence = (value) => {
+  const normalized = String(value || "").trim().toLowerCase();
+  if (!normalized) return t("Directional");
+  if (normalized === "high") return t("High");
+  if (normalized === "medium") return t("Medium");
+  if (normalized === "low") return t("Low");
+  return value;
+};
+
+const setText = (selector, value, fallback = "") => {
+  const node = typeof selector === "string" ? document.querySelector(selector) : selector;
+  if (!node) return;
+  node.textContent = value || fallback;
+};
+
+const renderList = (container, items, emptyText) => {
+  if (!container) return;
+  container.innerHTML = "";
+  const normalizedItems = (items || []).filter(Boolean);
+  if (!normalizedItems.length) {
+    const item = document.createElement("li");
+    item.textContent = emptyText;
+    container.append(item);
+    return;
+  }
+  normalizedItems.forEach((entry) => {
+    const item = document.createElement("li");
+    item.textContent = entry;
+    container.append(item);
+  });
+};
+
+const renderRoadmap = (container, groups, emptyText = t("No roadmap items available yet.")) => {
+  if (!container) return;
+  container.innerHTML = "";
+  if (!groups?.length) {
+    const empty = document.createElement("p");
+    empty.textContent = emptyText;
+    container.append(empty);
+    return;
+  }
+  groups.forEach((group) => {
+    const block = document.createElement("article");
+    block.className = "analyzer-roadmap-group";
+    const marker = document.createElement("div");
+    marker.className = "analyzer-roadmap-marker";
+    block.append(marker);
+
+    const body = document.createElement("div");
+    body.className = "analyzer-roadmap-body";
+    const heading = document.createElement("h4");
+    heading.textContent = t(group.label);
+    body.append(heading);
+    const list = document.createElement("ul");
+    group.items.forEach((entry) => {
+      const item = document.createElement("li");
+      item.textContent = entry;
+      list.append(item);
+    });
+    body.append(list);
+    block.append(body);
+    container.append(block);
+  });
+};
+
+const renderOpportunities = (
+  container,
+  opportunities,
+  emptyText = t("No opportunities were returned yet.")
+) => {
+  if (!container) return;
+  container.innerHTML = "";
+  if (!opportunities?.length) {
+    const empty = document.createElement("p");
+    empty.className = "analyzer-surface";
+    empty.textContent = emptyText;
+    container.append(empty);
+    return;
+  }
+
+  opportunities.forEach((opportunity) => {
+    const card = document.createElement("article");
+    card.className = "analyzer-opportunity-card analyzer-surface";
+    if (opportunity.where) {
+      const meta = document.createElement("div");
+      meta.className = "analyzer-opportunity-meta";
+      const area = document.createElement("span");
+      area.textContent = opportunity.where;
+      meta.append(area);
+      card.append(meta);
+    }
+    const title = document.createElement("h3");
+    title.textContent = opportunity.title || t("Opportunities");
+    card.append(title);
+
+    if (opportunity.what) {
+      const summary = document.createElement("p");
+      summary.className = "analyzer-opportunity-summary";
+      summary.textContent = opportunity.what;
+      card.append(summary);
+    }
+
+    if (opportunity.why) {
+      const why = document.createElement("p");
+      why.className = "analyzer-opportunity-why";
+      why.textContent = opportunity.why;
+      card.append(why);
+    }
+
+    if (opportunity.value) {
+      const value = document.createElement("div");
+      value.className = "analyzer-opportunity-value";
+      const label = document.createElement("span");
+      label.className = "analyzer-opportunity-value-label";
+      label.textContent = t("Business value");
+      const copy = document.createElement("p");
+      copy.textContent = opportunity.value;
+      value.append(label, copy);
+      card.append(value);
+    }
+
+    const details = document.createElement("div");
+    details.className = "analyzer-opportunity-details";
+
+    if (opportunity.howItIsBuilt) {
+      const build = document.createElement("div");
+      build.className = "analyzer-opportunity-detail";
+      const label = document.createElement("span");
+      label.className = "analyzer-opportunity-detail-label";
+      label.textContent = t("How it is built");
+      const copy = document.createElement("p");
+      copy.className = "analyzer-opportunity-detail-copy";
+      copy.textContent = opportunity.howItIsBuilt;
+      build.append(label, copy);
+      details.append(build);
+    }
+
+    if (opportunity.firstStep) {
+      const firstStep = document.createElement("div");
+      firstStep.className = "analyzer-opportunity-detail";
+      const label = document.createElement("span");
+      label.className = "analyzer-opportunity-detail-label";
+      label.textContent = t("First step");
+      const copy = document.createElement("p");
+      copy.className = "analyzer-opportunity-detail-copy";
+      copy.textContent = opportunity.firstStep;
+      firstStep.append(label, copy);
+      details.append(firstStep);
+    }
+
+    if (details.childElementCount) {
+      card.append(details);
+    }
+
+    container.append(card);
+  });
+};
+
+const renderNarrative = (container, narrative, emptyText = t("No narrative returned.")) => {
+  if (!container) return;
+  container.innerHTML = "";
+  const paragraphs = String(narrative || "")
+    .split(/\n{2,}/)
+    .map((part) => part.replace(/^#{1,6}\s*/gm, "").trim())
+    .filter(Boolean);
+
+  if (!paragraphs.length) {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = emptyText;
+    container.append(paragraph);
+    return;
+  }
+
+  paragraphs.forEach((entry) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = entry;
+    container.append(paragraph);
+  });
+};
+
+const revealAnalyzerResult = (root) => {
+  root.querySelectorAll("[data-reveal-group]").forEach((group) => {
+    if (!group.classList.contains("is-loading")) {
+      group.dataset.revealed = "true";
+    }
+  });
+};
+
+const setResultGroupLoaded = (root, groupName, loaded) => {
+  const group = root.querySelector(`[data-result-group="${groupName}"]`);
+  if (!group) return;
+  group.classList.toggle("is-loading", !loaded);
+};
+
+const renderAnalyzerResultState = (root, payload) => {
+  const result = payload.result || null;
+  const progress = payload.progress || {};
+  const sectionsReady = progress.sectionsReady || {};
+  const isRunning = payload.status === "queued" || payload.status === "running";
+  const isCompleted = payload.status === "completed";
+  const isFailed = payload.status === "failed";
+  const host = extractHostname(payload.websiteUrl || result?.websiteUrl || "");
+  const emptyText = isRunning ? t("Still loading…") : t("No signal found yet.");
+
+  setText("[data-result-company]", result?.companyName || host || t("Preparing result…"));
+  setText(
+    "[data-result-summary]",
+    result?.summary || result?.keyInsight || t("Sections will appear as they are completed.")
+  );
+  setText("[data-result-key-insight]", result?.keyInsight || (isRunning ? t("Still loading…") : "—"));
+  const progressMessage = isFailed
+    ? localizeRuntimeMessage(payload.error, "The analysis could not be completed.")
+    : isCompleted
+      ? t("Analysis complete.")
+      : progress.currentNodeTitle
+        ? `${t("Currently processing:")} ${progress.currentNodeTitle}`
+        : t("The analysis is running.");
+  setText("[data-result-progress]", progressMessage);
+  renderOpportunities(
+    document.querySelector("[data-result-opportunities]"),
+    result?.opportunities,
+    isRunning ? t("Still loading…") : t("No opportunities were returned yet.")
+  );
+  setResultGroupLoaded(root, "header", true);
+  setResultGroupLoaded(root, "opportunities", isCompleted || sectionsReady.opportunities);
+  setResultGroupLoaded(root, "footer", isCompleted || isFailed);
+};
+
+const initAnalyzerResultPage = async () => {
+  if (normalizedPath !== analyzerResultPath) return;
+  const root = document.querySelector("[data-analyzer-result]");
+  if (!root) return;
+
+  const emptyState = root.querySelector("[data-result-empty]");
+  const emptyCopy = root.querySelector("[data-result-empty-copy]");
+  const scanId = new URLSearchParams(window.location.search).get("id");
+
+  const showEmpty = (message) => {
+    root.querySelectorAll("[data-reveal-group]").forEach((group) => {
+      group.hidden = true;
+    });
+    if (emptyCopy) emptyCopy.textContent = message;
+    if (emptyState) emptyState.hidden = false;
+  };
+
+  if (!scanId) {
+    showEmpty(t("The result may have expired or the analysis did not complete."));
+    return;
+  }
+
+  let resultViewTracked = false;
+  let completedTracked = false;
+
+  try {
+    while (true) {
+      const payload = await fetchScanStatus(scanId);
+
+      if (payload.status === "failed" && !payload.result) {
+        showEmpty(
+          localizeRuntimeMessage(
+            payload.error,
+            "The result may have expired or the analysis did not complete."
+          )
+        );
+        return;
+      }
+
+      renderAnalyzerResultState(root, payload);
+
+      if (!resultViewTracked && !sessionStorage.getItem(`analyzer:viewed:${scanId}`)) {
+        trackAnalyzerEvent("scan_result_viewed", {
+          scan_id: scanId,
+          website_host: extractHostname(payload.websiteUrl || payload.result?.websiteUrl),
+        });
+        sessionStorage.setItem(`analyzer:viewed:${scanId}`, "1");
+        resultViewTracked = true;
+      }
+
+      if (emptyState) emptyState.hidden = true;
+      revealAnalyzerResult(root);
+
+      if (payload.status === "completed") {
+        if (!completedTracked && !sessionStorage.getItem(`analyzer:completed:${scanId}`)) {
+          trackAnalyzerEvent("scan_completed", {
+            scan_id: scanId,
+            website_host: extractHostname(payload.result?.websiteUrl || payload.websiteUrl),
+          });
+          sessionStorage.setItem(`analyzer:completed:${scanId}`, "1");
+          completedTracked = true;
+        }
+        return;
+      }
+
+      if (payload.status === "failed") {
+        return;
+      }
+
+      await wait(1800);
+    }
+  } catch (error) {
+    showEmpty(localizeRuntimeMessage(error.message, "We could not load the analysis result yet."));
+  }
+};
+
+const initAnalyzerCtaTracking = () => {
+  document.querySelectorAll("[data-analyzer-cta]").forEach((link) => {
+    link.addEventListener("click", () => {
+      trackAnalyzerEvent("scan_cta_clicked", {
+        placement: link.getAttribute("data-analyzer-cta") || "unknown",
+        path: normalizedPath,
+      });
+    });
+  });
+};
+
 enhanceFooter();
 setupLanguageSwitcher();
 applyLanguage(getInitialLanguage());
 initStoryShelves();
+initAnalyzerForms();
+initAnalyzerCtaTracking();
+void initAnalyzerLoadingPage();
+void initAnalyzerResultPage();
 

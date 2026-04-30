@@ -3,6 +3,38 @@ const fs = require("fs");
 const path = require("path");
 const vm = require("vm");
 const zlib = require("zlib");
+const { randomUUID } = require("crypto");
+
+const loadLocalEnv = () => {
+  const envPath = path.join(__dirname, ".env");
+  if (!fs.existsSync(envPath)) return;
+
+  const envSource = fs.readFileSync(envPath, "utf8");
+  envSource.split(/\r?\n/).forEach((line) => {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith("#")) return;
+    const separatorIndex = trimmed.indexOf("=");
+    if (separatorIndex === -1) return;
+
+    const key = trimmed.slice(0, separatorIndex).trim();
+    if (!key || process.env[key] !== undefined) return;
+
+    let value = trimmed.slice(separatorIndex + 1).trim();
+    if (
+      (value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'"))
+    ) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
+  });
+};
+
+loadLocalEnv();
+
+if (!process.env.DIFY_API && process.env.DIFY_API_KEY) {
+  process.env.DIFY_API = process.env.DIFY_API_KEY;
+}
 
 const port = process.env.PORT || 3000;
 const publicDir = path.join(__dirname, "public");
@@ -11,12 +43,27 @@ const maxIncludeDepth = 10;
 const defaultLocale = "no";
 const supportedLocales = new Set(["en", "no"]);
 const languageCookieName = "neurosys-lang";
+const analyzerBasePath = "/analyze-your-business";
+const scanTimeoutMs = Math.max(
+  15000,
+  parseInt(process.env.DIFY_SCAN_TIMEOUT_MS || "120000", 10) || 120000
+);
+const scanCacheTtlMs = Math.max(
+  60000,
+  parseInt(process.env.DIFY_SCAN_CACHE_TTL_MS || "21600000", 10) || 21600000
+);
+const scanRateLimitWindowMs = 60000;
+const scanRateLimitMax = 5;
+const scanJobs = new Map();
+const scanCache = new Map();
+const rateLimitStore = new Map();
 const sitemapPaths = [
   "/",
   "/about",
   "/services",
   "/agent-platform",
   "/contact",
+  analyzerBasePath,
   "/customer-references",
   "/ai-workshops",
   "/applications/dialogueagents",
@@ -142,6 +189,9 @@ const permanentRedirects = {
 };
 
 const routeAliases = {
+  [analyzerBasePath]: "analyze-your-business",
+  [`${analyzerBasePath}/loading`]: "analyze-your-business-loading",
+  [`${analyzerBasePath}/result`]: "analyze-your-business-result",
   "/ai-workshops": "training",
   "/customer-references": "our-work",
   "/insights": "news/index",
@@ -666,11 +716,631 @@ const renderHtmlWithIncludes = async (filePath, depth = 0) => {
   return rendered;
 };
 
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+const sendJson = (req, res, statusCode, payload, extraHeaders = {}) => {
+  const headers = {
+    "Content-Type": "application/json; charset=utf-8",
+    "Cache-Control": "no-store",
+    ...extraHeaders,
+  };
+  const compressedResponse = compressResponseBody(req, JSON.stringify(payload), headers);
+  res.writeHead(statusCode, compressedResponse.headers);
+  res.end(compressedResponse.body);
+};
+
+const readJsonBody = (req) =>
+  new Promise((resolve, reject) => {
+    let rawBody = "";
+
+    req.on("data", (chunk) => {
+      rawBody += chunk;
+      if (rawBody.length > 64 * 1024) {
+        reject(new Error("Payload too large"));
+        req.destroy();
+      }
+    });
+
+    req.on("end", () => {
+      if (!rawBody.trim()) {
+        resolve({});
+        return;
+      }
+
+      try {
+        resolve(JSON.parse(rawBody));
+      } catch (error) {
+        reject(new Error("Invalid JSON body"));
+      }
+    });
+
+    req.on("error", reject);
+  });
+
+const getClientIp = (req) => {
+  const forwardedFor = req.headers["x-forwarded-for"];
+  if (typeof forwardedFor === "string" && forwardedFor.trim()) {
+    return forwardedFor.split(",")[0].trim();
+  }
+  return req.socket?.remoteAddress || "unknown";
+};
+
+const consumeRateLimit = (key) => {
+  const now = Date.now();
+  const timestamps = (rateLimitStore.get(key) || []).filter(
+    (timestamp) => now - timestamp < scanRateLimitWindowMs
+  );
+  timestamps.push(now);
+  rateLimitStore.set(key, timestamps);
+  return {
+    allowed: timestamps.length <= scanRateLimitMax,
+    remaining: Math.max(scanRateLimitMax - timestamps.length, 0),
+    retryAfterMs: timestamps[0] ? scanRateLimitWindowMs - (now - timestamps[0]) : 0,
+  };
+};
+
+const normalizeWebsiteUrl = (input) => {
+  const raw = String(input || "").trim();
+  if (!raw) {
+    throw new Error("Please enter a website URL.");
+  }
+
+  const withProtocol = /^[a-z]+:\/\//i.test(raw) ? raw : `https://${raw}`;
+  let parsedUrl;
+  try {
+    parsedUrl = new URL(withProtocol);
+  } catch (error) {
+    throw new Error("Please enter a valid website URL.");
+  }
+
+  if (!["http:", "https:"].includes(parsedUrl.protocol)) {
+    throw new Error("Only http and https URLs are supported.");
+  }
+
+  if (!parsedUrl.hostname || !parsedUrl.hostname.includes(".")) {
+    throw new Error("Please enter a valid company website.");
+  }
+
+  parsedUrl.hash = "";
+  const normalizedPathname = parsedUrl.pathname.replace(/\/+$/, "") || "/";
+  parsedUrl.pathname = normalizedPathname === "/" ? "/" : normalizedPathname;
+  return {
+    normalizedUrl: parsedUrl.toString(),
+    domainKey: parsedUrl.hostname.toLowerCase(),
+  };
+};
+
+const cleanupExpiredScans = () => {
+  const now = Date.now();
+  for (const [cacheKey, entry] of scanCache.entries()) {
+    if (now - entry.completedAt > scanCacheTtlMs) {
+      scanCache.delete(cacheKey);
+    }
+  }
+
+  for (const [scanId, job] of scanJobs.entries()) {
+    const age = now - (job.updatedAt || job.createdAt || now);
+    if (
+      (job.status === "completed" || job.status === "failed") &&
+      age > scanCacheTtlMs
+    ) {
+      scanJobs.delete(scanId);
+    }
+  }
+};
+
+const safeParseJson = (value) => {
+  if (value == null) return null;
+  if (typeof value === "object") return value;
+  if (typeof value !== "string") return null;
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  try {
+    return JSON.parse(trimmed);
+  } catch (error) {
+    return null;
+  }
+};
+
+const ensureArray = (value) => {
+  if (Array.isArray(value)) {
+    return value.filter(Boolean).map((entry) => String(entry).trim()).filter(Boolean);
+  }
+  if (typeof value === "string") {
+    return value
+      .split(/\n+/)
+      .map((entry) => entry.replace(/^[-*\d.\s]+/, "").trim())
+      .filter(Boolean);
+  }
+  return [];
+};
+
+const firstNonEmpty = (...values) =>
+  values
+    .flatMap((value) => (Array.isArray(value) ? value : [value]))
+    .find((value) => typeof value === "string" && value.trim()) || "";
+
+const extractPlainText = (value) => {
+  if (typeof value === "string") return value.trim();
+  if (Array.isArray(value)) return firstNonEmpty(value);
+  return "";
+};
+
+const extractInsightHeadline = (value) => {
+  const text = extractPlainText(value)
+    .replace(/#{1,6}\s*/g, "")
+    .split(/\n+/)
+    .map((line) => line.trim())
+    .find(Boolean);
+  return text || "";
+};
+
+const extractLeadSentence = (value) => {
+  const text = extractPlainText(value).replace(/\s+/g, " ").trim();
+  if (!text) return "";
+  const match = text.match(/^(.+?[.!?])(?:\s|$)/);
+  return (match ? match[1] : text).trim();
+};
+
+const WORKFLOW_NODE_OUTPUT_MAP = {
+  "Business Understanding": "company",
+  "AI Opportunities": "opportunity",
+};
+
+const PRIORITY_ORDER = {
+  high: 0,
+  medium: 1,
+  low: 2,
+};
+
+const EFFORT_ORDER = {
+  low: 0,
+  medium: 1,
+  high: 2,
+};
+
+const mergeOutputs = (target, source) => {
+  if (!source || typeof source !== "object") return target;
+  Object.entries(source).forEach(([key, value]) => {
+    if (value === undefined || value === null || value === "") return;
+    target[key] = value;
+  });
+  return target;
+};
+
+const getSectionsReady = (outputs = {}) => ({
+  summary: Boolean(
+    firstNonEmpty(outputs.summary, safeParseJson(outputs.company)?.summary, outputs.company_name)
+  ),
+  situation: false,
+  opportunities: Boolean(
+    ensureArray(
+      safeParseJson(outputs.opportunity)?.opportunities ||
+        safeParseJson(outputs.opportunities) ||
+        safeParseJson(outputs.ai_opportunities)
+    ).length
+  ),
+  actions: false,
+  investment: false,
+  comparison: false,
+  narrative: false,
+});
+
+const rankOpportunity = (opportunity) => {
+  const priority = String(opportunity?.priority || "").trim().toLowerCase();
+  const effort = String(opportunity?.effort || "").trim().toLowerCase();
+  return {
+    priority: PRIORITY_ORDER[priority] ?? 99,
+    effort: EFFORT_ORDER[effort] ?? 99,
+    title: String(opportunity?.title || "").toLowerCase(),
+  };
+};
+
+const getJobProgress = (job) => ({
+  workflowRunId: job.workflowRunId || null,
+  taskId: job.taskId || null,
+  currentNodeTitle: job.currentNodeTitle || "",
+  completedNodes: job.completedNodes || [],
+  sectionsReady: getSectionsReady(job.partialOutputs || job.result?.rawOutputs || {}),
+  lastEvent: job.lastEvent || null,
+});
+
+const serializeResultForClient = (result) => {
+  if (!result || typeof result !== "object") return null;
+  const { rawOutputs, ...clientResult } = result;
+  return clientResult;
+};
+
+const updateJobPartialResult = (job) => {
+  job.result = normalizeDifyResult({ outputs: job.partialOutputs || {} }, job.websiteUrl);
+  job.updatedAt = Date.now();
+};
+
+const applyWorkflowEventToJob = (job, event) => {
+  if (!job || !event || typeof event !== "object") return;
+
+  if (event.task_id) {
+    job.taskId = event.task_id;
+  }
+  if (event.workflow_run_id) {
+    job.workflowRunId = event.workflow_run_id;
+  }
+  if (event.event) {
+    job.lastEvent = event.event;
+  }
+
+  const data = event.data && typeof event.data === "object" ? event.data : {};
+
+  if (event.event === "node_started") {
+    job.currentNodeTitle = data.title || data.node_type || "";
+    job.updatedAt = Date.now();
+    return;
+  }
+
+  if (event.event === "node_finished") {
+    if (data.title || data.node_id) {
+      job.completedNodes = job.completedNodes || [];
+      job.completedNodes.push({
+        id: data.node_id || data.id || randomUUID(),
+        title: data.title || data.node_type || "Node",
+        status: data.status || "succeeded",
+      });
+    }
+    if (data.outputs && typeof data.outputs === "object") {
+      mergeOutputs(job.partialOutputs, data.outputs);
+      if (typeof data.title === "string" && typeof data.outputs.text === "string") {
+        const mappedKey = WORKFLOW_NODE_OUTPUT_MAP[data.title.trim()];
+        if (mappedKey) {
+          job.partialOutputs[mappedKey] = data.outputs.text;
+        }
+      }
+      updateJobPartialResult(job);
+    }
+    job.currentNodeTitle = "";
+    job.updatedAt = Date.now();
+    return;
+  }
+
+  if (event.event === "workflow_finished") {
+    if (data.outputs && typeof data.outputs === "object") {
+      mergeOutputs(job.partialOutputs, data.outputs);
+      updateJobPartialResult(job);
+    }
+
+    if (data.status === "succeeded") {
+      job.status = "completed";
+      job.error = null;
+      job.updatedAt = Date.now();
+      if (job.result) {
+        scanCache.set(job.domainKey, {
+          result: job.result,
+          completedAt: job.updatedAt,
+        });
+      }
+    } else {
+      job.status = "failed";
+      job.error = data.error || "The analysis could not be completed.";
+      job.updatedAt = Date.now();
+    }
+    job.currentNodeTitle = "";
+  }
+};
+
+const consumeSseStream = async (stream, onEvent) => {
+  const reader = stream.getReader();
+  const decoder = new TextDecoder();
+  let buffer = "";
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) break;
+
+    buffer += decoder.decode(value, { stream: true }).replace(/\r\n/g, "\n");
+
+    let separatorIndex = buffer.indexOf("\n\n");
+    while (separatorIndex !== -1) {
+      const rawEvent = buffer.slice(0, separatorIndex).trim();
+      buffer = buffer.slice(separatorIndex + 2);
+
+      if (rawEvent) {
+        const dataPayload = rawEvent
+          .split("\n")
+          .filter((line) => line.startsWith("data:"))
+          .map((line) => line.slice(5).trim())
+          .join("\n");
+
+        if (dataPayload) {
+          try {
+            const parsedEvent = JSON.parse(dataPayload);
+            await onEvent(parsedEvent);
+          } catch (error) {
+            // Ignore malformed chunks to keep the stream alive.
+          }
+        }
+      }
+
+      separatorIndex = buffer.indexOf("\n\n");
+    }
+  }
+};
+
+const normalizeDifyResult = (payload, websiteUrl) => {
+  const outputs = payload?.data?.outputs || payload?.outputs || payload?.data || payload || {};
+  const company =
+    safeParseJson(outputs.company) ||
+    {};
+  const opportunityPayload =
+    safeParseJson(outputs.opportunity) ||
+    safeParseJson(outputs.opportunities) ||
+    safeParseJson(outputs.ai_opportunities) ||
+    {};
+  const opportunities = Array.isArray(opportunityPayload)
+    ? opportunityPayload
+    : opportunityPayload.opportunities || [];
+  const companyName = firstNonEmpty(
+    outputs.company_name,
+    outputs.companyName,
+    company.company_name,
+    company.companyName
+  );
+  const summary = firstNonEmpty(outputs.summary, company.summary, company.company_summary);
+
+  const normalizedOpportunities = Array.isArray(opportunities)
+    ? opportunities.map((opportunity, index) => ({
+        title: firstNonEmpty(
+          opportunity?.title,
+          opportunity?.opportunity,
+          opportunity?.name,
+          `Opportunity ${index + 1}`
+        ),
+        where: firstNonEmpty(opportunity?.where, opportunity?.area, opportunity?.category),
+        what: firstNonEmpty(
+          opportunity?.what,
+          opportunity?.summary,
+          opportunity?.description,
+          opportunity?.why_now,
+          opportunity?.whyNow
+        ),
+        why: firstNonEmpty(
+          opportunity?.why,
+          opportunity?.impact,
+          opportunity?.business_impact,
+          opportunity?.businessImpact
+        ),
+        value: firstNonEmpty(
+          opportunity?.value,
+          opportunity?.business_value,
+          opportunity?.businessValue
+        ),
+        howItIsBuilt: firstNonEmpty(
+          opportunity?.how_it_is_built,
+          opportunity?.howItIsBuilt,
+          opportunity?.how_neurosys_delivers,
+          opportunity?.howNeurosysDelivers,
+          opportunity?.neurosys_approach,
+          opportunity?.neurosysApproach
+        ),
+        firstStep: firstNonEmpty(opportunity?.first_step, opportunity?.firstStep),
+        effort: firstNonEmpty(opportunity?.effort, opportunity?.complexity),
+        priority: firstNonEmpty(opportunity?.priority),
+      }))
+        .sort((left, right) => {
+          const leftRank = rankOpportunity(left);
+          const rightRank = rankOpportunity(right);
+          return (
+            leftRank.priority - rightRank.priority ||
+            leftRank.effort - rightRank.effort ||
+            leftRank.title.localeCompare(rightRank.title)
+          );
+        })
+    : [];
+  const keyInsight = firstNonEmpty(
+    outputs.key_insight,
+    outputs.keyInsight,
+    extractLeadSentence(summary),
+    normalizedOpportunities[0]?.title
+  );
+
+  return {
+    companyName,
+    websiteUrl,
+    summary,
+    keyInsight,
+    opportunities: normalizedOpportunities,
+    generatedAt: new Date().toISOString(),
+    rawOutputs: outputs,
+  };
+};
+
+const runScanJob = async (scanId) => {
+  const job = scanJobs.get(scanId);
+  if (!job || job.status === "completed") {
+    return;
+  }
+
+  if (!process.env.DIFY_API) {
+    job.status = "failed";
+    job.error = "Scanner is not configured on the server.";
+    job.updatedAt = Date.now();
+    return;
+  }
+
+  job.status = "running";
+  job.updatedAt = Date.now();
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), scanTimeoutMs);
+
+  try {
+    const response = await fetch(
+      `${process.env.DIFY_API_BASE_URL || "https://workflows.neurosys.com/v1"}/workflows/run`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${process.env.DIFY_API}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          inputs: {
+            website_url: job.websiteUrl,
+          },
+          response_mode: "streaming",
+          user: `neurosys-web:${job.domainKey}`,
+        }),
+        signal: controller.signal,
+      }
+    );
+
+    if (!response.ok) {
+      const payload = await response.json().catch(() => ({}));
+      throw new Error(payload?.message || "The analysis request failed.");
+    }
+
+    await consumeSseStream(response.body, async (event) => {
+      applyWorkflowEventToJob(job, event);
+    });
+
+    if (job.status === "running") {
+      job.status = "failed";
+      job.error = "The analysis could not be completed.";
+      job.updatedAt = Date.now();
+    }
+  } catch (error) {
+    job.status = "failed";
+    job.error =
+      error?.name === "AbortError"
+        ? "The analysis took too long. Please try again."
+        : error?.message || "The analysis could not be completed.";
+    job.updatedAt = Date.now();
+  } finally {
+    clearTimeout(timeout);
+    cleanupExpiredScans();
+  }
+};
+
 const server = http.createServer((req, res) => {
   (async () => {
     const requestUrl = new URL(req.url, `http://${req.headers.host}`);
     const pathname = requestUrl.pathname || "/";
     const normalizedPath = normalizePathname(pathname);
+
+    if (normalizedPath === "/api/scan" && req.method === "POST") {
+      cleanupExpiredScans();
+      const rateLimit = consumeRateLimit(getClientIp(req));
+      if (!rateLimit.allowed) {
+        sendJson(req, res, 429, {
+          error: "Too many scan requests. Please wait a moment and try again.",
+        });
+        return;
+      }
+
+      let body;
+      try {
+        body = await readJsonBody(req);
+      } catch (error) {
+        sendJson(req, res, 400, { error: error.message });
+        return;
+      }
+
+      let normalizedInput;
+      try {
+        normalizedInput = normalizeWebsiteUrl(body.website_url || body.websiteUrl);
+      } catch (error) {
+        sendJson(req, res, 400, { error: error.message });
+        return;
+      }
+
+      const cachedEntry = scanCache.get(normalizedInput.domainKey);
+      const scanId = randomUUID();
+      const now = Date.now();
+
+      if (cachedEntry && now - cachedEntry.completedAt < scanCacheTtlMs) {
+        scanJobs.set(scanId, {
+          id: scanId,
+          status: "completed",
+          websiteUrl: normalizedInput.normalizedUrl,
+          domainKey: normalizedInput.domainKey,
+          result: cachedEntry.result,
+          partialOutputs: cachedEntry.result?.rawOutputs || {},
+          workflowRunId: null,
+          taskId: null,
+          currentNodeTitle: "",
+          completedNodes: [],
+          lastEvent: "workflow_finished",
+          error: null,
+          createdAt: now,
+          updatedAt: now,
+        });
+        sendJson(req, res, 200, {
+          scanId,
+          status: "completed",
+          cached: true,
+          websiteUrl: normalizedInput.normalizedUrl,
+        });
+        return;
+      }
+
+      scanJobs.set(scanId, {
+        id: scanId,
+        status: "queued",
+        websiteUrl: normalizedInput.normalizedUrl,
+        domainKey: normalizedInput.domainKey,
+        result: null,
+        partialOutputs: {},
+        workflowRunId: null,
+        taskId: null,
+        currentNodeTitle: "",
+        completedNodes: [],
+        lastEvent: null,
+        error: null,
+        createdAt: now,
+        updatedAt: now,
+      });
+
+      void runScanJob(scanId);
+
+      sendJson(req, res, 202, {
+        scanId,
+        status: "queued",
+        websiteUrl: normalizedInput.normalizedUrl,
+      });
+      return;
+    }
+
+    if (normalizedPath === "/api/scan-status" && req.method === "GET") {
+      cleanupExpiredScans();
+      const scanId = requestUrl.searchParams.get("id");
+      if (!scanId) {
+        sendJson(req, res, 400, { error: "Missing scan id." });
+        return;
+      }
+
+      const job = scanJobs.get(scanId);
+      if (!job) {
+        sendJson(req, res, 404, { error: "Scan not found." });
+        return;
+      }
+
+      sendJson(req, res, 200, {
+        scanId: job.id,
+        status: job.status,
+        websiteUrl: job.websiteUrl,
+        domainKey: job.domainKey,
+        retryable: job.status === "failed",
+        error: job.error,
+        result: serializeResultForClient(job.result),
+        progress: getJobProgress(job),
+      });
+      return;
+    }
+
+    if (
+      ["/api/scan", "/api/scan-status"].includes(normalizedPath) &&
+      !["POST", "GET"].includes(req.method || "GET")
+    ) {
+      sendJson(req, res, 405, { error: "Method not allowed." }, { Allow: "GET, POST" });
+      return;
+    }
 
     if (normalizedPath === "/sitemap.xml") {
       res.writeHead(200, {
