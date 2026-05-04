@@ -405,7 +405,7 @@ const I18N_STRINGS = {
     Insights: "Innsikt",
     "AI Workshops": "AI-workshops",
     Contact: "Kontakt",
-    "Get in touch": "Ta kontakt",
+    "Contact us": "Kontakt oss",
     "Why Dify →": "Hvorfor Dify →",
     Menu: "Meny",
     Discover: "Utforsk",
@@ -3082,7 +3082,7 @@ const I18N_STRINGS = {
       "Overvåk bruk og kvalitet, forbedre logikk og modeller og utvid kapabiliteter over tid.",
     "Governance, hosting and human-in-the-loop controls are built in - and we work alongside your product and engineering teams.":
       "Governance, hosting og kontroller for menneske-i-loopen er innebygd - og vi jobber sammen med produkt- og ingeniørteamene dine.",
-    "Get in touch →": "Ta kontakt →",
+    "Contact us →": "Kontakt oss →",
     "AI Chatbots & Assistants": "AI-chatbots og assistenter",
     "Assistants connected to your systems and knowledge.":
       "Assistenter koblet til systemene og kunnskapen din.",
